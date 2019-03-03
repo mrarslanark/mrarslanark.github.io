@@ -1,0 +1,34 @@
+h1, p, .credit, .irritateBtn {
+    font-family: 'Raleway', sans-serif;
+    color: #212121;
+    text-align: center
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.credit, a {
+    color: #b4b4b4;
+    font-size: 10px;
+}
+
+.irritateBtn {
+    padding: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+    border-color: #78B9EB;
+    border-radius: 8px;
+}
+
+.irritateBtn:focus {
+    outline: 0;
+}
+
+
