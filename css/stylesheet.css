@@ -1,10 +1,10 @@
 h1, p, .credit, .irritateBtn {
     font-family: 'Raleway', sans-serif;
     color: #212121;
-    text-align: center
+    text-align: center;
 }
 
-img {
+.welcomeImage {
     width: 20%;
     height: 20%;
     display: block;
@@ -12,9 +12,19 @@ img {
     margin-right: auto;
 }
 
-.credit, a {
+.credit, .creditLink {
     color: #b4b4b4;
     font-size: 10px;
+}
+
+a {
+    color: #212121;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A4C639;
+    font-weight: bold;
 }
 
 .irritateBtn {
@@ -23,12 +33,39 @@ img {
     margin-left: auto;
     margin-right: auto;
     background: #FFFFFF;
-    border-color: #78B9EB;
-    border-radius: 8px;
+    border-color: #A4C639;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.irritateBtn:hover {
+    background: rgb(255, 199, 199);
+    border-color: rgb(198, 57, 57);
 }
 
 .irritateBtn:focus {
     outline: 0;
+}
+
+.socialMediaBlock {
+    margin: 10px;
+    text-align: center;
+    display: block;
+}
+
+img {
+    width: 2.5%;
+    height: 2.5%;
+}
+
+.socialMediaIcon {
+    padding: 1%;
+}
+
+.line {
+    width: 40%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 
