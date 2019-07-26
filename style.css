@@ -1,54 +1,72 @@
-/* Color Palette
-#394648 - ARSENIC
-#69995D - RUSSIAN GREEN
-#CBAC88 - LIGHT FRENCH BEIGE
-#EDB6A3 - DESERT SAND
-#F8E9E9 - LINEN
-#9C0D38 - RED
-*/
+:root {
+  --arsenic: #394648;
+  --russian-green: #69995D;
+  --light-french-beige: #CBAC88;
+  --desert-sand: #EDB6A3;
+  --linen: #F8E9E9;
+  --red: #9C0D38;
+}
+
 
 /* Global Styles  */
 html {
     box-sizing: border-box;
 }
-*, *:before, *:after {
+
+
+*, 
+*:before, 
+*:after {
     box-sizing: inherit;
 }
+
+
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
     margin: 0;
+    line-height: 1.5;
 }
+
 h1, h2 {
     font-family: 'Exo', sans-serif;
     text-transform: uppercase;
 }
+
 h1 {
     font-size: 60px;
 }
+
 h2 {
     font-size: 25px;
     margin-top: 0;
 }
+
 p {
     margin: 10px 0;
 }
+
 a {
-    color: #9C0D38;
+    color: var(--red);
 }
+
 a:hover {
     text-decoration: none;
 }
+
 .content-wrap {
     max-width: 950px;
     margin: 0 auto;
     padding: 50px;
     overflow: auto;
 }
+
 .col-narrow {
     width: 30%;
     float: left;
     min-height: 175px;
 }
+
 .col-wide {
     width: 70%;
     float: left;
@@ -56,41 +74,49 @@ a:hover {
     min-height: 200px;
 }
 
+
 /* Header and Footer styles */
 header, footer {
-    background: #EDB6A3;
-    color: #394648;
+    background: var(--desert-sand);
+    color: var(--arsenic);
 }
+
 /* Header */
 .profile-img {
     border-radius: 50%;
 }
+
 header h1, header h2 {
-    color: #394648;
+    color: var(--arsenic);
     margin: 0;
 }
+
 /* Footer */
 footer {
     text-align: center;
 }
+
 .contact-info a {
     padding: 10px;
-    background: #394648;
+    background: var(--arsenic);
     color: white;
     text-decoration: none;
     display: inline-block;
 }
+
 .contact-info a:hover {
     text-decoration: underline;
 }
 
+
 /* Work Experience */
 .work {
-    background: #69995D;
+    background: var(--russian-green);
 }
+
 
 
 /* Education */
 .education {
-    background: #CBAC88;
+    background: var(--light-french-beige);
 }
