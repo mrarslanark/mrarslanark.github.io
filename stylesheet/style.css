@@ -1,10 +1,9 @@
 /* Color Palette
-#394648 - ARSENIC
-#69995D - RUSSIAN GREEN
-#CBAC88 - LIGHT FRENCH BEIGE
-#EDB6A3 - DESERT SAND
-#F8E9E9 - LINEN
-#9C0D38 - RED
+#631D76 - MIDNIGHT
+#9E4770 - MAGENTA HAZE
+#FBFBFB - SNOW
+#2E2532 - DARK PURPLE
+#201A23 - RAISIN BLACK
 */
 
 /* Global Styles  */
@@ -18,9 +17,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Exo', sans-serif;
     text-transform: uppercase;
+    color: #201A23;
 }
 h1 {
     font-size: 60px;
@@ -31,9 +31,10 @@ h2 {
 }
 p {
     margin: 10px 0;
+    color: #FBFBFB;
 }
 a {
-    color: #9C0D38;
+    color: #FBFBFB;
 }
 a:hover {
     text-decoration: none;
@@ -58,7 +59,7 @@ a:hover {
 
 /* Header and Footer styles */
 header, footer {
-    background: #EDB6A3;
+    background: #2E2532;
     color: #394648;
 }
 /* Header */
@@ -66,7 +67,7 @@ header, footer {
     border-radius: 50%;
 }
 header h1, header h2 {
-    color: #394648;
+    color: #9E4770;
     margin: 0;
 }
 /* Footer */
@@ -75,7 +76,7 @@ footer {
 }
 .contact-info a {
     padding: 10px;
-    background: #394648;
+    background: #9E4770;
     color: white;
     text-decoration: none;
     display: inline-block;
@@ -86,7 +87,7 @@ footer {
 
 /* Work Experience */
 .work {
-    background: #69995D;
+    background: #9E4770;
 }
 
 
