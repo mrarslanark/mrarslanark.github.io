@@ -2,44 +2,88 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/6047e2027c.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arslan Mushtaq | Resume</title>
     <link rel="stylesheet" href="/stylesheet/style.css">
     <link rel="icon" type="image/ico" href="/images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Exo:700|Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:700|Titillium+Web&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- // Intro -->
     <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#work">Work Experience</a>
+            <a href="#education">Education</a>
+        </nav>
         <div class="content-wrap">
             <img class="profile-img col-narrow" src="/images/profile-picture.jpg" alt="Arslan Mushtaq">
-            <div class="col-wide">
-                <h1>Arslan Mushtaq</h1>
-                <h2>Mobile/Web Developer + Graphic Designer</h2>
-                <p>
+            <div class="col-wide header-table">
+                <div class="intro">
+                    <h1>Arslan Mushtaq</h1>
+                    <h2>Mobile/Web Developer + Graphic Designer</h2>
+                    <!-- Social media and contact links. Add or remove any networks. -->
+                    <div class="contact-info">
+                        <a class="email animation" href="mailto:m.arslanmushtaqahmed@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a class="website animation" href="https://androidclub.dyzynz.net/" rel="noopener" target="_blank" title="Website">
+                            <i class="fab fa-android"></i>
+                        </a>
+                        <a class="github animation" href="https://github.com/mrarslanark" rel="noopener" target="_blank" title="Github Handler">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a class="twitter animation" href="https://twitter.com/mrarslanark" rel="noopener" target="_blank" title="Twitter Handler">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="linkedin animation" href="https://linkedin.com/in/arslanark" rel="noopener" target="_blank" title="LinkedIn Handler">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="facebook animation" href="https://www.facebook.com/mrarslanark" rel="noopener" target="_blank" title="Facebook Hanlder">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="resume animation" href="resume.pdf" title="PDF Version of Resume">
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- <p>
                     A fresh undergradute from <a href="https://www.mul.edu.pk/english/index.html" title="Minhaj University Lahore">Minhaj University Lahore</a> based in Lahore, Pakistan. I have a keen desire for Android Application and Web Development.
                     Alongside development, Graphic Designing is what I am expert in. I love to experiement with advance technologies as Machine Learning is what I am moving towards.
-                </p>
+                </p> -->
             </div>
         </div>
     </header>
     <main>
-        <!-- // Work Experience -->
-        <section class="work">
+        <!-- // About -->
+        <section id="about" class="about">
             <div class="content-wrap">
-                <h2>Work Experience</h2>
+                <h2><i class="fas fa-glasses"></i> &ThinSpace; What I am &amp; upto!</h2>
+                <p>
+                    A fresh undergradute from <a href="https://www.mul.edu.pk/english/index.html" title="Minhaj University Lahore">Minhaj University Lahore</a> based in Lahore, Pakistan. I have a keen desire for Android Application and Web Development.
+                    Alongside development, Graphic Designing is what I am expert in. I love to experiement with advance technologies as Machine Learning is what I am moving towards.
+                </p>
 
-                <!-- Job Details: News Writer -->
+            </div>
+        </section>
+
+        <!-- // Work Experience -->
+        <section id="work" class="work">
+            <div class="content-wrap">
+                <h2><i class="fas fa-briefcase"></i> &ThinSpace; Work Experience</h2>
+
+                <!-- Job Details: Tech Blogger -->
                 <div class="col-narrow">
                     <h3>Tech Blogger</h3>
-                    <p>Team Android</p>
-                    <p>April 2019 - June 2019</p>
+                    <p class="uppercase team-android"><a href="https://www.teamandroid.com/author/arslanmushtaq/" title="Team Android Work Link" rel="noopener" target="_blank">Team Android</a></p>
+                    <p>Apr 2019 - Jun 2019</p>
                 </div>
 
                 <!-- Summary -->
-                <div class="col-wide">
+                <div class="col-wide job-description">
                     <p>Design and edit news for reading by anchors and communicate appropriate stories to audience. Develop bridges and other articles to broadcast during interval of news stories. Perform copy editing of scripts for accuracy, factual content
                         and correct language.</p>
                 </div>
@@ -48,12 +92,12 @@
                 <!-- Job Details: Mobile UI/UX Designer -->
                 <div class="col-narrow">
                     <h3>Mobile UI/UX Designer</h3>
-                    <p>Juice Phactree</p>
-                    <p>September 2017 - October 2018</p>
+                    <p class="uppercase">Juice Phactree</p>
+                    <p>Sep 2017 - Oct 2018</p>
                 </div>
 
                 <!-- Summary -->
-                <div class="col-wide">
+                <div class="col-wide job-description">
                     <p>
                         Working as a User Interface/Experience Designer my responsibilities included visualizing &amp; developing an interface for a product. Providing better &amp; smooth user experience was my primary responsibility.
                     </p>
@@ -62,12 +106,12 @@
                 <!-- Job Details: Junior Graphic Designer -->
                 <div class="col-narrow">
                     <h3>Junior Graphic Designer</h3>
-                    <p>Medad Printing &amp; Advertising</p>
-                    <p>October 2013 - December 2013</p>
+                    <p class="uppercase">Medad Printing &amp; Advertising</p>
+                    <p>Oct 2013 - Dec 2013</p>
                 </div>
 
                 <!-- Add as many paragraphs as you need. -->
-                <div class="col-wide">
+                <div class="col-wide job-description">
                     <p>
                         Started as a trainee, officially promoted to Junior Graphic Designer. The internship included working on 3D modeling &amp; Graphic using tools like 3Ds Max, Keyshot, Adobe Photoshop &amp; Illustrator. I worked on various business branding &amp; 3D product
                         modeling. I also designed a 3D model concept of a donation box for Red Crescent U.A.E that was shortlisted for prototype build.
@@ -79,16 +123,14 @@
         </section>
 
         <!-- // Education -->
-        <section class="education">
+        <section id="education" class="education">
             <div class="content-wrap">
-                <h2>Education</h2>
+                <h2><i class="fas fa-university"></i> &ThinSpace; Education</h2>
 
                 <!-- School details: BS Computer Science Honors (BSCS) -->
                 <h3>Minhaj University Lahore - Lahore, Pakistan</h3>
                 <p>Bachelors (Honors), April 2015 - September 2019</p>
                 <p>Major in Computer Science</p>
-
-                <br>
 
                 <!-- School details: BS Computer Science Honors (BSCS) -->
                 <h3>Sheikh Khalifa Bin Zayed Arab Pakistani School - Abu Dhabi, U.A.E</h3>
@@ -100,21 +142,8 @@
     </main>
 
     <!-- // Footer & contact info -->
-    <footer>
-        <div class="content-wrap">
-            <h2 style="color: #FBFBFB">Let's Keep in Touch!</h2>
-
-            <!-- Social media and contact links. Add or remove any networks. -->
-            <div class="contact-info">
-                <a href="mailto:m.arslanmushtaqahmed@gmail.com">m.arslanmushtaqahmed@gmail.com</a>
-                <a href="https://androidclub.dyzynz.net/" rel="noopener" target="_blank">Android Club</a>
-                <a href="https://twitter.com/mrarslanark" rel="noopener" target="_blank">Twitter</a>
-                <a href="https://linkedin.com/in/arslanark" rel="noopener" target="_blank">LinkedIn</a>
-                <a href="https://www.facebook.com/mrarslanark" rel="noopener" target="_blank">Facebook</a>
-            </div>
-
-            <p>Copyright 2019 by Arslan Mushtaq</p>
-        </div>
+    <footer id="contact">
+        <p>Copyright 2019 by Arslan Mushtaq</p>
     </footer>
 </body>
 

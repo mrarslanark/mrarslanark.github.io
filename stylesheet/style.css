@@ -12,6 +12,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -21,31 +22,31 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-family: 'Titillium Web', sans-serif;
     margin: 0;
-    line-height: 1.5;
 }
 
 h1,
 h2 {
-    font-family: 'Exo', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     text-transform: uppercase;
     color: #201A23;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 40px;
+    padding-bottom: 10px;
 }
 
 h2 {
     font-size: 25px;
     margin-top: 0;
+    text-transform: none;
 }
 
-p {
-    margin: 10px 0;
-    color: #FBFBFB;
+h3 {
+    margin: 0;
+    letter-spacing: 2px;
 }
 
 a {
@@ -59,21 +60,34 @@ a:hover {
 .content-wrap {
     max-width: 950px;
     margin: 0 auto;
-    padding: 50px;
-    overflow: auto;
+    padding: 60px 50px;
+    overflow: hidden;
 }
 
-.col-narrow {
-    width: 30%;
-    float: left;
-    min-height: 175px;
+.content-wrap h2 i {
+    color: var(--desert-sand);
 }
 
-.col-wide {
-    width: 70%;
-    float: left;
-    padding-left: 20px;
-    min-height: 200px;
+i {
+    color: white;
+}
+
+.content-wrap p {
+    line-height: 1.5;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+
+/* Main Tag Content  */
+
+main p,
+main h2,
+main h3 {
+    color: white;
 }
 
 
@@ -81,52 +95,203 @@ a:hover {
 
 header,
 footer {
-    background: var(--desert-sand);
-    color: var(--arsenic);
+    background: linear-gradient(rgba(58, 58, 58, 0.8), rgba(114, 114, 114, 0.8)), url(../images/four-edu-bg.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 
 /* Header */
 
-.profile-img {
-    border-radius: 50%;
+header {
+    padding-top: 50px;
+    position: relative;
 }
 
 header h1,
 header h2 {
-    color: var(--arsenic);
+    color: white;
     margin: 0;
+}
+
+.profile-img {
+    border-radius: 50%;
+    border: 0.5px solid var(--light-french-beige);
+}
+
+.contact-info a {
+    padding: 10px;
+    color: var(--arsenic);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.header-table {
+    display: table;
+}
+
+.intro {
+    height: 230px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+
+/* Social Media Hover Changes */
+
+.animation i:hover {
+    transition: 0.3s;
+}
+
+.email i:hover {
+    color: #3CB97F;
+}
+
+.website i:hover {
+    color: #76BD55;
+}
+
+.github i:hover {
+    color: #161414;
+}
+
+.twitter i:hover {
+    color: #1C9DEB;
+}
+
+.linkedin i:hover {
+    color: #0271AE;
+}
+
+.facebook i:hover {
+    color: #395698;
+}
+
+.resume i:hover {
+    color: var(--red);
 }
 
 
 /* Footer */
 
 footer {
-    text-align: center;
-}
-
-.contact-info a {
-    padding: 10px;
-    background: var(--arsenic);
-    color: white;
-    text-decoration: none;
     display: inline-block;
+    width: 100%;
 }
 
-.contact-info a:hover {
+footer p {
+    text-align: center;
+    color: white;
+}
+
+
+/* Navigation */
+
+nav {
+    text-align: center;
+    background: var(--arsenic);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/* About  */
+
+.about {
+    background: linear-gradient(rgba(96, 108, 136, 0.8), rgba(63, 76, 107, 0.8)), url(../images/three-edu-bg.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.about a {
+    text-decoration: none;
+    color: var(--linen);
+    font-weight: bold;
+}
+
+.about a:hover {
     text-decoration: underline;
+}
+
+.about p {
+    line-height: 2;
 }
 
 
 /* Work Experience */
 
 .work {
-    background: var(--russian-green);
+    background: linear-gradient(rgba(35, 37, 38, 0.8), rgba(65, 67, 69, 0.8)), url(../images/two-edu-bg.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+h3~p {
+    margin: 0;
+}
+
+.col-narrow p:last-child {
+    margin-top: 5px;
+}
+
+.job-description {
+    margin-bottom: 25px;
+}
+
+.job-description p:first-of-type {
+    margin-top: 0;
+}
+
+.team-android a {
+    text-decoration: none;
+    color: #76BD55;
 }
 
 
 /* Education */
 
 .education {
-    background: var(--light-french-beige);
+    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url(../images/one-edu-bg.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+p+h3 {
+    margin-top: 30px;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 900px) {
+    .col-narrow {
+        width: 30%;
+        float: left;
+    }
+    .col-wide {
+        width: 70%;
+        float: left;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        text-align: center;
+    }
+    .profile-img {
+        width: 230px;
+        border-radius: 50%;
+    }
 }
