@@ -13,6 +13,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-size: 1vm;
 }
 
 *,
@@ -141,35 +142,59 @@ header h2 {
 
 /* Social Media Hover Changes */
 
-.animation i:hover {
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* .animation i:hover {
     transition: 0.3s;
+} */
+
+.animation:hover {
+    animation: zoom 1.5s ease-in 0s infinite;
 }
 
 .email i:hover {
+    transition: 0.3s;
     color: #3CB97F;
 }
 
 .website i:hover {
+    transition: 0.3s;
     color: #76BD55;
 }
 
 .github i:hover {
+    transition: 0.3s;
     color: #161414;
 }
 
 .twitter i:hover {
+    transition: 0.3s;
     color: #1C9DEB;
 }
 
 .linkedin i:hover {
+    transition: 0.3s;
     color: #0271AE;
 }
 
 .facebook i:hover {
+    transition: 0.3s;
     color: #395698;
 }
 
 .resume i:hover {
+    transition: 0.3s;
     color: var(--red);
 }
 
