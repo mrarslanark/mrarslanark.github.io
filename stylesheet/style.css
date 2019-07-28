@@ -193,6 +193,21 @@ header h2 {
     color: #395698;
 }
 
+.instagram i:hover {
+    transition: 0.3s;
+    color: #C1558B;
+}
+
+.medium i:hover {
+    transition: 0.3s;
+    color: #292929;
+}
+
+.snapchat i:hover {
+    transition: 0.3s;
+    color: #FFFC00;
+}
+
 .resume i:hover {
     transition: 0.3s;
     color: var(--red);
