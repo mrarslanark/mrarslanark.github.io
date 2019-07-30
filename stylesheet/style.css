@@ -96,7 +96,7 @@ main h3 {
 
 header,
 footer {
-    background: linear-gradient(rgba(58, 58, 58, 0.8), rgba(114, 114, 114, 0.8)), url(../images/four-edu-bg.webp) no-repeat fixed;
+    background: linear-gradient(rgba(58, 58, 58, 0.8), rgba(114, 114, 114, 0.8)), url(../images/top-bg.webp) no-repeat fixed;
     background-size: cover;
     background-position: center;
 }
@@ -250,7 +250,7 @@ nav a {
 /* About  */
 
 .about {
-    background: linear-gradient(rgba(96, 108, 136, 0.8), rgba(63, 76, 107, 0.8)), url(../images/three-edu-bg.webp) no-repeat fixed;
+    background: linear-gradient(rgba(96, 108, 136, 0.8), rgba(63, 76, 107, 0.8)), url(../images/about-bg.webp) no-repeat fixed;
     background-size: cover;
     background-position: center;
 }
@@ -273,7 +273,7 @@ nav a {
 /* Work Experience */
 
 .work {
-    background: linear-gradient(rgba(35, 37, 38, 0.8), rgba(65, 67, 69, 0.8)), url(../images/two-edu-bg.webp) no-repeat fixed;
+    background: linear-gradient(rgba(35, 37, 38, 0.8), rgba(65, 67, 69, 0.8)), url(../images/work-bg.webp) no-repeat fixed;
     background-size: cover;
     background-position: center;
 }
@@ -303,7 +303,7 @@ h3~p {
 /* Education */
 
 .education {
-    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url(../images/one-edu-bg.webp) no-repeat fixed;
+    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url(../images/edu-bg.webp) no-repeat fixed;
     background-size: cover;
 }
 
@@ -315,7 +315,7 @@ p+h3 {
 /* Skills */
 
 .skills {
-    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url(../images/five-edu-bg.webp) no-repeat fixed;
+    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url(../images/skill-bg.webp) no-repeat fixed;
     background-size: cover;
 }
 
@@ -327,12 +327,22 @@ p+h3 {
 }
 
 .grid-item {
-    padding: 50px;
+    padding: 30px;
     text-align: center;
+    border-radius: 1%;
 }
 
 .grid-item img {
-    padding: 20px 0px;
+    padding: 15px 0px;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.grid-item a:hover {
+    text-decoration: underline;
 }
 
 .intermediate {
