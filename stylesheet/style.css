@@ -312,6 +312,42 @@ p+h3 {
 }
 
 
+/* Skills */
+
+.skills {
+    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url(../images/five-edu-bg.webp) no-repeat fixed;
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.grid-item {
+    padding: 50px;
+    text-align: center;
+}
+
+.grid-item img {
+    padding: 20px 0px;
+}
+
+.intermediate {
+    background: rgba(28, 157, 235, 0.5);
+}
+
+.basic {
+    background: rgba(22, 20, 20, 0.5);
+}
+
+.professional {
+    background: rgba(60, 185, 127, 0.5);
+}
+
+
 /* Media Queries */
 
 @media (min-width: 900px) {
