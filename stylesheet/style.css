@@ -203,11 +203,6 @@ header h2 {
     color: #292929;
 }
 
-.snapchat i:hover {
-    transition: 0.3s;
-    color: #FFFC00;
-}
-
 .resume i:hover {
     transition: 0.3s;
     color: var(--red);
