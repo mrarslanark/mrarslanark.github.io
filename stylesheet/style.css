@@ -27,22 +27,17 @@ body {
     margin: 0;
 }
 
-h1,
-h2 {
+h1 {
     font-family: 'Exo 2', sans-serif;
+    font-size: 80px;
     text-transform: uppercase;
     color: #201A23;
 }
 
-h1 {
-    font-size: 40px;
-    padding-bottom: 10px;
-}
-
 h2 {
-    font-size: 25px;
-    margin-top: 0;
+    font-size: 30px;
     text-transform: none;
+    letter-spacing: 1px;
 }
 
 h3 {
@@ -63,10 +58,6 @@ a:hover {
     margin: 0 auto;
     padding: 60px 50px;
     overflow: hidden;
-}
-
-.content-wrap h2 i {
-    color: var(--desert-sand);
 }
 
 i {
@@ -121,7 +112,8 @@ header h2 {
 }
 
 .contact-info a {
-    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
     color: var(--arsenic);
     text-decoration: none;
     display: inline-block;
@@ -354,64 +346,3 @@ p+h3 {
 
 
 /* Media Queries */
-
-@media (max-width: 320px) {
-    nav {
-        display: none;
-    }
-    .content-wrap {
-        max-width: 320px;
-        padding: 30px 20px;
-    }
-    header {
-        padding: 0;
-    }
-    .col-wide {
-        width: 70%;
-        float: left;
-        padding-left: 20px;
-    }
-    .col-narrow {
-        padding-bottom: 30px;
-    }
-    .profile-img {
-        display: none;
-    }
-    .intro {
-        padding: 0;
-    }
-    .intro h1 {
-        font-size: 30px;
-        text-align: left;
-    }
-    .intro h2 {
-        font-size: 20px;
-        text-align: left;
-    }
-    .contact-info {
-        display: none;
-    }
-    .job-description {
-        display: none;
-    }
-    .grid-container {
-        grid-template-columns: 100%;
-    }
-}
-
-@media (max-width: 900px) {
-    header {
-        text-align: center;
-    }
-    .header-table {
-        width: 100%;
-    }
-    .profile-img {
-        width: 230px;
-        border-radius: 50%;
-    }
-    .contact-info-row {
-        display: inline-block;
-        padding-top: 20px;
-    }
-}
