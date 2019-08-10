@@ -408,4 +408,8 @@ p+h3 {
         display: initial;
         cursor: pointer;
     }
+    /* Skills */
+    .grid-container {
+        grid-template-columns: 100%;
+    }
 }
