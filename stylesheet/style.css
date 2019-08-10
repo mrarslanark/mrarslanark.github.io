@@ -365,51 +365,32 @@ p+h3 {
 }
 
 
-/* Media Queries */
+/* Achievements */
 
-@media (max-width: 425px) {
-    /* Header  */
-    h1 {
-        font-size: 30px;
-    }
-    h2 {
-        font-size: 22px;
-    }
-    .intro {
-        padding-top: 20px;
-        text-align: center;
-        padding: 0;
-    }
-    /* Social Media Icons */
-    .contact-info {
-        display: none;
-    }
-    /* Navigation Bar */
-    .navbar,
-    .navbar-items {
-        flex-direction: column;
-    }
-    .navbar {
-        padding: 20px;
-    }
-    .navbar-items {
-        display: none;
-        width: 100%;
-        text-align: center;
-    }
-    .navbar-items div {
-        padding: 16px;
-    }
-    .navbar-items {
-        margin-left: 0;
-    }
-    .navbar-toggle {
-        align-self: flex-start;
-        display: initial;
-        cursor: pointer;
-    }
-    /* Skills */
-    .grid-container {
-        grid-template-columns: 100%;
-    }
+.achievements {
+    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url(../images/achievements-bg.webp) no-repeat fixed;
+    background-size: cover;
+}
+
+.grid-achievements {
+    grid-template-columns: 50% 50%;
+}
+
+.grid-achievements div {
+    background: white;
+}
+
+.grid-achievements h1,
+.grid-achievements h2,
+.grid-achievements p {
+    color: black;
+}
+
+.fa-info-circle {
+    color: #0271AE;
+}
+
+.fa-map-marker-alt,
+.fa-medal {
+    color: var(--red);
 }
