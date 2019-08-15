@@ -234,6 +234,12 @@ footer p {
     display: flex;
 }
 
+.divider {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
 
 /* 
 nav {
@@ -350,6 +356,20 @@ p+h3 {
 
 .grid-item a:hover {
     text-decoration: underline;
+}
+
+.grid-item h3 {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.grid-item p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.grid-item h2 {
+    margin-top: 0;
 }
 
 .intermediate {
