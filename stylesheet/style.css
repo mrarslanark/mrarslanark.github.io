@@ -75,7 +75,7 @@ i {
 
 hr {
     border-color: rgba(255, 255, 255, 0.3);
-    width: 50%;
+    width: 60%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -117,12 +117,15 @@ header h2 {
     border: 0.5px solid var(--light-french-beige);
 }
 
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
 .contact-info a {
-    padding-top: 10px;
-    padding-right: 10px;
+    margin: 15px;
     color: var(--arsenic);
     text-decoration: none;
-    display: inline-block;
     font-size: 25px;
 }
 
@@ -139,22 +142,6 @@ header h2 {
 
 
 /* Social Media Hover Changes */
-
-@keyframes zoom {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.animation:hover {
-    animation: zoom 1.5s ease-in 0s infinite;
-}
 
 .email i:hover {
     transition: 0.3s;
@@ -455,4 +442,21 @@ p+h3 {
     font-size: 2rem;
     margin-bottom: 20px;
     margin-right: 10px;
+}
+
+
+/* Contact */
+
+.contact {
+    background: linear-gradient(#212121, black);
+}
+
+.contact-header {
+    text-align: center;
+    margin: 0;
+}
+
+.fa-heart {
+    color: var(--red);
+    font-size: 5rem;
 }
