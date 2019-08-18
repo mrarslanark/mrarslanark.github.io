@@ -73,6 +73,13 @@ i {
     font-style: italic;
 }
 
+hr {
+    border-color: rgba(255, 255, 255, 0.3);
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 /* Main Tag Content  */
 
@@ -87,7 +94,7 @@ main h3 {
 
 header,
 footer {
-    background: linear-gradient(rgba(58, 58, 58, 0.8), rgba(114, 114, 114, 0.8)), url(../images/top-bg.webp) no-repeat fixed;
+    background: linear-gradient(rgba(58, 58, 58, 0.8), rgba(114, 114, 114, 0.8)), url(../images/backgrounds/main.webp) no-repeat fixed;
     background-size: cover;
     background-position: center;
 }
@@ -263,7 +270,7 @@ nav a {
 /* About  */
 
 .about {
-    background: linear-gradient(rgba(96, 108, 136, 0.8), rgba(63, 76, 107, 0.8)), url(../images/about-bg.webp) no-repeat fixed;
+    background: linear-gradient(rgba(96, 108, 136, 0.8), rgba(63, 76, 107, 0.8)), url(../images/backgrounds/about.webp) no-repeat fixed;
     background-size: cover;
     background-position: center;
 }
@@ -286,7 +293,7 @@ nav a {
 /* Work Experience */
 
 .work {
-    background: linear-gradient(rgba(35, 37, 38, 0.8), rgba(65, 67, 69, 0.8)), url(../images/work-bg.webp) no-repeat fixed;
+    background: linear-gradient(rgba(35, 37, 38, 0.8), rgba(65, 67, 69, 0.8)), url(../images/backgrounds/work-experience.webp) no-repeat fixed;
     background-size: cover;
     background-position: center;
 }
@@ -295,16 +302,16 @@ h3~p {
     margin: 0;
 }
 
+.col-narrow h3 {
+    text-transform: uppercase;
+}
+
 .col-narrow p:last-child {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
-.job-description {
-    margin-bottom: 25px;
-}
-
-.job-description p:first-of-type {
-    margin-top: 0;
+.location-time {
+    margin-top: 10px;
 }
 
 .team-android a {
@@ -312,11 +319,15 @@ h3~p {
     color: #76BD55;
 }
 
+.date {
+    float: right;
+}
+
 
 /* Education */
 
 .education {
-    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url(../images/edu-bg.webp) no-repeat fixed;
+    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url(../images/backgrounds/edu.webp) no-repeat fixed;
     background-size: cover;
 }
 
@@ -328,7 +339,7 @@ p+h3 {
 /* Skills */
 
 .skills {
-    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url(../images/skill-bg.webp) no-repeat fixed;
+    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url(../images/backgrounds/tech-skills.webp) no-repeat fixed;
     background-size: cover;
 }
 
@@ -388,7 +399,7 @@ p+h3 {
 /* Achievements */
 
 .achievements {
-    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url(../images/achievements-bg.webp) no-repeat fixed;
+    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url(../images/backgrounds/achievements.webp) no-repeat fixed;
     background-size: cover;
 }
 
@@ -413,4 +424,35 @@ p+h3 {
 .fa-map-marker-alt,
 .fa-medal {
     color: var(--red);
+}
+
+
+/* Projects */
+
+.projects {
+    background: linear-gradient(rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.8)), url(../images/backgrounds/projects.webp) no-repeat fixed;
+    background-size: cover;
+}
+
+.grid-projects {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.grid-projects div {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.grid-projects h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.grid-projects p:last-child {
+    margin-top: 20px;
+}
+
+.availability {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-right: 10px;
 }
