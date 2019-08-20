@@ -4,6 +4,7 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-size: 1vm;
+    background-color: #f3f3f3;
 }
 
 *,
@@ -17,22 +18,43 @@ body {
     margin: 0;
 }
 
+hr {
+    padding: 0;
+    margin: 0;
+    border-color: rgba(0, 0, 0, 0.11)
+}
+
+.green {
+    color: white;
+    background: #003f1596;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.content-wrap {
+    width: 80%;
+    overflow: hidden;
+}
+
+.content-wrap h2 {
+    font-family: 'Patua One', cursive;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
  /* Navigation Bar */
 
- .navbar {
-    background-color: #f3f3f3;
+.navbar {
     display: flex;
-    position: fixed;
     width: 100%;
-    justify-content: end;
-    box-shadow: 0px 2px 6px #0000001f;
-    -webkit-box-shadow: 0px 2px 6px #0000001f;
-    -moz-box-shadow: 0px 2px 6px #0000001f;
-    padding: 20px;
 }
 
 .navbar-items {
     align-self: center;
+    text-align: right;
+    width: 60%;
+    margin-right: 50px;
 }
 
 .navbar-items a {
@@ -45,17 +67,22 @@ body {
 
 .navbar-items a:hover {
     color: #003F15;
-    transition: 0.5s;
+    border-bottom: solid thin #003F15;
 }
 
 .logo-and-label {
+    width: 40%;
     display: flex;
     margin-left: 50px;
 }
 
 .label {
     align-self: center;
-    margin-left: 20px;
+}
+
+.label p {
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
 .navbar h2, .navbar p {
@@ -65,8 +92,43 @@ body {
 
 /* Introduction */
 
-/* .introduction {
+.introduction {
     width: 100%;
     height: 800px;
-    background: rgb(212, 212, 212); 
-} */
+    background: linear-gradient(rgba(19, 78, 94, 0.7), rgba(113, 178, 128, 0.7)), url(../images/backgrounds/ptss/ptss-bg.webp) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.intro {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.intro h1 {
+    font-family: 'Patua One', cursive;
+    font-weight: normal;
+    font-size: 4rem;
+    color: #f3f3f3;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.212);
+    margin-bottom: 2px;
+}
+
+.intro p {
+    font-size: 1.7rem;
+    color: whitesmoke;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.212);
+
+}
+
+/* About Us */
+
+.about-us {
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
