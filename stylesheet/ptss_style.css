@@ -21,18 +21,26 @@ body {
 hr {
     padding: 0;
     margin: 0;
-    border-color: rgba(0, 0, 0, 0.11)
+    border-color: rgba(0, 0, 0, 0.11);
+}
+
+.divider {
+    width: 60%;
+    margin: 0 auto;
 }
 
 .green {
     color: white;
-    background: #003f1596;
+    background: rgba(0, 63, 21, 0.5);
     border-radius: 5px;
     padding: 10px;
 }
 
 .content-wrap {
-    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     overflow: hidden;
 }
 
@@ -41,6 +49,12 @@ hr {
     font-weight: normal;
     text-transform: uppercase;
     font-size: 2rem;
+    display: inline-block;
+    padding: 5px;
+    border-bottom: solid thick rgba(0, 63, 21, 0.5);
+    border-radius: 5px;
+    color: black;
+    letter-spacing: 2px;
 }
 
  /* Navigation Bar */
@@ -122,13 +136,65 @@ hr {
     font-size: 1.7rem;
     color: whitesmoke;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.212);
-
 }
 
-/* About Us */
+/* Tech to Explore */
 
-.about-us {
-    height: 400px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.grid-item {
+    text-align: center;
+    border: solid thin rgba(21, 77, 31, 0.1);
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.grid-item:hover {
+    transition: 0.3s;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    margin-top: 20px;
+}
+
+.grid-item h3,
+.grid-item p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.grid-item h3 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.grid-item hr,
+.grid-item p {
+    width: 80%;
     margin: 0 auto;
-    margin-top: 50px;
+}
+
+.grid-item p {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.fab, .fas {
+    font-size: 1.5rem;
+    margin: 30px;
+    border-radius: 2%;
+    color: #212121;
+    cursor: pointer;
+}
+
+.fa-google-play:hover,
+.fa-app-store-ios:hover,
+.fa-globe-asia:hover {
+    transition: 0.5s;
+    color: rgba(0, 63, 21, 0.5);
 }
