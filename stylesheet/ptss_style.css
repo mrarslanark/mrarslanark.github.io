@@ -152,6 +152,7 @@ hr {
     border: solid thin rgba(21, 77, 31, 0.1);
     border-radius: 8px;
     margin-bottom: 5px;
+    background-color: white;
 }
 
 .grid-item:hover {
@@ -161,6 +162,7 @@ hr {
 
 .grid-item img {
     margin-top: 20px;
+    width: 40%;
 }
 
 .grid-item h3,
@@ -170,7 +172,6 @@ hr {
 
 .grid-item h3 {
     font-size: 1.2rem;
-    letter-spacing: 2px;
 }
 
 .grid-item hr,
@@ -182,6 +183,8 @@ hr {
 .grid-item p {
     font-size: 0.8rem;
     margin-bottom: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .fab, .fas {

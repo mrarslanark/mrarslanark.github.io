@@ -6,6 +6,7 @@
 * http://sam.zoy.org/wtfpl/
 */
 
+
 (function(){
     /**
      * Clamps a text node.
@@ -260,5 +261,13 @@
     window.$clamp = clamp;
 })();
 
-var paragraph = document.getElementById('clamp-it');
-$clamp(paragraph, {clamp: 3});
+var paragraph = document.querySelectorAll('#clamp-it');
+console.log(paragraph);
+
+paragraph.forEach(
+    function(currentValue) { 
+        $clamp(currentValue, {clamp: 3});
+      }
+);
+
+
