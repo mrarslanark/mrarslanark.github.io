@@ -235,25 +235,6 @@ footer p {
 }
 
 
-/* 
-nav {
-    text-align: center;
-    background: var(--arsenic);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-}
-
-nav a {
-    display: inline-block;
-    padding: 15px 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-} */
-
-
 /* About  */
 
 .about {
@@ -459,4 +440,69 @@ p+h3 {
 .fa-heart {
     color: var(--red);
     font-size: 5rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+    .navbar {
+        display: none;
+    }
+    .header-table {
+        width: 100%;
+    }
+    .intro {
+        text-align: center;
+    }
+    .intro h1 {
+        font-size: 4rem;
+    }
+    .intro h2 {
+        font-size: 1.5rem;
+    }
+    .location-time {
+        display: grid;
+    }
+    .contact-info {
+        display: list-item;
+    }
+}
+
+@media (max-width: 760px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 50%);
+    }
+    .grid-item h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+    .intro h2 {
+        font-size: 1.2rem;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+
+@media (max-width: 500px) {
+    .intro {
+        text-align: start;
+    }
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+    .intro h2 {
+        font-size: 1.2rem;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 100%);
+    }
+    .grid-item h2 {
+        font-size: 1rem;
+    }
 }
