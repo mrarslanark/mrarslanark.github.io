@@ -277,11 +277,11 @@ p + h3 {
   margin-top: 30px;
 }
 
-/* Skills */
+/* Grid - Skills */
 
 .grid-container {
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-columns: repeat(3, 33.3%);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
@@ -291,7 +291,6 @@ p + h3 {
   text-align: center;
   border-radius: 2%;
   background-color: rgb(0, 0, 0, 0.05);
-  vertical-align: middle;
 }
 
 .grid-item a {
@@ -321,18 +320,34 @@ p + h3 {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-.grid-achievements {
-  grid-template-columns: 50% 50%;
+.achievements .grid-container {
+  grid-template-columns: repeat(1, 100%);
 }
 
-.grid-achievements div {
-  background: white;
+.achievements .grid-item {
+  background-color: white;
+  text-align: start;
+  display: inline-flex;
 }
 
-.grid-achievements h1,
-.grid-achievements h2,
-.grid-achievements p {
-  color: var(--text-color);
+.detail-container {
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  margin-left: 20px;
+}
+
+.achievements .grid-item img {
+  width: 30%;
+  align-self: flex-end;
+}
+
+.achievements .grid-item h3 {
+  margin-bottom: 10px;
+}
+
+.achievements .grid-item p {
+  margin-top: 10px;
 }
 
 .fa-info-circle {
