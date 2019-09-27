@@ -288,7 +288,7 @@ p + h3 {
 
 .grid-item {
   padding: 30px;
-  text-align: center;
+  text-align: left;
   border-radius: 2%;
   background-color: rgb(0, 0, 0, 0.05);
 }
@@ -314,6 +314,39 @@ p + h3 {
   margin-top: 0;
 }
 
+.master {
+  background: rgb(118, 189, 85, 0.25);
+}
+
+.intermediate {
+  background: rgba(85, 104, 189, 0.25);
+}
+
+.basic {
+  background: rgba(189, 85, 166, 0.25);
+}
+
+.discontinued {
+  background: rgba(247, 0, 0, 0.25);
+}
+
+.color-box {
+  padding: 1px 12px;
+}
+
+.legends {
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+
+.legends p {
+  padding: 0;
+  margin: 0px 20px 0px 0px;
+}
+
+.legends span {
+  margin-right: 10px;
+}
 /* Achievements */
 
 .achievements {
@@ -361,21 +394,19 @@ p + h3 {
 
 /* Projects */
 
-.grid-projects {
-  grid-template-columns: 33.3% 33.3% 33.3%;
+.project-item {
+  text-align: start;
 }
 
-.grid-projects div {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.grid-projects h3 {
-  color: white;
+.project-item h3,
+.skills-item h2 {
   text-transform: uppercase;
+  border-bottom: 1px solid rgb(22, 20, 20, 0.1);
+  padding-bottom: 5px;
 }
 
-.grid-projects p:last-child {
-  margin-top: 20px;
+.project-item p {
+  margin-top: 10px;
 }
 
 .availability {
