@@ -44,7 +44,6 @@ h2 {
 
 h3 {
   margin: 0;
-  letter-spacing: 2px;
 }
 
 /* p {
@@ -315,6 +314,7 @@ h3 ~ p {
   text-align: left;
   border-radius: 2%;
   background-color: rgba(0, 0, 0, 0.02);
+  box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .grid-item:hover {
@@ -447,7 +447,7 @@ h3 ~ p {
 }
 
 .availability {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
   margin-right: 10px;
 }
@@ -465,7 +465,7 @@ h3 ~ p {
 
 .fa-heart {
   color: var(--red);
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 /* Media Queries */
