@@ -21,15 +21,16 @@
 }
 
 .bg-primary {
-    background-color: darkkhaki!important;
-    background: linear-gradient(to bottom,rgba(13, 37, 73, 0.8) 0,rgba(49, 49, 49, 0.8) 100%),url(../img/bg-about.webp);
+    background-color: darkkhaki !important;
+    background: linear-gradient(to bottom, rgba(13, 37, 73, 0.8) 0, rgba(49, 49, 49, 0.8) 100%), url(../img/bg-about.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
 }
 
-#services, #question {
+#services,
+#question {
     background: radial-gradient(rgba(255, 255, 255, 1), rgba(230, 230, 230, 1));
 }
 
@@ -52,26 +53,30 @@
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
-    color: rgba(34, 112, 34, 1)!important;
+    color: rgba(34, 112, 34, 1) !important;
 
 }
 
 .fa-facebook-square:hover {
-    color: #3b5998!important;
+    color: #3b5998 !important;
     transition: 0.3s;
 }
 
 .fa-instagram:hover {
-    color: #8a3ab9!important;
+    color: #8a3ab9 !important;
     transition: 0.3s;
 }
 
 .fa-twitter:hover {
-    color: #1da1f2!important;
+    color: #1da1f2 !important;
     transition: 0.3s
 }
 
 .fa-envelope:hover {
-    color: #006600!important;
+    color: #006600 !important;
     transition: 0.3s;
+}
+
+#your-story {
+    background-color: darkslategray;
 }
