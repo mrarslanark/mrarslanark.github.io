@@ -1,8 +1,6 @@
-# Resume/Portfolio 
-Updating Continously 
-
-Clone before contributing
-
+# Resume
+---
+## To Clone
 `git clone https://github.com/mrarslanark/mrarslanark.github.io.git`
 
 ## To contribute:
