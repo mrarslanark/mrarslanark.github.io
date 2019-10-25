@@ -264,7 +264,7 @@ footer p {
 
 /* Work Experience */
 
-h3 ~ p {
+h3~p {
   margin: 0;
 }
 
@@ -376,6 +376,7 @@ h3 ~ p {
 .legends span {
   margin-right: 10px;
 }
+
 /* Achievements */
 
 .achievements {
@@ -452,6 +453,15 @@ h3 ~ p {
   margin-right: 10px;
 }
 
+/* Design Portfolio */
+
+.design-item,
+.design-item img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
 /* Contact */
 
 .contact {
@@ -474,21 +484,27 @@ h3 ~ p {
   .navbar {
     display: none;
   }
+
   .header-table {
     width: 100%;
   }
+
   .intro {
     text-align: center;
   }
+
   .intro h1 {
     font-size: 4rem;
   }
+
   .intro h2 {
     font-size: 1.5rem;
   }
+
   .location-time {
     display: grid;
   }
+
   .contact-info {
     display: list-item;
   }
@@ -498,6 +514,7 @@ h3 ~ p {
   .grid-container {
     grid-template-columns: repeat(2, 50%);
   }
+
   .grid-item h2 {
     font-size: 1rem;
   }
@@ -507,22 +524,28 @@ h3 ~ p {
   .intro {
     text-align: start;
   }
+
   .intro h1 {
     font-size: 1.5rem;
   }
+
   .intro h2 {
     font-size: 0.8rem;
   }
+
   .languages,
   .hidden {
     display: none;
   }
+
   .into hr {
     display: none;
   }
+
   .grid-container {
     grid-template-columns: repeat(1, 100%);
   }
+
   .grid-item h2 {
     font-size: 1rem;
   }
