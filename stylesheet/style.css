@@ -473,6 +473,10 @@ button:hover {
 
 /* Design Portfolio */
 
+.design {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
 .design-item,
 .design-item img {
   width: 100%;
@@ -519,6 +523,50 @@ button:hover {
 .design-icons a:hover {
   color: #212121;
   text-decoration: none;
+}
+
+/* Goals */
+
+.goals {
+  background-color: white;
+}
+
+.goals .grid-item {
+  padding: 0px;
+  padding-top: 10px;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: none;
+}
+
+.fa-times-circle {
+  color: red;
+}
+
+.goals .grid-container {
+  grid-template-columns: repeat(1, 100%);
+}
+
+.grid-container hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.goal {
+  width: 100%;
+  display: inline-flex;
+}
+
+.goal .label {
+  width: 100%;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.goal .objective {
+  width: 100%;
+  text-align: end;
+  margin: 0;
 }
 
 /* Contact */
