@@ -386,7 +386,7 @@ h3~p {
 }
 
 .achievements .grid-container {
-  grid-template-columns: repeat(1, 100%);
+  grid-template-columns: repeat(2, 50%);
 }
 
 .achievements .grid-item {
@@ -395,10 +395,23 @@ h3~p {
   display: inline-flex;
 }
 
+.achievements .detail-container h2 {
+  width: fit-content;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 3px;
+}
+
+.speaker {
+  background: #395693;
+}
+
+.winner {
+  background: #008328;
+}
+
 .detail-container {
   width: 100%;
-  align-self: center;
-  justify-self: center;
   margin-left: 20px;
 }
 
@@ -407,8 +420,8 @@ h3~p {
 }
 
 .achievements .grid-item img {
-  width: 30%;
   align-self: center;
+  width: 50%;
 }
 
 .achievements .grid-item h3 {
