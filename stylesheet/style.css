@@ -503,20 +503,17 @@ button:hover {
 
 .design-item .design-content {
   padding: 12px;
-
 }
 
-.design-item h3 {
-  font-family: 'Baloo Bhai', cursive;
+.design-item h2 {
   text-transform: uppercase;
-  letter-spacing: 0.10rem;
   background-color: white;
   padding-bottom: 5px;
+  text-align: center;
 }
 
 .design-item p {
   margin: 0;
-  text-align: justify;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: small;
   background: white;
@@ -524,8 +521,7 @@ button:hover {
 
 .design-item .design-icons {
   width: 100%;
-  text-align: start;
-  margin-left: 12px;
+  text-align: center;
   font-size: x-large;
 }
 
