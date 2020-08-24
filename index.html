@@ -1,404 +1,643 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <script src="https://kit.fontawesome.com/6047e2027c.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Arslan Mushtaq | Resume</title>
-    <link rel="stylesheet" href="/stylesheet/style.css">
-    <link rel="icon" type="image/ico" href="/images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="/stylesheet/style.css" />
+    <link rel="icon" type="image/ico" href="/images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v5.0'
-            });
-        };
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v5.0",
+        });
+      };
 
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
     </script>
 
     <!-- Your customer chat code -->
-    <div class="fb-customerchat" attribution=setup_tool page_id="328031837696822" theme_color="#212121"
-        logged_in_greeting="Hi, this is Arslan. How can I help you?"
-        logged_out_greeting="Hi, this is Arslan. How can I help you?">
-    </div>
+    <div
+      class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="328031837696822"
+      theme_color="#212121"
+      logged_in_greeting="Hi, this is Arslan. How can I help you?"
+      logged_out_greeting="Hi, this is Arslan. How can I help you?"
+    ></div>
 
     <!-- // Header -->
     <header>
-        <div class="navbar">
-            <div class="navbar-toggle">
-                <i class="fas fa-bars"></i>
+      <div class="navbar">
+        <div class="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navbar-items">
+          <div><a href="#skills">Tech Skills</a></div>
+          <div><a href="#achievements">Achievements</a></div>
+          <div><a href="#projects">Projects</a></div>
+          <div><a href="#design">Designs</a></div>
+          <div><a href="#contact">Connect</a></div>
+        </nav>
+      </div>
+      <div class="content-wrap">
+        <div class="col-wide header-table">
+          <div class="intro">
+            <img src="images/pp.jpg" />
+            <div class="intro-container">
+              <p id="name">Arslan Mushtaq</p>
+              <h2>Mobile, Web Developer & Graphic Designer</h2>
+              <p style="font-weight: bolder; margin-top: 12;">
+                <a href="./documents/ArslanMushtaq.pdf" target="_blank"
+                  >Check out my resume</a
+                >
+              </p>
             </div>
-            <nav class="navbar-items">
-                <div><a href="#skills">Tech Skills</a></div>
-                <div><a href="#achievements">Achievements</a></div>
-                <div><a href="#projects">Projects</a></div>
-                <div><a href="#design">Designs</a></div>
-                <div><a href="#contact">Connect</a></div>
-            </nav>
+          </div>
         </div>
-        </div>
-        <div class="content-wrap">
-            <div class="col-wide header-table">
-                <div class="intro">
-                    <img src="images/pp.jpg">
-                    <div class="intro-container">
-                        <p id="name">Arslan Mushtaq</p>
-                        <h2>Mobile, Web Developer & Graphic Designer</span></h2>
-                        <p style="font-weight: bolder; margin-top: 12;">
-                            <a href="./documents/ArslanMushtaq.pdf" target="_blank" >Check out my resume</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </header>
     <main>
-
-        <!-- // Tech Skills -->
-        <section id="skills" class="skills">
-            <div class="content-wrap">
-                <h2><i class="fas fa-microchip"></i> Tech Skills</h2>
-                <div class="grid-container">
-
-                    <!-- Native Mobile Developer (React-Native) -->
-                    <div class="grid-item skills-item">
-                        <h2>Hybrid Mobile Development (React-Native)</h2>
-                    </div>
-
-                    <!-- Android Development (Hybrid) -->
-                    <div class="grid-item skills-item">
-                        <h2>Android Development</h2>
-                    </div>
-
-                    <!-- Android Development (Hybrid) -->
-                    <div class="grid-item skills-item">
-                        <h2>iOS Development</h2>
-                    </div>
-
-                    <div class="grid-item skills-item">
-                        <h2>Graphic Design</h2>
-                    </div>
-
-                </div>
+      <!-- // Tech Skills -->
+      <section id="skills" class="skills">
+        <div class="content-wrap">
+          <h2><i class="fas fa-microchip"></i> Tech Skills</h2>
+          <div class="grid-container">
+            <!-- Native Mobile Developer (React-Native) -->
+            <div class="grid-item skills-item">
+              <h2>Hybrid Mobile Development (React-Native)</h2>
             </div>
-        </section>
 
-        <!-- // Career Development -->
-        <section id="achievements" class="achievements">
-            <div class="content-wrap">
-                <h2><i class="fas fa-trophy"></i> Career Development</h2>
-                <div class="grid-container">
-
-                    <!-- Speaker -->
-                    <div class="grid-item">
-                        <div class="detail-container">
-                            <h2 class="speaker">SPEAKER</h2>
-                            <h3>Tech Tology & Devenings Live</h3>
-                            <p>Do More with Firebase</p>
-                            <br>
-                            <button class="do-more-with-firebase">View Slides</button>
-                        </div>
-                    </div>
-
-                    <!-- Speaker -->
-                    <div class="grid-item">
-                        <div class="detail-container">
-                            <h2 class="speaker">SPEAKER</h2>
-                            <h3>Tech Tology Live</h3>
-                            <p>Understanding Git and GitHub</p>
-                            <br>
-                            <button class="git-and-github">View Slides</button>
-                        </div>
-
-                    </div>
-
-                    <!-- Speaker -->
-                    <div class="grid-item">
-                        <div class="detail-container">
-                            <h2 class="speaker">SPEAKER</h2>
-                            <h3>Tech Tology Lahore Chapter Launch</h3>
-                            <p>Develop Android Apps the fun way</p>
-                            </p>
-                            <br>
-                            <button class="tech-tology-link">View Slides</button>
-                        </div>
-                    </div>
-
-                    <!-- Speaker -->
-                    <div class="grid-item">
-                        <div class="detail-container">
-                            <h2 class="speaker">SPEAKER</h2>
-                            <h3>Google I/O Extended Lahore 2019</h3>
-                            <p>Introducing Kotlin</p>
-                            </p>
-                            <br>
-                            <button class="google-io-link">View Slides</button>
-                        </div>
-                    </div>
-
-                    <!-- AppDev Competition -->
-                    <div class="grid-item">
-                        <div class="detail-container">
-                            <h2 class="winner">AWARD</h2>
-                            <h3>SOFTEC'19</h3>
-                            <p>Mobile App Dev Competition</p>
-                        </div>
-                    </div>
-
-                    <!-- Application Development Club -->
-                    <div class="grid-item">
-                        <div class="detail-container">
-                            <h2 class="winner">ACHIEVEMENT</h2>
-                            <h3>Application Development Club</h3>
-                            <p><a href="http://mul.edu.pk/" rel="noopener" target="_blank">Minhaj University Lahore</a></p>
-                        </div>
-                    </div>
-
-                    <!-- Annual Get Together -->
-                    <div class="grid-item">
-                        <div class="detail-container">
-                            <h2 class="winner">VOLUNTEER</h2>
-                            <h3>Annual Dinner 2k15</h3>
-                            <p><a href="http://mul.edu.pk/" rel="noopener" target="_blank">Minhaj University Lahore</a></p>
-                        </div>
-                    </div>
-                </div>
+            <!-- Android Development (Hybrid) -->
+            <div class="grid-item skills-item">
+              <h2>Android Development</h2>
             </div>
-        </section>
 
-        <!-- // Projects -->
-        <section id="projects" class="projects">
-            <div class="content-wrap">
-                <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-                <div class="grid-container">
-
-                    <!-- Lay Ao -->
-                    <div class="grid-item project-item">
-                        <i class="fab fa-android availability" title="Android App" style="color: #A4C639;"></i>
-                        <h3>Lay Ao (2020)</h3>
-                        <p>Lay Ao is a grocery shopping app that consists of multiple features like cart, favorite lists, search and order tracking.</p>
-                    </div>
-
-                    <!-- Loan Manager -->
-                    <div class="grid-item project-item">
-                        <i class="fab fa-android availability" title="Android App" style="color: #A4C639;"></i>
-                        <i class="fab fa-apple availability" title="iOS App" style="color: #A3AAAE;"></i>
-                        <h3><a href="https://bit.ly/2XoUn35" target="_blank" rel="noopener">Loan Manager (2020)</a></h3>
-                        <p>Loan Manager is a loan tracking app where users can add, manage and track information about their loans.</p>
-                    </div>
-
-                    <!-- COVID-19 -->
-                    <div class="grid-item project-item">
-                        <i class="fab fa-android availability" title="Android App" style="color: #A4C639;"></i>
-                        <i class="fab fa-apple availability" title="iOS App" style="color: #A3AAAE;"></i>
-                        <h3>COVID-19 Stats (2020)</h3>
-                        <p>Mobile app that provides up-to-date statistics about Coronavirus (COVID-19) pandemic. It sources the data by consuming different APIs available publicly.</p>
-                    </div>
-
-                    <!-- Roman Numeral Converter -->
-                    <div class="grid-item project-item">
-                        <i class="fab fa-html5 availability" title="HTML5" style="color: #DE4B25;"></i>
-                        <i class="fab fa-css3 availability" title="CSS3" style="color: #254BE0;"></i>
-                        <i class="fab fa-js availability" title="JavaScript" style="color: #EED818;"></i>
-                        <a href="https://github.com/mrarslanark/roman-numeral-converter" target="_blank"
-                            rel="noopener"><i class="fab fa-github availability" title="Github Link"
-                                style="color: #212121;"></i></a>
-                        <h3><a href="https://github.com/mrarslanark/roman-numeral-converter" target="_blank"
-                                rel="noopener">Roman Numeral Converter (2019)</a></h3>
-                        <p>Web app part of the 100 Days of Code Challenge which converts numbers to roman numerals.</p>
-                    </div>
-
-                    <!-- Caesars Cipher Converter -->
-                    <div class="grid-item project-item">
-                        <i class="fab fa-html5 availability" title="HTML5" style="color: #DE4B25;"></i>
-                        <i class="fab fa-css3 availability" title="CSS3" style="color: #254BE0;"></i>
-                        <i class="fab fa-js availability" title="JavaScript" style="color: #EED818;"></i>
-                        <a href="https://github.com/mrarslanark/caesars-cipher" target="_blank" rel="noopener"><i
-                                class="fab fa-github availability" title="Github Link" style="color: #212121;"></i></a>
-                        <h3><a href="https://github.com/mrarslanark/caesars-cipher" target="_blank"
-                                rel="noopener">Caesars Cipher Converter (2019)</a></h3>
-                        <p>Web app that converts your caesars cipher into words.</p>
-                    </div>
-
-                    <!-- Palindrome Checker -->
-                    <div class="grid-item project-item">
-                        <i class="fab fa-html5 availability" title="HTML5" style="color: #DE4B25;"></i>
-                        <i class="fab fa-css3 availability" title="CSS3" style="color: #254BE0;"></i>
-                        <i class="fab fa-js availability" title="JavaScript" style="color: #EED818;"></i>
-                        <a href="https://github.com/mrarslanark/palindrome-check" target="_blank" rel="noopener"><i
-                                class="fab fa-github availability" title="Github Link" style="color: #212121;"></i></a>
-                        <h3><a href="https://github.com/mrarslanark/palindrome-check" target="_blank"
-                                rel="noopener">Palindrome Checker (2019)</a></h3>
-                        <p>Web app that check whether the provided text is a palindrome or not.</p>
-                    </div>
-
-                    <!-- Random Quote Machine -->
-                    <div class="grid-item project-item">
-                        <i class="fab fa-html5 availability" title="HTML5" style="color: #DE4B25;"></i>
-                        <i class="fab fa-css3 availability" title="CSS3" style="color: #254BE0;"></i>
-                        <i class="fab fa-react availability" title="ReactJS" style="color: #00D8FF;"></i>
-                        <a href="https://github.com/mrarslanark/random-quote-machine" target="_blank" rel="noopener"><i
-                                class="fab fa-github availability" title="Github Link" style="color: #212121;"></i></a>
-                        <h3><a href="https://github.com/mrarslanark/random-quote-machine" target="_blank"
-                                rel="noopener">Random Quote Machine (2019)</a></h3>
-                        <p>A web app part of the 100 Days of Code Challenge which generates random quotes.</p>
-                    </div>
-
-                </div>
+            <!-- Android Development (Hybrid) -->
+            <div class="grid-item skills-item">
+              <h2>iOS Development</h2>
             </div>
-        </section>
 
-        <!-- // Design Portfolio -->
-        <section id="design" class="design">
-            <div class="content-wrap">
-                <h2><i class="fas fa-project-diagram"></i> Design Portfolio</h2>
-                <div class="grid-container">
-
-                    <!-- Kaaj Taank -->
-                    <div class="grid-item design-item">
-                        <div class="company-logo">
-                            <img src="/images/design/kaaj-taanka.png">
-                        </div>
-                        <div class="design-icons">
-                            <a class="design-instagram" href="https://www.instagram.com/kaajtanka" rel="noopener"
-                                target="_blank" title="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="design-instagram" href="https://www.facebook.com/kaajtanka" rel="noopener"
-                                target="_blank" title="Instagram">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                        </div>
-                        <div class="design-content">
-                            <h2>Kaaj Taanka</h2>
-                        </div>
-                    </div>
-
-                    <!-- Tech Tology -->
-                    <div class="grid-item design-item">
-                        <div class="company-logo">
-                            <img src="/images/design/tech-tology.png">
-                        </div>
-                        <div class="design-icons">
-                            <a class="design-instagram" href="https://www.instagram.com/techtology43" rel="noopener"
-                                target="_blank" title="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="design-instagram" href="https://www.facebook.com/techtology43" rel="noopener"
-                                target="_blank" title="Instagram">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a class="design-instagram" href="https://www.linkedin.com/company/tech-tology/"
-                                rel="noopener" target="_blank" title="Instagram">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                        <div class="design-content">
-                            <h2>Tech Tology</h2>
-                        </div>
-                    </div>
-
-                    <!-- App Club -->
-                    <div class="grid-item design-item">
-                        <div class="company-logo">
-                            <img src="/images/design/app-club.png">
-                        </div>
-                        <div class="design-icons">
-                            <a href="https://www.facebook.com/appclubtech" rel="noopener" target="_blank"
-                                title="Facebook">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a href="https://www.instagram.com/appclubtech/" rel="noopener" target="_blank"
-                                title="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.twitter.com/appclubtech/" rel="noopener" target="_blank"
-                                title="Twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/appclubtech/" rel="noopener" target="_blank"
-                                title="LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://www.github.com/appclubtech/" rel="noopener" target="_blank" title="Github">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="http://appclub.tech/" rel="noopener" target="_blank" title="Website">
-                                <i class="fas fa-globe"></i>
-                            </a>
-                        </div>
-                        <div class="design-content">
-                            <h2>App Club</h2>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="grid-item skills-item">
+              <h2>Graphic Design</h2>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Connect -->
-        <section id="contact" class="contact">
-            <div class="content-wrap">
-                <div class="contact-header">
-                    <h2>&lt;/ CONNECT WITH ME &gt;</h2>
-                </div>
-                <div class="contact-info">
-                    <a class="email" href="mailto:m.arslanmushtaqahmed@gmail.com" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a class="website" href="http://appclub.tech/" rel="noopener" target="_blank" title="Website">
-                        <i class="fas fa-globe"></i>
-                    </a>
-                    <a class="github" href="https://github.com/mrarslanark" rel="noopener" target="_blank"
-                        title="Github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a class="twitter" href="https://twitter.com/mrarslanark" rel="noopener" target="_blank"
-                        title="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="linkedin" href="https://linkedin.com/in/mrarslanark" rel="noopener" target="_blank"
-                        title="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="facebook" href="https://www.facebook.com/devmrark/" rel="noopener" target="_blank"
-                        title="Facebook">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                    <a class="instagram" href="https://www.instagram.com/officially.arslan/" rel="noopener"
-                        target="_blank" title="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
+      <!-- // Career Development -->
+      <section id="achievements" class="achievements">
+        <div class="content-wrap">
+          <h2><i class="fas fa-trophy"></i> Career Development</h2>
+          <div class="grid-container">
+            <!-- Speaker -->
+            <div class="grid-item">
+              <div class="detail-container">
+                <h2 class="speaker">SPEAKER</h2>
+                <h3>Tech Tology & Devenings Live</h3>
+                <p>Do More with Firebase</p>
+                <br />
+                <button class="do-more-with-firebase">View Slides</button>
+              </div>
             </div>
-        </section>
+
+            <!-- Speaker -->
+            <div class="grid-item">
+              <div class="detail-container">
+                <h2 class="speaker">SPEAKER</h2>
+                <h3>Tech Tology Live</h3>
+                <p>Understanding Git and GitHub</p>
+                <br />
+                <button class="git-and-github">View Slides</button>
+              </div>
+            </div>
+
+            <!-- Speaker -->
+            <div class="grid-item">
+              <div class="detail-container">
+                <h2 class="speaker">SPEAKER</h2>
+                <h3>Tech Tology Lahore Chapter Launch</h3>
+                <p>Develop Android Apps the fun way</p>
+                <br />
+                <button class="tech-tology-link">View Slides</button>
+              </div>
+            </div>
+
+            <!-- Speaker -->
+            <div class="grid-item">
+              <div class="detail-container">
+                <h2 class="speaker">SPEAKER</h2>
+                <h3>Google I/O Extended Lahore 2019</h3>
+                <p>Introducing Kotlin</p>
+                <br />
+                <button class="google-io-link">View Slides</button>
+              </div>
+            </div>
+
+            <!-- AppDev Competition -->
+            <div class="grid-item">
+              <div class="detail-container">
+                <h2 class="winner">AWARD</h2>
+                <h3>SOFTEC'19</h3>
+                <p>Mobile App Dev Competition</p>
+              </div>
+            </div>
+
+            <!-- Application Development Club -->
+            <div class="grid-item">
+              <div class="detail-container">
+                <h2 class="winner">ACHIEVEMENT</h2>
+                <h3>Application Development Club</h3>
+                <p>
+                  <a href="http://mul.edu.pk/" rel="noopener" target="_blank"
+                    >Minhaj University Lahore</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <!-- Annual Get Together -->
+            <div class="grid-item">
+              <div class="detail-container">
+                <h2 class="winner">VOLUNTEER</h2>
+                <h3>Annual Dinner 2k15</h3>
+                <p>
+                  <a href="http://mul.edu.pk/" rel="noopener" target="_blank"
+                    >Minhaj University Lahore</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- // Projects -->
+      <section id="projects" class="projects">
+        <div class="content-wrap">
+          <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+          <div class="grid-container">
+            <!-- Crack a Joke -->
+            <div class="grid-item project-item">
+              <h3>Crack a Joke</h3>
+              <p class="technology">
+                <b
+                  ><a
+                    href="https://github.com/mrarslanark/crack-a-joke-react-native"
+                    target="_blank"
+                    rel="noopener"
+                    >Android & iOS (React Native)</a
+                  ></b
+                >
+              </p>
+              <p>
+                Crack a joke is a mobile application which generates a random
+                joke and a list of jokes using a free API.
+              </p>
+            </div>
+
+            <!-- Search GitHub Profiles -->
+            <div class="grid-item project-item">
+              <h3>Search GitHub Profiles</h3>
+              <p class="technology">
+                <b
+                  ><a
+                    href="https://github.com/mrarslanark/github-profiles-react"
+                    target="_blank"
+                    rel="noopener"
+                    >Web (ReactJS)</a
+                  ></b
+                >
+              </p>
+              <p>
+                A web app which let users search different Github user details.
+                Try out the application
+                <a href="https://bit.ly/34FATf5" target="_blank" rel="noopener"
+                  >here</a
+                >
+              </p>
+            </div>
+
+            <!-- Lay Ao -->
+            <div class="grid-item project-item">
+              <h3>Lay Ao</h3>
+              <p class="technology"><b>Android</b></p>
+              <p>
+                Lay Ao is a grocery shopping app that consists of multiple
+                features like cart, favorite lists, search and order tracking.
+              </p>
+            </div>
+
+            <!-- Loan Manager -->
+            <div class="grid-item project-item">
+              <h3>Loan Manager</h3>
+              <p class="technology">
+                <b
+                  ><a
+                    href="https://bit.ly/2XoUn35"
+                    target="_blank"
+                    rel="noopener"
+                    >Android</a
+                  ></b
+                >
+              </p>
+              <p>
+                Loan Manager is a loan tracking app where users can add, manage
+                and track information about their loans.
+              </p>
+            </div>
+
+            <!-- COVID-19 -->
+            <div class="grid-item project-item">
+              <h3>COVID-19 Stats</h3>
+              <p class="technology">
+                <b
+                  ><a
+                    href="https://bit.ly/34v0UNK"
+                    target="_blank"
+                    rel="noopener"
+                    >Android</a
+                  ></b
+                >
+              </p>
+              <p>
+                Mobile app that provides up-to-date statistics about Coronavirus
+                (COVID-19) pandemic. It sources the data by consuming different
+                APIs available publicly.
+              </p>
+            </div>
+
+            <!-- Roman Numeral Converter -->
+            <div class="grid-item project-item">
+              <h3>Roman Numeral Converter</h3>
+              <p class="technology">
+                <b>
+                  <a
+                    href="https://github.com/mrarslanark/roman-numeral-converter"
+                    target="_blank"
+                    rel="noopener"
+                    >Web (VanillaJS)</a
+                  >
+                </b>
+              </p>
+              <p>
+                A simple web app part of the 100 Days of Code Challenge which
+                converts numbers to roman numerals.
+              </p>
+            </div>
+
+            <!-- Caesars Cipher Converter -->
+            <div class="grid-item project-item">
+              <h3>Caesars Cipher Converter</h3>
+              <p class="technology">
+                <b>
+                  <a
+                    href="https://github.com/mrarslanark/caesars-cipher"
+                    target="_blank"
+                    rel="noopener"
+                    >Web (VanillaJS)</a
+                  >
+                </b>
+              </p>
+              <p>Web app that converts your caesars cipher into words.</p>
+            </div>
+
+            <!-- Palindrome Checker -->
+            <div class="grid-item project-item">
+              <h3>Palindrome Checker</h3>
+              <p class="technology">
+                <b>
+                  <a
+                    href="https://github.com/mrarslanark/palindrome-check"
+                    target="_blank"
+                    rel="noopener"
+                    >Web (VanillaJS)</a
+                  ></b
+                >
+              </p>
+              <p>
+                Web app that check whether the provided text is a palindrome or
+                not.
+              </p>
+            </div>
+
+            <!-- Random Quote Machine -->
+            <div class="grid-item project-item">
+              <h3>Random Quote Machine</h3>
+              <p class="technology">
+                <b>
+                  <a
+                    href="https://github.com/mrarslanark/random-quote-machine"
+                    target="_blank"
+                    rel="noopener"
+                    >Web (React JS)</a
+                  ></b
+                >
+              </p>
+              <p>
+                A web app part of the 100 Days of Code Challenge which generates
+                random quotes.
+              </p>
+            </div>
+
+            <!-- Counter iOS -->
+            <div class="grid-item project-item">
+              <h3>Counter (Practice)</h3>
+              <p class="technology">
+                <b
+                  ><a
+                    href="https://github.com/mrarslanark/counter-ios"
+                    target="_blank"
+                    rel="noopener"
+                    >iOS</a
+                  ></b
+                >
+              </p>
+              <p>
+                A simple counter application developed in Xcode 11 using Swift 5
+                for iOS.
+              </p>
+            </div>
+
+            <!-- Counter RN -->
+            <div class="grid-item project-item">
+              <h3>Counter (Practice)</h3>
+              <p class="technology">
+                <b
+                  ><a
+                    href="https://github.com/mrarslanark/simple-counter-react-native"
+                    target="_blank"
+                    rel="noopener"
+                    >Android & iOS (Counter)</a
+                  ></b
+                >
+              </p>
+              <p>
+                A simple counter application developed in React Native using
+                <code>expo-cli</code> for Android & iOS
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- // Design Portfolio -->
+      <section id="design" class="design">
+        <div class="content-wrap">
+          <h2><i class="fas fa-project-diagram"></i> Design Portfolio</h2>
+          <div class="grid-container">
+            <!-- Kaaj Taank -->
+            <div class="grid-item design-item">
+              <div class="company-logo">
+                <img src="/images/design/design-by-ark.png" />
+              </div>
+              <div class="design-icons">
+                <a
+                  class="design-instagram"
+                  href="https://www.instagram.com/dyzynzbyark"
+                  rel="noopener"
+                  target="_blank"
+                  title="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+              <div class="design-content">
+                <h2>dyzynz by ark</h2>
+              </div>
+            </div>
+
+            <!-- Kaaj Taank -->
+            <div class="grid-item design-item">
+              <div class="company-logo">
+                <img src="/images/design/kaaj-taanka.png" />
+              </div>
+              <div class="design-icons">
+                <a
+                  class="design-instagram"
+                  href="https://www.instagram.com/kaajtanka"
+                  rel="noopener"
+                  target="_blank"
+                  title="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  class="design-instagram"
+                  href="https://www.facebook.com/kaajtanka"
+                  rel="noopener"
+                  target="_blank"
+                  title="Instagram"
+                >
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </div>
+              <div class="design-content">
+                <h2>Kaaj Taanka</h2>
+              </div>
+            </div>
+
+            <!-- Tech Tology -->
+            <div class="grid-item design-item">
+              <div class="company-logo">
+                <img src="/images/design/tech-tology.png" />
+              </div>
+              <div class="design-icons">
+                <a
+                  class="design-instagram"
+                  href="https://www.instagram.com/techtology43"
+                  rel="noopener"
+                  target="_blank"
+                  title="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  class="design-instagram"
+                  href="https://www.facebook.com/techtology43"
+                  rel="noopener"
+                  target="_blank"
+                  title="Instagram"
+                >
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a
+                  class="design-instagram"
+                  href="https://www.linkedin.com/company/tech-tology/"
+                  rel="noopener"
+                  target="_blank"
+                  title="Instagram"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+              <div class="design-content">
+                <h2>Tech Tology</h2>
+              </div>
+            </div>
+
+            <!-- App Club -->
+            <div class="grid-item design-item">
+              <div class="company-logo">
+                <img src="/images/design/app-club.png" />
+              </div>
+              <div class="design-icons">
+                <a
+                  href="https://www.facebook.com/appclubtech"
+                  rel="noopener"
+                  target="_blank"
+                  title="Facebook"
+                >
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/appclubtech/"
+                  rel="noopener"
+                  target="_blank"
+                  title="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.twitter.com/appclubtech/"
+                  rel="noopener"
+                  target="_blank"
+                  title="Twitter"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/appclubtech/"
+                  rel="noopener"
+                  target="_blank"
+                  title="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://www.github.com/appclubtech/"
+                  rel="noopener"
+                  target="_blank"
+                  title="Github"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="http://appclub.tech/"
+                  rel="noopener"
+                  target="_blank"
+                  title="Website"
+                >
+                  <i class="fas fa-globe"></i>
+                </a>
+              </div>
+              <div class="design-content">
+                <h2>App Club</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Connect -->
+      <section id="contact" class="contact">
+        <div class="content-wrap">
+          <div class="contact-header">
+            <h2>&lt;/ CONNECT WITH ME &gt;</h2>
+          </div>
+          <div class="contact-info">
+            <a
+              class="email"
+              href="mailto:m.arslanmushtaqahmed@gmail.com"
+              title="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a
+              class="website"
+              href="http://appclub.tech/"
+              rel="noopener"
+              target="_blank"
+              title="Website"
+            >
+              <i class="fas fa-globe"></i>
+            </a>
+            <a
+              class="github"
+              href="https://github.com/mrarslanark"
+              rel="noopener"
+              target="_blank"
+              title="Github"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              class="twitter"
+              href="https://twitter.com/mrarslanark"
+              rel="noopener"
+              target="_blank"
+              title="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              class="linkedin"
+              href="https://linkedin.com/in/mrarslanark"
+              rel="noopener"
+              target="_blank"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              class="facebook"
+              href="https://www.facebook.com/devmrark/"
+              rel="noopener"
+              target="_blank"
+              title="Facebook"
+            >
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a
+              class="instagram"
+              href="https://www.instagram.com/officially.arslan/"
+              rel="noopener"
+              target="_blank"
+              title="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- // Footer & contact info -->
     <footer id="contact">
-        <p>&copy; Copyright 2020 by Arslan Mushtaq</p>
+      <p>&copy; Copyright 2020 by Arslan Mushtaq</p>
     </footer>
 
     <!-- // Scripts -->
     <script src="/scripts/script.js"></script>
-</body>
-
+  </body>
 </html>
