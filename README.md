@@ -1,15 +1,30 @@
-# Resume
+# designbyark.com
 
-## To Clone
-```bash
-git clone https://github.com/mrarslanark/mrarslanark.github.io.git
+### Technology Stack
+
+- ReactJS
+- Bootstrap 4
+- HTML
+
+### Installation
+
+- Clone the repo
+
+```shell
+git clone https://github.com/mrarslanark/mrarslanark.github.io
 ```
 
-## To contribute:
-* Make a pull request
-* Start an issue
+- Run `npm install` to install dependencies
+- Run `npm start` to run the project
 
-## Technology Stack
-* HTML
-* CSS
-* JavaScript
+### Contribution
+
+Make a pull request or start an issue
+
+### License
+
+The source code is licensed under the MIT License unless stated otherwise. The data is attributed to their relevant sources.
+
+<hr />
+
+© 2020 Arslan Mushtaq

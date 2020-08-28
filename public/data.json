@@ -1,0 +1,243 @@
+{
+  "tech_skills": [
+    {
+      "id": 1,
+      "title": "Hybrid Mobile Development",
+      "experience": "2+"
+    },
+    {
+      "id": 2,
+      "title": "Native Android Development",
+      "experience": "3+"
+    },
+    {
+      "id": 3,
+      "title": "Native iOS Development",
+      "experience": "1+"
+    },
+    {
+      "id": 4,
+      "title": "Graphic Designing",
+      "experience": "6+"
+    },
+    {
+      "id": 5,
+      "title": "Version Control",
+      "experience": "4+"
+    }
+  ],
+  "career": [
+    {
+      "id": 1,
+      "as": "Guest Speaker",
+      "origaniser": "Tech Tology & Devenings",
+      "type": "Live",
+      "topic": "Do more with Firebase",
+      "link": "https://bit.ly/31q0vLi"
+    },
+    {
+      "id": 2,
+      "as": "Guest Speaker",
+      "origaniser": "Tech Tology",
+      "type": "Live",
+      "topic": "Understanding Git and GitHub",
+      "link": "https://bit.ly/30tDXHc"
+    },
+    {
+      "id": 3,
+      "as": "Guest Speaker",
+      "origaniser": "Tech Tology Lahore Chapter Launch",
+      "type": "Event",
+      "topic": "Develop Android apps the fun way",
+      "link": "http://bit.ly/2TkDN3c"
+    },
+    {
+      "id": 4,
+      "as": "Guest Speaker",
+      "origaniser": "Google I/O Extended Lahore 2019",
+      "type": "Event",
+      "topic": "Intro to Kotlin",
+      "link": "http://bit.ly/2t4xki6"
+    },
+    {
+      "id": 5,
+      "as": "Speaker & Organizer",
+      "origaniser": "Application Development Club of Minhaj University Lahore",
+      "type": "Event",
+      "topic": "Introduction to Programming from Scratch",
+      "link": null
+    },
+    {
+      "id": 6,
+      "as": "Winner",
+      "origaniser": "Softec'19",
+      "type": "Event",
+      "topic": "Won PKR 50,000 by scoring first place in the Mobile App Development Competition",
+      "link": null
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Crack a Joke",
+      "tech_stack": ["react-native", "css", "html", "api"],
+      "platform": ["Android", "iOS"],
+      "details": "Crack a joke generates a random joke and a list of jokes using a free API.",
+      "github_repo": "https://github.com/mrarslanark/crack-a-joke-react-native",
+      "playstore_link": null
+    },
+    {
+      "id": 2,
+      "title": "Search GitHub Profile",
+      "tech_stack": ["reactjs", "css", "html", "api"],
+      "platform": ["Web"],
+      "details": "Web app which let users search different Github user profile details.",
+      "github_repo": "https://github.com/mrarslanark/github-profiles-react",
+      "playstore_link": null
+    },
+    {
+      "id": 3,
+      "title": "Lay Ao",
+      "tech_stack": ["kotlin", "xml", "firebase", "algolia"],
+      "platform": ["Android"],
+      "details": "A grocery e-commerce mobile solution built only for Android. Features include cart system, adding favorites, order tracking, and more",
+      "github_repo": null,
+      "playstore_link": null
+    },
+    {
+      "id": 4,
+      "title": "Loan Manager",
+      "tech_stack": ["kotlin", "xml", "sqlite"],
+      "platform": ["Android"],
+      "details": "Loan tracking mobile app where users can add, manage and track information about their loans.",
+      "github_repo": "https://github.com/loan-manager/loan-manager-android",
+      "playstore_link": "https://play.google.com/store/apps/details?id=arslan.appclub.loanmanager"
+    },
+    {
+      "id": 5,
+      "title": "CVOID-19 Stats",
+      "tech_stack": ["kotlin", "xml", "api"],
+      "platform": ["Android"],
+      "details": "App that provides up-to-date statistics about Coronavirus (COVID-19) pandemic. It sources the data by consuming different APIs available publicly. App was suspended from Google Play Store due to their terms and condition",
+      "github_repo": "https://github.com/mrarslanark/covid-19-status-android",
+      "playstore_link": null
+    },
+    {
+      "id": 6,
+      "title": "Roman Numeral Converter",
+      "tech_stack": ["html", "css", "javascript"],
+      "platform": ["Web"],
+      "details": "Web app part of the 100 Days of Code challenge which converts numbers to roman numerals.",
+      "github_repo": "https://github.com/mrarslanark/roman-numeral-converter",
+      "playstore_link": null
+    },
+    {
+      "id": 7,
+      "title": "Caesars Cipher Converter",
+      "tech_stack": ["html", "css", "javascript"],
+      "platform": ["Web"],
+      "details": "Web app part of the 100 Days of Code challenge that converts caesars cipher into words.",
+      "github_repo": "https://github.com/mrarslanark/caesars-cipher",
+      "playstore_link": null
+    },
+    {
+      "id": 8,
+      "title": "Palindrome Checker",
+      "tech_stack": ["html", "css", "javascript"],
+      "platform": ["Web"],
+      "details": "Web app part of the 100 Days of Code challenge that checks whether the provided text is a palindrome or not.",
+      "github_repo": "https://github.com/mrarslanark/palindrome-check",
+      "playstore_link": null
+    },
+    {
+      "id": 9,
+      "title": "Random Quote Machine",
+      "tech_stack": ["html", "css", "reactjs"],
+      "platform": ["Web"],
+      "details": "Web app part of the 100 Days of Code challenge which generates random quotes.",
+      "github_repo": "https://github.com/mrarslanark/palindrome-check",
+      "playstore_link": null
+    }
+  ],
+  "designs": [
+    {
+      "id": 1,
+      "company": "dyzynz by ark",
+      "details": "Instagram account where I showcase most of my designs",
+      "content": "./images/dyzynzbyark.webp",
+      "facebook_url": null,
+      "instagram_url": "https://www.instagram.com/dyzynzbyark/",
+      "twitter_url": null,
+      "gitHub_url": null,
+      "linkedIn_url": null,
+      "website_url": null
+    },
+    {
+      "id": 2,
+      "company": "Kaaj Taanka",
+      "details": "Kaaj Taanka is a garments business for which I designed their logo.",
+      "content": "./images/kaajtaanka.webp",
+      "facebook_url": "https://www.facebook.com/kaajtanka",
+      "instagram_url": "https://www.instagram.com/kaajtanka/",
+      "twitter_url": null,
+      "gitHub_url": null,
+      "linkedIn_url": null,
+      "website_url": null
+    },
+    {
+      "id": 3,
+      "company": "Tech Tology",
+      "details": "A community of technology loving people where I handled their initial designs",
+      "content": "./images/techtology.webp",
+      "facebook_url": "https://www.facebook.com/TechTology43/",
+      "instagram_url": "https://www.instagram.com/techtology43/",
+      "twitter_url": "https://twitter.com/techtologycs",
+      "gitHub_url": null,
+      "linkedIn_url": "https://www.linkedin.com/company/tech-tology/",
+      "website_url": null
+    },
+    {
+      "id": 4,
+      "company": "App Club",
+      "details": "A tech blog where you can find tutorials and tech related content",
+      "content": "./images/appclub.webp",
+      "facebook_url": "https://www.facebook.com/appclubtech/",
+      "instagram_url": "https://www.instagram.com/appclubtech//",
+      "twitter_url": "https://twitter.com/appclubtech/",
+      "gitHub_url": "https://github.com/appclubtech/",
+      "linkedIn_url": "https://www.linkedin.com/company/appclubtech/",
+      "website_url": "http://appclub.tech/"
+    },
+    {
+      "id": 5,
+      "company": "Carpenters",
+      "details": "Providing carpntery services at a cheaper rate with a golden touch",
+      "content": "./images/carpenters.webp",
+      "facebook_url": null,
+      "instagram_url": null,
+      "twitter_url": null,
+      "gitHub_url": null,
+      "linkedIn_url": null,
+      "website_url": null
+    },
+    {
+      "id": 6,
+      "company": "Millennials",
+      "details": "Cosmetics that make you and your personality shine",
+      "content": "./images/millennials.webp",
+      "facebook_url": null,
+      "instagram_url": null,
+      "twitter_url": null,
+      "gitHub_url": null,
+      "linkedIn_url": null,
+      "website_url": null
+    }
+  ],
+  "email": "mailto:arslanark@gmail.com",
+  "website_url": "http://appclub.tech/",
+  "twitter_url": "https://twitter.com/mrarslanark",
+  "github_url": "https://github.com/mrarslanark",
+  "linkedin_url": "https://linkedin.com/in/mrarslanark",
+  "facebook_url": "https://facebook.com/devmrark",
+  "instagram_url": "https://www.instagram.com/officially.arslan"
+}
