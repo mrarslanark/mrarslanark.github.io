@@ -17,7 +17,7 @@ const App = () => {
         </p>
         <p>
           Currently, I am working on developing an extraordinary portfolio so
-          bear with me until <strong>August 1, 2022</strong>.
+          bear with me until <strong>September 1, 2022</strong>.
         </p>
         <SocialSection />
       </div>
