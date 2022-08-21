@@ -1,0 +1,29 @@
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.info-section-decription {
+  width: 55%;
+  text-align: center;
+}
+
+.info-section-header {
+  margin: 20px 10px;
+}
+
+.about-me-section {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.pp {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  align-self: center;
+}
