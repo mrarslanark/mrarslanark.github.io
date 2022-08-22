@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import Lottie from "react-lottie";
+
 import { Link } from "react-router-dom";
 
 import cooking from "../../assets/animations/cooking.json";
