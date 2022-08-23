@@ -1,7 +1,6 @@
 import { doc, getDoc } from "firebase/firestore";
 import { useState } from "react";
 import { useEffect } from "react";
-import Lottie from "react-lottie";
 import { useParams } from "react-router-dom";
 import Layout from "../../components/Layout";
 
@@ -9,6 +8,7 @@ import { db } from "../../firebase";
 import loading from "../../assets/animations/loading.json";
 import "./styles.css";
 import moment from "moment";
+import Lottie from "lottie-react";
 
 const BlogDetails = () => {
   const params = useParams();
@@ -41,14 +41,10 @@ const BlogDetails = () => {
       <Layout footer={false}>
         <div className="blog-detail-loading">
           <Lottie
-            width={100}
-            height={100}
-            options={{
-              loop: true,
-              autoplay: true,
-              animationData: loading,
-              rendererSettings: { preserveAspectRatio: "xMidYMid slice" },
-            }}
+            animationData={loading}
+            loop={true}
+            autoPlay={true}
+            className="loading-animation"
           />
         </div>
       </Layout>

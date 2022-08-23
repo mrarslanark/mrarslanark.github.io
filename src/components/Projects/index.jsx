@@ -1,23 +1,21 @@
-import loading from "../../assets/animations/loading.json";
+import Lottie from "lottie-react";
 import { useContext } from "react";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
-import Lottie from "react-lottie";
+import loading from "../../assets/animations/loading.json";
 import "./styles.css";
 
 const Projects = ({ projects }) => {
   if (projects.length === 0) {
     return (
-      <Lottie
-        width={100}
-        height={100}
-        options={{
-          loop: true,
-          autoplay: true,
-          animationData: loading,
-          rendererSettings: { preserveAspectRatio: "xMidYMid slice" },
-        }}
-      />
+      <div className="projects-section-loading">
+        <Lottie
+          animationData={loading}
+          loop={true}
+          autoPlay={true}
+          className="loading-animation"
+        />
+      </div>
     );
   }
 
