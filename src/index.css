@@ -50,6 +50,12 @@ a {
   text-decoration: none;
 }
 
+hr {
+  margin: 10px 0px;
+  border-color: rgba(255, 255, 255, 0.1);
+  border-width: 0.5px;
+}
+
 .loading-animation {
   height: 100px;
   width: 100px;
