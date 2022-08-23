@@ -49,3 +49,8 @@ section {
 a {
   text-decoration: none;
 }
+
+.loading-animation {
+  height: 100px;
+  width: 100px;
+}

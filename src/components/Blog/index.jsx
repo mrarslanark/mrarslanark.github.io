@@ -1,8 +1,8 @@
+import Lottie from "lottie-react";
 import moment from "moment";
 import { useContext } from "react";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
-import Lottie from "react-lottie";
 
 import { Link } from "react-router-dom";
 
@@ -16,13 +16,10 @@ const Blogs = ({ blogs }) => {
         <h1>Blogs</h1>
         <Lottie
           style={{ marginBlock: 24 }}
-          width={100}
-          height={100}
-          options={{
-            animationData: cooking,
-            loop: true,
-            autoplay: true,
-          }}
+          animationData={cooking}
+          loop={true}
+          autoplay={true}
+          className={"loading-animation"}
         />
         <p>Something is cooking...</p>
       </section>
