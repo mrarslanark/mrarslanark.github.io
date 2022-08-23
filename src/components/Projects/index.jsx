@@ -1,9 +1,8 @@
 import Lottie from "lottie-react";
-import { useContext } from "react";
-import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
-import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
+import { ScrollMenu } from "react-horizontal-scrolling-menu";
 import loading from "../../assets/animations/loading.json";
 import "./styles.css";
+import SliderFooter from "../../components/HorizontalSlider/SliderFooter";
 
 const Projects = ({ projects }) => {
   if (projects.length === 0) {
@@ -23,48 +22,16 @@ const Projects = ({ projects }) => {
     <section>
       <h1>Projects</h1>
       <div className="projects">
-        <ScrollMenu Footer={Footer} scrollContainerClassName="projects-scroll">
+        <ScrollMenu
+          Footer={SliderFooter}
+          scrollContainerClassName="projects-scroll"
+        >
           {projects.map((item) => {
             return <ProjectItem key={item.id} item={item} />;
           })}
         </ScrollMenu>
       </div>
     </section>
-  );
-};
-
-const Footer = () => {
-  return (
-    <div className="projects-footer">
-      <LeftArrow />
-      <RightArrow />
-    </div>
-  );
-};
-
-const LeftArrow = () => {
-  const { isFirstItemVisible, scrollPrev } = useContext(VisibilityContext);
-
-  return isFirstItemVisible ? (
-    <div />
-  ) : (
-    <div onClick={() => scrollPrev()} className="projects-footer-container ">
-      <BsArrowLeftShort color="#ffffff" size={"2em"} />
-      <p>Prev</p>
-    </div>
-  );
-};
-
-const RightArrow = () => {
-  const { isLastItemVisible, scrollNext } = useContext(VisibilityContext);
-
-  return isLastItemVisible ? (
-    <div />
-  ) : (
-    <div onClick={() => scrollNext()} className="projects-footer-container ">
-      <p>Next</p>
-      <BsArrowRightShort color="#ffffff" size={"2em"} />
-    </div>
   );
 };
 
