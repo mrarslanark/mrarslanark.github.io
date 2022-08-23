@@ -3,51 +3,56 @@ import Info from "../../components/Info";
 import Layout from "../../components/Layout";
 import Projects from "../../components/Projects";
 
-import { db } from "../../firebase";
-import { collection, getDocs } from "firebase/firestore";
 import { useState } from "react";
 import { useEffect } from "react";
 import Blogs from "../../components/Blog";
 import Contact from "../../components/Contact";
+import Skills from "../../components/Skills";
+import { fetchCollection } from "../../services/firebase";
 
 const Home = () => {
   const [projects, setProjects] = useState([]);
   const [blogs, setBlogs] = useState([]);
+  const [skills, setSkills] = useState([]);
 
-  const fetchProjects = async () => {
+  const getProjects = async () => {
     try {
-      const querySnapshot = await getDocs(collection(db, "projects"));
-      const data = [];
-      for (const doc of querySnapshot.docs) {
-        data.push(doc.data());
-      }
-      setProjects(data);
+      const fetchedProjects = await fetchCollection("projects");
+      setProjects(fetchedProjects);
     } catch (err) {
       console.log(err);
     }
   };
 
-  const fetchBlogs = async () => {
+  const getBlogs = async () => {
     try {
-      const querySnapshot = await getDocs(collection(db, "blogs"));
-      const data = [];
-      for (const doc of querySnapshot.docs) {
-        data.push(doc.data());
-      }
-      setBlogs(data);
+      const fetchedBlogs = await fetchCollection("blogs");
+      setBlogs(fetchedBlogs);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const getSkills = async () => {
+    try {
+      const fetchedSkills = await fetchCollection("skills");
+      setSkills(fetchedSkills);
     } catch (err) {
       console.log(err);
     }
   };
 
   useEffect(() => {
-    fetchProjects();
-    fetchBlogs();
+    getSkills();
+    getProjects();
+    getBlogs();
   }, []);
 
   return (
     <Layout>
       <Info />
+      <Divider />
+      <Skills skills={skills} />
       <Divider />
       <Projects projects={projects} />
       <Divider />
