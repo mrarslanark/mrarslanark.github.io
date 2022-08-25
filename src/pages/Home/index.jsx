@@ -3,50 +3,41 @@ import Info from "../../components/Info";
 import Layout from "../../components/Layout";
 import Projects from "../../components/Projects";
 
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { useEffect } from "react";
 import Blogs from "../../components/Blog";
 import Contact from "../../components/Contact";
 import Skills from "../../components/Skills";
 import { fetchCollection } from "../../services/firebase";
+import PageLoader from "../../components/PageLoader";
 
 const Home = () => {
+  const [loading, setLoading] = useState(true);
   const [projects, setProjects] = useState([]);
   const [blogs, setBlogs] = useState([]);
   const [skills, setSkills] = useState([]);
 
-  const getProjects = async () => {
-    try {
-      const fetchedProjects = await fetchCollection("projects");
-      setProjects(fetchedProjects);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  const getBlogs = async () => {
-    try {
-      const fetchedBlogs = await fetchCollection("blogs");
-      setBlogs(fetchedBlogs);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  const getSkills = async () => {
+  const getData = useCallback(async () => {
     try {
       const fetchedSkills = await fetchCollection("skills");
+      const fetchedProjects = await fetchCollection("projects");
+      const fetchedBlogs = await fetchCollection("blogs");
       setSkills(fetchedSkills);
+      setProjects(fetchedProjects);
+      setBlogs(fetchedBlogs);
+      setLoading(false);
     } catch (err) {
       console.log(err);
     }
-  };
+  }, []);
 
   useEffect(() => {
-    getSkills();
-    getProjects();
-    getBlogs();
+    getData();
   }, []);
+
+  if (loading) {
+    return <PageLoader />;
+  }
 
   return (
     <Layout>
