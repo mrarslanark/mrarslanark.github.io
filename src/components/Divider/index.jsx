@@ -1,7 +1,13 @@
-import "./styles.css";
+import styled from "styled-components";
 
 const Divider = () => {
-  return <div className={"divider"} />;
+  return <Container />;
 };
+
+const Container = styled.div`
+  margin: 24px 0px;
+  background-color: ${({ theme }) => theme.divider};
+  height: 1px;
+`;
 
 export default Divider;

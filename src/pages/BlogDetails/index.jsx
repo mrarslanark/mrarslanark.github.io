@@ -5,10 +5,9 @@ import { useParams } from "react-router-dom";
 import Layout from "../../components/Layout";
 
 import { db } from "../../firebase";
-import loading from "../../assets/animations/loading.json";
-import "./styles.css";
 import moment from "moment";
-import Lottie from "lottie-react";
+import PageLoader from "../../components/PageLoader";
+import styled from "styled-components";
 
 const BlogDetails = () => {
   const params = useParams();
@@ -37,38 +36,57 @@ const BlogDetails = () => {
   }, []);
 
   if (!data) {
-    return (
-      <Layout footer={false}>
-        <div className="blog-detail-loading">
-          <Lottie
-            animationData={loading}
-            loop={true}
-            autoPlay={true}
-            className="loading-animation"
-          />
-        </div>
-      </Layout>
-    );
+    return <PageLoader />;
   }
 
   return (
     <Layout footer={false}>
-      <div className="blog-detail-container">
-        <img src={data.poster} alt={"poster"} className="blog-detail-poster" />
-        <div className="blog-detail-content">
-          <div className="blog-detail-title-container">
+      <Container>
+        <Poster
+          src={data.poster}
+          alt={"poster"}
+          className="blog-detail-poster"
+        />
+        <ContentContainer className="blog-detail-content">
+          <ContentHeader className="blog-detail-title-container">
             <h1>{data.title}</h1>
-            <p className="blog-detail-release-date">
+            <ReleaseDate>
               Published on {moment(data.publishedOn.toDate()).format("llll")}
-            </p>
-          </div>
+            </ReleaseDate>
+          </ContentHeader>
           <p>{data.short_description}</p>
           <br />
           <div dangerouslySetInnerHTML={{ __html: data.content }} />
-        </div>
-      </div>
+        </ContentContainer>
+      </Container>
     </Layout>
   );
 };
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 24px 0px;
+`;
+
+const ContentContainer = styled.div`
+  width: 60%;
+`;
+
+const ContentHeader = styled.div`
+  margin: 12px 0px;
+`;
+
+const Poster = styled.img`
+  width: 60%;
+`;
+
+const ReleaseDate = styled.p`
+  font-size: medium;
+  color: rgb(100, 100, 100);
+`;
 
 export default BlogDetails;

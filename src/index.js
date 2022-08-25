@@ -1,16 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import "./index.css";
 import EntryPoint from "./pages/EntryPoint";
+import { Provider } from "react-redux";
 
 import reportWebVitals from "./reportWebVitals";
+import { store } from "./store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <EntryPoint />
+      <Provider store={store}>
+        <EntryPoint />
+      </Provider>
     </BrowserRouter>
   </React.StrictMode>
 );
