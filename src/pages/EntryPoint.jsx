@@ -6,6 +6,7 @@ import GlobalStyles from "../components/GlobalStyles";
 import { dark, light } from "../constants/theme";
 import BlogDetails from "./BlogDetails";
 import Home from "./Home";
+import NotFound from "./NotFound";
 
 const EntryPoint = () => {
   const { theme } = useSelector((state) => state.theme);
@@ -18,6 +19,7 @@ const EntryPoint = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog/:blogId" element={<BlogDetails />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </ThemeProvider>
   );
