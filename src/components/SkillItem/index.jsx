@@ -1,10 +1,10 @@
 import styled from "styled-components";
+import { device } from "../../constants/theme";
 
 const SkillItem = ({ item }) => {
   return (
     <ItemContainer className="item-container">
-      <h3>{item.title}</h3>
-      <br />
+      <Title>{item.title}</Title>
       <p>
         {item.experience} {item.duration} of experience
       </p>
@@ -25,6 +25,22 @@ const ItemContainer = styled.div`
   &:hover {
     background-color: ${({ theme }) => theme.item_container_bg_hover};
   }
+  @media ${device.mobileS} {
+    width: 270px;
+  }
+  @media ${device.mobileM} {
+    width: 340px;
+  }
+  @media ${device.mobileL} {
+    width: 380px;
+  }
+  @media ${device.tablet} {
+    width: 300px;
+  }
+`;
+
+const Title = styled.h3`
+  margin: 0px 0px 6px 0px;
 `;
 
 const LibrariesContainer = styled.div`

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { device } from "../../constants/theme";
 
 const GlobalStyles = createGlobalStyle`
     * {
@@ -63,14 +64,19 @@ const GlobalStyles = createGlobalStyle`
     }
 
     .scroll {
-        overflow: hidden;
+        -ms-overflow-style: none; 
+        scrollbar-width: none;
+        overflow-x: scroll; 
+    }
+
+    .scroll::-webkit-scrollbar {
+        display: none;
     }
 
     .item-container {
         background-color: ${({ theme }) => theme.item_container_bg};
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         margin: 0px 12px 0px 0px;
         transition: 0.3s;
     }
@@ -78,7 +84,42 @@ const GlobalStyles = createGlobalStyle`
     .item-container:hover {
         background-color: ${({ theme }) => theme.item_container_bg_hover};
     }
-      
+
+    @media ${device.mobileS} {
+        h4 {
+            font-size: xx-small;
+        }
+      }
+      @media ${device.mobileM} {
+        h4 {
+            font-size: x-small;
+        }
+      }
+      @media ${device.mobileL} {
+        h4 {
+            font-size: small;
+        }
+      }
+      @media ${device.tablet} {
+        h4 {
+            font-size: medium;
+        }
+      }
+      @media ${device.laptop} {
+        h4 {
+            font-size: large;
+        }
+      }
+      @media ${device.laptopL} {
+        h4 {
+            font-size: x-large;
+        }
+      }
+      @media ${device.desktop} {
+        h4 {
+            font-size: xx-large;
+        }
+      }
 `;
 
 export default GlobalStyles;

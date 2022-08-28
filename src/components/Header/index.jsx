@@ -4,8 +4,9 @@ import styled from "styled-components";
 
 import { useDispatch } from "react-redux";
 import { toggleTheme } from "../../store/slices/themeSlice";
+import { device } from "../../constants/theme";
 
-const Header = () => {
+const Header = ({ showMenuItems = false }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -28,9 +29,11 @@ const Header = () => {
           <DarkModeIcon size={24} />
         </DarkModeIconContainer>
 
-        <NavListItem onClick={onNavigate}>
-          <p>Home</p>
-        </NavListItem>
+        {showMenuItems ? (
+          <NavListItem onClick={onNavigate}>
+            <p>Home</p>
+          </NavListItem>
+        ) : null}
       </NavList>
     </Nav>
   );
@@ -38,17 +41,18 @@ const Header = () => {
 
 export default Header;
 
-const Name = styled.h4`
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  cursor: pointer;
-`;
-
 const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 0px 0px 20px;
+  height: 60px;
+`;
+
+const Name = styled.h4`
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+  margin: 0px 20px;
 `;
 
 const NavList = styled.ul`

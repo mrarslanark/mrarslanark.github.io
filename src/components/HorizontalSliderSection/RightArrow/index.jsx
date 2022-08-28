@@ -10,7 +10,6 @@ export const RightArrow = () => {
     <div />
   ) : (
     <Container onClick={() => scrollNext()}>
-      <p>Next</p>
       <Arrow size={"2em"} />
     </Container>
   );
@@ -22,7 +21,7 @@ const Container = styled.div`
   align-items: center;
   align-content: center;
   background-color: ${({ theme }) => theme.item_container_bg};
-  width: 100px;
+  padding: 0px 24px;
   height: inherit;
   &:hover {
     background-color: ${({ theme }) => theme.item_container_bg_hover};
