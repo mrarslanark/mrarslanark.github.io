@@ -1,10 +1,11 @@
 import {
   RiFacebookFill,
-  RiTwitterFill,
-  RiLinkedinFill,
   RiGithubFill,
+  RiLinkedinFill,
+  RiTwitterFill,
 } from "react-icons/ri";
 import styled, { css } from "styled-components";
+import { device } from "../../constants/theme";
 
 const Contact = () => {
   return (
@@ -54,9 +55,14 @@ const Section = styled.section`
 
 const IconContainer = styled.div`
   margin: 36px 0px;
-  width: 600px;
   display: flex;
   justify-content: space-evenly;
+  @media ${device.mobileS} {
+    width: 100%;
+  }
+  @media ${device.tablet} {
+    width: 600px;
+  }
 `;
 
 const iconColor = css`
@@ -66,6 +72,9 @@ const iconColor = css`
   transition-duration: 0.3s;
   &:hover {
     color: ${({ theme }) => theme.icon_color_hover};
+  }
+  @media ${device.mobileS} {
+    font-size: 2rem;
   }
 `;
 
