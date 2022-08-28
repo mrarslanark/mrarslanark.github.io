@@ -1,8 +1,8 @@
 import { ScrollMenu } from "react-horizontal-scrolling-menu";
 import styled from "styled-components";
 
-import Loading from "../Loading";
 import EmptySection from "../EmptySection";
+import Loading from "../Loading";
 import SliderFooter from "./SliderFooter";
 
 const HorizonSliderSection = ({

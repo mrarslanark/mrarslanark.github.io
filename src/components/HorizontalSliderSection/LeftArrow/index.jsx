@@ -11,7 +11,6 @@ export const LeftArrow = () => {
   ) : (
     <Container onClick={() => scrollPrev()}>
       <Arrow size={"2em"} />
-      <p>Prev</p>
     </Container>
   );
 };
@@ -22,7 +21,7 @@ const Container = styled.div`
   align-items: center;
   align-content: center;
   background-color: ${({ theme }) => theme.item_container_bg};
-  width: 100px;
+  padding: 0px 24px;
   height: inherit;
   &:hover {
     background-color: ${({ theme }) => theme.item_container_bg_hover};
