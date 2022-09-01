@@ -89,37 +89,49 @@ const GlobalStyles = createGlobalStyle`
         h4 {
             font-size: xx-small;
         }
-      }
-      @media ${device.mobileM} {
+    }
+    @media ${device.mobileM} {
         h4 {
             font-size: x-small;
         }
-      }
-      @media ${device.mobileL} {
+    }
+    @media ${device.mobileL} {
         h4 {
             font-size: small;
         }
-      }
-      @media ${device.tablet} {
+    }
+    @media ${device.tablet} {
         h4 {
             font-size: medium;
         }
-      }
-      @media ${device.laptop} {
+    }
+    @media ${device.laptop} {
         h4 {
             font-size: large;
         }
-      }
-      @media ${device.laptopL} {
+    }
+    @media ${device.laptopL} {
         h4 {
             font-size: x-large;
         }
-      }
-      @media ${device.desktop} {
+    }
+    @media ${device.desktop} {
         h4 {
             font-size: xx-large;
         }
-      }
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
 `;
 
 export default GlobalStyles;
