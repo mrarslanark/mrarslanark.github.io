@@ -1,31 +1,37 @@
-import { doc, getDoc } from "firebase/firestore";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Layout from "../../components/Layout";
 
-import { db } from "../../firebase";
 import moment from "moment";
-import PageLoader from "../../components/PageLoader";
 import styled from "styled-components";
+import PageLoader from "../../components/PageLoader";
+import axios from "axios";
+
+const findPostBySlug = (id) => {
+  return `${process.env.REACT_APP_BLOG_URL}/${id}`;
+};
 
 const BlogDetails = () => {
-  const params = useParams();
+  const { blogId } = useParams();
   const [data, setData] = useState(null);
 
   const fetchBlogDetails = async () => {
     try {
-      if (!params.blogId) {
-        throw new Error("Blog Id is unavailable");
+      if (!blogId) {
+        throw new Error("Blog Unavailable");
       }
-      const docRef = doc(db, "blogs", params.blogId);
-      const docSnapshot = await getDoc(docRef);
 
-      if (docSnapshot.exists()) {
-        setData(docSnapshot.data());
-      } else {
-        throw new Error("Blog doesn't exists");
-      }
+      const { data } = await axios.get(findPostBySlug(blogId));
+      setData({
+        content: data.content.rendered,
+        createdAt: data.date,
+        excerpt: data.excerpt.rendered,
+        id: data.id,
+        slug: data.slug,
+        title: data.title.rendered,
+        modified: data.modified,
+        featuredImage: data.jetpack_featured_media_url,
+      });
     } catch (err) {
       console.log(err);
     }
@@ -42,19 +48,15 @@ const BlogDetails = () => {
   return (
     <Layout footer={false}>
       <Container>
-        <Poster
-          src={data.poster}
-          alt={"poster"}
-          className="blog-detail-poster"
-        />
         <ContentContainer className="blog-detail-content">
           <ContentHeader className="blog-detail-title-container">
             <h1>{data.title}</h1>
             <ReleaseDate>
-              Published on {moment(data.publishedOn.toDate()).format("llll")}
+              {data.modified
+                ? `Updated on ${moment(data.modified).format("llll")}`
+                : `Published on ${moment(data.date).format("llll")}`}
             </ReleaseDate>
           </ContentHeader>
-          <p>{data.short_description}</p>
           <br />
           <div dangerouslySetInnerHTML={{ __html: data.content }} />
         </ContentContainer>

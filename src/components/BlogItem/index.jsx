@@ -12,16 +12,17 @@ const BlogItem = ({ item }) => {
 
   return (
     <Container onClick={onNavigate} className="item-container">
-      <Poster src={item.poster} alt={"Poster"} />
+      <Poster src={item.featuredImage} alt={"Poster"} />
       <ContentContainer>
         <TopContainer>
           <h2>{item.title}</h2>
           <ReleaseDate>
-            {/* Published on {moment(item.publishedOn.toDate()).format("llll")} */}
-            Published on {moment(item.publishedOn).format("llll")}
+            {item.modified
+              ? `Updated on ${moment(item.modified).format("llll")}`
+              : `Published on ${moment(item.date).format("llll")}`}
           </ReleaseDate>
         </TopContainer>
-        <Description>{item.short_description}</Description>
+        <Description dangerouslySetInnerHTML={{ __html: item.excerpt }} />
       </ContentContainer>
     </Container>
   );
