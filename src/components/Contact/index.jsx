@@ -76,6 +76,7 @@ const iconColor = css`
   @media ${device.mobileS} {
     font-size: 2rem;
   }
+  animation: float 5s ease-in-out infinite;
 `;
 
 const Facebook = styled(RiFacebookFill)`
@@ -84,10 +85,12 @@ const Facebook = styled(RiFacebookFill)`
 
 const Twitter = styled(RiTwitterFill)`
   ${iconColor}
+  animation-delay: 1s;
 `;
 
 const LinkedIn = styled(RiLinkedinFill)`
   ${iconColor}
+  animation-delay: 2s;
 `;
 
 const GitHub = styled(RiGithubFill)`

@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 import { useDispatch } from "react-redux";
 import { toggleTheme } from "../../store/slices/themeSlice";
-import { device } from "../../constants/theme";
 
 const Header = ({ showMenuItems = false }) => {
   const dispatch = useDispatch();
@@ -20,20 +19,18 @@ const Header = ({ showMenuItems = false }) => {
 
   return (
     <Nav>
-      <Name onClick={onNavigate}>Arslan Mushtaq</Name>
       <NavList>
+        {showMenuItems ? (
+          <NavListItem onClick={onNavigate}>
+            <p>Home</p>
+          </NavListItem>
+        ) : null}
         <DarkModeIconContainer
           className="dark-mode-container"
           onClick={onChangeTheme}
         >
           <DarkModeIcon size={24} />
         </DarkModeIconContainer>
-
-        {showMenuItems ? (
-          <NavListItem onClick={onNavigate}>
-            <p>Home</p>
-          </NavListItem>
-        ) : null}
       </NavList>
     </Nav>
   );
@@ -43,22 +40,14 @@ export default Header;
 
 const Nav = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   height: 60px;
-`;
-
-const Name = styled.h4`
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  cursor: pointer;
-  margin: 0px 20px;
 `;
 
 const NavList = styled.ul`
   display: flex;
   flex-direction: row;
-  list-style: none;
 `;
 
 const NavListItem = styled.div`
