@@ -24,7 +24,7 @@ export const dark = {
   nav_btn_bg: black,
   item_container_bg: "rgba(25, 25, 25, 0.5)",
   item_container_bg_hover: "rgba(35, 35, 35, 1)",
-  content_divider: "rgba(250, 250, 250, 1)",
+  content_divider: "rgba(250, 250, 250, 0.1)",
   divider: "rgba(255, 255, 255, 0.1)",
   icon_color: white,
   icon_color_hover: "rgba(255, 255, 255, 0.5)",

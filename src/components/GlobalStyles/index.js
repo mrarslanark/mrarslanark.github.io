@@ -38,7 +38,7 @@ const GlobalStyles = createGlobalStyle`
     
     p {
         color: ${({ theme }) => theme.text};
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         margin: 0;
         padding: 0;
         line-height: 1.6rem;
@@ -84,6 +84,52 @@ const GlobalStyles = createGlobalStyle`
     .item-container:hover {
         background-color: ${({ theme }) => theme.item_container_bg_hover};
     }
+
+    li {
+        color: ${({ theme }) => theme.text};
+        margin: 10px 0px
+    }
+
+    // Wordpress Divider
+    .wp-block-separator, .has-alpha-channel-opacity {
+        border-color: background-color: ${({ theme }) => theme.content_divider};
+        margin: 24px 0px;
+    }
+
+
+    // Wordpress table
+    .wp-block-table table {
+        margin: 12px 0px;
+    }
+
+    .wp-block-table tr {
+        display: flex;
+        flex-direction: row;
+        margin: 0px 0px 12px 0px
+    }
+
+    .wp-block-table th {
+        flex: 1;
+        color: ${({ theme }) => theme.text};
+        text-align: left;
+    }
+
+    .wp-block-table td {
+        flex: 1;
+        color: ${({ theme }) => theme.text};
+        line-height: 24px;
+    }
+
+    .content p {
+        margin: 0px 0px 24px 0px
+    }
+
+    .content a {
+        text-decoration: none;  
+        font-weight: bold;
+        color: ${({ theme }) => theme.text};
+    }
+      
 
     @media ${device.mobileS} {
         h4 {

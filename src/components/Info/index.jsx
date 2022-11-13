@@ -5,7 +5,7 @@ const Info = () => {
   return (
     <Section>
       <ProfilePicture src="/images/pp.jpg" alt="Profile" />
-      <Title>ABOUT ME</Title>
+      <Title>ARSLAN MUSHTAQ</Title>
       <Description>
         A software developer from Pakistan. I love to design and develop
         products and talk about tech. I've spoken on different topics like Cloud

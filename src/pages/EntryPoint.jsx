@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
+
 import GlobalStyles from "../components/GlobalStyles";
 import { dark, light } from "../constants/theme";
 import BlogDetails from "./BlogDetails";

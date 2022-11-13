@@ -15,7 +15,7 @@ const BlogItem = ({ item }) => {
       <Poster src={item.featuredImage} alt={"Poster"} />
       <ContentContainer>
         <TopContainer>
-          <h2>{item.title}</h2>
+          <h2 dangerouslySetInnerHTML={{ __html: item.title }} />
           <ReleaseDate>
             {item.modified
               ? `Updated on ${moment(item.modified).format("llll")}`

@@ -1,11 +1,11 @@
+import axios from "axios";
+import moment from "moment";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Layout from "../../components/Layout";
-
-import moment from "moment";
 import styled from "styled-components";
+
+import Layout from "../../components/Layout";
 import PageLoader from "../../components/PageLoader";
-import axios from "axios";
 
 const findPostBySlug = (id) => {
   return `${process.env.REACT_APP_BLOG_URL}/${id}`;
@@ -46,11 +46,11 @@ const BlogDetails = () => {
   }
 
   return (
-    <Layout footer={false}>
+    <Layout showMenuItem={true} footer={false}>
       <Container>
         <ContentContainer className="blog-detail-content">
           <ContentHeader className="blog-detail-title-container">
-            <h1>{data.title}</h1>
+            <h1 dangerouslySetInnerHTML={{ __html: data.title }} />
             <ReleaseDate>
               {data.modified
                 ? `Updated on ${moment(data.modified).format("llll")}`
@@ -58,7 +58,10 @@ const BlogDetails = () => {
             </ReleaseDate>
           </ContentHeader>
           <br />
-          <div dangerouslySetInnerHTML={{ __html: data.content }} />
+          <div
+            className="content"
+            dangerouslySetInnerHTML={{ __html: data.content }}
+          />
         </ContentContainer>
       </Container>
     </Layout>
@@ -75,15 +78,11 @@ const Container = styled.div`
 `;
 
 const ContentContainer = styled.div`
-  width: 60%;
+  width: 90%;
 `;
 
 const ContentHeader = styled.div`
   margin: 12px 0px;
-`;
-
-const Poster = styled.img`
-  width: 60%;
 `;
 
 const ReleaseDate = styled.p`
