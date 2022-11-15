@@ -3,14 +3,16 @@ import Info from "../../components/Info";
 import Layout from "../../components/Layout";
 import Projects from "../../components/Projects";
 
-import { useCallback, useState } from "react";
-import { useEffect } from "react";
+import axios from "axios";
+import { useCallback, useEffect, useState } from "react";
 import Blogs from "../../components/Blog";
 import Contact from "../../components/Contact";
-import Skills from "../../components/Skills";
-import { fetchCollection } from "../../services/firebase";
 import PageLoader from "../../components/PageLoader";
-import axios from "axios";
+import Skills from "../../components/Skills";
+import {
+  fetchCollectionFromDB,
+  fetchProjectsFromDB,
+} from "../../services/firebase";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -41,8 +43,8 @@ const Home = () => {
 
   const getData = useCallback(async () => {
     try {
-      const fetchedSkills = await fetchCollection("skills");
-      const fetchedProjects = await fetchCollection("projects");
+      const fetchedSkills = await fetchCollectionFromDB("skills");
+      const fetchedProjects = await fetchProjectsFromDB();
       const fetchedBlogs = await getBlogs();
       setSkills(fetchedSkills);
       setProjects(fetchedProjects);
