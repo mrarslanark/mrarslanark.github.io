@@ -29,14 +29,6 @@ const ProjectItem = ({ item }) => {
             })}
           </div>
         </ItemTopContainer>
-        <ReleaseDate tbp={item.tbp} status={item.status}>
-          {item.tbp
-            ? "To be published on"
-            : item.status === "dead"
-            ? "Removed on "
-            : "Publised on"}{" "}
-          {item.publishedOn}
-        </ReleaseDate>
       </div>
       <LinkContainer>
         {item.links.map((link, index) => {
@@ -112,22 +104,6 @@ const Icon = styled.img`
   }
   @media ${device.tablet} {
     display: inline-block;
-  }
-`;
-
-const ReleaseDate = styled.p`
-  color: ${(props) => {
-    if (props.tbp) {
-      return props.theme.tbp;
-    } else if (props.status === "dead") {
-      return "rgb(206, 38, 38)";
-    } else {
-      return "color: rgb(100, 100, 100)";
-    }
-  }};
-  margin: 2px 0px;
-  @media ${device.mobileS} {
-    font-size: medium;
   }
 `;
 
