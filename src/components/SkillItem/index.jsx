@@ -5,10 +5,6 @@ const SkillItem = ({ item }) => {
   return (
     <ItemContainer className="item-container">
       <Title>{item.title}</Title>
-      <p>
-        {item.experience} {item.duration} of experience
-      </p>
-      <p>{item.projectsCount} projects</p>
       <hr className="line-divider" />
       <LibrariesContainer>
         <LibraryItem>{item.libraries.join(", ")}</LibraryItem>
