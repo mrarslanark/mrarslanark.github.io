@@ -3,18 +3,13 @@ import moment from "moment";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 
 import Layout from "../../components/Layout";
 import PageLoader from "../../components/PageLoader";
 
 const findPostBySlug = (id) => {
   return `${process.env.REACT_APP_BLOG_URL}/${id}`;
-};
-
-const setOGProperty = (property, value) => {
-  document
-    .querySelector(`meta[property="og:${property}"]`)
-    .setAttribute("content", value);
 };
 
 const BlogDetails = () => {
@@ -28,15 +23,6 @@ const BlogDetails = () => {
       }
 
       const { data } = await axios.get(findPostBySlug(blogId));
-      setOGProperty("title", data.title.rendered);
-      setOGProperty("image", data.jetpack_featured_media_url);
-      setOGProperty("image:alt", data.title.rendered);
-      setOGProperty("image:width", "300");
-      setOGProperty("image:height", "200");
-      setOGProperty("image:alt", data.title.rendered);
-      setOGProperty("description", data.excerpt.rendered);
-      setOGProperty("url", `http://arslanmushtaq.com/blog/${blogId}`);
-      setOGProperty("type", "article");
       setData({
         content: data.content.rendered,
         createdAt: data.date,
@@ -62,6 +48,7 @@ const BlogDetails = () => {
 
   return (
     <Layout showMenuItem={true} footer={false}>
+      <HeadTags data={data} id={blogId} />
       <Container>
         <ContentContainer className="blog-detail-content">
           <ContentHeader className="blog-detail-title-container">
@@ -80,6 +67,21 @@ const BlogDetails = () => {
         </ContentContainer>
       </Container>
     </Layout>
+  );
+};
+
+const HeadTags = ({ data, id }) => {
+  return (
+    <Helmet>
+      <meta property="og:title" content={data.title} />
+      <meta property="og:image" content={data.featuredImage} />
+      <meta property="og:image:alt" content={data.title} />
+      <meta property="og:description" content={data.excerpt} />
+      <meta property="og:url" content={`http://arslanmushtaq.com/blog/${id}`} />
+      <meta property="og:image:width" content="300" />
+      <meta property="og:image:height" content="200" />
+      <meta property="og:type" content="article" />
+    </Helmet>
   );
 };
 
