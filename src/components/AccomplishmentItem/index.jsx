@@ -19,7 +19,10 @@ const AccomplishmentItem = ({ item }) => {
           {item.links &&
             item.links.map((link) => {
               return (
-                <div dangerouslySetInnerHTML={{ __html: `${link}{\t}` }} />
+                <div
+                  key={link}
+                  dangerouslySetInnerHTML={{ __html: `${link}{\t}` }}
+                />
               );
             })}
         </LinkContainer>
