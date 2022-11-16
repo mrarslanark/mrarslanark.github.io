@@ -1,7 +1,6 @@
 import axios from "axios";
 import moment from "moment";
 import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 
@@ -10,6 +9,12 @@ import PageLoader from "../../components/PageLoader";
 
 const findPostBySlug = (id) => {
   return `${process.env.REACT_APP_BLOG_URL}/${id}`;
+};
+
+const setOGProperty = (property, value) => {
+  document
+    .querySelector(`meta[property="og:${property}"]`)
+    .setAttribute("content", value);
 };
 
 const BlogDetails = () => {
@@ -23,6 +28,15 @@ const BlogDetails = () => {
       }
 
       const { data } = await axios.get(findPostBySlug(blogId));
+      setOGProperty("title", data.title.rendered);
+      setOGProperty("image", data.jetpack_featured_media_url);
+      setOGProperty("image:alt", data.title.rendered);
+      setOGProperty("image:width", "300");
+      setOGProperty("image:height", "200");
+      setOGProperty("image:alt", data.title.rendered);
+      setOGProperty("description", data.excerpt.rendered);
+      setOGProperty("url", `http://arslanmushtaq.com/blog/${blogId}`);
+      setOGProperty("type", "article");
       setData({
         content: data.content.rendered,
         createdAt: data.date,
@@ -48,17 +62,6 @@ const BlogDetails = () => {
 
   return (
     <Layout showMenuItem={true} footer={false}>
-      <Helmet>
-        <meta property="og:title" content={data.title} />
-        <meta property="og:image" content={data.featuredImage} />
-        <meta property="og:image:alt" content={"Poster"} />
-        <meta property="og:description" content={data.excerpt} />
-        <meta
-          property="og:url"
-          content={`http://arslanmushtaq.com/blog/${blogId}`}
-        />
-        <meta property="og:type" content="article" />
-      </Helmet>
       <Container>
         <ContentContainer className="blog-detail-content">
           <ContentHeader className="blog-detail-title-container">
