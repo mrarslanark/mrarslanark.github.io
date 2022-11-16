@@ -1,6 +1,7 @@
 import axios from "axios";
 import moment from "moment";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 
@@ -47,6 +48,17 @@ const BlogDetails = () => {
 
   return (
     <Layout showMenuItem={true} footer={false}>
+      <Helmet>
+        <meta property="og:title" content={data.title} />
+        <meta property="og:image" content={data.featuredImage} />
+        <meta property="og:image:alt" content={"Poster"} />
+        <meta property="og:description" content={data.excerpt} />
+        <meta
+          property="og:url"
+          content={`http://arslanmushtaq.com/blog/${blogId}`}
+        />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Container>
         <ContentContainer className="blog-detail-content">
           <ContentHeader className="blog-detail-title-container">
