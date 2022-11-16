@@ -9,11 +9,11 @@ const Layout = ({
   ...props
 }) => {
   return (
-    <React.Fragment>
+    <div>
       {header && <Header showMenuItems={showMenuItem} />}
       {props.children}
       {footer && <Footer />}
-    </React.Fragment>
+    </div>
   );
 };
 
