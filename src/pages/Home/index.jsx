@@ -5,13 +5,15 @@ import Projects from "../../components/Projects";
 
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
+import Accomplishments from "../../components/Accomplishments";
 import Blogs from "../../components/Blog";
 import Contact from "../../components/Contact";
 import PageLoader from "../../components/PageLoader";
 import Skills from "../../components/Skills";
 import {
-  fetchCollectionFromDB,
+  fetchAccomplishmentsFromDB,
   fetchProjectsFromDB,
+  fetchSkillsFromDB,
 } from "../../services/firebase";
 
 const Home = () => {
@@ -19,6 +21,7 @@ const Home = () => {
   const [projects, setProjects] = useState([]);
   const [blogs, setBlogs] = useState([]);
   const [skills, setSkills] = useState([]);
+  const [accomplishments, setAccomplishments] = useState([]);
 
   const getBlogs = useCallback(async () => {
     try {
@@ -43,12 +46,14 @@ const Home = () => {
 
   const getData = useCallback(async () => {
     try {
-      const fetchedSkills = await fetchCollectionFromDB("skills");
+      const fetchedSkills = await fetchSkillsFromDB();
       const fetchedProjects = await fetchProjectsFromDB();
+      const fetchedAccomplishments = await fetchAccomplishmentsFromDB();
       const fetchedBlogs = await getBlogs();
       setSkills(fetchedSkills);
       setProjects(fetchedProjects);
       setBlogs(fetchedBlogs);
+      setAccomplishments(fetchedAccomplishments);
       setLoading(false);
     } catch (err) {
       console.log(err);
@@ -70,6 +75,8 @@ const Home = () => {
       <Skills skills={skills} />
       <Divider />
       <Projects projects={projects} />
+      <Divider />
+      <Accomplishments accomplishments={accomplishments} />
       <Divider />
       <Blogs blogs={blogs} />
       <Divider />

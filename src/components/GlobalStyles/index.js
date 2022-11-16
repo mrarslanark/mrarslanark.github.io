@@ -49,7 +49,9 @@ const GlobalStyles = createGlobalStyle`
     }
     
     a {
-        text-decoration: none;
+        text-decoration: underlined;
+        color: ${({ theme }) => theme.text};
+        font-weight: 600;
     }
     
     hr {
