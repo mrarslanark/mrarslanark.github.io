@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "populate": "NODE_ENV=env node ./populate.js",
+    "populate": "node ./populate.js",
     "prebuild": "npm run populate",
     "prestart": "npm run populate"
   },
