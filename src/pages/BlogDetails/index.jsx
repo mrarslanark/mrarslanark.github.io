@@ -1,70 +1,54 @@
-import axios from "axios";
 import moment from "moment";
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 import Layout from "../../components/Layout";
 import PageLoader from "../../components/PageLoader";
 
-const findPostBySlug = (id) => {
-  return `${process.env.REACT_APP_BLOG_URL}/${id}`;
-};
-
 const BlogDetails = () => {
-  const { blogId } = useParams();
-  const [data, setData] = useState(null);
+  const { state } = useLocation();
 
-  const fetchBlogDetails = async () => {
-    try {
-      if (!blogId) {
-        throw new Error("Blog Unavailable");
-      }
-
-      const { data } = await axios.get(findPostBySlug(blogId));
-      setData({
-        content: data.content.rendered,
-        createdAt: data.date,
-        excerpt: data.excerpt.rendered,
-        id: data.id,
-        slug: data.slug,
-        title: data.title.rendered,
-        modified: data.modified,
-        featuredImage: data.jetpack_featured_media_url,
-      });
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  useEffect(() => {
-    fetchBlogDetails();
-  }, []);
-
-  if (!data) {
+  if (!state) {
     return <PageLoader />;
   }
 
   return (
     <Layout showMenuItem={true} footer={false}>
+      <HeadTags data={state} id={state.slug} />
       <Container>
         <ContentContainer className="blog-detail-content">
           <ContentHeader className="blog-detail-title-container">
-            <h1 dangerouslySetInnerHTML={{ __html: data.title }} />
+            <h1 dangerouslySetInnerHTML={{ __html: state.title }} />
             <ReleaseDate>
-              {data.modified
-                ? `Updated on ${moment(data.modified).format("llll")}`
-                : `Published on ${moment(data.date).format("llll")}`}
+              {state.modified
+                ? `Updated on ${moment(state.modified).format("llll")}`
+                : `Published on ${moment(state.date).format("llll")}`}
             </ReleaseDate>
           </ContentHeader>
           <br />
           <div
             className="content"
-            dangerouslySetInnerHTML={{ __html: data.content }}
+            dangerouslySetInnerHTML={{ __html: state.content }}
           />
         </ContentContainer>
       </Container>
     </Layout>
+  );
+};
+
+const HeadTags = ({ data, id }) => {
+  return (
+    <Helmet>
+      <meta property="og:title" content={data.title} />
+      <meta property="og:image" content={data.featuredImage} />
+      <meta property="og:image:alt" content={data.title} />
+      <meta property="og:description" content={data.excerpt} />
+      <meta property="og:url" content={`http://arslanmushtaq.com/blog/${id}`} />
+      <meta property="og:image:width" content="300" />
+      <meta property="og:image:height" content="200" />
+      <meta property="og:type" content="article" />
+    </Helmet>
   );
 };
 

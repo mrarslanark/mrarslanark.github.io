@@ -7,11 +7,10 @@ const Info = () => {
       <ProfilePicture src="/images/pp.jpg" alt="Profile" />
       <Title>ARSLAN MUSHTAQ</Title>
       <Description>
-        A software developer from Pakistan. I love to design and develop
-        products and talk about tech. I've spoken on different topics like Cloud
-        Services, Version Control, Mobile Development, Frontend Development and
-        more. My core expertise include MERN Stack, Hybrid/Native Mobile
-        Development and DevOps.
+        I am a Software Engineer with an experience of just over 7 years. I am
+        passionate about software development with a keen eye for detail. I am
+        willing to work within a multidisciplinary team to expand my experience
+        and share my learnings.
       </Description>
     </Section>
   );
@@ -78,7 +77,7 @@ const Description = styled.p`
     text-align: left;
   }
   @media ${device.tablet} {
-    width: 60%;
+    width: 40%;
     text-align: center;
   }
 `;

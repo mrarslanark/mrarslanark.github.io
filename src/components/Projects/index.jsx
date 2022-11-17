@@ -3,7 +3,7 @@ import HorizonSliderSection from "../HorizontalSliderSection";
 import loading from "../../assets/animations/loading.json";
 import ProjectItem from "../ProjectItem";
 
-const Skills = ({ projects }) => {
+const Projects = ({ projects }) => {
   return (
     <HorizonSliderSection
       ListItem={ProjectItem}
@@ -15,4 +15,4 @@ const Skills = ({ projects }) => {
   );
 };
 
-export default Skills;
+export default Projects;
