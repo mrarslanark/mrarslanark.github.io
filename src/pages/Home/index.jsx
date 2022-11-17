@@ -16,20 +16,22 @@ import accomplishments from "../../data/accomplishments.json";
 
 const Home = () => {
   return (
-    <Layout>
+    <div>
       <HeadTags />
-      <Info />
-      <Divider />
-      <Skills skills={skills} />
-      <Divider />
-      <Projects projects={projects} />
-      <Divider />
-      <Accomplishments accomplishments={accomplishments} />
-      <Divider />
-      <Blogs blogs={articles} />
-      <Divider />
-      <Contact />
-    </Layout>
+      <Layout>
+        <Info />
+        <Divider />
+        <Skills skills={skills} />
+        <Divider />
+        <Projects projects={projects} />
+        <Divider />
+        <Accomplishments accomplishments={accomplishments} />
+        <Divider />
+        <Blogs blogs={articles} />
+        <Divider />
+        <Contact />
+      </Layout>
+    </div>
   );
 };
 

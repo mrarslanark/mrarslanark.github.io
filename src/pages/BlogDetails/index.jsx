@@ -14,31 +14,33 @@ const BlogDetails = () => {
   }
 
   return (
-    <Layout showMenuItem={true} footer={false}>
+    <div>
       <HeadTags
         excerpt={state.excerpt}
         image={state.featuredImage}
         title={state.title}
         id={state.slug}
       />
-      <Container>
-        <ContentContainer className="blog-detail-content">
-          <ContentHeader className="blog-detail-title-container">
-            <h1 dangerouslySetInnerHTML={{ __html: state.title }} />
-            <ReleaseDate>
-              {state.modified
-                ? `Updated on ${moment(state.modified).format("llll")}`
-                : `Published on ${moment(state.date).format("llll")}`}
-            </ReleaseDate>
-          </ContentHeader>
-          <br />
-          <div
-            className="content"
-            dangerouslySetInnerHTML={{ __html: state.content }}
-          />
-        </ContentContainer>
-      </Container>
-    </Layout>
+      <Layout showMenuItem={true} footer={false}>
+        <Container>
+          <ContentContainer className="blog-detail-content">
+            <ContentHeader className="blog-detail-title-container">
+              <h1 dangerouslySetInnerHTML={{ __html: state.title }} />
+              <ReleaseDate>
+                {state.modified
+                  ? `Updated on ${moment(state.modified).format("llll")}`
+                  : `Published on ${moment(state.date).format("llll")}`}
+              </ReleaseDate>
+            </ContentHeader>
+            <br />
+            <div
+              className="content"
+              dangerouslySetInnerHTML={{ __html: state.content }}
+            />
+          </ContentContainer>
+        </Container>
+      </Layout>
+    </div>
   );
 };
 
