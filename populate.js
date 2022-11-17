@@ -14,6 +14,16 @@ function printMessage(message) {
   console.log("-------", message, "-------");
 }
 
+function checkDirAndStoreData(fileName, data) {
+  const isDirectoryAvailable = fs.existsSync("src/data");
+  if (!isDirectoryAvailable) {
+    fs.mkdirSync("src/data");
+  }
+  fs.writeFileSync(`src/data/${fileName}.json`, JSON.stringify(data), {
+    encoding: "utf-8",
+  });
+}
+
 async function fetchArticles() {
   try {
     printMessage("STARTED FETCHING ARTICLES");
@@ -34,9 +44,7 @@ async function fetchArticles() {
       };
     });
     printMessage("WRITING ARTICLES LOCALLY");
-    fs.writeFileSync("src/data/articles.json", JSON.stringify(articles), {
-      encoding: "utf-8",
-    });
+    checkDirAndStoreData("articles", articles);
     printMessage("ARTICLES SUCCESSFULLY WRITTEN");
   } catch (err) {
     console.log("fetchArticles: ", err);
@@ -54,9 +62,7 @@ async function fetchSkills() {
     });
     printMessage("SKILLS RETRIVED");
     printMessage("WRITING SKILLS LOCALLY");
-    fs.writeFileSync("src/data/skills.json", JSON.stringify(skills), {
-      encoding: "utf-8",
-    });
+    checkDirAndStoreData("skills", skills);
     printMessage("SKILLS SUCCESSFULLY WRITTEN");
   } catch (err) {
     console.log("fetchSkills:", err);
@@ -69,14 +75,12 @@ async function fetchProjects() {
     printMessage("STARTED FETCHING PROJECTS");
     const q = query(collection(db, "projects"), where("released", "==", true));
     const querySnapshot = await getDocs(q);
-    const skills = querySnapshot.docs.map((project) => {
+    const projects = querySnapshot.docs.map((project) => {
       return { id: project.id, ...project.data() };
     });
     printMessage("PROJECTS RETRIVED");
     printMessage("WRITING PROJECTS LOCALLY");
-    fs.writeFileSync("src/data/projects.json", JSON.stringify(skills), {
-      encoding: "utf-8",
-    });
+    checkDirAndStoreData("projects", projects);
     printMessage("PROJECTS SUCCESSFULLY WRITTEN");
   } catch (err) {
     console.log("fetchProjects:", err);
@@ -89,14 +93,12 @@ async function fetchAccomplishments() {
     printMessage("STARTED FETCHING ACCOOMPLISHMENTS");
     const q = query(collection(db, "accomplishments"), orderBy("year", "desc"));
     const querySnapshot = await getDocs(q);
-    const skills = querySnapshot.docs.map((project) => {
+    const accomplishments = querySnapshot.docs.map((project) => {
       return { id: project.id, ...project.data() };
     });
     printMessage("ACCOOMPLISHMENTS RETRIVED");
     printMessage("WRITING ACCOOMPLISHMENTS LOCALLY");
-    fs.writeFileSync("src/data/accomplishments.json", JSON.stringify(skills), {
-      encoding: "utf-8",
-    });
+    checkDirAndStoreData("accomplishments", accomplishments);
     printMessage("ACCOOMPLISHMENTS SUCCESSFULLY WRITTEN");
   } catch (err) {
     console.log("fetchAccomplishments:", err);
