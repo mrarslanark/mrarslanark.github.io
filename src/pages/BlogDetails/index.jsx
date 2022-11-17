@@ -1,41 +1,51 @@
 import moment from "moment";
+import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import styled from "styled-components";
 
 import Layout from "../../components/Layout";
 import PageLoader from "../../components/PageLoader";
+import articles from "../../data/articles.json";
 
 const BlogDetails = () => {
-  const { state } = useLocation();
+  const { slug } = useParams();
+  const [article, setArticle] = useState(null);
 
-  if (!state) {
+  useEffect(() => {
+    const fetchArticle = articles.find((ar) => ar.slug === slug);
+    if (fetchArticle) {
+      setArticle(fetchArticle);
+    }
+  }, [slug]);
+
+  if (!article) {
     return <PageLoader />;
   }
 
   return (
     <div>
       <HeadTags
-        excerpt={state.excerpt}
-        image={state.featuredImage}
-        title={state.title}
-        id={state.slug}
+        excerpt={article.excerpt}
+        image={article.featuredImage}
+        title={article.title}
+        id={article.slug}
       />
       <Layout showMenuItem={true} footer={false}>
         <Container>
           <ContentContainer className="blog-detail-content">
             <ContentHeader className="blog-detail-title-container">
-              <h1 dangerouslySetInnerHTML={{ __html: state.title }} />
+              <h1 dangerouslySetInnerHTML={{ __html: article.title }} />
               <ReleaseDate>
-                {state.modified
-                  ? `Updated on ${moment(state.modified).format("llll")}`
-                  : `Published on ${moment(state.date).format("llll")}`}
+                {article.modified
+                  ? `Updated on ${moment(article.modified).format("llll")}`
+                  : `Published on ${moment(article.date).format("llll")}`}
               </ReleaseDate>
             </ContentHeader>
             <br />
             <div
               className="content"
-              dangerouslySetInnerHTML={{ __html: state.content }}
+              dangerouslySetInnerHTML={{ __html: article.content }}
             />
           </ContentContainer>
         </Container>

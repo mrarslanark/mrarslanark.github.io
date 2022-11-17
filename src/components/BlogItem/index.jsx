@@ -7,7 +7,7 @@ const BlogItem = ({ item }) => {
   const navigate = useNavigate();
 
   const onNavigate = () => {
-    navigate(`/blog/${item.slug}`, { state: item });
+    navigate(`/blog/${item.slug}`);
   };
 
   return (

@@ -19,7 +19,7 @@ const EntryPoint = () => {
       <GlobalStyles />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog/:blogId" element={<BlogDetails />} />
+        <Route path="/blog/:slug" element={<BlogDetails />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </ThemeProvider>
