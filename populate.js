@@ -27,8 +27,7 @@ function checkDirAndStoreData(fileName, data) {
 async function fetchArticles() {
   try {
     printMessage("STARTED FETCHING ARTICLES");
-    const url =
-      "https://public-api.wordpress.com/wp/v2/sites/arslanmushtaq.wordpress.com/posts";
+    const url = process.env.REACT_APP_BLOG_URL;
     const { data } = await axios.get(url);
     printMessage("ARTICLES RETRIVED");
     const articles = data.map((blog) => {
