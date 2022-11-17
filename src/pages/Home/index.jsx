@@ -37,7 +37,7 @@ const Home = () => {
 
 const HeadTags = () => {
   return (
-    <Helmet async>
+    <Helmet>
       <meta property="og:title" content="Arslan Mushtaq" />
       <meta
         property="og:image"

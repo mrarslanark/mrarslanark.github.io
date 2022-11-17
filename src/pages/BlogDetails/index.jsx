@@ -56,7 +56,7 @@ const BlogDetails = () => {
 
 const HeadTags = ({ title, image, excerpt, id }) => {
   return (
-    <Helmet async={true}>
+    <Helmet>
       <meta property="og:title" content={title} />
       <meta property="og:image" content={image} />
       <meta property="og:image:alt" content={title} />
