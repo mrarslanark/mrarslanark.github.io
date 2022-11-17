@@ -15,7 +15,12 @@ const BlogDetails = () => {
 
   return (
     <Layout showMenuItem={true} footer={false}>
-      <HeadTags data={state} id={state.slug} />
+      <HeadTags
+        excerpt={state.excerpt}
+        image={state.featuredImage}
+        title={state.title}
+        id={state.slug}
+      />
       <Container>
         <ContentContainer className="blog-detail-content">
           <ContentHeader className="blog-detail-title-container">
@@ -37,13 +42,13 @@ const BlogDetails = () => {
   );
 };
 
-const HeadTags = ({ data, id }) => {
+const HeadTags = ({ title, image, excerpt, id }) => {
   return (
     <Helmet>
-      <meta property="og:title" content={data.title} />
-      <meta property="og:image" content={data.featuredImage} />
-      <meta property="og:image:alt" content={data.title} />
-      <meta property="og:description" content={data.excerpt} />
+      <meta property="og:title" content={title} />
+      <meta property="og:image" content={image} />
+      <meta property="og:image:alt" content={title} />
+      <meta property="og:description" content={excerpt} />
       <meta property="og:url" content={`http://arslanmushtaq.com/blog/${id}`} />
       <meta property="og:image:width" content="300" />
       <meta property="og:image:height" content="200" />
