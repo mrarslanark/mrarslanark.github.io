@@ -11,6 +11,7 @@ const HorizonSliderSection = ({
   ListItem,
   emptyListAnimation,
   subtitle,
+  sectionId,
 }) => {
   if (!data) {
     return <Loading />;
@@ -27,7 +28,7 @@ const HorizonSliderSection = ({
   }
 
   return (
-    <section>
+    <section id={sectionId}>
       <h1>{title}</h1>
       <Section>
         <ScrollMenu Footer={SliderFooter} scrollContainerClassName="scroll">

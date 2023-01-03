@@ -5,23 +5,25 @@ const Info = () => {
   return (
     <Section>
       <ProfilePicture src="/images/pp.jpg" alt="Profile" />
-      <Title>ARSLAN MUSHTAQ</Title>
-      <Description>
-        I am a Software Engineer with an experience of just over 7 years. I am
-        passionate about software development with a keen eye for detail. I am
-        willing to work within a multidisciplinary team to expand my experience
-        and share my learnings.
-      </Description>
+      <TextContainer>
+        <h2>ARSLAN MUSHTAQ</h2>
+        <p>
+          I am a Software Engineer with an experience of just over 4 years. I am
+          passionate about software development with a keen eye for detail. I am
+          willing to work within a multidisciplinary team to expand my
+          experience and share my learnings.
+        </p>
+      </TextContainer>
     </Section>
   );
 };
 
 const Section = styled.section`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  width: 80%;
+  margin: auto;
+  column-gap: 24px;
+  padding-top: 90px;
   @media ${device.mobileS} {
     justify-content: start;
     align-items: start;
@@ -29,13 +31,15 @@ const Section = styled.section`
   }
   @media ${device.tablet} {
     justify-content: center;
-    align-items: center;
-    align-content: center;
   }
 `;
 
-const Title = styled.h2`
-  margin: 12px 0px;
+const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
 `;
 
 const ProfilePicture = styled.img`
@@ -67,18 +71,6 @@ const ProfilePicture = styled.img`
   @media ${device.desktop} {
     width: 140px;
     height: 140px;
-  }
-`;
-
-const Description = styled.p`
-  width: 55%;
-  @media ${device.mobileS} {
-    width: 100%;
-    text-align: left;
-  }
-  @media ${device.tablet} {
-    width: 40%;
-    text-align: center;
   }
 `;
 

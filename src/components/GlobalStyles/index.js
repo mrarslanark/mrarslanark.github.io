@@ -1,14 +1,18 @@
 import { createGlobalStyle } from "styled-components";
 import { device } from "../../constants/theme";
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle `
     * {
         margin: 0;
         box-sizing: border-box;
     }
+
+    html {
+        scroll-behavior: smooth;
+    }
     
     body {
-        font-family: "Anek Latin", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-family: "Hind Siliguri", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         background-color: ${({ theme }) => theme.body};
@@ -18,6 +22,18 @@ const GlobalStyles = createGlobalStyle`
         font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
     }
+
+    button {
+        font-family: "Hind Siliguri", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    }
+
+    pre {
+        color: ${({ theme }) => theme.text};
+        padding: 16px;
+        font-size: 18px;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin-bottom: 16px;
+    }
     
     h1,
     h2,
@@ -25,23 +41,21 @@ const GlobalStyles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: "Kdam Thmor Pro", sans-serif;
         color: ${({ theme }) => theme.heading};
         margin: 0;
         padding: 0;
     }
     
     h1 {
-        font-size: xx-large;
+        font-size: x-large;
         color: ${({ theme }) => theme.heading};
     }
     
     p {
         color: ${({ theme }) => theme.text};
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin: 0;
         padding: 0;
-        line-height: 1.6rem;
     }
     
     section {
@@ -51,13 +65,32 @@ const GlobalStyles = createGlobalStyle`
     a {
         text-decoration: underlined;
         color: ${({ theme }) => theme.text};
-        font-weight: 600;
     }
     
     hr {
         margin: 10px 0px;
         border-color: ${({ theme }) => theme.content_divider};
         border-width: 0.5px;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: ${({ theme }) => theme.body}; 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: ${({ theme }) => theme.text};; 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
     }
     
     .loading-animation {
@@ -128,7 +161,6 @@ const GlobalStyles = createGlobalStyle`
 
     .content a {
         text-decoration: none;  
-        font-weight: bold;
         color: ${({ theme }) => theme.text};
     }
       

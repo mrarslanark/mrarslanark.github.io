@@ -11,6 +11,7 @@ const Skills = ({ skills }) => {
       emptyListAnimation={loading}
       subtitle={"Loading Arslan's Skills"}
       title={"Skills"}
+      sectionId={"skills"}
     />
   );
 };

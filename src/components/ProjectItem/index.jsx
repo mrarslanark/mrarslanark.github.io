@@ -1,70 +1,52 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import { device } from "../../constants/theme";
+import React from 'react'
+import styled from 'styled-components'
+import { device } from '../../constants/theme'
 
 const ProjectItem = ({ item }) => {
-  const [showMore, setShowMore] = useState(false);
-
-  const toggleShowMore = () => {
-    setShowMore((prevState) => !prevState);
-  };
-
   return (
-    <ItemContainer showMore={showMore} className="item-container">
+    <ItemContainer className="item-container">
       <div>
         <ItemTopContainer>
-          <ProjectTitle>{item.title}</ProjectTitle>
-          <div>
-            {item.links.map((link) => {
-              return (
-                <a
-                  key={link.id}
-                  href={link.url}
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  <Icon src={`/icons/${link.id}.png`} alt={link.id} />
-                </a>
-              );
-            })}
-          </div>
+          <ProjectTitle>
+            {item.title}{' '}
+            {item.release.production
+              ? item.release.production
+              : item.release.development}
+          </ProjectTitle>
         </ItemTopContainer>
+        <ReleaseContainer>
+          <ReleaseInfoText>
+            {item.release.development} releases on{' '}
+            {item.release.development_date}
+          </ReleaseInfoText>
+        </ReleaseContainer>
       </div>
+      <Description>{item.description}</Description>
       <LinkContainer>
         {item.links.map((link, index) => {
           return (
             <Link
-              target={"_blank"}
+              target={'_blank'}
               href={link.url}
               rel="noreferrer"
-              key={link.id}
-            >
-              <LinkText>{link.title}</LinkText>{" "}
-              {index === item.links.length - 1 ? null : (
-                <>
-                  <span> - &nbsp;</span>
-                </>
-              )}
+              key={link.id}>
+              <LinkText>{link.title}</LinkText> &nbsp;
             </Link>
-          );
+          )
         })}
       </LinkContainer>
-      <Description showMore={showMore}>{item.description}</Description>
-      <ShowMore onClick={toggleShowMore}>
-        {showMore ? "Show Less" : "Show More"}
-      </ShowMore>
-      <TechContainer>
-        <Technology>{item.builtOn.join(" | ")}</Technology>
-      </TechContainer>
+      <DetailsButton>Details</DetailsButton>
     </ItemContainer>
-  );
-};
+  )
+}
 
 const ItemContainer = styled.div`
   padding: 16px 24px;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
   @media ${device.mobileS} {
     width: 240px;
-    height: ${({ showMore }) => (showMore ? "auto" : "360px")};
   }
   @media ${device.mobileM} {
     width: 280px;
@@ -74,15 +56,13 @@ const ItemContainer = styled.div`
   }
   @media ${device.tablet} {
     width: 450px;
-    height: ${({ showMore }) => (showMore ? "auto" : "310px")};
   }
-`;
+`
 
 const ItemTopContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 40px;
-`;
+`
 
 const ProjectTitle = styled.h2`
   text-transform: uppercase;
@@ -93,63 +73,51 @@ const ProjectTitle = styled.h2`
   @media ${device.tablet} {
     font-size: large;
   }
-`;
+`
 
-const Icon = styled.img`
-  width: 40px;
-  height: inherit;
-  cursor: inherit;
-  @media ${device.mobileS} {
-    display: none;
-  }
-  @media ${device.tablet} {
-    display: inline-block;
-  }
-`;
+const ReleaseContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`
+
+const ReleaseInfoText = styled.p`
+  font-size: 0.9rem;
+`
 
 const LinkContainer = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 6px 0px;
-  @media ${device.tablet} {
-    display: none;
-  }
-`;
+`
 
 const Link = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.text};
-`;
+`
 
 const LinkText = styled.span`
   text-decoration: underline;
-`;
-
-const TechContainer = styled.div`
-  display: flex;
-  margin: 20px 0px 0px 0px;
-`;
-
-const Technology = styled.p`
-  font-size: medium;
-`;
+`
 
 const Description = styled.p`
-  overflow: ${({ showMore }) => (showMore ? "visible" : "hidden")};
-  display: ${({ showMore }) => (showMore ? "block" : "-webkit-box")};
-  -webkit-line-clamp: ${({ showMore }) => (showMore ? "none" : "4")};
-  -webkit-box-orient: ${({ showMore }) => (showMore ? "none" : "vertical")};
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
   font-size: medium;
-  height: ${({ showMore }) => (showMore ? "auto" : "100px")};
+  height: 100px;
   @media ${device.mobileS} {
     height: auto;
   }
-`;
+`
 
-const ShowMore = styled.p`
+const DetailsButton = styled.button`
   font-size: medium;
   color: #1c6ff2;
   cursor: pointer;
-`;
+  background-color: transparent;
+  width: fit-content;
+  border: none;
+  padding: 6px 0px 0px 0px;
+`
 
-export default ProjectItem;
+export default ProjectItem

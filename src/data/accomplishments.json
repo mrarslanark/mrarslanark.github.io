@@ -1,0 +1,77 @@
+[{
+        "id": "git-and-github",
+        "featuredImage": "https://firebasestorage.googleapis.com/v0/b/portfolio-mrarslanark-github.appspot.com/o/GitandGitHub.jpeg?alt=media&token=0b98c2d0-206c-4ba5-9912-b7416a683acf",
+        "title": "Tech Tology Lahore Chapter",
+        "year": 2020,
+        "description": "As a guest speaker at the Tech Tology Lahore Chapter Launch, I had the opportunity to deliver a seminar on Git and GitHub to the tech community. The slides for the seminar are available through the provided link. The seminar covered the basics of Git and GitHub, including how to create and manage repositories, collaborate with other users, and track changes to code. I also discussed some advanced features of GitHub, such as code review and project management tools. Overall, the seminar was well received by the audience and I received positive feedback from attendees.",
+        "topic": "Understanding Git and GitHub",
+        "links": [{
+            "id": "google-slides",
+            "to": "https://docs.google.com/presentation/d/1a4MOXj26YlJzPEgjSMcJLDSMvl89BEDxkhC7HPFPo2w/edit?usp=sharing",
+            "title": "Google Slides"
+        }]
+    },
+    {
+        "id": "build-android-apps-the-fun-way",
+        "links": [{
+                "id": "google-slides",
+                "to": "https://docs.google.com/presentation/d/1bN7kQPMBM9fNFyrEjFXM2KvVLIqmPOqQzd5kklQZNhE/edit?usp=sharing",
+                "title": "Google Slides"
+            },
+            {
+                "id": "sneak-peek",
+                "to": "https://fb.watch/gQTBeeyYnI/",
+                "title": "Sneak Peek"
+            }
+        ],
+        "description": "As a mobile developer, I was into native/hybrid mobile development when I was invited as a speaker at the Tech Tology Lahore Chapter Launch. I talked about building Android applications the fun way and the objective was to make it easy for developers to understand how Android Application Development can be fun and easy.",
+        "topic": "Develop Android Apps the fun way",
+        "year": 2020,
+        "title": "Tech Tology Lahore Chapter Launch",
+        "featuredImage": "https://firebasestorage.googleapis.com/v0/b/portfolio-mrarslanark-github.appspot.com/o/DevelopAndroidAppsTheFunWay.jpeg?alt=media&token=21a633d2-26cb-4b92-a0c8-8e4e3b3cda82"
+    },
+    {
+        "id": "introduction-to-kotlin",
+        "title": "Google I/O Extended 2019",
+        "description": "I had the immense pleasure of speaking at Google I/O Extended 2019 on the topic of Introduction to Kotlin. Kotlin is used for developing Mobile application on Android. I was at the stage talking about the basics of Kotlin and how it is better than Java when it comes to Android Development. The event took place at LUMS and was conducted by GDG Lahore.",
+        "featuredImage": "https://firebasestorage.googleapis.com/v0/b/portfolio-mrarslanark-github.appspot.com/o/IntroductionToKotlin.jpeg?alt=media&token=7e9107e2-03e5-4e77-a95e-8521a2b815e7",
+        "topic": "Introduction to Kotlin",
+        "links": [{
+            "id": "google-slides",
+            "to": "https://docs.google.com/presentation/d/1CWbe0IZP4g63C1B85bju8j1DGxlOVHydezNVC1boAuU/edit?usp=sharing",
+            "title": "Google Slides"
+        }],
+        "year": 2019
+    },
+    {
+        "id": "do-more-with-firebase",
+        "title": "Devenings & Tech Tology Lahore Chapter",
+        "links": [{
+            "id": "event-recording",
+            "to": "https://fb.watch/gQRALim4WM/",
+            "title": "Event Recording"
+        }],
+        "description": "I was invited by Tech Tology and  to speak about the services that Firebase offered. Due to COVID-19 we had a virtual session which you can access above using the Video link. <a target=\"_blank\" href-\"https://firebase.google.com/\">Firebase</a> is a google product and an amazing cloud service which let's you develop a lot of things within a single space. Tech Tology and Devenings are a tech community where tech geeks gather to share their ideas, new technologies and so much more.",
+        "topic": "Do More with Firebase",
+        "featuredImage": "https://firebasestorage.googleapis.com/v0/b/portfolio-mrarslanark-github.appspot.com/o/DoMorewithFirebase.jpeg?alt=media&token=c9d9cc04-1c27-42f5-85d5-1aea516903e7",
+        "year": 2019
+    },
+    {
+        "id": "app-dev-competition-winner",
+        "title": "App Dev Competition Winner",
+        "year": 2019,
+        "featuredImage": "https://firebasestorage.googleapis.com/v0/b/portfolio-mrarslanark-github.appspot.com/o/AppDevCompetition.jpeg?alt=media&token=44aea1a4-8af7-4bb9-bb00-20eb72401c1e",
+        "description": "Softec is an event held every year at FAST-NU, Lahore where contestants from different fields gather to compete. I was nominated by my University along with 2 juniors for the App Dev Competition. The competition was to build a mobile application similar to Netflix within 28 hours. Our team Hex Clanners developed the application using Native iOS (Swift/Objective-c) and Native Android (Kotlin). We secured the first prize along with a cash reward of PKR 50,000.",
+        "topic": "Hackathon",
+        "links": null
+    },
+    {
+        "id": "annual-get-together-2015-mul",
+        "title": "Annual Get Together 2k15",
+        "year": 2015,
+        "featuredImage": "https://media-exp1.licdn.com/dms/image/C561BAQFUAF9xnXTXiA/company-background_10000/0/1639457407013?e=2147483647&v=beta&t=gDQ8w8nOWsRE1G7GkvIoEsQf4M246HIg315gApwo2YM",
+        "description": "During my bachelor, I was appointed to organize an event at my University (<a target=\"_blank\" href=\"https://mul.edu.pk/\">Minhaj University Lahore</a>) which now takes place every year. An annual get-together where students come together, have fun, eat, and enjoy. This event was attended by 400+ students and 300+ faculty members and it was a very successful event which took place after 22 years. I had a team of 30 students which included seniors, juniors and faculty members. Due to this event, I was able to learn about leadership.",
+        "topic": "Event Organizer & Leadership",
+        "links": null
+    }
+]

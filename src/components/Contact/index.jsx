@@ -3,45 +3,41 @@ import {
   RiGithubFill,
   RiLinkedinFill,
   RiTwitterFill,
+  RiInstagramLine,
 } from "react-icons/ri";
 import styled, { css } from "styled-components";
 import { device } from "../../constants/theme";
 
 const Contact = () => {
   return (
-    <Section>
+    <Section id="connect">
       <h1>Connect with me</h1>
       <IconContainer className="social-icon-container">
-        <a
-          href={"https://www.facebook.com/devmrark"}
-          target={"_blank"}
-          rel={"noreferrer"}
-        >
+        <LinkItem to={"https://www.facebook.com/devmrark"}>
           <Facebook />
-        </a>
-        <a
-          href={"https://twitter.com/mrarslanark"}
-          target={"_blank"}
-          rel={"noreferrer"}
-        >
+        </LinkItem>
+        <LinkItem to={"https://www.instagram.com/devmrark"}>
+          <Instagram />
+        </LinkItem>
+        <LinkItem to={"https://twitter.com/mrarslanark"}>
           <Twitter />
-        </a>
-        <a
-          href={"https://linkedin.com/in/mrarslanark"}
-          target={"_blank"}
-          rel={"noreferrer"}
-        >
+        </LinkItem>
+        <LinkItem to={"https://linkedin.com/in/mrarslanark"}>
           <LinkedIn />
-        </a>
-        <a
-          href={"https://github.com/mrarslanark"}
-          target={"_blank"}
-          rel={"noreferrer"}
-        >
+        </LinkItem>
+        <LinkItem to={"https://github.com/mrarslanark"}>
           <GitHub />
-        </a>
+        </LinkItem>
       </IconContainer>
     </Section>
+  );
+};
+
+const LinkItem = ({ to, children }) => {
+  return (
+    <a href={to} target={"_blank"} rel={"noreferrer"}>
+      {children}
+    </a>
   );
 };
 
@@ -94,6 +90,10 @@ const LinkedIn = styled(RiLinkedinFill)`
 `;
 
 const GitHub = styled(RiGithubFill)`
+  ${iconColor}
+`;
+
+const Instagram = styled(RiInstagramLine)`
   ${iconColor}
 `;
 

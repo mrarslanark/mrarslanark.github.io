@@ -31,7 +31,7 @@ const BlogDetails = () => {
         title={article.title}
         id={article.slug}
       />
-      <Layout showMenuItem={true} footer={false}>
+      <Layout menu={"blog"} footer={false}>
         <Container>
           <ContentContainer className="blog-detail-content">
             <ContentHeader className="blog-detail-title-container">

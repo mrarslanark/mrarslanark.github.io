@@ -11,6 +11,7 @@ const Projects = ({ projects }) => {
       emptyListAnimation={loading}
       subtitle={"Loading Arslan's Projects"}
       title={"Projects"}
+      sectionId={"projects"}
     />
   );
 };

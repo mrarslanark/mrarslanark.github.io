@@ -1,17 +1,56 @@
 import { MdDarkMode } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 import { useDispatch } from "react-redux";
 import { toggleTheme } from "../../store/slices/themeSlice";
 
-const Header = ({ showMenuItems = false }) => {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
+const blogMenuItems = [
+  {
+    id: "home",
+    to: "/",
+    title: "Home",
+  },
+];
 
-  const onNavigate = () => {
-    navigate("/");
-  };
+const homeMenuItems = [
+  {
+    id: "me",
+    to: "#",
+    title: "Me",
+  },
+  {
+    id: "projects",
+    to: "#projects",
+    title: "Projects",
+  },
+  {
+    id: "skills",
+    to: "#skills",
+    title: "Skills",
+  },
+  {
+    id: "accomplishments",
+    to: "#accomplishments",
+    title: "Accomplishments",
+  },
+  {
+    id: "blog",
+    to: "#blog",
+    title: "Blog",
+  },
+  {
+    id: "connect",
+    to: "#connect",
+    title: "Connect",
+  },
+];
+
+function displayMenuItems(menu) {
+  return menu === "home" ? homeMenuItems : blogMenuItems;
+}
+
+const Header = ({ menu = "home" }) => {
+  const dispatch = useDispatch();
 
   const onChangeTheme = () => {
     dispatch(toggleTheme());
@@ -20,11 +59,13 @@ const Header = ({ showMenuItems = false }) => {
   return (
     <Nav>
       <NavList>
-        {showMenuItems ? (
-          <NavListItem onClick={onNavigate}>
-            <p>Home</p>
-          </NavListItem>
-        ) : null}
+        {displayMenuItems(menu).map((item) => {
+          return (
+            <NavListItem key={item.id} href={item.to}>
+              {item.title}
+            </NavListItem>
+          );
+        })}
         <DarkModeIconContainer
           className="dark-mode-container"
           onClick={onChangeTheme}
@@ -42,7 +83,11 @@ const Nav = styled.nav`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: fixed;
+  width: 100%;
   height: 60px;
+  background-color: ${({ theme }) => theme.nav_btn_bg};
+  z-index: 100;
 `;
 
 const NavList = styled.ul`
@@ -50,26 +95,32 @@ const NavList = styled.ul`
   flex-direction: row;
 `;
 
-const NavListItem = styled.div`
+const NavListItem = styled.a`
   background-color: ${({ theme }) => theme.nav_btn_bg};
-  width: 120px;
-  padding: 20px 0px;
+  padding: 16px 16px;
   text-align: center;
   transition: 0.3s;
+  text-decoration: none;
+  height: 60px;
   &:hover {
     background-color: ${({ theme }) => theme.nav_btn_bg_hover};
     cursor: pointer;
   }
 `;
 
-const DarkModeIconContainer = styled.div`
+const DarkModeIconContainer = styled.button`
   width: 64px;
+  height: 60px;
   display: flex;
-  margin: 0px 12px;
-  align-self: center;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background: transparent;
+  border: none;
+  &:hover {
+    background-color: ${({ theme }) => theme.nav_btn_bg_hover};
+    cursor: pointer;
+  }
 `;
 
 const DarkModeIcon = styled(MdDarkMode)`

@@ -9,25 +9,55 @@ import Blogs from "../../components/Blog";
 import Contact from "../../components/Contact";
 import Skills from "../../components/Skills";
 
-import articles from "../../data/articles.json";
 import skills from "../../data/skills.json";
 import projects from "../../data/projects.json";
 import accomplishments from "../../data/accomplishments.json";
+import { useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
 
 const Home = () => {
+  const [blog, setBlogs] = useState(null);
+
+  async function fetchBlogs() {
+    const url = process.env.REACT_APP_BLOG_URL;
+    try {
+      const { data } = await axios.get(url);
+      const articles = data.map((blog) => {
+        return {
+          content: blog.content.rendered,
+          createdAt: blog.date,
+          excerpt: blog.excerpt.rendered,
+          id: blog.slug,
+          slug: blog.slug,
+          title: blog.title.rendered,
+          modified: blog.modified,
+          featuredImage: blog.jetpack_featured_media_url,
+        };
+      });
+      setBlogs(articles);
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  useEffect(() => {
+    fetchBlogs();
+  }, []);
+
   return (
     <div>
       <HeadTags />
-      <Layout>
+      <Layout menu={"home"}>
         <Info />
-        <Divider />
-        <Skills skills={skills} />
         <Divider />
         <Projects projects={projects} />
         <Divider />
+        <Skills skills={skills} />
+        <Divider />
         <Accomplishments accomplishments={accomplishments} />
         <Divider />
-        <Blogs blogs={articles} />
+        <Blogs blog={blog} />
         <Divider />
         <Contact />
       </Layout>

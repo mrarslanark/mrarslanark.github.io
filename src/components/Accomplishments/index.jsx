@@ -11,6 +11,7 @@ const Accomplishments = ({ accomplishments = [] }) => {
       emptyListAnimation={loading}
       subtitle={"Loading Arslan's Skills"}
       title={"Accomplishments"}
+      sectionId={"accomplishments"}
     />
   );
 };

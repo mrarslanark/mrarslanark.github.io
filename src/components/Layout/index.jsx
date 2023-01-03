@@ -1,20 +1,20 @@
 import React from "react";
+import styled from "styled-components";
 import Footer from "../Footer";
 import Header from "../Header";
 
-const Layout = ({
-  header = true,
-  footer = true,
-  showMenuItem = false,
-  ...props
-}) => {
+const Layout = ({ header = true, footer = true, menu, ...props }) => {
   return (
-    <div>
-      {header && <Header showMenuItems={showMenuItem} />}
+    <Container>
+      {header && <Header menu={menu} />}
       {props.children}
       {footer && <Footer />}
-    </div>
+    </Container>
   );
 };
+
+const Container = styled.div`
+  width: 100%;
+`;
 
 export default Layout;
