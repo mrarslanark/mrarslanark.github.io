@@ -1,29 +1,35 @@
 import styled from "styled-components";
 import { device } from "../../constants/theme";
 
-const Info = () => {
+const Introduction = () => {
   return (
-    <Section>
-      <ProfilePicture src="/images/pp.jpg" alt="Profile" />
-      <TextContainer>
-        <h2>ARSLAN MUSHTAQ</h2>
-        <p>
-          I am a Software Engineer with an experience of just over 4 years. I am
-          passionate about software development with a keen eye for detail. I am
-          willing to work within a multidisciplinary team to expand my
-          experience and share my learnings.
-        </p>
-      </TextContainer>
-    </Section>
+    <section>
+      <Container>
+        <ProfilePicture src="/images/pp.jpg" alt="Profile" />
+        <TextContainer>
+          <h2>ARSLAN MUSHTAQ</h2>
+          <p>
+            As a software developer with 4 years of experience, I have a diverse
+            set of skills and have worked on a variety of projects in different
+            domains including EdTech, FinTech, MedTech, E-Commerce, P2P
+            Marketplaces, and B2B Solutions. This broad range of experience has
+            given me the ability to adapt to new environments and technologies,
+            making me a valuable asset to any development team.
+          </p>
+        </TextContainer>
+      </Container>
+    </section>
   );
 };
 
-const Section = styled.section`
+const Container = styled.div`
   display: flex;
+  flex-direction: column;
+  row-gap: 12px;
   width: 80%;
   margin: auto;
   column-gap: 24px;
-  padding-top: 90px;
+  padding: 60px 0px;
   @media ${device.mobileS} {
     justify-content: start;
     align-items: start;
@@ -31,6 +37,7 @@ const Section = styled.section`
   }
   @media ${device.tablet} {
     justify-content: center;
+    flex-direction: row;
   }
 `;
 
@@ -74,4 +81,4 @@ const ProfilePicture = styled.img`
   }
 `;
 
-export default Info;
+export default Introduction;

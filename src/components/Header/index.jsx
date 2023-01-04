@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import { useDispatch } from "react-redux";
 import { toggleTheme } from "../../store/slices/themeSlice";
+import { device } from "../../constants/theme";
 
 const blogMenuItems = [
   {
@@ -80,14 +81,24 @@ const Header = ({ menu = "home" }) => {
 export default Header;
 
 const Nav = styled.nav`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   position: fixed;
   width: 100%;
   height: 60px;
   background-color: ${({ theme }) => theme.nav_btn_bg};
   z-index: 100;
+  @media ${device.mobileS} {
+    display: none;
+  }
+  @media ${device.mobileM} {
+    display: none;
+  }
+  @media ${device.mobileL} {
+    display: none;
+  }
+  @media ${device.tablet} {
+    display: flex;
+    justify-content: flex-end;
+  }
 `;
 
 const NavList = styled.ul`

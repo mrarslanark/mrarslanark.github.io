@@ -15,6 +15,7 @@ const SliderFooter = () => {
 
 const Container = styled.div`
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   margin: 12px 0px;
   height: 50px;

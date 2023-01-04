@@ -1,5 +1,4 @@
-import Divider from "../../components/Divider";
-import Info from "../../components/Info";
+import Introduction from "../../components/Introduction";
 import Layout from "../../components/Layout";
 import Projects from "../../components/Projects";
 
@@ -9,12 +8,12 @@ import Blogs from "../../components/Blog";
 import Contact from "../../components/Contact";
 import Skills from "../../components/Skills";
 
-import skills from "../../data/skills.json";
-import projects from "../../data/projects.json";
-import accomplishments from "../../data/accomplishments.json";
-import { useEffect } from "react";
-import { useState } from "react";
 import axios from "axios";
+import { useEffect, useState } from "react";
+import accomplishments from "../../data/accomplishments.json";
+import projects from "../../data/projects.json";
+import skills from "../../data/skills.json";
+import styled from "styled-components";
 
 const Home = () => {
   const [blog, setBlogs] = useState(null);
@@ -49,16 +48,11 @@ const Home = () => {
     <div>
       <HeadTags />
       <Layout menu={"home"}>
-        <Info />
-        <Divider />
+        <Introduction />
         <Projects projects={projects} />
-        <Divider />
         <Skills skills={skills} />
-        <Divider />
         <Accomplishments accomplishments={accomplishments} />
-        <Divider />
         <Blogs blog={blog} />
-        <Divider />
         <Contact />
       </Layout>
     </div>

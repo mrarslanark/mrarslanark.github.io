@@ -60,6 +60,7 @@ const GlobalStyles = createGlobalStyle `
     
     section {
         padding: 24px;
+        border-bottom: 1px solid ${({ theme }) => theme.divider};
     }
     
     a {
@@ -73,22 +74,46 @@ const GlobalStyles = createGlobalStyle `
         border-width: 0.5px;
     }
 
-    /* width */
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: ${({ theme }) => theme.body};
+        border: none;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 16px 24px;
+    }
+
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        background-color: ${({ theme }) => theme.modal_overlay};
+    }
+
+    /* Scrollbar width */
     ::-webkit-scrollbar {
         width: 5px;
     }
 
-    /* Track */
+    /* Scrollbar track */
     ::-webkit-scrollbar-track {
         background: ${({ theme }) => theme.body}; 
     }
     
-    /* Handle */
+    /* Scrollbar handle */
     ::-webkit-scrollbar-thumb {
         background: ${({ theme }) => theme.text};; 
     }
 
-    /* Handle on hover */
+    /* Scrollbar handle on hover */
     ::-webkit-scrollbar-thumb:hover {
         background: #555; 
     }
@@ -169,6 +194,10 @@ const GlobalStyles = createGlobalStyle `
         h4 {
             font-size: xx-small;
         }
+        .modal {
+            width: 100%;
+            overflow: scroll;
+        }
     }
     @media ${device.mobileM} {
         h4 {
@@ -179,10 +208,14 @@ const GlobalStyles = createGlobalStyle `
         h4 {
             font-size: small;
         }
+        
     }
     @media ${device.tablet} {
         h4 {
             font-size: medium;
+        }
+        .modal {
+            width: 60%;
         }
     }
     @media ${device.laptop} {

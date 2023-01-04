@@ -6,13 +6,16 @@ import AccomplishmentItem from "../AccomplishmentItem";
 const Accomplishments = ({ accomplishments = [] }) => {
   return (
     <HorizonSliderSection
-      ListItem={AccomplishmentItem}
       data={accomplishments}
       emptyListAnimation={loading}
       subtitle={"Loading Arslan's Skills"}
       title={"Accomplishments"}
       sectionId={"accomplishments"}
-    />
+    >
+      {accomplishments.map((accomplishment) => (
+        <AccomplishmentItem item={accomplishment} key={accomplishment.id} />
+      ))}
+    </HorizonSliderSection>
   );
 };
 

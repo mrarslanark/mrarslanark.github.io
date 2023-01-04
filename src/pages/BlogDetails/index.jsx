@@ -24,7 +24,7 @@ const BlogDetails = () => {
   }
 
   return (
-    <div>
+    <>
       <HeadTags
         excerpt={article.excerpt}
         image={article.featuredImage}
@@ -50,7 +50,7 @@ const BlogDetails = () => {
           </ContentContainer>
         </Container>
       </Layout>
-    </div>
+    </>
   );
 };
 
@@ -75,7 +75,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin: 24px 0px;
+  padding: 60px 0;
 `;
 
 const ContentContainer = styled.div`

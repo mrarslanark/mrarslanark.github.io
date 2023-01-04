@@ -21,8 +21,8 @@
         "release": {
             "production": "v1.0",
             "development": "v2.0",
-            "production_date": "July 2020",
-            "development_date": "March 2023"
+            "production_date": "2020-07-01",
+            "development_date": "2023-03-01"
         },
         "links": [{
                 "id": "google",
@@ -66,8 +66,8 @@
         "release": {
             "production": "v1.0",
             "development": "v2.0",
-            "production_date": "May 2023",
-            "development_date": "May 2023"
+            "production_date": "2020-07-01",
+            "development_date": "2023-05-01"
         },
         "links": [{
             "url": "https://youtu.be/seS03o0oOkk",
@@ -98,7 +98,7 @@
             "production": null,
             "development": "v1.0",
             "production_date": null,
-            "development_date": "May 2023"
+            "development_date": "2023-07-01"
         },
         "links": []
     },
@@ -126,7 +126,7 @@
             "production": null,
             "development": "v1.0",
             "production_date": null,
-            "development_date": "September 2023"
+            "development_date": "2023-09-01"
         },
         "links": []
     },
@@ -153,7 +153,7 @@
             "production": null,
             "development": "v1.0",
             "production_date": null,
-            "development_date": "December 2023"
+            "development_date": "2023-12-01"
         },
         "links": []
     }

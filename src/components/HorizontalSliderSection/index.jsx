@@ -8,10 +8,10 @@ import SliderFooter from "./SliderFooter";
 const HorizonSliderSection = ({
   title,
   data,
-  ListItem,
   emptyListAnimation,
   subtitle,
   sectionId,
+  children,
 }) => {
   if (!data) {
     return <Loading />;
@@ -32,9 +32,7 @@ const HorizonSliderSection = ({
       <h1>{title}</h1>
       <Section>
         <ScrollMenu Footer={SliderFooter} scrollContainerClassName="scroll">
-          {data.map((item) => (
-            <ListItem key={item.id} item={item} />
-          ))}
+          {children}
         </ScrollMenu>
       </Section>
     </section>
