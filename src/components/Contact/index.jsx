@@ -5,6 +5,7 @@ import {
   RiTwitterFill,
   RiInstagramLine,
 } from "react-icons/ri";
+import { FaHackerrank } from "react-icons/fa";
 import styled, { css } from "styled-components";
 import { device } from "../../constants/theme";
 
@@ -27,6 +28,9 @@ const Contact = () => {
         </LinkItem>
         <LinkItem to={"https://github.com/mrarslanark"}>
           <GitHub />
+        </LinkItem>
+        <LinkItem to={"https://www.hackerrank.com/mrarslanark"}>
+          <HackerRank />
         </LinkItem>
       </IconContainer>
     </Section>
@@ -94,6 +98,10 @@ const GitHub = styled(RiGithubFill)`
 `;
 
 const Instagram = styled(RiInstagramLine)`
+  ${iconColor}
+`;
+
+const HackerRank = styled(FaHackerrank)`
   ${iconColor}
 `;
 
