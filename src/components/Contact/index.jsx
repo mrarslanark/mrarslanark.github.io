@@ -6,6 +6,7 @@ import {
   RiInstagramLine,
 } from "react-icons/ri";
 import { FaHackerrank } from "react-icons/fa";
+import { DiAndroid } from "react-icons/di";
 import styled, { css } from "styled-components";
 import { device } from "../../constants/theme";
 
@@ -31,6 +32,9 @@ const Contact = () => {
         </LinkItem>
         <LinkItem to={"https://www.hackerrank.com/mrarslanark"}>
           <HackerRank />
+        </LinkItem>
+        <LinkItem to={"https://g.dev/arslan-mushtaq"}>
+          <GoogleDevelopers />
         </LinkItem>
       </IconContainer>
     </Section>
@@ -102,6 +106,10 @@ const Instagram = styled(RiInstagramLine)`
 `;
 
 const HackerRank = styled(FaHackerrank)`
+  ${iconColor}
+`;
+
+const GoogleDevelopers = styled(DiAndroid)`
   ${iconColor}
 `;
 
