@@ -25,12 +25,19 @@ const BlogDetails = () => {
 
   return (
     <>
-      <HeadTags
-        excerpt={article.excerpt}
-        image={article.featuredImage}
-        title={article.title}
-        id={article.slug}
-      />
+      <Helmet>
+        <meta property="og:title" content={article.title} />
+        <meta property="og:image" content={article.featuredImage} />
+        <meta property="og:image:alt" content={article.title} />
+        <meta property="og:description" content={article.excerpt} />
+        <meta
+          property="og:url"
+          content={`https://arslanmushtaq.com/blog/${article.slug}`}
+        />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="200" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Layout menu={"blog"} footer={false}>
         <Container>
           <ContentContainer className="blog-detail-content">
@@ -51,21 +58,6 @@ const BlogDetails = () => {
         </Container>
       </Layout>
     </>
-  );
-};
-
-const HeadTags = ({ title, image, excerpt, id }) => {
-  return (
-    <Helmet>
-      <meta property="og:title" content={title} />
-      <meta property="og:image" content={image} />
-      <meta property="og:image:alt" content={title} />
-      <meta property="og:description" content={excerpt} />
-      <meta property="og:url" content={`http://arslanmushtaq.com/blog/${id}`} />
-      <meta property="og:image:width" content="300" />
-      <meta property="og:image:height" content="200" />
-      <meta property="og:type" content="article" />
-    </Helmet>
   );
 };
 
