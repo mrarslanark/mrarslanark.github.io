@@ -1,160 +1,138 @@
-[{
-        "id": "loan-manager",
-        "production_stack": ["Native Android (Kotlin)", "SQLite", "Room DB"],
-        "development_stack": [
-            "React Native (Bare CLI)",
-            "ReactJS",
-            "Redux Toolkit",
-            "TypeScript",
-            "NodeJS",
-            "ExpressJS",
-            "Passportjs",
-            "Redis",
-            "PostgreSQL",
-            "Docker",
-            "Amazon Web Services",
-            "Test Driven Development",
-            "GitHub (Projects & Actions)",
-            "CI/CD"
-        ],
-        "title": "Loan Manager",
-        "release": {
-            "production": "v1.0",
-            "development": "v2.0",
-            "production_date": "2020-07-01",
-            "development_date": "2023-03-01"
-        },
-        "links": [{
-                "id": "google",
-                "title": "Google Play",
-                "url": "https://play.google.com/store/apps/details?id=arslan.appclub.loanmanager"
-            },
-            {
-                "id": "youtube",
-                "url": "https://youtu.be/3sio66CPQts",
-                "title": "Video Preview"
-            }
-        ],
-        "description": "Loan Manager is a financial application that allows users to track and manage their loans. With this tool, users can get the latest exchange rates, set reminders for their payday, and view statistics about their financial situation. The app helps users stay organized and on top of their loan payments, ensuring they don't miss any deadlines and avoid late fees. It also provides valuable insights into their overall financial health, allowing them to make informed decisions about their money. "
+{
+  "loan-manager": {
+    "stack": ["React Native (Bare CLI)", "ReactJS", "NodeJS"],
+    "title": "LOAN MANAGER v2.0",
+    "release": "03-01-2023",
+    "links": [
+      {
+        "id": "google",
+        "title": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=arslan.appclub.loanmanager"
+      },
+      {
+        "id": "youtube",
+        "url": "https://youtu.be/3sio66CPQts",
+        "title": "Video Preview"
+      }
+    ],
+    "description": "Loan Manager is a financial application that allows users to track and manage their loans. With this tool, users can get the latest exchange rates, set reminders for their payday, and view statistics about their financial situation. The app helps users stay organized and on top of their loan payments, ensuring they don't miss any deadlines and avoid late fees. It also provides valuable insights into their overall financial health, allowing them to make informed decisions about their money. "
+  },
+  "lay-ao": {
+    "description": "Lay Ao is a digital grocery store application that allows users to create their own store on the platform. Other users can then browse and order groceries from these stores, as well as store their favorites for easy reordering. Lay Ao also offers a delivery service, allowing users to schedule a time for their groceries to be brought to them. Additionally, the app has a \"ready-to-pick\" feature, which allows users to add items to their cart and pay for them in advance, skipping the line at the store. Users can also create a Wishlist of desired items for future reference.",
+    "title": "Lay Ao",
+    "production_stack": [
+      "Native Android (Java)",
+      "Firebase Authentication",
+      "Firebase Firestore",
+      "Firebase Storage",
+      "Room DB",
+      "SQLite"
+    ],
+    "development_stack": [
+      "Native Android (Kotlin)",
+      "Native iOS (Swift)",
+      "ReactJS",
+      "Redux Toolkit",
+      "Redux Thunk",
+      "Redux Saga",
+      "Java Spring Boot",
+      "Oracle",
+      "Docker",
+      "Amazon Web Services",
+      "Test Driven Development",
+      "GitHub (Projects & Actions)"
+    ],
+    "release": {
+      "production": "v1.0",
+      "development": "v2.0",
+      "production_date": "2020-07-01",
+      "development_date": "2023-05-01"
     },
-    {
-        "id": "lay-ao",
-        "description": "Lay Ao is a digital grocery store application that allows users to create their own store on the platform. Other users can then browse and order groceries from these stores, as well as store their favorites for easy reordering. Lay Ao also offers a delivery service, allowing users to schedule a time for their groceries to be brought to them. Additionally, the app has a \"ready-to-pick\" feature, which allows users to add items to their cart and pay for them in advance, skipping the line at the store. Users can also create a Wishlist of desired items for future reference.",
-        "title": "Lay Ao",
-        "production_stack": [
-            "Native Android (Java)",
-            "Firebase Authentication",
-            "Firebase Firestore",
-            "Firebase Storage",
-            "Room DB",
-            "SQLite"
-        ],
-        "development_stack": [
-            "Native Android (Kotlin)",
-            "Native iOS (Swift)",
-            "ReactJS",
-            "Redux Toolkit",
-            "Redux Thunk",
-            "Redux Saga",
-            "Java Spring Boot",
-            "Oracle",
-            "Docker",
-            "Amazon Web Services",
-            "Test Driven Development",
-            "GitHub (Projects & Actions)"
-        ],
-        "release": {
-            "production": "v1.0",
-            "development": "v2.0",
-            "production_date": "2020-07-01",
-            "development_date": "2023-05-01"
-        },
-        "links": [{
-            "url": "https://youtu.be/seS03o0oOkk",
-            "id": "youtube",
-            "title": "Video Preview"
-        }]
+    "links": [
+      {
+        "url": "https://youtu.be/seS03o0oOkk",
+        "id": "youtube",
+        "title": "Video Preview"
+      }
+    ]
+  },
+  "majma": {
+    "description": "Majma is an event management application that allows users to create and manage events, and for other users to purchase tickets to events happening in their area. With Majma, users can easily create an event and promote it to a targeted audience, as well as manage ticket sales and track attendance. Other users can discover and purchase tickets to events happening nearby, making it easy to find and attend events of interest. Majma streamlines the process of event creation and ticket sales, making it a valuable tool for anyone hosting or attending events.",
+    "title": "Majma",
+    "production_stack": [],
+    "development_stack": [
+      "React Native (Bare CLI)",
+      "ReactJS",
+      "Redux Toolkit",
+      "TypeScript",
+      "Django",
+      "MariaDB",
+      "Redis",
+      "Docker",
+      "Test Driven Development",
+      "GitHub (Projects & Actions)",
+      "CI/CD",
+      "Google Firebase"
+    ],
+    "release": {
+      "production": null,
+      "development": "v1.0",
+      "production_date": null,
+      "development_date": "2023-07-01"
     },
-    {
-        "id": "majma",
-        "description": "Majma is an event management application that allows users to create and manage events, and for other users to purchase tickets to events happening in their area. With Majma, users can easily create an event and promote it to a targeted audience, as well as manage ticket sales and track attendance. Other users can discover and purchase tickets to events happening nearby, making it easy to find and attend events of interest. Majma streamlines the process of event creation and ticket sales, making it a valuable tool for anyone hosting or attending events.",
-        "title": "Majma",
-        "production_stack": [],
-        "development_stack": [
-            "React Native (Bare CLI)",
-            "ReactJS",
-            "Redux Toolkit",
-            "TypeScript",
-            "Django",
-            "MariaDB",
-            "Redis",
-            "Docker",
-            "Test Driven Development",
-            "GitHub (Projects & Actions)",
-            "CI/CD",
-            "Google Firebase"
-        ],
-        "release": {
-            "production": null,
-            "development": "v1.0",
-            "production_date": null,
-            "development_date": "2023-07-01"
-        },
-        "links": []
+    "links": []
+  },
+  "plan-it": {
+    "description": "Plan It is a weekly planner application that helps users stay organized and on track with their tasks, projects, and goals. With Plan It, users can add tasks and schedule them throughout the week, ensuring they stay focused and productive. The app also includes a Yoga Mode, which helps users avoid distractions and stay focused on their tasks. In addition, Plan It has a feature called the Void Bucket, which uses artificial intelligence to manage and fill the gaps between tasks with unimportant tasks, helping users complete everything on their to-do list. The app also includes a reward system to encourage users to achieve their goals. Overall, Plan It is a comprehensive and effective tool for anyone looking to stay organized and achieve their objectives.",
+    "title": "Plan It",
+    "production_stack": [],
+    "development_stack": [
+      "Native Android (Kotlin)",
+      "Native iOS (Swift)",
+      "NextJS",
+      "Redux Toolkit",
+      "TypeScript",
+      "NestJS",
+      "Redis",
+      "MongoDB",
+      "Docker",
+      "Amazon Web Services",
+      "Test Driven Development",
+      "GitHub (Projects & Actions)",
+      "CI/CD"
+    ],
+    "release": {
+      "production": null,
+      "development": "v1.0",
+      "production_date": null,
+      "development_date": "2023-09-01"
     },
-    {
-        "id": "plan-it",
-        "description": "Plan It is a weekly planner application that helps users stay organized and on track with their tasks, projects, and goals. With Plan It, users can add tasks and schedule them throughout the week, ensuring they stay focused and productive. The app also includes a Yoga Mode, which helps users avoid distractions and stay focused on their tasks. In addition, Plan It has a feature called the Void Bucket, which uses artificial intelligence to manage and fill the gaps between tasks with unimportant tasks, helping users complete everything on their to-do list. The app also includes a reward system to encourage users to achieve their goals. Overall, Plan It is a comprehensive and effective tool for anyone looking to stay organized and achieve their objectives.",
-        "title": "Plan It",
-        "production_stack": [],
-        "development_stack": [
-            "Native Android (Kotlin)",
-            "Native iOS (Swift)",
-            "NextJS",
-            "Redux Toolkit",
-            "TypeScript",
-            "NestJS",
-            "Redis",
-            "MongoDB",
-            "Docker",
-            "Amazon Web Services",
-            "Test Driven Development",
-            "GitHub (Projects & Actions)",
-            "CI/CD"
-        ],
-        "release": {
-            "production": null,
-            "development": "v1.0",
-            "production_date": null,
-            "development_date": "2023-09-01"
-        },
-        "links": []
+    "links": []
+  },
+  "loader": {
+    "description": "Loader is a \"Movers as a Service\" application that allows users to easily find and hire professional movers. With Loader, multiple moving companies can create a store on the platform, allowing users to browse and compare their services. Users can choose a mover based on location or other preferences, and easily book and pay for their services through the app. Loader streamlines the process of finding and hiring a mover, making it a convenient and hassle-free tool for anyone in need of moving services.",
+    "title": "Loader",
+    "production_stack": [],
+    "development_stack": [
+      "React Native",
+      "NextJS",
+      "Redux Toolkit",
+      "TypeScript",
+      "Rust",
+      "Redis",
+      "Microsoft Azure",
+      "Docker",
+      "Amazon Web Services",
+      "Test Driven Development",
+      "GitHub (Projects & Actions)",
+      "CI/CD"
+    ],
+    "release": {
+      "production": null,
+      "development": "v1.0",
+      "production_date": null,
+      "development_date": "2023-12-01"
     },
-    {
-        "id": "loader",
-        "description": "Loader is a \"Movers as a Service\" application that allows users to easily find and hire professional movers. With Loader, multiple moving companies can create a store on the platform, allowing users to browse and compare their services. Users can choose a mover based on location or other preferences, and easily book and pay for their services through the app. Loader streamlines the process of finding and hiring a mover, making it a convenient and hassle-free tool for anyone in need of moving services.",
-        "title": "Loader",
-        "production_stack": [],
-        "development_stack": [
-            "React Native",
-            "NextJS",
-            "Redux Toolkit",
-            "TypeScript",
-            "Rust",
-            "Redis",
-            "Microsoft Azure",
-            "Docker",
-            "Amazon Web Services",
-            "Test Driven Development",
-            "GitHub (Projects & Actions)",
-            "CI/CD"
-        ],
-        "release": {
-            "production": null,
-            "development": "v1.0",
-            "production_date": null,
-            "development_date": "2023-12-01"
-        },
-        "links": []
-    }
-]
+    "links": []
+  }
+}

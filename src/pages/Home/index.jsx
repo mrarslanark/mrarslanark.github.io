@@ -11,9 +11,7 @@ import Skills from "../../components/Skills";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import accomplishments from "../../data/accomplishments.json";
-import projects from "../../data/projects.json";
 import skills from "../../data/skills.json";
-import styled from "styled-components";
 
 const Home = () => {
   const [blog, setBlogs] = useState(null);
@@ -45,17 +43,17 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <HeadTags />
       <Layout menu={"home"}>
         <Introduction />
-        <Projects projects={projects} />
+        <Projects id={"loan-manager"} />
         <Skills skills={skills} />
         <Accomplishments accomplishments={accomplishments} />
         <Blogs blog={blog} />
         <Contact />
       </Layout>
-    </div>
+    </>
   );
 };
 

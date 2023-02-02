@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { device } from "../../constants/theme";
 
-const GlobalStyles = createGlobalStyle `
+const GlobalStyles = createGlobalStyle`
     * {
         margin: 0;
         box-sizing: border-box;
@@ -64,8 +64,12 @@ const GlobalStyles = createGlobalStyle `
     }
     
     a {
-        text-decoration: underlined;
+        text-decoration: none;
         color: ${({ theme }) => theme.text};
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
     
     hr {
