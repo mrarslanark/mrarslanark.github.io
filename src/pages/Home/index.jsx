@@ -43,35 +43,14 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      <HeadTags />
-      <Layout menu={"home"}>
-        <Introduction />
-        <Projects id={"loan-manager"} />
-        <Skills skills={skills} />
-        <Accomplishments accomplishments={accomplishments} />
-        <Blogs blog={blog} />
-        <Contact />
-      </Layout>
-    </>
-  );
-};
-
-const HeadTags = () => {
-  return (
-    <Helmet>
-      <meta property="og:title" content="Arslan Mushtaq" />
-      <meta
-        property="og:image"
-        content="https://arslanmushtaq.com/images/site_preview.jpeg"
-      />
-      <meta property="og:image:alt" content="Welcome to my Website" />
-      <meta property="og:description" content="Software Developer" />
-      <meta property="og:url" content="https://arslanmushtaq.com/" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="627" />
-      <meta property="og:type" content="website" />
-    </Helmet>
+    <Layout menu={"home"}>
+      <Introduction />
+      <Projects id={"loan-manager"} />
+      <Skills skills={skills} />
+      <Accomplishments accomplishments={accomplishments} />
+      <Blogs blog={blog} />
+      <Contact />
+    </Layout>
   );
 };
 
