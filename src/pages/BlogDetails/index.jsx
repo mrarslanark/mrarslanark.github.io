@@ -1,6 +1,6 @@
 import moment from "moment";
 import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
+import Helmet from "react-helmet";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 

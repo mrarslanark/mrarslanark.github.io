@@ -2,7 +2,7 @@ import Introduction from "../../components/Introduction";
 import Layout from "../../components/Layout";
 import Projects from "../../components/Projects";
 
-import { Helmet } from "react-helmet";
+import Helmet from "react-helmet";
 import Accomplishments from "../../components/Accomplishments";
 import Blogs from "../../components/Blog";
 import Contact from "../../components/Contact";
