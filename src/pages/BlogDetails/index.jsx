@@ -1,6 +1,6 @@
 import moment from "moment";
 import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 
@@ -26,6 +26,7 @@ const BlogDetails = () => {
   return (
     <>
       <Helmet>
+        <title>{article.title}</title>
         <meta property="og:title" content={article.title} />
         <meta property="og:image" content={article.featuredImage} />
         <meta property="og:image:alt" content={article.title} />
