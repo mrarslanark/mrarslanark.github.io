@@ -1,6 +1,6 @@
 import moment from "moment";
 import { useEffect, useState } from "react";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 
@@ -30,13 +30,13 @@ const BlogDetails = () => {
         <meta property="og:image" content={article.featuredImage} />
         <meta property="og:image:alt" content={article.title} />
         <meta property="og:description" content={article.excerpt} />
-        {/* <meta
+        <meta
           property="og:url"
           content={`https://arslanmushtaq.com/blog/${article.slug}`}
         />
         <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="200" />
-        <meta property="og:type" content="article" /> */}
+        <meta property="og:type" content="article" />
       </Helmet>
       <Layout menu={"blog"} footer={false}>
         <Container>
