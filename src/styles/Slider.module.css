@@ -1,0 +1,18 @@
+.slider {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  column-gap: 8px;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.item:first-child {
+  padding-left: 24px;
+}
+
+.item:last-child {
+  padding-right: 24px;
+}

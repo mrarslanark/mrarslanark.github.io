@@ -1,0 +1,154 @@
+[
+  {
+    "id": "version-control",
+    "title": "Version Control",
+    "libraries": [
+      "Git",
+      "GitHub",
+      "BitBucket",
+      "Gitlab",
+      "Source Tree",
+      "GitKraken"
+    ]
+  },
+  {
+    "id": "react-native",
+    "libraries": [
+      "TypeScript",
+      "ESLint",
+      "commitlint",
+      "Jest",
+      "Husky",
+      "Storybook",
+      "Formik",
+      "Redux Toolkit",
+      "Redux Saga",
+      "Redux Thunk",
+      "MUI",
+      "Appium",
+      "Detox",
+      "FastLane",
+      "Lottie",
+      "Axios",
+      "Moment",
+      "Lodash",
+      "Google Play Store",
+      "Apple App Store"
+    ],
+    "title": "React Native"
+  },
+  {
+    "id": "react-js",
+    "libraries": [
+      "TypeScript",
+      "React Navigation",
+      "ESLint",
+      "commitlint",
+      "Jest",
+      "Husky",
+      "Storybook",
+      "Formik",
+      "Redux Toolkit",
+      "Redux Saga",
+      "Redux Thunk",
+      "MUI",
+      "Cloudflare",
+      "Circle CI",
+      "Lottie",
+      "Axios",
+      "Moment",
+      "Lodash"
+    ],
+    "title": "ReactJS"
+  },
+  {
+    "id": "node-js",
+    "libraries": [
+      "ExpressJS",
+      "TypeScript",
+      "ESLint",
+      "commitlint",
+      "Jest",
+      "Husky",
+      "Socket.IO",
+      "HELMET",
+      "Axios",
+      "Passport",
+      "Faker",
+      "Sequelize",
+      "MikroORM",
+      "Mongoose",
+      "Moment",
+      "Lodash",
+      "JSDoc",
+      "Multer",
+      "Docker"
+    ],
+    "title": "NodeJS"
+  },
+  {
+    "id": "project-management",
+    "libraries": [
+      "Jira",
+      "Confluence",
+      "GitHub",
+      "Trello",
+      "Asana",
+      "Monday",
+      "Agile Methodologies",
+      "Kanban"
+    ],
+    "title": "Project Management"
+  },
+  {
+    "id": "designing",
+    "libraries": [
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Figma",
+      "Sketch",
+      "Adobe XD",
+      "Autodesk 3Ds Max",
+      "Keyshot",
+      "V-Ray"
+    ],
+    "title": "Graphic Design"
+  },
+  {
+    "id": "databases",
+    "libraries": [
+      "Google Firestore",
+      "Google Realtime Database",
+      "MongoDB",
+      "MariaDB",
+      "MySQL",
+      "Oracle",
+      "PostgreSQL",
+      "Apache CouchDB"
+    ],
+    "title": "Databases"
+  },
+  {
+    "id": "nest-js",
+    "libraries": [
+      "TypeScript",
+      "ESLint",
+      "commitlint",
+      "Jest",
+      "Husky",
+      "Storybook",
+      "Formik",
+      "Redux Toolkit",
+      "Redux Saga",
+      "Redux Thunk",
+      "MUI",
+      "Docker"
+    ],
+    "title": "NextJS"
+  },
+  {
+    "id": "java",
+    "title": "Java",
+    "libraries": ["Spring Boot", "Android", "H2", "PostgreSQL"]
+  }
+]

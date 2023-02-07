@@ -1,0 +1,116 @@
+[
+  {
+    "id": "loan-manager",
+    "title": "Loan Manager",
+    "icon": "loan-manager.jpg",
+    "description": "Loan Manager is a financial application that allows users to track and manage their loans. With this tool, users can get the latest exchange rates, set reminders for their payday, and view statistics about their financial situation. The app helps users stay organized and on top of their loan payments, ensuring they don't miss any deadlines and avoid late fees. It also provides valuable insights into their overall financial health, allowing them to make informed decisions about their money.",
+    "social": [
+      {
+        "id": "facebook",
+        "url": "https://www.facebook.com/loanmanagerpk"
+      }
+    ],
+    "releases": [
+      {
+        "id": "0",
+        "version": "1.0",
+        "stack": {
+          "fe": ["Native Android (Kotlin)"],
+          "be": ["SQLite", "Room Database"],
+          "cs": [],
+          "tools": ["Android Studio"]
+        },
+        "functionality": [
+          "Track your unpaid and paid loans",
+          "Keep a history of your loans",
+          "Add loans in multiple currencies"
+        ],
+        "date": "July 16, 2020",
+        "status": "production",
+        "links": [
+          {
+            "id": "google",
+            "title": "Google Play",
+            "url": "https://play.google.com/store/apps/details?id=arslan.appclub.loanmanager",
+            "description": "Available to download from the Google Play Store for Android devices."
+          },
+          {
+            "id": "youtube",
+            "url": "https://youtu.be/3sio66CPQts",
+            "title": "Video Preview",
+            "description": "Take a sneak peak into what the application looks like on YouTube"
+          }
+        ]
+      },
+      {
+        "id": "1",
+        "version": "2.0",
+        "stack": {
+          "fe": ["React Native", "ReactJS", "Tailwind"],
+          "be": ["NodeJS", "PostgreSQL"],
+          "cs": ["Firebase Messaging", "Authentication", "Hosting"],
+          "tools": ["Redis", "Redux", "Postman"],
+          "design": ["Figma"],
+          "monitoring": ["Firebase Crashlytics"],
+          "hosting": ["Firebase Hosting", "Firebase Storage"]
+        },
+        "functionality": [
+          "Convert your loans into multiple currencies",
+          "Get latest exchange rates for everyday",
+          "Add different types of loans like subscription or reminder",
+          "Get notifications for the payday",
+          "Get monthly, quaterly, or yearly statistics",
+          "Save data on the cloud"
+        ],
+        "date": "Feburary 28, 2023",
+        "status": "development",
+        "links": []
+      }
+    ]
+  },
+  {
+    "id": "lay-ao",
+    "title": "Lay Ao",
+    "icon": "lay-ao.jpg",
+    "description": "Lay Ao is a digital grocery store application that allows users to create their own store on the platform. Other users can then browse and order groceries from these stores, as well as store their favorites for easy reordering. Lay Ao also offers a delivery service, allowing users to schedule a time for their groceries to be brought to them. Additionally, the app has a \"ready-to-pick\" feature, which allows users to add items to their cart and pay for them in advance, skipping the line at the store. Users can also create a Wishlist of desired items for future reference.",
+    "social": [],
+    "releases": [
+      {
+        "id": "0",
+        "version": "1.0",
+        "stack": {
+          "fe": ["Native Android (Java)"],
+          "be": [
+            "Firebase Firestore, Authentication, Storage",
+            "Room Database",
+            "SQLite"
+          ],
+          "cs": [],
+          "tools": ["Android Studio"]
+        },
+        "functionality": [
+          "Purchase grocery from a variety of products",
+          "Add items to the cart",
+          "Place order or schedule an order",
+          "Store your favorite grocery items"
+        ],
+        "date": "July 5, 2020",
+        "status": "discontinued",
+        "links": [
+          {
+            "id": "youtube",
+            "url": "https://youtu.be/3sio66CPQts",
+            "title": "Video Preview",
+            "description": "Take a sneak peak into what the application looks like on YouTube"
+          },
+          {
+            "id": "github",
+            "url": "https://github.com/lay-ao/lay-ao-android",
+            "title": "Repository - Android",
+            "description": "Have a look at the code written to build this product"
+          }
+        ]
+      }
+    ]
+  }
+]

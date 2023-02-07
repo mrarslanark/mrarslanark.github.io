@@ -1,0 +1,26 @@
+.connect {
+  flex: 0.2;
+  padding: 0px 16px;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 12px 0px;
+}
+
+.itemContainer div {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.itemContainer div svg {
+  padding-right: 12px;
+}
+
+.itemContainer div p {
+  text-transform: capitalize;
+}

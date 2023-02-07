@@ -1,0 +1,15 @@
+.description {
+  color: gray;
+}
+
+.listContainer {
+  margin-top: 6px;
+}
+
+.listContainer div {
+  flex: 1;
+}
+
+.listContainer h3 {
+  text-transform: capitalize;
+}

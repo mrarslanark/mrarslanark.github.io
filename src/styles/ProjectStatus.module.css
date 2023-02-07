@@ -1,0 +1,28 @@
+.container {
+  padding: 2px 8px;
+  width: fit-content;
+  border-radius: 6px;
+  margin: 6px 0px;
+}
+
+.container p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: small;
+}
+
+.production {
+  background-color: green;
+}
+
+.development {
+  background-color: rgb(252, 208, 9);
+}
+
+.development p {
+  color: black;
+}
+
+.discontinued {
+  background-color: rgb(165, 20, 20);
+}

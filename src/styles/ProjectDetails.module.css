@@ -1,0 +1,64 @@
+.container {
+  padding: 32px 64px;
+}
+
+.infoContainer {
+  margin: 18px 0px;
+  display: flex;
+  column-gap: 32px;
+}
+
+.infoContainer img {
+  border-radius: 12%;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+.infoContainer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.infoContainer h1 {
+  text-transform: uppercase;
+}
+
+.releaseDetailContainer {
+  flex: 0.8;
+}
+
+.contentContainer {
+  display: flex;
+  flex: 0.8;
+}
+
+.tabList {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  color: white;
+  width: 150px;
+  height: 40px;
+  align-items: center;
+  align-content: center;
+  margin: 12px 0px;
+}
+
+.tabList li {
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.selectedTab {
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  height: inherit;
+  background-color: #121212;
+  border-bottom: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+}

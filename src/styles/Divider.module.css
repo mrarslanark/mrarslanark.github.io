@@ -1,0 +1,15 @@
+.horizontal {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  opacity: 0.1;
+  margin: 12px 0px;
+}
+
+.vertical {
+  width: 1px;
+  height: inherit;
+  background-color: white;
+  opacity: 0.1;
+  margin: 0px 12px;
+}

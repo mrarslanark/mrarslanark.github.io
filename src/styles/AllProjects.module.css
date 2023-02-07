@@ -1,0 +1,30 @@
+.container {
+  padding: 24px;
+}
+
+.projectInfoContainer {
+  display: flex;
+  column-gap: 12px;
+  margin: 18px 0px;
+}
+
+.infoContainer {
+  padding: 14px 18px;
+  background-color: #1c1c1c;
+  text-align: left;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.infoContainer h1 {
+  text-align: left;
+  width: 100%;
+}
+
+.projectList {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 16px;
+}

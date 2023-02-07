@@ -1,0 +1,27 @@
+.description {
+  color: gray;
+}
+
+.linksContainer {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  margin-top: 16px;
+  column-gap: 12px;
+  row-gap: 12px;
+  width: fit-content;
+}
+
+.linkItemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  row-gap: 12px;
+  padding: 12px;
+  background-color: #121212;
+  transition: 0.3s;
+  border-radius: 12px;
+}
+
+.linkItemContainer:hover {
+  background-color: #212121;
+}
