@@ -8,6 +8,9 @@ import {
   FaInstagram,
   FaTwitter,
   FaYoutube,
+  FaHackerrank,
+  FaLinkedin,
+  FaAndroid,
 } from "react-icons/fa";
 import { TbBrandMeta } from "react-icons/tb";
 import { MdEmail } from "react-icons/md";
@@ -48,6 +51,14 @@ const IconGenerator: React.FC<IconGeneratorProps> = ({
       return <FaGithub className={style} />;
     case "meta":
       return <TbBrandMeta className={style} />;
+    case "hackerrank":
+      return <FaHackerrank className={style} />;
+    case "hackerrank":
+      return <FaHackerrank className={style} />;
+    case "linkedin":
+      return <FaLinkedin className={style} />;
+    case "android":
+      return <FaAndroid className={style} />;
     default:
       return null;
   }

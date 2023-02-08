@@ -7,6 +7,7 @@ import { formatTimestamp } from "@/constants/utils";
 import Image from "next/image";
 import Divider from "@/components/Divider";
 import Link from "next/link";
+import MoreItem from "@/components/MoreItem";
 
 type BlogDetailsProps = {
   post: PostType;
@@ -58,34 +59,31 @@ const BlogDetails: React.FC<BlogDetailsProps> = ({ post, posts }) => {
           </div>
           <Divider direction="vertical" />
           <div className={styles.moreContainer}>
-            <h2>More Posts</h2>
+            <h3 className={styles.title}>Author</h3>
+            <div className={styles.authorContainer}>
+              <Image
+                src={"/images/pp.jpg"}
+                alt={"Arslan Mushtaq"}
+                width={100}
+                height={100}
+              />
+              <div>
+                <h3>Arslan Mushtaq</h3>
+                <p>A passionate Software Developer</p>
+                <Link href={"mailto:arslanark@gmail.com"}>
+                  arslanark@gmail.com
+                </Link>
+              </div>
+            </div>
+            <Divider direction="horizontal" />
+            <h3 className={styles.title}>More Posts</h3>
             <div className={styles.moreListContainer}>
               {posts.map((postItem) => {
                 if (postItem.slug === post.slug) {
                   return null;
                 }
 
-                return (
-                  <Link href={`/posts/${postItem.slug}`} key={postItem.id}>
-                    <div className={styles.moreItemContainer}>
-                      <Image
-                        src={postItem.featuredImage}
-                        width={75}
-                        height={75}
-                        alt={postItem.title}
-                        className={styles.featuredImage}
-                      />
-                      <div className={styles.textContainer}>
-                        <h3
-                          dangerouslySetInnerHTML={{ __html: postItem.title }}
-                        />
-                        <div
-                          dangerouslySetInnerHTML={{ __html: postItem.excerpt }}
-                        />
-                      </div>
-                    </div>
-                  </Link>
-                );
+                return <MoreItem key={postItem.id} {...postItem} />;
               })}
             </div>
           </div>

@@ -4,13 +4,18 @@
   align-items: center;
   align-content: center;
   background-color: black;
-  padding: 0px 24px;
-  height: inherit;
+  padding: 0px 12px;
+  margin: 0px 12px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  transition: 0.3s;
 }
 
 .container:hover {
   background-color: var(--background-color);
   cursor: pointer;
+  border: 1px solid #484848;
 }
 
 .icon {

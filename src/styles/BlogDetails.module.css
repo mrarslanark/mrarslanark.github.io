@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   flex: 0.7;
-  padding: 0px 0px 0px 24px;
+  padding: 0px 12px 0px 24px;
 }
 
 .headerContainer {
@@ -24,6 +24,13 @@
 
 .moreContainer {
   flex: 0.3;
+  margin: 12px;
+}
+
+.title {
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: gray;
 }
 
 .moreListContainer {
@@ -32,40 +39,28 @@
   row-gap: 12px;
 }
 
-.moreItemContainer {
+.authorContainer {
   display: flex;
-  padding: 12px;
-  background-color: #121212;
-  margin-right: 12px;
-  border-radius: 12px;
-  justify-content: center;
+
   align-items: center;
   align-content: center;
+  column-gap: 12px;
 }
 
-.moreItemContainer:hover {
-  background-color: black;
-}
-
-.textContainer {
-  padding: 0px 12px;
-}
-
-.featuredImage {
+.authorContainer img {
   border-radius: 100%;
 }
 
-.textContainer h3 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+.authorContainer div {
+  display: flex;
+  flex-direction: column;
 }
 
-.textContainer p {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  font-size: small;
+.authorContainer div a {
+  color: gray;
+  cursor: pointer;
+}
+
+.authorContainer div a:hover {
+  color: white;
 }
