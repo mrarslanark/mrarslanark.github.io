@@ -9,6 +9,22 @@ import Divider from "@/components/Divider";
 import Link from "next/link";
 import MoreItem from "@/components/MoreItem";
 import { getPosts, getSinglePost, getSlugs } from "@/services/posts";
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+  RedditShareButton,
+  RedditIcon,
+  TumblrShareButton,
+  TumblrIcon,
+  TelegramShareButton,
+  TelegramIcon,
+} from "next-share";
 
 type BlogDetailsProps = {
   post: PostType;
@@ -75,6 +91,15 @@ const BlogDetails: React.FC<BlogDetailsProps> = ({ post, posts }) => {
               </div>
             </div>
             <Divider direction="horizontal" />
+            <div className={styles.socialShare}>
+              <h3 className={styles.title}>Share it with the world</h3>
+              <SocialShare
+                description={post.excerpt}
+                title={post.title}
+                url={`https://arslanmushtaq.com/blog/posts/${post.slug}`}
+              />
+            </div>
+            <Divider direction="horizontal" />
             <h3 className={styles.title}>More Posts</h3>
             <div className={styles.moreListContainer}>
               {posts.map((postItem) => {
@@ -93,6 +118,44 @@ const BlogDetails: React.FC<BlogDetailsProps> = ({ post, posts }) => {
 };
 
 export default BlogDetails;
+
+type SocialShareProps = {
+  url: string;
+  title: string;
+  description: string;
+};
+
+const SocialShare: React.FC<SocialShareProps> = ({
+  url,
+  title,
+  description,
+}) => {
+  return (
+    <div className={styles.socialShareContainer}>
+      <FacebookShareButton title={title} url={url}>
+        <FacebookIcon size={32} />
+      </FacebookShareButton>
+      <TwitterShareButton title={title} url={url}>
+        <TwitterIcon size={32} />
+      </TwitterShareButton>
+      <WhatsappShareButton title={title} url={url}>
+        <WhatsappIcon size={32} />
+      </WhatsappShareButton>
+      <LinkedinShareButton title={title} url={url}>
+        <LinkedinIcon size={32} />
+      </LinkedinShareButton>
+      <RedditShareButton title={title} url={url}>
+        <RedditIcon size={32} />
+      </RedditShareButton>
+      <TumblrShareButton title={title} caption={description} url={url}>
+        <TumblrIcon size={32} />
+      </TumblrShareButton>
+      <TelegramShareButton title={title} url={url}>
+        <TelegramIcon size={32} />
+      </TelegramShareButton>
+    </div>
+  );
+};
 
 export async function getStaticPaths() {
   const paths = await getSlugs();

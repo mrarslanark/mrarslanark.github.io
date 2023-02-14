@@ -10,7 +10,7 @@ const MoreItem: React.FC<PostType> = ({
   excerpt,
 }) => {
   return (
-    <Link href={`/posts/${slug}`}>
+    <Link href={`/blog/posts/${slug}`}>
       <div className={styles.moreItemContainer}>
         <Image
           src={featuredImage}

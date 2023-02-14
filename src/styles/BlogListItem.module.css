@@ -11,6 +11,7 @@
   flex-direction: column;
   transition: 0.3s;
   width: 450px;
+  height: 450px;
 }
 
 .container:hover {
@@ -41,4 +42,42 @@
 .featuredImage {
   object-fit: cover;
   width: inherit;
+}
+
+.detailsContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  padding: 8px 16px 16px;
+}
+
+.detailsContainer p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: small;
+  color: gray;
+  transition: 0.3s;
+}
+
+.detailsContainer svg {
+  color: gray;
+  transition: 0.3s;
+}
+
+.container:hover .detailsContainer p {
+  color: white;
+}
+
+.containerWithoutWidth:hover .detailsContainer p {
+  color: white;
+}
+
+.container:hover .detailsContainer svg {
+  color: white;
+}
+
+.containerWithoutWidth:hover .detailsContainer svg {
+  color: white;
 }

@@ -3,6 +3,7 @@ import styles from "@/styles/BlogListItem.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { BsArrowRightShort } from "react-icons/bs";
 
 export type PostType = {
   content: string;
@@ -50,6 +51,10 @@ const BlogListItem: React.FC<PostType> = ({
             className={styles.description}
             dangerouslySetInnerHTML={{ __html: excerpt }}
           />
+        </div>
+        <div className={styles.detailsContainer}>
+          <p>Read More</p>
+          <BsArrowRightShort size={24} />
         </div>
       </div>
     </Link>

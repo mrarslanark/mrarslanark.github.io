@@ -64,3 +64,9 @@
 .authorContainer div a:hover {
   color: white;
 }
+
+.socialShareContainer {
+  display: flex;
+  column-gap: 12px;
+  margin: 24px 0px;
+}
