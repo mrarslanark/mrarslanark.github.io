@@ -20,7 +20,7 @@ const Section: React.FC<PropsWithChildren<SectionProps>> = ({
     <section className={styles.container} id={sectionId}>
       <div className={styles.header}>
         <h1>{title}</h1>
-        {showSeeAll && <Link href={seeAllURL ?? ""}>See All {title}</Link>}
+        {showSeeAll && <Link href={seeAllURL ?? ""}>See All</Link>}
       </div>
       <div className={styles.slider}>{children}</div>
     </section>

@@ -9,6 +9,7 @@ import career_development from "@/constants/career_development.json";
 import certifications from "@/constants/certifications.json";
 import projects from "@/constants/projects.json";
 import skills from "@/constants/skills.json";
+import { getPosts } from "@/services/posts";
 import Head from "next/head";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -46,32 +47,10 @@ const Home = ({ posts }: any) => {
 };
 
 export async function getStaticProps() {
-  const url = process.env.NEXT_WP_API_BLOG as string;
-  const res = await fetch(url);
-  if (!res.ok) {
-    return {
-      props: {
-        posts: [],
-      },
-    };
-  }
-  const posts = await res.json();
-  const data = posts.map((blog: any) => {
-    return {
-      content: blog.content.rendered,
-      createdAt: blog.date,
-      excerpt: blog.excerpt.rendered,
-      id: blog.slug,
-      slug: blog.slug,
-      title: blog.title.rendered,
-      modified: blog.modified,
-      featuredImage: blog.jetpack_featured_media_url,
-    };
-  });
-
+  const result = await getPosts();
   return {
     props: {
-      posts: data,
+      posts: result,
     },
   };
 }

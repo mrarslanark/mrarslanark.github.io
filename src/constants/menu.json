@@ -49,6 +49,12 @@
       "to": "/",
       "title": "Home",
       "target": "_self"
+    },
+    {
+      "id": "blog",
+      "to": "/blog",
+      "title": "Blog",
+      "target": "_self"
     }
   ]
 }

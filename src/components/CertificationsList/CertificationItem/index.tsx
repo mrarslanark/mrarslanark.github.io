@@ -32,8 +32,9 @@ const CertificationItem: React.FC<CertificationItemType> = ({
         </div>
         <h4>{title}</h4>
         <div>
-          <p>{date}</p>
-          <p>{provider}</p>
+          <p>
+            {provider} | {date}
+          </p>
         </div>
       </div>
     </Link>

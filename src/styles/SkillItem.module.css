@@ -2,14 +2,12 @@
   width: 300px;
   padding: 16px 24px;
   background-color: #121212;
-  border-radius: 12px;
   transition: 0.3s;
 }
 
 .containerWithNoWith {
   padding: 16px 24px;
   background-color: #121212;
-  border-radius: 12px;
   transition: 0.3s;
 }
 

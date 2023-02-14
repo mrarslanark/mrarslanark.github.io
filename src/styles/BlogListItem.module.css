@@ -2,10 +2,15 @@
   background-color: #121212;
   display: flex;
   flex-direction: column;
-  margin: 0px 12px 0px 0px;
   transition: 0.3s;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+}
+
+.containerWithoutWidth {
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  width: 450px;
 }
 
 .container:hover {
@@ -34,7 +39,6 @@
 }
 
 .featuredImage {
-  border-top-right-radius: 12px;
-  border-top-left-radius: 12px;
   object-fit: cover;
+  width: inherit;
 }

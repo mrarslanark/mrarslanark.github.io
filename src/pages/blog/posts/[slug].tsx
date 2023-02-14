@@ -8,6 +8,7 @@ import Image from "next/image";
 import Divider from "@/components/Divider";
 import Link from "next/link";
 import MoreItem from "@/components/MoreItem";
+import { getPosts, getSinglePost, getSlugs } from "@/services/posts";
 
 type BlogDetailsProps = {
   post: PostType;
@@ -15,8 +16,6 @@ type BlogDetailsProps = {
 };
 
 const BlogDetails: React.FC<BlogDetailsProps> = ({ post, posts }) => {
-  console.log(posts);
-
   if (!post) {
     return null;
   }
@@ -96,7 +95,7 @@ const BlogDetails: React.FC<BlogDetailsProps> = ({ post, posts }) => {
 export default BlogDetails;
 
 export async function getStaticPaths() {
-  const paths = await getAllPostSlugs();
+  const paths = await getSlugs();
   return {
     paths,
     fallback: false,
@@ -105,67 +104,13 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }: any) {
   // Fetch necessary data for the blog post using params.id
-  const post = await getAPost(params.slug);
+  const post = await getSinglePost(params.slug);
   const posts = await getPosts();
 
   return {
     props: {
-      post: post ?? null,
-      posts: posts ?? [],
+      post: post,
+      posts: posts,
     },
   };
-}
-
-export async function getAPost(slug: string) {
-  const url = `${process.env.NEXT_WP_API_BLOG}?slug=${slug}`;
-  const res = await fetch(url);
-  const post = await res.json();
-  const data = post.map((blog: any) => {
-    return {
-      content: blog.content.rendered,
-      createdAt: blog.date,
-      excerpt: blog.excerpt.rendered,
-      id: blog.slug,
-      slug: blog.slug,
-      title: blog.title.rendered,
-      modified: blog.modified,
-      featuredImage: blog.jetpack_featured_media_url,
-    };
-  });
-  if (data.length > 0) {
-    return data[0];
-  } else {
-    return null;
-  }
-}
-
-export async function getPosts() {
-  const url = process.env.NEXT_WP_API_BLOG as string;
-  const res = await fetch(url);
-  const posts = await res.json();
-  return posts.map((blog: any) => {
-    return {
-      content: blog.content.rendered,
-      createdAt: blog.date,
-      excerpt: blog.excerpt.rendered,
-      id: blog.slug,
-      slug: blog.slug,
-      title: blog.title.rendered,
-      modified: blog.modified,
-      featuredImage: blog.jetpack_featured_media_url,
-    };
-  });
-}
-
-export async function getAllPostSlugs() {
-  const url = process.env.NEXT_WP_API_BLOG as string;
-  const res = await fetch(url);
-  const posts = await res.json();
-  return posts.map((blog: any) => {
-    return {
-      params: {
-        slug: blog.slug,
-      },
-    };
-  });
 }

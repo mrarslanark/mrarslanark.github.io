@@ -1,3 +1,4 @@
+import Divider from "@/components/Divider";
 import { formatTimestamp } from "@/constants/utils";
 import styles from "@/styles/ProjectItem.module.css";
 import classNames from "classnames";
@@ -74,9 +75,6 @@ const ProjectItem: React.FC<ProjectType> = ({
           <div className={styles.headerContentContainer}>
             <div className={styles.header}>
               <h2>{title}</h2>
-              <Link href={`/projects/${id}`}>
-                Details <BsArrowRightShort size={24} />
-              </Link>
             </div>
             <div className={styles.releaseContainer}>
               <p>
@@ -103,6 +101,12 @@ const ProjectItem: React.FC<ProjectType> = ({
             );
           })}
       </div>
+      <Link href={`/projects/${id}`}>
+        <div className={styles.detailsContainer}>
+          <p>Details</p>
+          <BsArrowRightShort size={24} />
+        </div>
+      </Link>
     </div>
   );
 };

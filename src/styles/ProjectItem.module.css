@@ -3,23 +3,21 @@
   flex-direction: column;
   justify-content: space-around;
   width: 450px;
-  height: 250px;
+  height: 300px;
   padding: 16px 24px;
   background-color: #121212;
   transition: 0.3s;
-  border-radius: 12px;
 }
 
 .containerWithNoWith {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 250px;
+  height: 300px;
   padding: 16px 24px;
   margin: 0px 12px 0px 0px;
   background-color: #121212;
   transition: 0.3s;
-  border-radius: 12px;
 }
 
 .container:hover {
@@ -41,7 +39,6 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
 }
 
 .header h2 {
@@ -82,7 +79,6 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   font-size: medium;
-  height: auto;
 }
 
 .linkContainer {
@@ -93,4 +89,27 @@
 .linkContainer a {
   text-decoration: underline;
   margin-right: 8px;
+}
+
+.detailsContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.detailsContainer p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: small;
+  color: gray;
+}
+
+.detailsContainer svg {
+  color: gray;
+}
+
+.detailsContainer:hover > * {
+  color: white;
 }

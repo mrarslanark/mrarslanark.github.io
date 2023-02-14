@@ -13,6 +13,7 @@ export type PostType = {
   title: string;
   modified: string;
   featuredImage: string;
+  fullWidth?: boolean;
 };
 
 const BlogListItem: React.FC<PostType> = ({
@@ -22,10 +23,13 @@ const BlogListItem: React.FC<PostType> = ({
   excerpt,
   createdAt,
   slug,
+  fullWidth,
 }) => {
   return (
-    <Link href={`/posts/${slug}`}>
-      <div className={styles.container}>
+    <Link href={`/blog/posts/${slug}`}>
+      <div
+        className={fullWidth ? styles.container : styles.containerWithoutWidth}
+      >
         <Image
           className={styles.featuredImage}
           src={featuredImage}

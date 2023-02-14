@@ -1,0 +1,30 @@
+.container {
+  margin: 0px 64px;
+}
+
+.firstContainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+  margin: 32px 0px;
+}
+
+.firstContainer img {
+  flex: 1;
+  object-fit: cover;
+  height: 250px;
+}
+
+.firstContainer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.postListContainer {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  row-gap: 16px;
+  column-gap: 12px;
+}

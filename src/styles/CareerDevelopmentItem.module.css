@@ -2,16 +2,12 @@
   padding: 16px 24px;
   width: 400px;
   background-color: #121212;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
   transition: 0.3s;
 }
 
 .containerWithNoWidth {
   padding: 16px 24px;
   background-color: #121212;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
   transition: 0.3s;
 }
 
@@ -28,8 +24,6 @@
 .featuredImage {
   object-fit: cover;
   object-position: 65%;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
 }
 
 .topic {
