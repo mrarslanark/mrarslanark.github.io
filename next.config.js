@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ["arslanmushtaq.files.wordpress.com"],
   },
+  experimental: {
+    runtime: "edge",
+  },
 };
 
 module.exports = nextConfig;
