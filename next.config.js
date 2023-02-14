@@ -5,7 +5,7 @@ const nextConfig = {
     domains: ["arslanmushtaq.files.wordpress.com"],
   },
   experimental: {
-    runtime: "edge",
+    runtime: "experimental-edge",
   },
 };
 

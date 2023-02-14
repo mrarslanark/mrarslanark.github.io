@@ -53,8 +53,6 @@ const IconGenerator: React.FC<IconGeneratorProps> = ({
       return <TbBrandMeta className={style} />;
     case "hackerrank":
       return <FaHackerrank className={style} />;
-    case "hackerrank":
-      return <FaHackerrank className={style} />;
     case "linkedin":
       return <FaLinkedin className={style} />;
     case "android":

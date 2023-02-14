@@ -26,5 +26,8 @@
     "react-icons": "^4.7.1",
     "react-tabs": "^6.0.0",
     "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "vercel": "^28.15.4"
   }
 }
