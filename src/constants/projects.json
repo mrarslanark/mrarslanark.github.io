@@ -112,5 +112,35 @@
         ]
       }
     ]
+  },
+  {
+    "id": "little-lemon-swiftui",
+    "title": "Little Lemon (iOS)",
+    "icon": "little-lemon.jpeg",
+    "description": "Little Lemon iOS version of the application is developed using SwiftUI and I will keep on updating it. Currently, there is no published version of it but soon I will be making it available on TestFlight for a demo. The application allows going through a resturant's menu and ordering it.",
+    "social": [],
+    "releases": [
+      {
+        "id": "0",
+        "version": "1.0",
+        "stack": {
+          "fe": ["Native iOS (SwiftUI)"],
+          "be": ["Core Data"],
+          "cs": [],
+          "tools": ["Xcode"]
+        },
+        "functionality": ["Navigate through the Resturant menu"],
+        "date": "March 13, 2023",
+        "status": "production",
+        "links": [
+          {
+            "id": "github",
+            "url": "https://github.com/mrarslanark/little-lemon-ios",
+            "title": "Repository - iOS",
+            "description": "Have a look at the code written to build this product"
+          }
+        ]
+      }
+    ]
   }
 ]
