@@ -11,6 +11,7 @@ export type CertificationItemType = {
   by: string;
   date: string;
   fullWidth?: boolean;
+  courses: string[];
 };
 
 const CertificationItem: React.FC<CertificationItemType> = ({
@@ -20,6 +21,7 @@ const CertificationItem: React.FC<CertificationItemType> = ({
   by,
   date,
   fullWidth,
+  courses,
 }) => {
   return (
     <Link href={url} target={"_blank"} referrerPolicy={"no-referrer"}>
@@ -36,6 +38,15 @@ const CertificationItem: React.FC<CertificationItemType> = ({
             {provider} | {date}
           </p>
         </div>
+        <div className="divider" />
+        <h4>
+          <strong>Courses covered:</strong>
+        </h4>
+        <ol>
+          {courses.map((course) => {
+            return <li key={course}>{course}</li>;
+          })}
+        </ol>
       </div>
     </Link>
   );

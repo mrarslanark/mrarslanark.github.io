@@ -1,42 +1,23 @@
 [
   {
     "id": "0",
-    "title": "Introduction to iOS Mobile Application Development",
-    "url": "https://www.coursera.org/account/accomplishments/certificate/DEA4TQXYPSUS",
+    "title": "Meta iOS Developer",
+    "url": "https://coursera.org/verify/professional-cert/U7MHBNGXDDD7",
     "provider": "Coursera",
-    "date": "September 10, 2022",
-    "by": "meta"
-  },
-  {
-    "id": "1",
-    "title": "Version Control",
-    "url": "https://www.coursera.org/account/accomplishments/certificate/7EQHASRCMUEG",
-    "provider": "Coursera",
-    "date": "September 11, 2022",
-    "by": "meta"
-  },
-  {
-    "id": "2",
-    "title": "Programming Fundamentals in Swift",
-    "url": "https://www.coursera.org/account/accomplishments/certificate/B52B2ZPP2JX8",
-    "provider": "Coursera",
-    "date": "November 13, 2022",
-    "by": "meta"
-  },
-  {
-    "id": "3",
-    "title": "Principles of UX/UI Design",
-    "url": "https://www.coursera.org/account/accomplishments/certificate/FY8YFZZKZCY5",
-    "provider": "Coursera",
-    "date": "February 6, 2023",
-    "by": "meta"
-  },
-  {
-    "id": "4",
-    "title": "Create the User Interface with SwiftUI",
-    "url": "https://www.coursera.org/account/accomplishments/certificate/54GT6QBTEZLK",
-    "provider": "Coursera",
-    "date": "February 6, 2023",
-    "by": "meta"
+    "date": "March 16, 2023",
+    "by": "meta",
+    "courses": [
+      "Introduction to iOS Mobile Development",
+      "Version Control",
+      "Programming Fundamentals in Swift",
+      "Principles of UX/UI Design",
+      "Create the User Interface with SwiftUI",
+      "Working with Data in iOS",
+      "Mobile Development and JavaScript",
+      "React Basics",
+      "React Native",
+      "iOS App Capstone",
+      "Coding Interview Preparation"
+    ]
   }
 ]

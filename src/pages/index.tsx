@@ -9,12 +9,11 @@ import career_development from "@/constants/career_development.json";
 import certifications from "@/constants/certifications.json";
 import projects from "@/constants/projects.json";
 import skills from "@/constants/skills.json";
-import { getPosts } from "@/services/posts";
 import Head from "next/head";
 
 // const inter = Inter({ subsets: ["latin"] });
 
-const Home = ({ posts }: any) => {
+const Home = () => {
   return (
     <>
       <Head>
@@ -40,19 +39,10 @@ const Home = ({ posts }: any) => {
         <Skills data={skills} />
         <CareerDevelopment data={career_development} />
         <CertificationsList data={certifications} />
-        <BlogList data={posts} />
       </Container>
     </>
   );
 };
 
-export async function getStaticProps() {
-  const result = await getPosts();
-  return {
-    props: {
-      posts: result,
-    },
-  };
-}
 
 export default Home;

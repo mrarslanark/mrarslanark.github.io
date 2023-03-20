@@ -13,7 +13,7 @@ const Header: React.FC<HeaderType> = ({ menu }) => {
   return (
     <nav>
       <ul>
-        {menuItems[menu].map((mItem) => {
+        {menuItems.map((mItem) => {
           return (
             <Link target={mItem.target} key={mItem.id} href={mItem.to}>
               {mItem.title}

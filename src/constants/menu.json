@@ -1,60 +1,38 @@
-{
-  "home": [
-    {
-      "id": "me",
-      "to": "#",
-      "title": "Me",
-      "target": "_self"
-    },
-    {
-      "id": "projects",
-      "to": "#projects",
-      "title": "Projects",
-      "target": "_self"
-    },
-    {
-      "id": "skills",
-      "to": "#skills",
-      "title": "Skills",
-      "target": "_self"
-    },
-    {
-      "id": "career-development",
-      "to": "#career_development",
-      "title": "Career Development",
-      "target": "_self"
-    },
-    {
-      "id": "certifications",
-      "to": "#certifications",
-      "title": "Certifications",
-      "target": "_self"
-    },
-    {
-      "id": "blog",
-      "to": "#blog",
-      "title": "Blog",
-      "target": "_self"
-    },
-    {
-      "id": "devden",
-      "to": "http://devden.org/",
-      "title": "DevDen",
-      "target": "_blank"
-    }
-  ],
-  "blog": [
-    {
-      "id": "home",
-      "to": "/",
-      "title": "Home",
-      "target": "_self"
-    },
-    {
-      "id": "blog",
-      "to": "/blog",
-      "title": "Blog",
-      "target": "_self"
-    }
-  ]
-}
+[
+  {
+    "id": "me",
+    "to": "#",
+    "title": "Me",
+    "target": "_self"
+  },
+  {
+    "id": "projects",
+    "to": "#projects",
+    "title": "Projects",
+    "target": "_self"
+  },
+  {
+    "id": "skills",
+    "to": "#skills",
+    "title": "Skills",
+    "target": "_self"
+  },
+  {
+    "id": "career-development",
+    "to": "#career_development",
+    "title": "Career Development",
+    "target": "_self"
+  },
+  {
+    "id": "certifications",
+    "to": "#certifications",
+    "title": "Certifications",
+    "target": "_self"
+  },
+  {
+    "id": "devden",
+    "to": "http://devden.org/",
+    "title": "DevDen",
+    "target": "_blank"
+  }
+]
