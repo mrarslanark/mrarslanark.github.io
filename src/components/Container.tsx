@@ -4,12 +4,14 @@ import SectionHeading, { SectionHeadingProps } from "./SectionHeading";
 type ContainerProps = {
   invert?: boolean;
   header?: SectionHeadingProps;
+  showSeeAll?: boolean;
 };
 
 const Section: React.FC<PropsWithChildren<ContainerProps>> = ({
   children,
   invert,
   header,
+  showSeeAll = true,
 }) => {
   const backgroundColor = invert ? "bg-gray-100" : "bg-white";
 
@@ -22,6 +24,7 @@ const Section: React.FC<PropsWithChildren<ContainerProps>> = ({
               heading="Personal Projects"
               subtitle="Projects I work on during my free time"
               seeAllLink="/projects"
+              showSeeAll={showSeeAll}
             />
           )}
           {children}

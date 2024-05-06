@@ -11,16 +11,20 @@ const header = {
 
 interface PersonalProjectsProps {
   limit?: number;
+  showSeeAll?: boolean;
 }
 
-const PersonalProjects: React.FC<PersonalProjectsProps> = ({ limit }) => {
+const PersonalProjects: React.FC<PersonalProjectsProps> = ({
+  limit,
+  showSeeAll = true,
+}) => {
   let data = projects;
   if (limit) {
     data = projects.slice(0, limit);
   }
 
   return (
-    <Section invert header={header}>
+    <Section invert header={header} showSeeAll={showSeeAll}>
       {data.map((project, index) => {
         return (
           <ProjectItem
