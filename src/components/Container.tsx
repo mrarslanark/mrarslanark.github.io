@@ -16,7 +16,7 @@ const Section: React.FC<PropsWithChildren<ContainerProps>> = ({
   return (
     <section>
       <div className={`flex justify-center items-center ${backgroundColor}`}>
-        <div className="w-[864px] p-12">
+        <div className={"w-[864px] p-12"}>
           {header && (
             <SectionHeading
               heading="Personal Projects"
