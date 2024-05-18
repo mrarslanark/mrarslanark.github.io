@@ -61,7 +61,7 @@ const data = [
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex flex-col flex-1">
       <Introduction />
       {data.map((item) => {
         return <DataList key={item.id} {...item} />;
