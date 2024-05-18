@@ -1,5 +1,6 @@
 import DataList from "@/components/DataList";
 import ExperienceListItem from "@/components/ExperienceListItem";
+import EducationListItem from "@/components/ExperienceListItem copy";
 import Introduction from "@/components/Introduction";
 import ProjectItem from "@/components/ProjectItem";
 import SkillListItem from "@/components/SkillListItem";
@@ -31,6 +32,12 @@ const data = [
     limit: 2,
     invert: true,
     seeAll: { url: "/experience", type: "experience" },
+  },
+  {
+    id: "education",
+    data: Data.Education,
+    listItem: EducationListItem,
+    header: Data.Headers.education,
   },
 ];
 

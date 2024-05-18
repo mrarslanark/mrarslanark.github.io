@@ -16,5 +16,10 @@
     "seeAllLink": "/experience",
     "subtitle": "My professional experience till date",
     "showSeeAll": true
+  },
+  "education": {
+    "heading": "Education",
+    "subtitle": "My education over the years",
+    "showSeeAll": false
   }
 }

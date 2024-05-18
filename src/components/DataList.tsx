@@ -6,10 +6,11 @@ import Link from "next/link";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Section from "./Container";
 import { SectionHeadingProps } from "./SectionHeading";
+import { IEducation } from "@/types/education";
 
 type DataListProps = {
-  data: IProject[] | ISkill[] | IExperience[];
-  listItem: React.FC<IProject | ISkill | IExperience | any>;
+  data: IProject[] | ISkill[] | IExperience[] | IEducation[];
+  listItem: React.FC<IProject | ISkill | IExperience | IEducation | any>;
   header: SectionHeadingProps;
   invert?: boolean;
   seeAll?: {

@@ -1,5 +1,6 @@
 import { IExperience } from "@/types/experience";
 import { FaCircle } from "react-icons/fa";
+import ItemHeader from "./ItemHeader";
 
 const ExperienceListItem: React.FC<IExperience> = ({
   title,
@@ -11,18 +12,12 @@ const ExperienceListItem: React.FC<IExperience> = ({
 }) => {
   return (
     <div className="flex flex-col gap-4 my-4">
-      <div>
-        <div className="flex flex-wrap justify-between">
-          <p className="font-semibold text-lg">{title}</p>
-          <p>{location_type}</p>
-        </div>
-        <div className="flex flex-wrap justify-between">
-          <p>{company}</p>
-          <p>
-            {start_date} - {end_date}
-          </p>
-        </div>
-      </div>
+      <ItemHeader
+        topLeftText={title}
+        topRightText={location_type}
+        bottomLeftText={company}
+        bottomRightText={`${start_date} - ${end_date}`}
+      />
       <div>
         <ul className="flex flex-col gap-2">
           {responsibilities.map((responsibility) => {
