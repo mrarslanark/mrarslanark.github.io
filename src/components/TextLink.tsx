@@ -15,7 +15,7 @@ const TextLink: React.FC<TextLinkProps> = ({ text, link }) => {
         rel="noopener"
         className="flex items-center gap-x-1"
       >
-        <p className="underline font-semibold">{text}</p>
+        <p className="text-lg underline font-semibold">{text}</p>
         <BiLinkExternal className="text-gray-400" />
       </Link>
     );

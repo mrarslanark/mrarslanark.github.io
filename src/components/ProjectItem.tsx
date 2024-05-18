@@ -24,18 +24,14 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col gap-y-2 py-4 ${
+      className={`flex flex-col gap-3 py-4 ${
         !isLastItem && "border-b-2 border-gray-200"
       }`}
     >
-      <div className="flex">
-        <div className="flex flex-1 flex-col gap-y-2">
-          <TextLink text={title} link={web} />
-          <ChipsList items={skills} />
-        </div>
-        <StoreBadges apple={apple} google={google} />
-      </div>
+      <TextLink text={title} link={web} />
+      <StoreBadges apple={apple} google={google} web={web} />
       <p>{description}</p>
+      <ChipsList items={skills} />
     </div>
   );
 };

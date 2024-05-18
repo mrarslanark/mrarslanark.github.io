@@ -8,8 +8,8 @@ const Introduction = () => {
     <Section>
       <div className="flex gap-x-2 items-center">
         <div className="flex flex-1 flex-col gap-y-2">
-          <p className="text-4xl font-semibold">Arslan Mushtaq</p>
-          <p>Full Stack Developer, Gamer, and Traveler</p>
+          <p className="text-4xl font-semibold">ARSLAN MUSHTAQ</p>
+          <p>Full Stack Developer, Content Creator, Gamer, and Traveler</p>
           <SocialLinks />
         </div>
         <div className="flex flex-col items-center gap-y-2 text-gray-400 hover:text-black cursor-pointer transition-colors">
