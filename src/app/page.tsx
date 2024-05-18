@@ -1,3 +1,4 @@
+import ActivityListItem from "@/components/ActivityListItem";
 import CertificationListItem from "@/components/CertificationListItem";
 import DataList from "@/components/DataList";
 import ExperienceListItem from "@/components/ExperienceListItem";
@@ -46,6 +47,14 @@ const data = [
     listItem: CertificationListItem,
     header: Data.Headers.certifications,
     invert: true,
+  },
+  {
+    id: "volunteering",
+    data: Data.Volunteering,
+    listItem: ActivityListItem,
+    header: Data.Headers.volunteering,
+    limit: 2,
+    seeAll: { url: "/volunteering", type: "volunteering activities" },
   },
 ];
 

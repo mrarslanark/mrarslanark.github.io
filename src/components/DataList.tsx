@@ -6,7 +6,7 @@ import Link from "next/link";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Section from "./Container";
 import { SectionHeadingProps } from "./SectionHeading";
-import { IEducation } from "@/types/education";
+import { IAchievement, IEducation } from "@/types/education";
 import { ICertifications } from "@/types/certifications";
 
 type DataListProps = {
@@ -15,9 +15,16 @@ type DataListProps = {
     | ISkill[]
     | IExperience[]
     | IEducation[]
-    | ICertifications[];
+    | ICertifications[]
+    | IAchievement[];
   listItem: React.FC<
-    IProject | ISkill | IExperience | IEducation | ICertifications | any
+    | IProject
+    | ISkill
+    | IExperience
+    | IEducation
+    | ICertifications
+    | IAchievement
+    | any
   >;
   header: SectionHeadingProps;
   invert?: boolean;

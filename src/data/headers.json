@@ -26,5 +26,11 @@
     "heading": "Certifications",
     "subtitle": "Certifications that help in my daily development",
     "showSeeAll": false
+  },
+  "volunteering": {
+    "heading": "Volunteering Activities",
+    "seeAllLink": "/volunteering",
+    "subtitle": "My favorite part of life",
+    "showSeeAll": true
   }
 }
