@@ -1,7 +1,7 @@
 import Section from "@/components/Container";
 import ProjectItem from "@/components/ProjectItem";
 import projects from "@/data/projects.json";
-import Link from "next/link";
+import { PageProps } from "@/types/page";
 import React from "react";
 import { SectionHeadingProps } from "./SectionHeading";
 
@@ -12,24 +12,14 @@ const header: SectionHeadingProps = {
   showSeeAll: true,
 };
 
-interface PersonalProjectsProps {
-  limit?: number;
-  showSeeAll?: boolean;
-  showHomeBtn?: boolean;
-}
-
-const PersonalProjects: React.FC<PersonalProjectsProps> = ({
-  limit,
-  showSeeAll = true,
-  showHomeBtn,
-}) => {
+const PersonalProjects: React.FC<PageProps> = ({ limit, showHome }) => {
   let data = projects;
   if (limit) {
     data = projects.slice(0, limit);
   }
 
   return (
-    <Section invert header={header} showHomeBtn={showHomeBtn}>
+    <Section invert header={header} showHomeBtn={showHome}>
       {data.map((project, index) => {
         return (
           <ProjectItem

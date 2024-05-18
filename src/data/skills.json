@@ -1,0 +1,101 @@
+[
+  {
+    "id": "mobile",
+    "title": "Mobile",
+    "skills": [
+      "React Native (Expo CLI)",
+      "Android Jetpack Compose",
+      "Android XML Layouts",
+      "SwiftUI",
+      "iOS UIKit"
+    ]
+  },
+  {
+    "id": "frontend",
+    "title": "Frontend",
+    "skills": [
+      "React.js",
+      "Remix",
+      "Next.js",
+      "HTML5",
+      "CSS3",
+      "Solito",
+      "React Query",
+      "Axios"
+    ]
+  },
+  {
+    "id": "backend",
+    "title": "Backend",
+    "skills": [
+      "Node.js",
+      "Express",
+      "Auth0",
+      "Passportjs",
+      "REST APIs",
+      "GraphQL"
+    ]
+  },
+  {
+    "id": "ci-cd",
+    "title": "CI/CD",
+    "skills": ["GitHub Actions", "Fastlane", "Circle CI", "Bitrise"]
+  },
+  {
+    "id": "cloud-services",
+    "title": "Cloud Services",
+    "skills": [
+      "Amazon Web Services",
+      "Google Firebase",
+      "Heroku",
+      "Netlify",
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB"
+    ]
+  },
+  {
+    "id": "user-interface",
+    "title": "User Interface Libraries",
+    "skills": [
+      "Tailwind",
+      "Chakra",
+      "MUI",
+      "React Native Elements",
+      "React Native Paper",
+      "Native Base",
+      "Tamagui"
+    ]
+  },
+  {
+    "id": "testing",
+    "title": "Testing",
+    "skills": [
+      "Jest",
+      "Appium",
+      "WebDriverIO",
+      "Detox",
+      "Cypress",
+      "Mocha",
+      "Chai"
+    ]
+  },
+  {
+    "id": "ui-ux",
+    "title": "UI/UX",
+    "skills": ["Figma", "Adobe XD", "Sketch", "Framer"]
+  },
+  {
+    "id": "agile-tools",
+    "title": "Agile Tools",
+    "skills": [
+      "Jira",
+      "Monday",
+      "Asana",
+      "Trello",
+      "GitHub",
+      "Bitbucket",
+      "Gitlab"
+    ]
+  }
+]

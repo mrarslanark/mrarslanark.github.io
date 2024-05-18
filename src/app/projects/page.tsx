@@ -1,9 +1,9 @@
 import PersonalProjects from "@/components/PersonalProjects";
 
-export default function Projects() {
+export default function PersonalProjectsPage() {
   return (
     <main>
-      <PersonalProjects showSeeAll={false} showHomeBtn />
+      <PersonalProjects showHome />
     </main>
   );
 }

@@ -20,7 +20,7 @@ const Section: React.FC<PropsWithChildren<ContainerProps>> = ({
   return (
     <section>
       <div className={`flex justify-center items-center ${backgroundColor}`}>
-        <div className={"w-[864px] p-12"}>
+        <div className={"w-[864px] p-12 flex flex-col"}>
           <div className="flex flex-col gap-y-4">
             {showHomeBtn && (
               <Link href={"/"}>
