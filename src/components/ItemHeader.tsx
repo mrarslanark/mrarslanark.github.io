@@ -12,14 +12,14 @@ const ItemHeader: React.FC<ItemHeaderProps> = ({
   bottomRightText,
 }) => {
   return (
-    <div>
-      <div className="flex flex-wrap justify-between">
+    <div className="flex flex-wrap justify-between">
+      <div className="flex flex-col flex-wrap justify-between">
         <p className="font-semibold text-lg">{topLeftText}</p>
-        <p>{topRightText}</p>
-      </div>
-      <div className="flex flex-wrap justify-between">
         <p>{bottomLeftText}</p>
-        <p>{bottomRightText}</p>
+      </div>
+      <div className="flex flex-col flex-wrap justify-between">
+        <p className="text-left sm:text-right">{topRightText}</p>
+        <p className="text-left sm:text-right">{bottomRightText}</p>
       </div>
     </div>
   );
