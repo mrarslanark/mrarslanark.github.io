@@ -2,21 +2,12 @@ import React from "react";
 import ChipsList from "./ChipsList";
 import TextLink from "./TextLink";
 import StoreBadges from "./StoreBadges";
+import { IProject } from "@/types/project";
 
-interface ProjectItemProps {
-  title: string;
-  skills: string[];
-  description: string;
-  google?: string;
-  apple?: string;
-  web?: string;
-  isLastItem: boolean;
-}
-
-const ProjectItem: React.FC<ProjectItemProps> = ({
+const ProjectItem: React.FC<IProject> = ({
   title,
-  web,
   skills,
+  web,
   apple,
   google,
   description,

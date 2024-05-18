@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "heading": "Personal Projects",
+    "seeAllLink": "/projects",
+    "subtitle": "Projects I have work on during my free time.",
+    "showSeeAll": true
+  },
+  "skills": {
+    "heading": "Skills",
+    "seeAllLink": "/skills",
+    "subtitle": "Skills I use frequently during my development.",
+    "showSeeAll": true
+  }
+}

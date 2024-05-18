@@ -25,7 +25,7 @@ const SocialLinks = () => {
       <Link href="https://facebook.com/devmrark" target="_blank">
         <FaFacebook
           size={24}
-          className="text-gray-400 hover:text-black transition-colors cursor-pointer"
+          className="text-gray-400 hover:text-[#1877f2] transition-colors cursor-pointer"
         />
       </Link>
     </div>
