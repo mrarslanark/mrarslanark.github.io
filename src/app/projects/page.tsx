@@ -3,9 +3,20 @@ import ProjectItem from "@/components/ProjectItem";
 import Data from "@/data";
 import { Metadata } from "next";
 
+const title = "Personal Projects | Arslan Mushtaq";
+const description = "Things I love to work on in my free time.";
+
 export const metadata: Metadata = {
-  title: "Personal Projects | Arslan Mushtaq",
-  description: "Things I love to work on in my free time.",
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+  },
+  twitter: {
+    title,
+    description,
+  },
 };
 
 export default function PersonalProjectsPage() {

@@ -5,9 +5,22 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const title = "Arslan Mushtaq";
+const description = "Software Developer with over 8 years of experience.";
+
 export const metadata: Metadata = {
-  title: "Arslan Mushtaq",
-  description: "Software Developer with over 8 years of experience.",
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({
