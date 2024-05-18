@@ -8,6 +8,7 @@
     "end_year": "2019",
     "achievements": [
       {
+        "id": "0",
         "title": "Winner at Softec’19",
         "description": "Softec is an event held every year at FAST-NU, Lahore where contestants from different fields gather to compete. My University nominated me along with 2 juniors for the App Dev Competition. The competition was to build a mobile application similar to Netflix within 28 hours. Our team Hex Clanners developed the application using Native Android (Kotlin). We secured the first prize along with a cash reward of PKR 50,000."
       }

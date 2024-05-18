@@ -1,4 +1,5 @@
 export interface IAchievement {
+  id: string;
   title: string;
   description: string;
 }
