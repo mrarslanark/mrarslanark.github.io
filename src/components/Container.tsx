@@ -1,17 +1,19 @@
+import Link from "next/link";
 import { PropsWithChildren } from "react";
+import { IoIosArrowRoundBack } from "react-icons/io";
 import SectionHeading, { SectionHeadingProps } from "./SectionHeading";
 
 type ContainerProps = {
   invert?: boolean;
   header?: SectionHeadingProps;
-  showSeeAll?: boolean;
+  showHomeBtn?: boolean;
 };
 
 const Section: React.FC<PropsWithChildren<ContainerProps>> = ({
   children,
   invert,
   header,
-  showSeeAll = true,
+  showHomeBtn,
 }) => {
   const backgroundColor = invert ? "bg-gray-100" : "bg-white";
 
@@ -19,14 +21,24 @@ const Section: React.FC<PropsWithChildren<ContainerProps>> = ({
     <section>
       <div className={`flex justify-center items-center ${backgroundColor}`}>
         <div className={"w-[864px] p-12"}>
-          {header && (
-            <SectionHeading
-              heading="Personal Projects"
-              subtitle="Projects I work on during my free time"
-              seeAllLink="/projects"
-              showSeeAll={showSeeAll}
-            />
-          )}
+          <div className="flex flex-col gap-y-4">
+            {showHomeBtn && (
+              <Link href={"/"}>
+                <div className="flex items-center">
+                  <IoIosArrowRoundBack size={24} />
+                  <p>Home</p>
+                </div>
+              </Link>
+            )}
+            {header && (
+              <SectionHeading
+                heading={header.heading}
+                subtitle={header.subtitle}
+                seeAllLink={header.seeAllLink}
+                showSeeAll={header.showSeeAll}
+              />
+            )}
+          </div>
           {children}
         </div>
       </div>
