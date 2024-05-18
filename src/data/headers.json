@@ -10,5 +10,11 @@
     "seeAllLink": "/skills",
     "subtitle": "Skills I use frequently during my development.",
     "showSeeAll": true
+  },
+  "": {
+    "heading": "Professional Experience",
+    "seeAllLink": "/experience",
+    "subtitle": "My professional experience till date",
+    "showSeeAll": true
   }
 }
