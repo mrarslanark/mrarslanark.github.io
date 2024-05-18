@@ -3,10 +3,11 @@ import { IProject } from "@/types/project";
 import { ISkill } from "@/types/skill";
 import Section from "./Container";
 import { SectionHeadingProps } from "./SectionHeading";
+import { IExperience } from "@/types/experience";
 
 type DataListProps = {
-  data: IProject[] | ISkill[];
-  listItem: React.FC<IProject | ISkill | any>;
+  data: IProject[] | ISkill[] | IExperience[];
+  listItem: React.FC<IProject | ISkill | IExperience | any>;
   header: SectionHeadingProps;
   invert?: boolean;
 };

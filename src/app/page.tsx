@@ -1,4 +1,5 @@
 import DataList from "@/components/DataList";
+import ExperienceListItem from "@/components/ExperienceListItem";
 import Introduction from "@/components/Introduction";
 import ProjectItem from "@/components/ProjectItem";
 import SkillListItem from "@/components/SkillListItem";
@@ -19,6 +20,13 @@ const data = [
     listItem: SkillListItem,
     header: Data.Headers.skills,
     limit: 3,
+  },
+  {
+    id: "experience",
+    data: Data.Experience,
+    listItem: ExperienceListItem,
+    header: Data.Headers.experience,
+    limit: 2,
   },
 ];
 
