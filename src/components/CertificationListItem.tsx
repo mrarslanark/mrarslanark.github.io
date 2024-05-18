@@ -9,7 +9,12 @@ const CertificationListItem: React.FC<ICertifications> = ({
   return (
     <div className="flex flex-col flex-1 my-4">
       <p className="font-semibold">{title}</p>
-      <a href={url} className="text-sm flex items-center gap-1 underline">
+      <a
+        rel="noopener"
+        target="_blank"
+        href={url}
+        className="text-sm flex items-center gap-1 underline"
+      >
         {platform}
         <BiLinkExternal className="text-gray-400" />
       </a>
