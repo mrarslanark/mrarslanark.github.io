@@ -2,25 +2,22 @@ import DataList from "@/components/DataList";
 import Introduction from "@/components/Introduction";
 import ProjectItem from "@/components/ProjectItem";
 import SkillListItem from "@/components/SkillListItem";
-
-import headers from "@/data/headers.json";
-import projects from "@/data/projects.json";
-import skills from "@/data/skills.json";
+import Data from "@/data";
 
 const data = [
   {
     id: "personal-projects",
-    data: projects,
+    data: Data.Projects,
     listItem: ProjectItem,
-    header: headers.projects,
+    header: Data.Headers.projects,
     limit: 2,
     invert: true,
   },
   {
     id: "skills",
-    data: skills,
+    data: Data.Skills,
     listItem: SkillListItem,
-    header: headers.skills,
+    header: Data.Headers.skills,
     limit: 3,
   },
 ];

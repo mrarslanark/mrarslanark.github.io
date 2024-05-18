@@ -1,14 +1,13 @@
 import DataList from "@/components/DataList";
 import ProjectItem from "@/components/ProjectItem";
-import headers from "@/data/headers.json";
-import projects from "@/data/projects.json";
+import Data from "@/data";
 
 export default function PersonalProjectsPage() {
   return (
     <main>
       <DataList
-        data={projects}
-        header={headers.projects}
+        data={Data.Projects}
+        header={Data.Headers.projects}
         listItem={ProjectItem}
         showHome
       />

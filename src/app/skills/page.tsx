@@ -1,14 +1,13 @@
 import DataList from "@/components/DataList";
-import skills from "@/data/skills.json";
-import headers from "@/data/headers.json";
 import SkillListItem from "@/components/SkillListItem";
+import Data from "@/data";
 
 export default function SkillsPage() {
   return (
     <main>
       <DataList
-        data={skills}
-        header={headers.skills}
+        data={Data.Skills}
+        header={Data.Headers.skills}
         listItem={SkillListItem}
         showHome
       />
