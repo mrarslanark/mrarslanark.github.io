@@ -34,8 +34,6 @@ const Section: React.FC<PropsWithChildren<ContainerProps>> = ({
               <SectionHeading
                 heading={header.heading}
                 subtitle={header.subtitle}
-                seeAllLink={header.seeAllLink}
-                showSeeAll={header.showSeeAll}
               />
             )}
           </div>

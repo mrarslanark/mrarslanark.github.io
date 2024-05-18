@@ -13,6 +13,7 @@ const data = [
     header: Data.Headers.projects,
     limit: 2,
     invert: true,
+    seeAll: { url: "/projects", type: "projects" },
   },
   {
     id: "skills",
@@ -20,6 +21,7 @@ const data = [
     listItem: SkillListItem,
     header: Data.Headers.skills,
     limit: 3,
+    seeAll: { url: "/skills", type: "skills" },
   },
   {
     id: "experience",
@@ -27,6 +29,8 @@ const data = [
     listItem: ExperienceListItem,
     header: Data.Headers.experience,
     limit: 2,
+    invert: true,
+    seeAll: { url: "/experience", type: "experience" },
   },
 ];
 

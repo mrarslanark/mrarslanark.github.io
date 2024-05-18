@@ -19,8 +19,8 @@ const StoreBadges: React.FC<StoreBadgesProps> = ({ google, apple, web }) => {
       {google && (
         <a
           rel="noopener"
-          title={"Apple App Store Badge"}
-          href={apple}
+          title={"Google Play Store Badge"}
+          href={google}
           target="_blank"
         >
           <div className="p-3 bg-white rounded-md border-2 border-white hover:border-gray-200 transition-colors">
@@ -31,8 +31,8 @@ const StoreBadges: React.FC<StoreBadgesProps> = ({ google, apple, web }) => {
       {apple && (
         <a
           rel="noopener"
-          title={"Google Play Store Badge"}
-          href={google}
+          title={"Apple App Store Badge"}
+          href={apple}
           target="_blank"
         >
           <div className="p-3 bg-white rounded-md border-2 border-white hover:border-gray-200 transition-colors">
@@ -43,7 +43,7 @@ const StoreBadges: React.FC<StoreBadgesProps> = ({ google, apple, web }) => {
       {web && (
         <a
           rel="noopener"
-          title={"Google Play Store Badge"}
+          title={"Web Link to Project"}
           href={web}
           target="_blank"
         >
