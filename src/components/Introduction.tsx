@@ -1,6 +1,6 @@
 import { IoDocumentTextOutline } from "react-icons/io5";
 
-import Section from "./Container";
+import Section from "./Section";
 import SocialLinks from "./SocialLinks";
 import { Docs } from "@/constants";
 import TextLink from "./TextLink";

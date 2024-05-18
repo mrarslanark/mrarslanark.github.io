@@ -4,7 +4,7 @@ import { IProject } from "@/types/project";
 import { ISkill } from "@/types/skill";
 import Link from "next/link";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import Section from "./Container";
+import Section from "./Section";
 import { SectionHeadingProps } from "./SectionHeading";
 import { IAchievement, IEducation } from "@/types/education";
 import { ICertifications } from "@/types/certifications";
