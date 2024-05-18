@@ -7,10 +7,18 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import Section from "./Container";
 import { SectionHeadingProps } from "./SectionHeading";
 import { IEducation } from "@/types/education";
+import { ICertifications } from "@/types/certifications";
 
 type DataListProps = {
-  data: IProject[] | ISkill[] | IExperience[] | IEducation[];
-  listItem: React.FC<IProject | ISkill | IExperience | IEducation | any>;
+  data:
+    | IProject[]
+    | ISkill[]
+    | IExperience[]
+    | IEducation[]
+    | ICertifications[];
+  listItem: React.FC<
+    IProject | ISkill | IExperience | IEducation | ICertifications | any
+  >;
   header: SectionHeadingProps;
   invert?: boolean;
   seeAll?: {
@@ -34,15 +42,17 @@ const DataList: React.FC<DataListProps & PageProps> = ({
 
   return (
     <Section header={header} showHomeBtn={showHome} invert={invert}>
-      {data.map((item, index) => {
-        return (
-          <ListItem
-            key={item.id}
-            isLastItem={index === data.length - 1}
-            {...item}
-          />
-        );
-      })}
+      <div className="flex flex-wrap gap-2 my-2">
+        {data.map((item, index) => {
+          return (
+            <ListItem
+              key={item.id}
+              isLastItem={index === data.length - 1}
+              {...item}
+            />
+          );
+        })}
+      </div>
       {Boolean(seeAll !== undefined) ? (
         <Link
           href={seeAll?.url!}

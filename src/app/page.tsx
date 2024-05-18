@@ -1,3 +1,4 @@
+import CertificationListItem from "@/components/CertificationListItem";
 import DataList from "@/components/DataList";
 import ExperienceListItem from "@/components/ExperienceListItem";
 import EducationListItem from "@/components/ExperienceListItem copy";
@@ -38,6 +39,13 @@ const data = [
     data: Data.Education,
     listItem: EducationListItem,
     header: Data.Headers.education,
+  },
+  {
+    id: "certifications",
+    data: Data.Certifications,
+    listItem: CertificationListItem,
+    header: Data.Headers.certifications,
+    invert: true,
   },
 ];
 

@@ -21,5 +21,10 @@
     "heading": "Education",
     "subtitle": "My education over the years",
     "showSeeAll": false
+  },
+  "certifications": {
+    "heading": "Certifications",
+    "subtitle": "Certifications that help in my daily development",
+    "showSeeAll": false
   }
 }
