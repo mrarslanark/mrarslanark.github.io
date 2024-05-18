@@ -22,6 +22,27 @@
     "web": "https://web-fe-rho.vercel.app/"
   },
   {
+    "id": "tempo",
+    "title": "Tempo",
+    "skills": [
+      "React Native CLI",
+      "Firebase Authentication",
+      "Firebase Firestore Database",
+      "Firebase Storage",
+      "React Navigation",
+      "Redux Toolkit",
+      "Redux Persist",
+      "Redux Thunk",
+      "React Native Paper",
+      "Formik",
+      "Axios",
+      "Dayjs",
+      "Jest"
+    ],
+    "description": "Led full-stack development of Tempo, an iOS-based event management and ticketing marketplace. Built core features (event creation, location management, dashboard, Stripe), and the entire Firebase backend (Authentication, Firestore, A/B testing, Crashlytics, Analytics, Admin, Messaging, Cloud Functions). Initiated development of a supporting React.js web application.",
+    "apple": "https://apps.apple.com/ae/app/tempo/id954178248"
+  },
+  {
     "id": "loan-manager",
     "title": "Loan Manager",
     "skills": [
@@ -69,25 +90,5 @@
       "Remix"
     ],
     "description": "Mandii Mart is a B2B mobile application designed to streamline bulk purchasing for stores, grocers, restaurants, and other businesses. It offers a comprehensive suite of features including cart management, repeat ordering, custom order capabilities, favorites lists, and real-time out-of-stock notifications to optimize inventory management."
-  },
-  {
-    "id": "tempo",
-    "title": "Tempo",
-    "skills": [
-      "React Native CLI",
-      "Firebase Authentication",
-      "Firebase Firestore Database",
-      "Firebase Storage",
-      "React Navigation",
-      "Redux Toolkit",
-      "Redux Persist",
-      "Redux Thunk",
-      "React Native Paper",
-      "Formik",
-      "Axios",
-      "Dayjs",
-      "Jest"
-    ],
-    "description": "Led full-stack development of Tempo, an iOS-based event management and ticketing marketplace. Built core features (event creation, location management, dashboard, Stripe), and the entire Firebase backend (Authentication, Firestore, A/B testing, Crashlytics, Analytics, Admin, Messaging, Cloud Functions). Initiated development of a supporting React.js web application."
   }
 ]
