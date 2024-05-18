@@ -1,0 +1,22 @@
+[
+  {
+    "id": "0",
+    "title": "Guest Speaker at Google I/O Extended 2019",
+    "description": "I had the distinct honor of presenting at Google I/O Extended 2019, where I discussed the fundamentals of Kotlin in my presentation titled \"Introduction to Kotlin.\" Onstage at LUMS, I delved into the core concepts of Kotlin and its advantages over Java in the context of Android Development. GDG Lahore organized this noteworthy event."
+  },
+  {
+    "id": "1",
+    "title": "Tech Tology Lahore Chapter Launch",
+    "description": "I was honored to be invited as a guest speaker at the Tech Tology Lahore Chapter Launch event. During my presentation, I discussed the enjoyable aspects of constructing Android applications. The primary aim of my talk was to demystify Android Application Development, illustrating to developers how it can be an engaging and accessible process."
+  },
+  {
+    "id": "2",
+    "title": "Tech Tology Lahore Chapter",
+    "description": "I spoke at the Tech Tology Lahore Chapter Launch, delivering a seminar on Git and GitHub. The session covered the basics of repository management, collaborative work, and advanced GitHub features. The audience responded positively, and I received commendable feedback."
+  },
+  {
+    "id": "3",
+    "title": "Devenings & Tech Tology Lahore Chapter",
+    "description": "I had the honor of being a guest speaker at Tech Tology, where I presented on the services provided by Firebase. In response to the COVID-19 pandemic, our session was conducted virtually. Tech Tology and Devenings serve as vibrant tech communities, bringing together enthusiasts to exchange ideas, explore emerging technologies, and engage in insightful discussions."
+  }
+]

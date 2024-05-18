@@ -1,0 +1,94 @@
+[
+  {
+    "id": "sayaraat",
+    "title": "Sayaraat",
+    "skills": [
+      "Next.js",
+      "React",
+      "React Native",
+      "Express",
+      "PostgreSQL",
+      "TypeScript",
+      "Axios",
+      "Sequelize",
+      "Amazon Web Services",
+      "Firebase Cloud Messaging",
+      "Firebase Analytics",
+      "Firebase Crashlytics"
+    ],
+    "description": "Sayaraat is a comprehensive automotive marketplace designed for residents of the United Arab Emirates. This platform streamlines the process of buying, selling, and renting vehicles, offering users a wide range of options and services within the automotive sector.",
+    "google": "https://play.google.com/apps/internaltest/4700865611463819495",
+    "apple": "https://testflight.apple.com/join/SXzYG6rL",
+    "web": "https://web-fe-rho.vercel.app/"
+  },
+  {
+    "id": "tempo",
+    "title": "Tempo",
+    "skills": [
+      "React Native CLI",
+      "Firebase Authentication",
+      "Firebase Firestore Database",
+      "Firebase Storage",
+      "React Navigation",
+      "Redux Toolkit",
+      "Redux Persist",
+      "Redux Thunk",
+      "React Native Paper",
+      "Formik",
+      "Axios",
+      "Dayjs",
+      "Jest"
+    ],
+    "description": "Led full-stack development of Tempo, an iOS-based event management and ticketing marketplace. Built core features (event creation, location management, dashboard, Stripe), and the entire Firebase backend (Authentication, Firestore, A/B testing, Crashlytics, Analytics, Admin, Messaging, Cloud Functions). Initiated development of a supporting React.js web application.",
+    "apple": "https://apps.apple.com/ae/app/tempo/id954178248"
+  },
+  {
+    "id": "loan-manager",
+    "title": "Loan Manager",
+    "skills": [
+      "Native Android",
+      "Android Jetpack Libraries",
+      "SQLite (Room Database)"
+    ],
+    "description": "Track your loans with Loan Manager. With Loan Manager, you can track all your paid, unpaid loan and keep a history. Currently, simple statistics for all your loans are available.",
+    "web": "https://www.youtube.com/watch?v=3sio66CPQts&t=5s&ab_channel=ArslanMushtaq",
+    "google": "https://play.google.com/store/apps/details?id=arslan.appclub.loanmanager"
+  },
+  {
+    "id": "julso",
+    "title": "Julso",
+    "skills": [
+      "React Native CLI",
+      "Redux Toolkit",
+      "Redux Persist",
+      "React Native Async Storage",
+      "Axios",
+      "Dayjs",
+      "Google Places Autocomplete",
+      "React Native Maps",
+      "React Native Paper"
+    ],
+    "description": "Julso is your on-demand transportation solution in Pakistan. With a few taps on our app, connect with rickshaws, cars, bikes, or premium vehicles to get you where you need to go."
+  },
+  {
+    "id": "mandii-mart",
+    "title": "Mandii Mart",
+    "skills": [
+      "React Native CLI",
+      "Firebase Authentication",
+      "Firebase Firestore Database",
+      "Firebase Storage",
+      "React Navigation",
+      "Redux Toolkit",
+      "Redux Persist",
+      "Redux Thunk",
+      "React Native Paper",
+      "Formik",
+      "Axios",
+      "Dayjs",
+      "Jest",
+      "Remix"
+    ],
+    "description": "Mandii Mart is a B2B mobile application designed to streamline bulk purchasing for stores, grocers, restaurants, and other businesses. It offers a comprehensive suite of features including cart management, repeat ordering, custom order capabilities, favorites lists, and real-time out-of-stock notifications to optimize inventory management."
+  }
+]

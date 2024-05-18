@@ -1,0 +1,36 @@
+{
+  "projects": {
+    "heading": "Personal Projects",
+    "seeAllLink": "/projects",
+    "subtitle": "Projects I work on during my free time.",
+    "showSeeAll": true
+  },
+  "skills": {
+    "heading": "Skills",
+    "seeAllLink": "/skills",
+    "subtitle": "Skills I use frequently during my development.",
+    "showSeeAll": true
+  },
+  "experience": {
+    "heading": "Professional Experience",
+    "seeAllLink": "/experience",
+    "subtitle": "My professional experience till date",
+    "showSeeAll": true
+  },
+  "education": {
+    "heading": "Education",
+    "subtitle": "My education over the years",
+    "showSeeAll": false
+  },
+  "certifications": {
+    "heading": "Certifications",
+    "subtitle": "Certifications that help in my daily development",
+    "showSeeAll": false
+  },
+  "volunteering": {
+    "heading": "Volunteering Activities",
+    "seeAllLink": "/volunteering",
+    "subtitle": "My favorite part of life",
+    "showSeeAll": true
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "meta-ios",
+    "title": "Meta iOS",
+    "platform": "Coursera",
+    "url": "https://coursera.org/share/eb6d642c829974672fa7225e04432ac4"
+  },
+  {
+    "id": "meta-android",
+    "title": "Meta Android",
+    "platform": "Coursera",
+    "url": "https://coursera.org/share/eb591984a6b5ddf11575e1cb4948b6f5"
+  },
+  {
+    "id": "linkedin-learning",
+    "title": "+100 Certifications",
+    "platform": "LinkedIn Learning",
+    "url": "https://www.linkedin.com/in/mrarslanark/details/certifications"
+  }
+]
