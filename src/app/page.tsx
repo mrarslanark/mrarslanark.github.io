@@ -2,7 +2,7 @@ import ActivityListItem from "@/components/ActivityListItem";
 import CertificationListItem from "@/components/CertificationListItem";
 import DataList from "@/components/DataList";
 import ExperienceListItem from "@/components/ExperienceListItem";
-import EducationListItem from "@/components/ExperienceListItem copy";
+import EducationListItem from "@/components/EducationListItem";
 import Footer from "@/components/Footer";
 import Introduction from "@/components/Introduction";
 import ProjectItem from "@/components/ProjectItem";

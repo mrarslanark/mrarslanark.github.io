@@ -6,61 +6,53 @@
     "location_type": "Remote",
     "start_date": "April 2023",
     "end_date": "June 2024",
-    "responsibilities": [
-      "Organized team activities efficiently using Monday",
-      "Led the development and maintenance of mobile app infrastructure, utilizing Notion, Figma, and Terraform.",
-      "Crafted mobile applications proficiently with React Native, incorporating Redux, Redux RTK Query, and TypeScript.",
-      "Enhanced productivity by integrating Jenkins, App Center, and GitHub Actions for CI/CD.",
-      "Ensured application robustness through comprehensive end-to-end testing frameworks like jest and detox.",
-      "Enforced rigorous coding standards with ESlint and Prettier.",
-      "Established design guidelines in Figma for UI/UX consistency.",
-      "Applied Agile methodologies effectively for mobile app success."
+    "description": "As a Lead Frontend Developer, I led the creation and management of a mobile app and web module from scratch. Using Monday for team organization, I developed the app's infrastructure with Notion, Figma, and Terraform. I built the app with React Native, Redux, Redux RTK Query, and TypeScript. Enhancing productivity, I implemented CI/CD with Jenkins, App Center, and GitHub Actions, ensured robustness with Jest and Detox, maintained coding standards with ESLint and Prettier, and used Agile methodologies for success.",
+    "achievements": [
+      "The application being free increased web traffic by 30% and boosted e-commerce sales by 15%.",
+      "Thorough stress testing and implemented techniques allow the application to handle a million users.",
+      "Enhanced user experience during pre-release resulted in users spending more time on the app than expected."
     ]
   },
   {
     "id": "1",
-    "title": "Senior React Native Developer",
+    "title": "Senior React Native Engineer",
     "company": "S4 Digital, Belgium",
     "location_type": "Remote",
     "start_date": "October 2021",
     "end_date": "March 2023",
-    "responsibilities": [
-      "Enhanced an existing mobile app through pair programming with fellow developers.",
-      "Developed key features using React Native for the mobile application.",
-      "Maintained code quality with Jest unit tests and Appium/Webdriver for end-to-end testing.",
-      "Proactively addressed issues across environments using Bitrise, Dynatrace, and Instabug monitoring tools.",
-      "Implemented efficient localization with Magnolia CMS.",
-      "Facilitated debugging and troubleshooting with Sentry and React Native Debugger."
+    "description": "As a Senior React Native developer, I enhanced an existing mobile app through pair programming with colleagues and developed key features using React Native. I maintained code quality with Jest unit tests and end-to-end testing using Appium/Webdriver. I proactively addressed issues across environments using Bitrise, Dynatrace, and Instabug. Additionally, I implemented efficient localization with Magnolia CMS and facilitated debugging and troubleshooting with Sentry and React Native Debugger.",
+    "achievements": [
+      "Boosted E2E testing coverage from 45% to 96%",
+      "Increased traffic by 3% through the implementation of new features.",
+      "Enhanced localization efforts, resulting in an 8% rise in diverse traffic and enabling additional marketing strategies."
     ]
   },
   {
     "id": "2",
-    "title": "Associate React Native Developer",
+    "title": "Associate React Native Engineer",
     "company": "Ecologix, Pakistan",
     "location_type": "On-site",
     "start_date": "September 2020",
     "end_date": "September 2021",
-    "responsibilities": [
-      "Constructed client-tailored mobile applications using React Native.",
-      "Developed full-stack applications integrated with React Native using Google Firebase.",
-      "Optimized development processes with cutting-edge JavaScript ES6 techniques.",
-      "Oversaw a team of two junior members, fostering collaboration and productivity.",
-      "Managed client requirements effectively, ensuring seamless communication and satisfaction."
+    "description": "As an Associate React Native Engineer, I created custom mobile applications using React Native and developed full-stack applications integrated with technologies such as Node.js, Express, PostgreSQL, MySQL, MariaDB, Google Firebase, and Amazon Web Services. I optimized development processes with advanced JavaScript ES6 techniques and led a team of 12 developers, fostering collaboration and productivity. Additionally, I managed client requirements effectively, ensuring seamless communication and high client satisfaction.",
+    "achievements": [
+      "Boosted monthly revenue from USD 0 to USD 18,000 by completing projects and introducing maintenance contracts.",
+      "Secured over 8 clients, generating steady revenue for the Software Development Unit.",
+      "Led a team of 8 to 12 developers and mentored 5 developers, contributing to a monthly revenue increase to half a million dollars yearly."
     ]
   },
   {
     "id": "3",
-    "title": "React Native Developer",
+    "title": "React Native Engineer",
     "company": "Juice Phactree, Canada",
     "location_type": "Remote",
     "start_date": "September 2015",
     "end_date": "August 2020",
-    "responsibilities": [
-      "Transitioned from Native Android Developer to React Native framework.",
-      "Integrated popular React Native libraries and third-party APIs.",
-      "Managed end-to-end mobile app lifecycle, from development to deployment.",
-      "Solely responsible for the mobile application's architecture and codebase.",
-      "Provided technical support and troubleshooting for mobile applications."
+    "description": "I began my career in Native Android Development and later transitioned to the React Native framework, smoothly adjusting to the change. In this capacity, I adeptly incorporated popular React Native libraries and third-party APIs to ensure mobile apps ran seamlessly. I oversaw the complete lifecycle of mobile app development and deployment, taking full responsibility for architectural design and codebase maintenance. Furthermore, I provided extensive technical support and troubleshooting for the mobile applications I managed.",
+    "achievements": [
+      "Pioneered mobile app development in a startup, acquiring clients and growing the team.",
+      "Increased quarterly revenue from 8,000 CAD to 33,000 CAD through app and web development.",
+      "Explored diverse areas like marketing and sales, gaining insights into digital marketing and finances."
     ]
   }
 ]

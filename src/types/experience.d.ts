@@ -5,5 +5,6 @@ export interface IExperience {
   location_type: string;
   start_date: string;
   end_date: string;
-  responsibilities: string[];
+  description: string;
+  achievements: string[];
 }

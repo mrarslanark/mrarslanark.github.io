@@ -8,7 +8,8 @@ const ExperienceListItem: React.FC<IExperience> = ({
   company,
   start_date,
   end_date,
-  responsibilities,
+  description,
+  achievements,
 }) => {
   return (
     <div className="flex flex-col gap-4 my-4">
@@ -18,13 +19,14 @@ const ExperienceListItem: React.FC<IExperience> = ({
         bottomLeftText={company}
         bottomRightText={`${start_date} - ${end_date}`}
       />
-      <div>
+      <div className="flex flex-col gap-3">
+        <p>{description}</p>
         <ul className="flex flex-col gap-2">
-          {responsibilities.map((responsibility) => {
+          {achievements.map((achievement) => {
             return (
-              <li key={responsibility} className="flex gap-2 font-light">
+              <li key={achievement} className="flex gap-2 font-light">
                 <FaCircle size={8} className="mt-2 text-gray-400" />{" "}
-                {responsibility}
+                {achievement}
               </li>
             );
           })}
