@@ -7,7 +7,7 @@ import TextLink from "./TextLink";
 
 const Introduction = () => {
   return (
-    <Section invert>
+    <Section>
       <div className="flex gap-x-2 items-center">
         <div className="flex flex-1 flex-col gap-3">
           <div className="flex flex-col gap-1">
