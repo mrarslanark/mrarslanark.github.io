@@ -8,6 +8,7 @@ import Introduction from "@/components/Introduction";
 import ProjectItem from "@/components/ProjectItem";
 import SkillListItem from "@/components/SkillListItem";
 import Data from "@/data";
+import DevDenSection from "@/components/DevDenSection";
 
 const data = [
   {
@@ -63,6 +64,7 @@ export default function Home() {
   return (
     <main className="flex flex-col flex-1">
       <Introduction />
+      <DevDenSection />
       {data.map((item) => {
         return <DataList key={item.id} {...item} />;
       })}
