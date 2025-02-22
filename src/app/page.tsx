@@ -64,7 +64,6 @@ export default function Home() {
   return (
     <main className="flex flex-col flex-1">
       <Introduction />
-      {/* <DevDenSection /> */}
       {data.map((item) => {
         return <DataList key={item.id} {...item} />;
       })}
