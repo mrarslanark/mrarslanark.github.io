@@ -1,6 +1,22 @@
 [
   {
-    "id": "0",
+    "id": "amega",
+    "title": "Technical Lead (Frontend)",
+    "company": "Amega, Cyprus",
+    "location_type": "Remote",
+    "start_date": "June 2024",
+    "end_date": "November 2025",
+    "description": "As a Technical Lead, I directed a five-member development team in the end-to-end creation of a high-performance trading application. My responsibilities encompassed establishing the foundational architecture and base for three distinct projects. I personally contributed to the complex development of real-time data integration, intricate user interfaces, and sophisticated business logic. Furthermore, I optimized operations by automating the build and managing the continuous deployment pipeline. My role also included team management, mentoring, task assignment, and close collaboration with the CTO, Product, Backend, and Quality Assurance teams.",
+    "achievements": [
+      "Led the frontend ecosystem across React Native, Next.js, and .NET, delivering performance‑optimized features used across multiple products.",
+      "Built a unified automation framework using Appium + WebDriverIO, cutting manual QA work by 30% and standardizing testing across projects.",
+      "Improved CI/CD pipelines, reducing deployment time by 20% and increasing consistency across environments.",
+      "Led a team of 5 engineers, guiding architecture decisions, code reviews, and mentoring junior developers.",
+      "Worked closely with product and backend teams to ship stable, scalable features under tight timelines."
+    ]
+  },
+  {
+    "id": "novos",
     "title": "Lead Frontend Developer",
     "company": "Novos, USA",
     "location_type": "Remote",
@@ -14,7 +30,7 @@
     ]
   },
   {
-    "id": "1",
+    "id": "s4-digital",
     "title": "Senior React Native Engineer",
     "company": "S4 Digital, Belgium",
     "location_type": "Remote",
@@ -28,7 +44,7 @@
     ]
   },
   {
-    "id": "2",
+    "id": "ecologix",
     "title": "Associate React Native Engineer",
     "company": "Ecologix, Pakistan",
     "location_type": "On-site",
@@ -42,7 +58,7 @@
     ]
   },
   {
-    "id": "3",
+    "id": "juice-phactree",
     "title": "React Native Engineer",
     "company": "Juice Phactree, Canada",
     "location_type": "Remote",

@@ -65,7 +65,7 @@ const DataList: React.FC<DataListProps & PageProps> = ({
           href={seeAll?.url!}
           className="flex items-center gap-1 my-4 underline hover:animate-pulse"
         >
-          See all {data.length + (limit ?? 0)} {seeAll?.type}{" "}
+          Explore all {seeAll?.type}{" "}
           <IoIosArrowRoundForward className="text-black" size={24} />
         </Link>
       ) : null}
