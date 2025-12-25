@@ -1,14 +1,12 @@
 import ActivityListItem from "@/components/ActivityListItem";
 import CertificationListItem from "@/components/CertificationListItem";
 import DataList from "@/components/DataList";
-import ExperienceListItem from "@/components/ExperienceListItem";
 import EducationListItem from "@/components/EducationListItem";
-import Footer from "@/components/Footer";
+import ExperienceListItem from "@/components/ExperienceListItem";
 import Introduction from "@/components/Introduction";
 import ProjectItem from "@/components/ProjectItem";
 import SkillListItem from "@/components/SkillListItem";
 import Data from "@/data";
-import DevDenSection from "@/components/DevDenSection";
 
 const data = [
   {

@@ -12,7 +12,7 @@ const Introduction = () => {
         <div className="flex flex-col gap-1">
           <p className="text-md font-semibold md:text-2xl">ARSLAN MUSHTAQ</p>
           <p className="text-xs md:text-base">
-            Full Stack Developer, Content Creator, Gamer, and Traveler
+            <b>Principle Software Engineer</b> - Web, Mobile, &amp; Backend
           </p>
         </div>
         <SocialLinks />
