@@ -1,4 +1,5 @@
 import ActivityListItem from "@/components/ActivityListItem";
+import BulletListItem from "@/components/BulletListItem";
 import CertificationListItem from "@/components/CertificationListItem";
 import DataList from "@/components/DataList";
 import EducationListItem from "@/components/EducationListItem";
@@ -27,12 +28,18 @@ const data = [
     seeAll: { url: "/skills", type: "skills" },
   },
   {
+    id: "architecture-and-leadership",
+    data: Data.ArchitectureAndLeadership,
+    listItem: BulletListItem,
+    header: Data.Headers["architecture-and-leadership"],
+    invert: true,
+  },
+  {
     id: "experience",
     data: Data.Experience,
     listItem: ExperienceListItem,
     header: Data.Headers.experience,
     limit: 2,
-    invert: true,
     seeAll: { url: "/experience", type: "experience" },
   },
   {
@@ -40,13 +47,13 @@ const data = [
     data: Data.Education,
     listItem: EducationListItem,
     header: Data.Headers.education,
+    invert: true,
   },
   {
     id: "certifications",
     data: Data.Certifications,
     listItem: CertificationListItem,
     header: Data.Headers.certifications,
-    invert: true,
   },
   {
     id: "volunteering",
@@ -55,6 +62,7 @@ const data = [
     header: Data.Headers.volunteering,
     limit: 2,
     seeAll: { url: "/volunteering", type: "volunteering activities" },
+    invert: true,
   },
 ];
 

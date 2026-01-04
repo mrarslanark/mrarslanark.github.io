@@ -8,6 +8,7 @@ import Section from "./Section";
 import { SectionHeadingProps } from "./SectionHeading";
 import { IAchievement, IEducation } from "@/types/education";
 import { ICertifications } from "@/types/certifications";
+import { IList } from "@/types/list";
 
 type DataListProps = {
   data:
@@ -16,7 +17,8 @@ type DataListProps = {
     | IExperience[]
     | IEducation[]
     | ICertifications[]
-    | IAchievement[];
+    | IAchievement[]
+    | IList[];
   listItem: React.FC<
     | IProject
     | ISkill
@@ -24,6 +26,7 @@ type DataListProps = {
     | IEducation
     | ICertifications
     | IAchievement
+    | IList
     | any
   >;
   header: SectionHeadingProps;

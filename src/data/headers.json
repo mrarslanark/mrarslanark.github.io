@@ -32,5 +32,10 @@
     "seeAllLink": "/volunteering",
     "subtitle": "My favorite part of life",
     "showSeeAll": true
+  },
+  "architecture-and-leadership": {
+    "heading": "Architecture & Technical Leadership",
+    "subtitle": "Architecture decisions and leadership roles I've undertaken",
+    "showSeeAll": false
   }
 }

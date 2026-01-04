@@ -5,6 +5,7 @@ import Experience from "./experience.json";
 import Education from "./education.json";
 import Certifications from "./certifications.json";
 import Volunteering from "./volunteering.json";
+import ArchitectureAndLeadership from "./arch-and-leader.json";
 
 const Data = {
   Headers,
@@ -14,6 +15,7 @@ const Data = {
   Education,
   Certifications,
   Volunteering,
+  ArchitectureAndLeadership,
 };
 
 export default Data;
