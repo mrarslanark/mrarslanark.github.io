@@ -1,60 +1,59 @@
 [
   {
     "id": "amega",
-    "title": "Technical Lead (Frontend)",
+    "title": "Lead Frontend Engineer",
     "company": "Amega, Cyprus",
     "location_type": "Remote",
     "start_date": "June 2024",
     "end_date": "November 2025",
-    "description": "As a Technical Lead, I directed a five-member development team in the end-to-end creation of a high-performance trading application. My responsibilities encompassed establishing the foundational architecture and base for three distinct projects. I personally contributed to the complex development of real-time data integration, intricate user interfaces, and sophisticated business logic. Furthermore, I optimized operations by automating the build and managing the continuous deployment pipeline. My role also included team management, mentoring, task assignment, and close collaboration with the CTO, Product, Backend, and Quality Assurance teams.",
     "achievements": [
-      "Led the frontend ecosystem across React Native, Next.js, and .NET, delivering performance‑optimized features used across multiple products.",
-      "Built a unified automation framework using Appium + WebDriverIO, cutting manual QA work by 30% and standardizing testing across projects.",
-      "Improved CI/CD pipelines, reducing deployment time by 20% and increasing consistency across environments.",
-      "Led a team of 5 engineers, guiding architecture decisions, code reviews, and mentoring junior developers.",
-      "Worked closely with product and backend teams to ship stable, scalable features under tight timelines."
+      "Owned and defined the mobile and frontend architecture across React Native and web platforms, serving as the primary technical decision-maker for performance, scalability, and tooling strategy.",
+      "Led the frontend ecosystem across multiple products, delivering performance-optimized features used across customer-facing financial applications.",
+      "Designed and implemented a unified automation framework using Appium and WebDriverIO, reducing manual QA effort by 30% and standardizing testing practices organization-wide.",
+      "Architected and improved CI/CD pipelines, reducing deployment time by 20% while increasing release reliability and environment consistency.",
+      "Led and mentored a team of 5 engineers, conducting architecture reviews, code reviews, and technical coaching.",
+      "Collaborated closely with Product, Backend, and QA teams to deliver stable, scalable features under aggressive timelines."
     ]
   },
   {
     "id": "novos",
-    "title": "Lead Frontend Developer",
-    "company": "Novos, USA",
+    "title": "Senior React Native Engineer",
+    "company": "Novos, United States of America",
     "location_type": "Remote",
     "start_date": "April 2023",
     "end_date": "June 2024",
-    "description": "As a Lead Frontend Developer, I led the creation and management of a mobile app and web module from scratch. Using Monday for team organization, I developed the app's infrastructure with Notion, Figma, and Terraform. I built the app with React Native, Redux, Redux RTK Query, and TypeScript. Enhancing productivity, I implemented CI/CD with Jenkins, App Center, and GitHub Actions, ensured robustness with Jest and Detox, maintained coding standards with ESLint and Prettier, and used Agile methodologies for success.",
     "achievements": [
-      "The application being free increased web traffic by 30% and boosted e-commerce sales by 15%.",
-      "Thorough stress testing and implemented techniques allow the application to handle a million users.",
-      "Enhanced user experience during pre-release resulted in users spending more time on the app than expected."
+      "Led architectural decisions for a large-scale React Native application supporting 1M+ users, focusing on performance optimization, scalability, and reliability.",
+      "Delivered high-impact mobile features contributing to a 30% increase in traffic and 15% growth in e-commerce revenue.",
+      "Implemented performance and stability strategies that significantly improved app responsiveness and crash rates.",
+      "Worked cross-functionally with Product, Backend, and Design teams to translate business requirements into scalable mobile solutions."
     ]
   },
   {
     "id": "s4-digital",
     "title": "Senior React Native Engineer",
-    "company": "S4 Digital, Belgium",
+    "company": "S4 Digital, Pakistan",
     "location_type": "Remote",
     "start_date": "October 2021",
     "end_date": "March 2023",
-    "description": "As a Senior React Native developer, I enhanced an existing mobile app through pair programming with colleagues and developed key features using React Native. I maintained code quality with Jest unit tests and end-to-end testing using Appium/Webdriver. I proactively addressed issues across environments using Bitrise, Dynatrace, and Instabug. Additionally, I implemented efficient localization with Magnolia CMS and facilitated debugging and troubleshooting with Sentry and React Native Debugger.",
     "achievements": [
-      "Boosted E2E testing coverage from 45% to 96%",
-      "Increased traffic by 3% through the implementation of new features.",
-      "Enhanced localization efforts, resulting in an 8% rise in diverse traffic and enabling additional marketing strategies."
+      "Established and enforced end-to-end testing standards for mobile applications, increasing E2E coverage from 45% to 96%.",
+      "Contributed to architectural improvements and feature delivery, resulting in a 3% increase in application traffic.",
+      "Led localization and release enhancements that drove an 8% increase in engagement from diverse user regions."
     ]
   },
   {
     "id": "ecologix",
-    "title": "Associate React Native Engineer",
+    "title": "Associate React Native Engineer (De facto Technical Lead)",
     "company": "Ecologix, Pakistan",
     "location_type": "On-site",
     "start_date": "September 2020",
-    "end_date": "September 2021",
-    "description": "As an Associate React Native Engineer, I created custom mobile applications using React Native and developed full-stack applications integrated with technologies such as Node.js, Express, PostgreSQL, MySQL, MariaDB, Google Firebase, and Amazon Web Services. I optimized development processes with advanced JavaScript ES6 techniques and led a team of 12 developers, fostering collaboration and productivity. Additionally, I managed client requirements effectively, ensuring seamless communication and high client satisfaction.",
+    "end_date": "August 2021",
     "achievements": [
-      "Boosted monthly revenue from USD 0 to USD 18,000 by completing projects and introducing maintenance contracts.",
-      "Secured over 8 clients, generating steady revenue for the Software Development Unit.",
-      "Led a team of 8 to 12 developers and mentored 5 developers, contributing to a monthly revenue increase to half a million dollars yearly."
+      "Delivered production mobile applications across the full lifecycle from architecture and development to deployment and maintenance.",
+      "Functioned as de facto technical lead for mobile projects, coordinating delivery across teams of 8–12 developers.",
+      "Drove company revenue growth by delivering client projects and securing ongoing maintenance contracts, increasing monthly revenue from $0 to $18,000.",
+      "Mentored junior and mid-level engineers, directly impacting delivery velocity and quality."
     ]
   },
   {
@@ -64,11 +63,10 @@
     "location_type": "Remote",
     "start_date": "September 2015",
     "end_date": "August 2020",
-    "description": "I began my career in Native Android Development and later transitioned to the React Native framework, smoothly adjusting to the change. In this capacity, I adeptly incorporated popular React Native libraries and third-party APIs to ensure mobile apps ran seamlessly. I oversaw the complete lifecycle of mobile app development and deployment, taking full responsibility for architectural design and codebase maintenance. Furthermore, I provided extensive technical support and troubleshooting for the mobile applications I managed.",
     "achievements": [
-      "Pioneered mobile app development in a startup, acquiring clients and growing the team.",
-      "Increased quarterly revenue from 8,000 CAD to 33,000 CAD through app and web development.",
-      "Explored diverse areas like marketing and sales, gaining insights into digital marketing and finances."
+      "Built and delivered mobile applications for multiple clients, contributing to the expansion of the company’s client portfolio.",
+      "Increased quarterly revenue from 8,000 CAD to 33,000 CAD through successful delivery and long-term client engagement.",
+      "Collaborated cross-functionally with marketing and sales teams to support product growth initiatives."
     ]
   }
 ]

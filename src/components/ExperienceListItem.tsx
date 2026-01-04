@@ -8,7 +8,6 @@ const ExperienceListItem: React.FC<IExperience> = ({
   company,
   start_date,
   end_date,
-  description,
   achievements,
 }) => {
   return (
@@ -20,12 +19,13 @@ const ExperienceListItem: React.FC<IExperience> = ({
         bottomRightText={`${start_date} - ${end_date}`}
       />
       <div className="flex flex-col gap-3">
-        <p>{description}</p>
         <ul className="flex flex-col gap-2">
           {achievements.map((achievement) => {
             return (
               <li key={achievement} className="flex gap-2 font-light">
-                <FaCircle size={8} className="mt-2 text-gray-400" />{" "}
+                <div>
+                  <FaCircle size={6} className="mt-2 text-black" />
+                </div>{" "}
                 {achievement}
               </li>
             );
