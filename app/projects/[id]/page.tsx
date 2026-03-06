@@ -162,7 +162,7 @@ export default async function ProjectPage(props: {
                   <ul className="space-y-4">
                     {project.contribution.map((item: string, i: number) => (
                       <li key={i} className="flex items-start gap-3">
-                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                        <div className="mt-2.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
                         <span className="text-muted-light leading-relaxed">
                           {item}
                         </span>
