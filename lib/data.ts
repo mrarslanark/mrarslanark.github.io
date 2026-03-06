@@ -20,7 +20,7 @@ export const projects = {
     {
       title: "PulseBoard",
       description:
-        "Self-hostable real-time observability platform for mobile developers. Ingest errors, events & metrics via REST API. Live dashboard with WebSocket streaming, JWT auth, email alerts, and background job workers.",
+        "Built PulseBoard — an open-source mobile observability platform featuring crash analytics, real-time WebSocket event streaming, AI-powered insights via Anthropic/OpenAI/Google/Moonshot, and a React Native SDK. Self-hostable backend on Railway, web dashboard on Vercel.",
       tags: [
         "Next.js",
         "React Native",
@@ -29,15 +29,16 @@ export const projects = {
         "PostgreSQL",
         "Redis",
         "Railway",
+        "BullMQ",
       ],
       url: "https://pulseboard-omega-ruddy.vercel.app",
-      type: "Web App",
+      type: "Product",
       status: "Live",
     },
     {
       title: "KMIH 88.9 Radio",
       description:
-        "A sleek radio station app that allows users to listen to their favorite station on the go. Features real-time stream playback, Spotify integration, and Firebase analytics.",
+        "A student-operated radio station at Mercer Island High School, featuring a web application developed with Bolt.new and an iOS-exclusive mobile app built using React Native.",
       tags: [
         "React Native CLI",
         "React Navigation",
@@ -46,81 +47,106 @@ export const projects = {
         "React Query",
         "Firebase",
       ],
-      url: "https://radio-station-stream-xnee.bolt.host/",
+      url: "https://apps.apple.com/us/app/kmih-88-9/id6755164132",
       type: "Mobile App",
       status: "Live",
     },
     {
-      title: "InventoryPro",
+      title: "Loan Manager v2.0",
       description:
-        "Internal inventory management system with a custom native Android app integrated with handheld hardware scanners for real-time inventory logging.",
-      tags: [
-        "React Native",
-        "Android (Java)",
-        "Hardware Integration",
-        "REST API",
-      ],
+        "Loan Manager, a mobile-first product focused on bringing structure and reliability to informal personal lending. Millions of people lend and borrow money within their personal networks without proper tracking, instalment visibility, or accountability systems. Over time, this lack of structure creates missed repayments, unclear expectations, and strained relationships.",
+      tags: ["React Native", "Java Spring Boot", "Redis", "PostgreSQL"],
+      url: "https://play.google.com/store/apps/details?id=arslan.appclub.loanmanager",
+      type: "Product",
+      status: "Live",
+    },
+    {
+      title: "Sayaraat",
+      description:
+        "Sayaraat is a comprehensive vehicle-focused marketplace designed for buying, selling, renting, and modifying vehicles of all kinds. The platform is exclusively dedicated to vehicles, ranging from everyday cars and motorcycles to specialized machinery such as dump trucks and even recreational vehicles like go-karts.",
+      tags: ["React Native"],
       url: "#",
-      type: "Mobile App",
-      status: "Internal",
+      type: "Product",
+      status: "Development",
+    },
+    {
+      title: "You Can Do It",
+      description:
+        "You Can Do It is a platform designed to help parents manage and support their children through a gamified approach to daily development and behavior. The platform analyzes behavioral patterns over time to provide meaningful insights, enabling parents to better understand their children and guide them through everyday tasks more effectively.",
+      tags: ["React Native"],
+      url: "#",
+      type: "Product",
+      status: "Development",
+    },
+    {
+      title: "Snooki",
+      description:
+        "A gamified digital platform for snooker clubs that allows club owners to register their venues and manage players digitally. Players maintain personal snooker profiles based on recorded match results, performance history, and winning streaks.",
+      tags: ["React Native"],
+      url: "#",
+      type: "Product",
+      status: "Development",
+    },
+    {
+      title: "IntraExchange",
+      description:
+        "IntraExChange allows employers to shift employees to other companies by a single click. It is a perk that can be offered to an employee so it is easy for a company not to fire and leave them stranded and put a negative effect on the company’s reputation or the employees. Companies can integrate IntraExchange to understand how an employee is judged based on his work either working remotely or on-site.",
+      tags: ["React Native"],
+      url: "#",
+      type: "Product",
+      status: "Development",
+    },
+    {
+      title: "YumAte",
+      description:
+        "YumAte is a community-funded recipe marketplace where culinary creators turn original recipes into monetized digital assets. Instead of selling recipes individually, creators publish premium recipes using a collective unlock model, where users contribute small fees toward a funding goal; once reached, the recipe becomes permanently available to all contributors. The platform also supports recipe remixing with attribution and royalty sharing, creating a sustainable ecosystem for collaborative culinary innovation. ",
+      tags: ["React Native"],
+      url: "#",
+      type: "Product",
+      status: "Development",
+    },
+    {
+      title: "YumAte",
+      description:
+        "Voyesta is a unified travel and event management platform that enables users to plan personalized trips, discover destinations, purchase tickets, and organize complete itineraries in one place. The platform also empowers event organizers and tour guides with tools to create, manage, and promote events, handle venues, and manage ticketing and attendee engagement through an integrated dashboard. By combining travel discovery with streamlined event management, Voyesta delivers a seamless experience for both explorers and organizers.",
+      tags: ["React Native"],
+      url: "#",
+      type: "Product",
+      status: "Development",
     },
   ],
   professional: [
     {
-      title: "Amega Trading Platform",
+      id: "fundix",
+      title: "Fundix.pro",
+      subtitle: "Prop Trading Application",
+      build_at: "Amega",
       description:
-        "Architected 3 React Native fintech applications from scratch for a Cyprus-based broker. Includes real-time trading dashboards, multi-environment pipelines, and full analytics stack.",
+        "I led the architecture of the application using React Native alongside a small engineering team, establishing the foundational codebase structure, implementing complex business logic, and integrating third-party services. I managed two developers—mentoring a junior engineer to mid-level and oversaw performance optimization, scalability, and overall code quality.",
+      contribution: [
+        "Build the initial documentation for system design",
+        "Managed the organization of the codebase by applying principles like SOLID, DRY, OOP, and KISS pattern.",
+        "Implemented CI/CD for linting, unit test coverage check, and check for documentation",
+        "Implemented CIC/CD for E2E with GitHub Actions and BrowserStack for fullfilling business requirements",
+        "Managed performance through profiling, scanning the bundle and apply necessary solutions like lazy loading, code splitting",
+        "Made usage of Agents to enhance productivity across the team and myself",
+        "Cross collaborated with backend team along with UI/UX designers for handoff designs",
+        "Mentored junior and senior developers through tough decision and point of disturbance",
+      ],
       tags: [
         "React Native",
+        "Next.js",
+        "React Query",
+        "React Navigation API",
         "Zustand",
         "WebSockets",
         "Strapi",
         "GitHub Actions",
         "Fastlane",
       ],
-      url: "#",
+      urls: "#",
       type: "Mobile App",
-      status: "Production",
-    },
-    {
-      title: "Novos Health Platform",
-      description:
-        "Greenfield React Native app for a health-tech platform serving 1M+ users. Built a server-driven UI questionnaire engine with 50+ conditional branches and Redux Toolkit.",
-      tags: [
-        "React Native",
-        "Redux Toolkit",
-        "Server-Driven UI",
-        "WordPress CMS",
-        "Detox",
-      ],
-      url: "#",
-      type: "Mobile App",
-      status: "Production",
-    },
-    {
-      title: "Proximus Network Module",
-      description:
-        "Scalable micro-frontend features for Belgium's largest telecom using Re.pack federated architecture, enterprise telemetry (Dynatrace), and 96% E2E test coverage.",
-      tags: [
-        "React Native",
-        "Re.pack",
-        "Redux Saga",
-        "Dynatrace",
-        "Appium",
-        "WebDriverIO",
-      ],
-      url: "#",
-      type: "Mobile App",
-      status: "Production",
-    },
-    {
-      title: "Backend Observability API",
-      description:
-        "High-performance RESTful API and background job infrastructure for real-time metric ingestion, analytics pipelines, and alert systems across distributed mobile clients.",
-      tags: ["Node.js", "Fastify", "PostgreSQL", "Redis", "Docker"],
-      url: "#",
-      type: "Backend System",
-      status: "Production",
+      status: "Archived",
     },
   ],
 };
