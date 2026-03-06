@@ -1,14 +1,6 @@
-import { projects } from "@/lib/data";
+import { Project } from "@/lib/types/project";
 import { motion } from "framer-motion";
-import {
-  Archive,
-  ArrowUpRight,
-  ExternalLink,
-  Globe,
-  Server,
-  Smartphone,
-  Sparkles,
-} from "lucide-react";
+import { Archive, Globe, Server, Smartphone, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 const typeIcon = {
@@ -27,11 +19,11 @@ const statusColor: Record<string, string> = {
   Archived: "text-orange border-orange/30 bg-orange/5",
 };
 
-export function ProfessionalCard({
+export function ProjectCard({
   project,
   index,
 }: {
-  project: (typeof projects.professional)[0];
+  project: Project;
   index: number;
 }) {
   return (
@@ -50,30 +42,18 @@ export function ProfessionalCard({
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
       {/* Header */}
-      <div className="flex items-start justify-between mb-4">
-        <div className="flex items-center gap-2">
-          <span className="flex items-center gap-1.5 text-xs font-mono text-muted px-2.5 py-1 border border-border rounded-md">
-            {typeIcon[project.type as keyof typeof typeIcon]}
-            {project.type}
-          </span>
-          <span
-            className={`text-xs font-mono px-2.5 py-1 border rounded-md ${
-              statusColor[project.status]
-            }`}
-          >
-            {project.status}
-          </span>
-        </div>
-        {/* {project.url !== "#" && (
-          <a
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted hover:text-accent transition-colors duration-200 opacity-0 group-hover:opacity-100"
-          >
-            <ArrowUpRight size={18} />
-          </a>
-        )} */}
+      <div className="flex items-start justify-between mb-4 items-center gap-2">
+        <span className="flex items-center gap-1.5 text-xs font-mono text-muted px-2.5 py-1 border border-border rounded-md">
+          {typeIcon[project.type as keyof typeof typeIcon]}
+          {project.type}
+        </span>
+        <span
+          className={`text-xs font-mono px-2.5 py-1 border rounded-md ${
+            statusColor[project.status]
+          }`}
+        >
+          {project.status}
+        </span>
       </div>
 
       {/* Title */}
@@ -92,8 +72,8 @@ export function ProfessionalCard({
       </p>
 
       <Link
-        href={`project/${project.id}`}
-        className="text-sm font-semibold text-accent hover:underline"
+        href={`/projects/${project.id}`}
+        className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:underline"
       >
         View Details
       </Link>

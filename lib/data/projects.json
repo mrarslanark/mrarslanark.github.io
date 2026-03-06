@@ -1,0 +1,132 @@
+{
+  "personal": [
+    {
+      "id": "pulseboard",
+      "title": "PulseBoard",
+      "subtitle": "Monitoring & Observability Platform",
+      "description": "An open-source mobile observability platform featuring crash analytics, real-time WebSocket event streaming, AI-powered insights via Anthropic/OpenAI/Google/Moonshot, and a React Native SDK. Self-hostable backend on Railway, web dashboard on Vercel.",
+      "type": "Product",
+      "status": "Live",
+      "contribution": [],
+      "tags": [
+        "Next.js",
+        "React Native",
+        "Node.js",
+        "Fastify",
+        "PostgreSQL",
+        "Redis",
+        "Railway",
+        "BullMQ"
+      ],
+      "urls": [
+        {
+          "id": "1",
+          "type": "web",
+          "url": "https://pulseboard-omega-ruddy.vercel.app",
+          "title": "Visit Homepage"
+        },
+        {
+          "id": "2",
+          "type": "github",
+          "url": "https://github.com/aenexar/pulseboard-react-native",
+          "title": "React Native SDK - Repository"
+        }
+      ]
+    },
+    {
+      "id": "kmih-88-9-radio",
+      "title": "KMIH 88.9 Radio",
+      "subtitle": "Student Operated Radio Station",
+      "description": "A student-operated radio station at Mercer Island High School, featuring a web application developed with Bolt.new and an iOS-exclusive mobile app built using React Native.",
+      "type": "Mobile App",
+      "status": "Live",
+      "tags": [
+        "React Native CLI",
+        "React Navigation",
+        "Axios",
+        "Spotify Web API",
+        "React Query",
+        "Firebase"
+      ],
+      "contribution": [],
+      "urls": [
+        {
+          "id": "1",
+          "type": "ios",
+          "url": "https://apps.apple.com/us/app/kmih-88-9/id6755164132",
+          "title": "View on App Store"
+        },
+        {
+          "id": "2",
+          "type": "web",
+          "url": "https://radio-station-stream-xnee.bolt.host/",
+          "title": "Visit Homepage"
+        }
+      ]
+    },
+    {
+      "id": "loan-manager-v2-0",
+      "title": "Loan Manager v2.0",
+      "subtitle": "Informal Loan Management Platform",
+      "description": "Loan Manager, a mobile-first product focused on bringing structure and reliability to informal personal lending. Millions of people lend and borrow money within their personal networks without proper tracking, instalment visibility, or accountability systems. Over time, this lack of structure creates missed repayments, unclear expectations, and strained relationships.",
+      "type": "Product",
+      "status": "Live",
+      "tags": ["React Native", "Java Spring Boot", "Redis", "PostgreSQL"],
+      "urls": [
+        {
+          "id": "1",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=arslan.appclub.loanmanager",
+          "title": "VIew on Google Play - v1.0"
+        }
+      ],
+      "contribution": []
+    }
+  ],
+  "professional": [
+    {
+      "id": "fundix",
+      "title": "Fundix.pro",
+      "subtitle": "Prop Trading Application",
+      "build_at": "Amega",
+      "description": "I led the architecture of the application using React Native alongside a small engineering team, establishing the foundational codebase structure, implementing complex business logic, and integrating third-party services. I managed two developers—mentoring a junior engineer to mid-level and oversaw performance optimization, scalability, and overall code quality.",
+      "contribution": [
+        "Build the initial documentation for system design",
+        "Managed the organization of the codebase by applying principles like SOLID, DRY, OOP, and KISS pattern.",
+        "Implemented CI/CD for linting, unit test coverage check, and check for documentation",
+        "Implemented CIC/CD for E2E with GitHub Actions and BrowserStack for fullfilling business requirements",
+        "Managed performance through profiling, scanning the bundle and apply necessary solutions like lazy loading, code splitting",
+        "Made usage of Agents to enhance productivity across the team and myself",
+        "Cross collaborated with backend team along with UI/UX designers for handoff designs",
+        "Mentored junior and senior developers through tough decision and point of disturbance"
+      ],
+      "type": "Mobile App",
+      "status": "Archived",
+      "tags": [
+        "React Native",
+        "Next.js",
+        "React Query",
+        "React Navigation API",
+        "Zustand",
+        "WebSockets",
+        "Strapi",
+        "GitHub Actions",
+        "Fastlane"
+      ],
+      "urls": [
+        {
+          "id": "1",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=com.amega.fundix",
+          "title": "View on Google Play"
+        },
+        {
+          "id": "2",
+          "type": "web",
+          "url": "https://fundix.pro/",
+          "title": "Visit Homepage"
+        }
+      ]
+    }
+  ]
+}

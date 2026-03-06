@@ -1,11 +1,11 @@
 "use client";
 
-import { projects } from "@/lib/data";
+import projects from "@/lib/data/projects.json";
 import { AnimatePresence, motion } from "framer-motion";
 import { Layers } from "lucide-react";
 import { useState } from "react";
-import { PersonalCard } from "./projects/Personal";
-import { ProfessionalCard } from "./projects/Professional";
+import { ProjectCard } from "./molecules/ProjectItem";
+import { Project } from "@/lib/types/project";
 
 type TabKey = "personal" | "professional";
 
@@ -79,23 +79,9 @@ export default function Projects() {
                 return null;
               }
 
-              if (activeTab === "personal") {
-                return (
-                  <PersonalCard
-                    key={project.title}
-                    project={project as (typeof projects.personal)[number]}
-                    index={i}
-                  />
-                );
-              } else {
-                return (
-                  <ProfessionalCard
-                    key={project.title}
-                    project={project as (typeof projects.professional)[number]}
-                    index={i}
-                  />
-                );
-              }
+              return (
+                <ProjectCard index={i} project={project} key={project.id} />
+              );
             })}
           </motion.div>
         </AnimatePresence>
