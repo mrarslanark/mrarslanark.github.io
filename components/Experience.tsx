@@ -13,7 +13,9 @@ const typeColors: Record<string, string> = {
 };
 
 export default function Experience() {
-  const [expanded, setExpanded] = useState<string | null>(experience[0].company);
+  const [expanded, setExpanded] = useState<string | null>(
+    experience[0].company,
+  );
 
   return (
     <section id="experience" className="relative py-28 px-6">
@@ -30,11 +32,12 @@ export default function Experience() {
             <Briefcase size={16} className="text-accent" />
             <span className="section-label">Experience</span>
           </div>
-          <h2 className="font-syne text-4xl md:text-5xl font-extrabold text-text">
-            Professional Journey
+          <h2 className="font-syne text-4xl md:text-7xl font-semibold text-text">
+            Professional <span className="gradient-text">Journey</span>
           </h2>
           <p className="text-muted-light mt-3 max-w-xl">
-            Over 10 years of engineering leadership across fintech, health-tech, and telecom industries.
+            Over 10 years of engineering leadership across fintech, health-tech,
+            and telecom industries.
           </p>
         </motion.div>
 
@@ -77,11 +80,11 @@ export default function Experience() {
                   {/* Card */}
                   <div
                     className={`bg-surface border rounded-2xl overflow-hidden transition-colors duration-300 cursor-pointer ${
-                      isExpanded ? "border-accent/30" : "border-border hover:border-border/80"
+                      isExpanded
+                        ? "border-accent/30"
+                        : "border-border hover:border-border/80"
                     }`}
-                    onClick={() =>
-                      setExpanded(isExpanded ? null : job.company)
-                    }
+                    onClick={() => setExpanded(isExpanded ? null : job.company)}
                   >
                     {/* Header */}
                     <div className="p-5 md:p-6 flex items-start gap-4">
@@ -93,7 +96,7 @@ export default function Experience() {
                             {job.type}
                           </span>
                         </div>
-                        <h3 className="font-syne font-bold text-lg text-text">
+                        <h3 className="font-jetbrains font-bold text-lg text-text">
                           {job.title}
                         </h3>
                         <div className="flex flex-wrap items-center gap-3 mt-1.5">

@@ -40,8 +40,8 @@ export default function Skills() {
             <Code2 size={16} className="text-accent" />
             <span className="section-label">Technical Skills</span>
           </div>
-          <h2 className="font-syne text-4xl md:text-5xl font-extrabold text-text">
-            My Tech Stack
+          <h2 className="font-syne text-4xl md:text-7xl font-semibold text-text">
+            My <span className="gradient-text">Tech</span> Stack
           </h2>
           <p className="text-muted-light mt-3 max-w-xl">
             Tools and technologies I rely on daily to architect, build, and ship
@@ -69,7 +69,9 @@ export default function Skills() {
                 <span className="text-xl">
                   {categoryIcons[category] || "⚡"}
                 </span>
-                <h3 className="font-syne font-bold text-text">{category}</h3>
+                <h3 className="font-jetbrains font-bold text-text">
+                  {category}
+                </h3>
                 <span className="ml-auto text-xs font-mono text-muted px-2 py-0.5 bg-surface rounded border border-border">
                   {items.length} skills
                 </span>

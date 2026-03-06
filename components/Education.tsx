@@ -20,8 +20,8 @@ export default function Education() {
             <GraduationCap size={16} className="text-accent" />
             <span className="section-label">Education</span>
           </div>
-          <h2 className="font-syne text-4xl md:text-5xl font-extrabold text-text">
-            Academic Background
+          <h2 className="font-syne text-4xl md:text-5xl font-semibold text-text">
+            <span className="gradient-text">Academic</span> Background
           </h2>
         </motion.div>
 
@@ -42,7 +42,7 @@ export default function Education() {
                     <GraduationCap size={18} className="text-accent" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-syne font-bold text-text text-lg">
+                    <h3 className="font-jetbrains font-bold text-text text-lg">
                       {edu.degree}
                     </h3>
                     <p className="text-accent font-semibold mt-0.5">
@@ -55,8 +55,14 @@ export default function Education() {
                     {edu.achievements.length > 0 && (
                       <div className="mt-4 space-y-2">
                         {edu.achievements.map((ach, j) => (
-                          <div key={j} className="flex gap-2.5 text-sm text-muted-light">
-                            <Trophy size={14} className="text-accent flex-shrink-0 mt-0.5" />
+                          <div
+                            key={j}
+                            className="flex gap-2.5 text-sm text-muted-light"
+                          >
+                            <Trophy
+                              size={14}
+                              className="text-accent flex-shrink-0 mt-0.5"
+                            />
                             {ach}
                           </div>
                         ))}
@@ -78,7 +84,9 @@ export default function Education() {
           >
             <div className="flex items-center gap-2 mb-5">
               <Award size={16} className="text-accent" />
-              <h3 className="font-syne font-bold text-text">Certifications</h3>
+              <h3 className="font-jetbrains font-bold text-text gradient-text">
+                Certifications
+              </h3>
             </div>
             <div className="space-y-3">
               {certifications.map((cert, i) => (
@@ -92,8 +100,12 @@ export default function Education() {
                 >
                   <div className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0 mt-1.5" />
                   <div>
-                    <p className="text-sm text-text font-medium">{cert.title}</p>
-                    <p className="text-xs text-muted font-mono">{cert.issuer}</p>
+                    <p className="text-sm text-text font-medium">
+                      {cert.title}
+                    </p>
+                    <p className="text-xs text-muted font-mono">
+                      {cert.issuer}
+                    </p>
                   </div>
                 </motion.div>
               ))}

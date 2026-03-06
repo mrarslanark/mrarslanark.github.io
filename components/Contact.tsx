@@ -1,7 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Phone, MapPin, ArrowUpRight, Heart } from "lucide-react";
+import {
+  Mail,
+  Linkedin,
+  Phone,
+  MapPin,
+  ArrowUpRight,
+  Heart,
+} from "lucide-react";
 import { personalInfo, volunteering } from "@/lib/data";
 
 export default function Contact() {
@@ -20,7 +27,7 @@ export default function Contact() {
               <Heart size={16} className="text-accent" />
               <span className="section-label">Giving Back</span>
             </div>
-            <h2 className="font-syne text-4xl md:text-5xl font-extrabold text-text">
+            <h2 className="font-syne text-4xl md:text-5xl font-semibold text-text">
               Volunteering
             </h2>
           </motion.div>
@@ -35,8 +42,12 @@ export default function Contact() {
                 transition={{ delay: i * 0.1 }}
                 className="p-6 bg-surface border border-border rounded-2xl hover:border-accent/20 transition-colors duration-300"
               >
-                <h3 className="font-syne font-bold text-text mb-2">{item.title}</h3>
-                <p className="text-muted-light text-sm leading-relaxed">{item.description}</p>
+                <h3 className="font-jetbrains font-bold text-text mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-muted-light text-sm leading-relaxed">
+                  {item.description}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -66,15 +77,16 @@ export default function Contact() {
             transition={{ duration: 0.7 }}
           >
             <span className="section-label mb-4 block">Get In Touch</span>
-            <h2 className="font-syne text-5xl md:text-6xl lg:text-7xl font-extrabold text-text mb-6 leading-tight">
+            <h2 className="font-syne text-5xl md:text-6xl lg:text-7xl font-semibold text-text mb-6 leading-tight">
               Let&apos;s Build
               <br />
               <span className="gradient-text">Something Great</span>
             </h2>
             <p className="text-muted-light text-lg max-w-2xl mx-auto mb-12 leading-relaxed">
-              I&apos;m currently open to Senior and Lead React Native opportunities. If you have a
-              project or role that could use someone who cares deeply about architecture,
-              quality, and shipping — let&apos;s talk.
+              I&apos;m currently open to Senior and Lead React Native
+              opportunities. If you have a project or role that could use
+              someone who cares deeply about architecture, quality, and shipping
+              — let&apos;s talk.
             </p>
 
             {/* Contact links */}
@@ -85,7 +97,10 @@ export default function Contact() {
               >
                 <Mail size={20} />
                 {personalInfo.email}
-                <ArrowUpRight size={18} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ArrowUpRight
+                  size={18}
+                  className="opacity-0 group-hover:opacity-100 transition-opacity"
+                />
               </a>
               <a
                 href={personalInfo.linkedin}
@@ -96,18 +111,6 @@ export default function Contact() {
                 <Linkedin size={20} />
                 LinkedIn
               </a>
-            </div>
-
-            {/* Info row */}
-            <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted font-mono">
-              <span className="flex items-center gap-1.5">
-                <MapPin size={14} className="text-accent" />
-                {personalInfo.location}
-              </span>
-              <span className="flex items-center gap-1.5">
-                <Phone size={14} className="text-accent" />
-                {personalInfo.phone}
-              </span>
             </div>
           </motion.div>
         </div>

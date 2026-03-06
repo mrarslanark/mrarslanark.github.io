@@ -78,9 +78,9 @@ export default function Hero() {
           {/* Main heading */}
           <motion.h1
             variants={itemVariants}
-            className="font-syne text-3xl sm:text-6xl md:text-7xl lg:text-7xl font-semibold leading-[0.9] tracking-tight mb-6"
+            className="font-syne text-3xl sm:text-6xl md:text-7xl lg:text-7xl font-semibold leading-[0.9] tracking-tight mb-6 space-x-6"
           >
-            <span className="text-text">Arslan </span>
+            <span className="text-text">Arslan</span>
             <span className="gradient-text">Mushtaq</span>
           </motion.h1>
 

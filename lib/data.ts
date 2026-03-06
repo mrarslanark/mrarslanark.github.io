@@ -7,7 +7,6 @@ export const personalInfo = {
   location: "Pakistan (Remote-Ready)",
   email: "m.arslanmushtaqahmed@gmail.com",
   linkedin: "https://linkedin.com/in/mrarslanark",
-  phone: "+92 309 411 2868",
   stats: [
     { value: "10+", label: "Years Experience" },
     { value: "1M+", label: "Active Users" },
@@ -22,7 +21,15 @@ export const projects = {
       title: "PulseBoard",
       description:
         "Self-hostable real-time observability platform for mobile developers. Ingest errors, events & metrics via REST API. Live dashboard with WebSocket streaming, JWT auth, email alerts, and background job workers.",
-      tags: ["Next.js", "React Native", "Node.js", "Fastify", "PostgreSQL", "Redis", "Railway"],
+      tags: [
+        "Next.js",
+        "React Native",
+        "Node.js",
+        "Fastify",
+        "PostgreSQL",
+        "Redis",
+        "Railway",
+      ],
       url: "https://pulseboard-omega-ruddy.vercel.app",
       type: "Web App",
       status: "Live",
@@ -31,7 +38,14 @@ export const projects = {
       title: "KMIH 88.9 Radio",
       description:
         "A sleek radio station app that allows users to listen to their favorite station on the go. Features real-time stream playback, Spotify integration, and Firebase analytics.",
-      tags: ["React Native CLI", "React Navigation", "Axios", "Spotify Web API", "React Query", "Firebase"],
+      tags: [
+        "React Native CLI",
+        "React Navigation",
+        "Axios",
+        "Spotify Web API",
+        "React Query",
+        "Firebase",
+      ],
       url: "https://radio-station-stream-xnee.bolt.host/",
       type: "Mobile App",
       status: "Live",
@@ -40,7 +54,12 @@ export const projects = {
       title: "InventoryPro",
       description:
         "Internal inventory management system with a custom native Android app integrated with handheld hardware scanners for real-time inventory logging.",
-      tags: ["React Native", "Android (Java)", "Hardware Integration", "REST API"],
+      tags: [
+        "React Native",
+        "Android (Java)",
+        "Hardware Integration",
+        "REST API",
+      ],
       url: "#",
       type: "Mobile App",
       status: "Internal",
@@ -51,7 +70,14 @@ export const projects = {
       title: "Amega Trading Platform",
       description:
         "Architected 3 React Native fintech applications from scratch for a Cyprus-based broker. Includes real-time trading dashboards, multi-environment pipelines, and full analytics stack.",
-      tags: ["React Native", "Zustand", "WebSockets", "Strapi", "GitHub Actions", "Fastlane"],
+      tags: [
+        "React Native",
+        "Zustand",
+        "WebSockets",
+        "Strapi",
+        "GitHub Actions",
+        "Fastlane",
+      ],
       url: "#",
       type: "Mobile App",
       status: "Production",
@@ -60,7 +86,13 @@ export const projects = {
       title: "Novos Health Platform",
       description:
         "Greenfield React Native app for a health-tech platform serving 1M+ users. Built a server-driven UI questionnaire engine with 50+ conditional branches and Redux Toolkit.",
-      tags: ["React Native", "Redux Toolkit", "Server-Driven UI", "WordPress CMS", "Detox"],
+      tags: [
+        "React Native",
+        "Redux Toolkit",
+        "Server-Driven UI",
+        "WordPress CMS",
+        "Detox",
+      ],
       url: "#",
       type: "Mobile App",
       status: "Production",
@@ -69,7 +101,14 @@ export const projects = {
       title: "Proximus Network Module",
       description:
         "Scalable micro-frontend features for Belgium's largest telecom using Re.pack federated architecture, enterprise telemetry (Dynatrace), and 96% E2E test coverage.",
-      tags: ["React Native", "Re.pack", "Redux Saga", "Dynatrace", "Appium", "WebDriverIO"],
+      tags: [
+        "React Native",
+        "Re.pack",
+        "Redux Saga",
+        "Dynatrace",
+        "Appium",
+        "WebDriverIO",
+      ],
       url: "#",
       type: "Mobile App",
       status: "Production",

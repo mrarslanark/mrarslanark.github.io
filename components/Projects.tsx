@@ -15,8 +15,8 @@ import { projects } from "@/lib/data";
 type TabKey = "personal" | "professional";
 
 const tabs: { key: TabKey; label: string }[] = [
-  { key: "personal", label: "Personal Projects" },
   { key: "professional", label: "Professional Work" },
+  { key: "personal", label: "Personal Projects" },
 ];
 
 const typeIcon = {
@@ -43,7 +43,11 @@ function ProjectCard({
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.6, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
+      transition={{
+        duration: 0.6,
+        delay: index * 0.1,
+        ease: [0.22, 1, 0.36, 1],
+      }}
       className="group relative flex flex-col bg-surface border border-border rounded-2xl p-6 card-hover overflow-hidden"
     >
       {/* Top accent line */}
@@ -77,7 +81,7 @@ function ProjectCard({
       </div>
 
       {/* Title */}
-      <h3 className="font-syne font-bold text-xl text-text mb-3 group-hover:text-accent transition-colors duration-300">
+      <h3 className="font-jetbrains font-bold text-xl text-text mb-3 group-hover:text-accent transition-colors duration-300">
         {project.title}
       </h3>
 
@@ -130,11 +134,12 @@ export default function Projects() {
             <Layers size={16} className="text-accent" />
             <span className="section-label">Projects</span>
           </div>
-          <h2 className="font-syne text-4xl md:text-5xl font-extrabold text-text">
-            Things I&apos;ve Built
+          <h2 className="font-syne text-4xl md:text-7xl font-semibold text-text">
+            <span className="gradient-text">Things</span> I&apos;ve Built
           </h2>
           <p className="text-muted-light mt-3 max-w-xl">
-            A selection of personal experiments and professional deliverables across mobile, web, and backend.
+            A selection of personal experiments and professional deliverables
+            across mobile, web, and backend.
           </p>
         </motion.div>
 
