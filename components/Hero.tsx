@@ -25,7 +25,7 @@ export default function Hero() {
   return (
     <section
       id="about"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+      className="relative min-h-screen flex items-center overflow-hidden pt-20"
     >
       {/* Background glow orbs */}
       <div
@@ -60,7 +60,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
+      <div className="relative z-10 w-full max-w-7xl mx-auto py-20">
         <motion.div
           variants={containerVariants}
           initial="hidden"
