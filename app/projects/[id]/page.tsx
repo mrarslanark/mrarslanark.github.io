@@ -94,7 +94,7 @@ export default async function ProjectPage(props: {
         </Link>
 
         {/* Header Section */}
-        <div className="mb-12">
+        <div className="pb-8 border-b-[1px] border-gray-800">
           <div className="flex flex-wrap items-center gap-3 mb-6">
             <span className="flex items-center gap-1.5 text-sm font-mono text-muted px-3 py-1.5 border border-border rounded-md">
               {typeIcon[project.type as keyof typeof typeIcon]}
@@ -117,7 +117,7 @@ export default async function ProjectPage(props: {
             {project.subtitle}
           </h2>
 
-          <p className="text-lg text-muted mb-6 flex items-center gap-2">
+          <p className="text-lg text-muted mb-2 flex items-center gap-2">
             {project.build_at ? (
               <span>
                 Built at{" "}
@@ -136,11 +136,11 @@ export default async function ProjectPage(props: {
         </div>
 
         {/* Content Details */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pt-8">
           <div className="md:col-span-2 space-y-10">
             <section>
               <h3 className="text-2xl font-bold font-jetbrains text-text mb-4">
-                Overview
+                Product related links
               </h3>
               {/* Links Section */}
               {project.urls && Object.keys(project.urls).length > 0 && (
