@@ -78,10 +78,9 @@ export default function Hero() {
           {/* Main heading */}
           <motion.h1
             variants={itemVariants}
-            className="font-syne text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-[0.9] tracking-tight mb-6"
+            className="font-syne text-3xl sm:text-6xl md:text-7xl lg:text-7xl font-semibold leading-[0.9] tracking-tight mb-6"
           >
-            <span className="text-text">Arslan</span>
-            <br />
+            <span className="text-text">Arslan </span>
             <span className="gradient-text">Mushtaq</span>
           </motion.h1>
 
@@ -112,9 +111,9 @@ export default function Hero() {
             {personalInfo.stats.map((stat) => (
               <div
                 key={stat.label}
-                className="p-4 rounded-xl border border-border bg-surface/50 text-center group hover:border-accent/30 transition-colors duration-300"
+                className="p-4 rounded-xl border border-border bg-surface/50 text-center group hover:border-accent/30 transition-colors duration-300 space-y-2"
               >
-                <div className="font-syne text-3xl font-bold text-accent group-hover:scale-105 transition-transform duration-300">
+                <div className="font-jetbrains text-2xl font-bold text-accent group-hover:scale-105 transition-transform duration-300">
                   {stat.value}
                 </div>
                 <div className="text-xs text-muted font-mono mt-1">
@@ -134,7 +133,10 @@ export default function Hero() {
               className="group inline-flex items-center gap-2 px-6 py-3 bg-accent text-bg font-semibold rounded-xl hover:bg-accent-dim transition-all duration-300 hover:gap-3"
             >
               View My Work
-              <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
+              <ArrowRight
+                size={18}
+                className="transition-transform group-hover:translate-x-1"
+              />
             </a>
             <a
               href="mailto:m.arslanmushtaqahmed@gmail.com"
