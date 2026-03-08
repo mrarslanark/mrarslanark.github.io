@@ -88,45 +88,71 @@
       "id": "fundix",
       "title": "Fundix.pro",
       "subtitle": "Prop Trading Application",
+      "logo": "/logos/fundix.webp",
       "build_at": "Amega",
       "description": "I led the architecture of the application using React Native alongside a small engineering team, establishing the foundational codebase structure, implementing complex business logic, and integrating third-party services. I managed two developers—mentoring a junior engineer to mid-level and oversaw performance optimization, scalability, and overall code quality.",
       "contribution": [
-        "Build the initial documentation for system design",
-        "Managed the organization of the codebase by applying principles like SOLID, DRY, OOP, and KISS pattern.",
-        "Implemented CI/CD for linting, unit test coverage check, and check for documentation",
-        "Implemented CIC/CD for E2E with GitHub Actions and BrowserStack for fullfilling business requirements",
-        "Managed performance through profiling, scanning the bundle and apply necessary solutions like lazy loading, code splitting",
-        "Made usage of Agents to enhance productivity across the team and myself",
-        "Cross collaborated with backend team along with UI/UX designers for handoff designs",
-        "Mentored junior and senior developers through tough decision and point of disturbance"
+        "Build the initial documentation for system design.",
+        "Implemented the core architecture and established the foundational structure of the mobile application.",
+        "Managed the organization of the codebase by applying principles like SOLID, DRY, OOP, and the KISS pattern.",
+        "Implemented CI/CD pipelines for linting, unit test coverage checks, and documentation validation.",
+        "Implemented CI/CD for end-to-end testing using GitHub Actions and BrowserStack to fulfill business requirements.",
+        "Managed performance through profiling, bundle analysis, and applied optimizations such as lazy loading and code splitting.",
+        "Utilized AI agents to enhance productivity for both the team and myself.",
+        "Collaborated cross-functionally with the backend team to define and maintain API contracts.",
+        "Collaborated with UI/UX designers to ensure smooth design handoffs and accurate implementation.",
+        "Mentored both junior and senior developers through complex decisions and technical challenges.",
+        "Managed internal testing processes and post-production release workflows.",
+        "Developed a generic internal library on npmjs to support all company applications by isolating reusable components and design attributes.",
+        "Developed automated pipelines connecting the backend to Directus CMS and the mobile application, ensuring that backend updates automatically propagate to the frontend."
       ],
       "type": "Mobile App",
       "status": "Archived",
+      "status_reason": "The company was dissolved due to unknown reasons but work that was done is mentioned below along with screenshots.",
       "tags": [
         "React Native",
-        "Next.js",
         "React Query",
         "React Navigation API",
         "Zustand",
         "WebSockets",
-        "Strapi",
+        "Directus CMS",
         "GitHub Actions",
-        "Fastlane"
+        "Fastlane",
+        "MixPanel",
+        "Firebase Analytics",
+        "Looker Studio",
+        "Sentry",
+        "Zoho",
+        "Jira",
+        "Confluence",
+        "Figma"
       ],
       "urls": [
         {
           "id": "1",
-          "type": "android",
-          "url": "https://play.google.com/store/apps/details?id=com.amega.fundix",
-          "title": "View on Google Play"
-        },
-        {
-          "id": "2",
           "type": "web",
           "url": "https://fundix.pro/",
           "title": "Visit Homepage"
+        },
+        {
+          "id": "2",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=com.amega.fundix",
+          "title": "View on Google Play"
         }
-      ]
+      ],
+      "screenshots": {
+        "mobile": [
+          "android-1_fr7kmg",
+          "android-2_erbmfp",
+          "android-3_grya12",
+          "android-4_r5684f",
+          "android-5_dtqydy",
+          "android-6_h7b7a5",
+          "android-7_xpzpxh",
+          "android-8_kobshe"
+        ]
+      }
     }
   ]
 }

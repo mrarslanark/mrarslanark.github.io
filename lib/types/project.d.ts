@@ -16,4 +16,7 @@ export type Project = {
   urls: ProjectURL[];
   type: string;
   status: string;
+  status_reason?: string;
+  screenshots?: Record<string, string[]>;
+  logo?: string;
 };

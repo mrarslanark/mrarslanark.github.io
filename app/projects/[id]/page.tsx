@@ -10,9 +10,12 @@ import {
   Server,
   Smartphone,
   Sparkles,
+  TriangleAlert,
 } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import ScreenshotGallery from "@/components/ScreenshotGallery";
+import { WarningBox } from "@/components/molecules/WarningBox";
 
 const typeIcon = {
   "Mobile App": <Smartphone size={16} />,
@@ -53,10 +56,12 @@ function ProjectLinkItem({ url, title, type }: Project) {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 text-text font-medium hover:underline"
+      className="inline-flex items-center justify-between gap-2 text-text font-medium hover:underline"
     >
-      <Icon />
-      {title}
+      <div className="inline-flex items-center gap-2">
+        <Icon />
+        {title}
+      </div>
       <ExternalLink size={14} className="text-muted ml-1" />
     </Link>
   );
@@ -109,13 +114,22 @@ export default async function ProjectPage(props: {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold font-jetbrains text-text mb-4">
-            {project.title}
-          </h1>
+          <div className="inline-flex mb-4 gap-4 items-center">
+            {project.logo && (
+              <div className="rounded-xl overflow-hidden border border-gray-700">
+                <img src={project.logo} className="w-[90px] h-[90px]" />
+              </div>
+            )}
+            <div className="space-y-2">
+              <h1 className="text-4xl md:text-5xl font-bold font-jetbrains text-text">
+                {project.title}
+              </h1>
 
-          <h2 className="text-xl md:text-xl text-accent font-medium mb-2">
-            {project.subtitle}
-          </h2>
+              <h2 className="text-xl md:text-xl text-accent font-medium">
+                {project.subtitle}
+              </h2>
+            </div>
+          </div>
 
           <p className="text-lg text-muted mb-2 flex items-center gap-2">
             {project.build_at ? (
@@ -133,25 +147,19 @@ export default async function ProjectPage(props: {
           <p className="text-muted-light text-lg leading-relaxed whitespace-pre-wrap">
             {project.description}
           </p>
+
+          {project.status_reason && (
+            <WarningBox
+              text="The company was dissolved for undisclosed reasons; however, the
+              work completed during that period is outlined below along with
+              supporting screenshots."
+            />
+          )}
         </div>
 
         {/* Content Details */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 py-8">
           <div className="md:col-span-2 space-y-10">
-            <section>
-              <h3 className="text-2xl font-bold font-jetbrains text-text mb-4">
-                Product related links
-              </h3>
-              {/* Links Section */}
-              {project.urls && Object.keys(project.urls).length > 0 && (
-                <div className="flex flex-col gap-4 ">
-                  {project.urls.map((project: Project) => {
-                    return <ProjectLinkItem key={project.id} {...project} />;
-                  })}
-                </div>
-              )}
-            </section>
-
             {isProfessional &&
               project.contribution &&
               project.contribution.length > 0 && (
@@ -173,8 +181,22 @@ export default async function ProjectPage(props: {
               )}
           </div>
 
-          <div className="md:col-span-1">
-            <div className="bg-surface border border-border rounded-2xl p-6 sticky top-24">
+          <div className="md:col-span-1 space-y-10">
+            <section>
+              <h3 className="text-2xl font-bold font-jetbrains text-text mb-4">
+                Product related links
+              </h3>
+              {/* Links Section */}
+              {project.urls && Object.keys(project.urls).length > 0 && (
+                <div className="flex flex-col gap-4 ">
+                  {project.urls.map((project: Project) => {
+                    return <ProjectLinkItem key={project.id} {...project} />;
+                  })}
+                </div>
+              )}
+            </section>
+
+            <section className="bg-surface border border-border rounded-2xl p-6">
               <h3 className="text-lg font-bold font-jetbrains text-text mb-4">
                 Technology Stack
               </h3>
@@ -188,9 +210,11 @@ export default async function ProjectPage(props: {
                   </span>
                 ))}
               </div>
-            </div>
+            </section>
           </div>
         </div>
+
+        <ScreenshotGallery screenshots={project.screenshots} />
       </div>
     </div>
   );
