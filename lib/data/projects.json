@@ -153,6 +153,68 @@
           "android-8_kobshe"
         ]
       }
+    },
+    {
+      "id": "yoka",
+      "title": "Yoka",
+      "subtitle": "Real-time Asset Duel Trading Platform",
+      "logo": "/logos/yoka.webp",
+      "build_at": "Amega",
+      "description": "Yoka was a real-time asset dueling platform where users selected financial assets such as Tesla, Microsoft, or Google and competed against other assets based on market price movement. Users placed stakes using USDT or Yokens (an in-app virtual currency) and selected duel durations of 5, 10, 15, or 30 minutes. Outcomes were determined by market profit or loss during the selected timeframe. The platform was delivered as both a Telegram Mini App built with Next.js and a mobile application built with React Native, enabling users to deposit funds via multiple wallets and participate in live duels.",
+      "contribution": [
+        "Led the mobile engineering effort and established the overall architecture and technical foundation of the React Native application.",
+        "Designed the system architecture and collaborated with backend teams to define scalable API contracts and real-time data flows.",
+        "Delivered the first production-ready version of the application within a 3-month timeline.",
+        "Implemented real-time communication using WebSockets to handle live asset duels and instant result updates.",
+        "Integrated wallet-based deposit mechanisms enabling users to fund their accounts with USDT and participate in duels.",
+        "Established state management and data-fetching strategies using Zustand and React Query for predictable and performant application behavior.",
+        "Implemented monitoring and observability using Sentry, MixPanel, Firebase Analytics, and Looker Studio.",
+        "Set up CI/CD pipelines using GitHub Actions and Fastlane to automate builds, testing, and release processes.",
+        "Collaborated with product, design, and backend teams to iterate on features and optimize the application after launch."
+      ],
+      "type": "Mobile App",
+      "status": "Archived",
+      "status_reason": "The company was dissolved due to unknown reasons but work that was done is mentioned below along with screenshots.",
+      "tags": [
+        "Telegram Mini Apps",
+        "Next.js",
+        "React Native",
+        "React Query",
+        "React Navigation API",
+        "Zustand",
+        "WebSockets",
+        "Directus CMS",
+        "GitHub Actions",
+        "Fastlane",
+        "MixPanel",
+        "Firebase Analytics",
+        "Looker Studio",
+        "Sentry",
+        "Zoho",
+        "Jira",
+        "Confluence",
+        "Figma"
+      ],
+      "urls": [
+        {
+          "id": "1",
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=com.amega.yoka",
+          "title": "View on Google Play"
+        }
+      ],
+      "screenshots": {
+        "telegram-mini-app": [
+          "telegram-1_wwyrgt",
+          "telegram-2_p10e2s",
+          "telegram-3_etz3s9",
+          "telegram-4_rgciuq",
+          "telegram-5_r9ih3l",
+          "telegram-6_rx1szp",
+          "telegram-7_inhcht"
+        ],
+        "mobile": ["android-01_n2nhem", "ios-2_qw3rnl", "ios-1_fqc6sr"]
+      }
     }
   ]
 }
