@@ -56,15 +56,24 @@ export function ProjectCard({
         </span>
       </div>
 
-      {/* Title */}
-      <h3 className="font-jetbrains font-bold text-xl text-text mb-1 group-hover:text-accent transition-colors duration-300">
-        {project.title}
-      </h3>
+      <div className="inline-flex mb-3 gap-3 items-center">
+        {project.logo && (
+          <div className="rounded-xl overflow-hidden border border-gray-700">
+            <img src={project.logo} className="w-[50px] h-[50px]" />
+          </div>
+        )}
+        <div>
+          {/* Title */}
+          <h3 className="font-jetbrains font-bold text-xl text-text group-hover:text-accent transition-colors duration-300">
+            {project.title}
+          </h3>
 
-      {/* Subtitle */}
-      <p className="ont-jetbrains text-sm mb-3 group-hover:text-accent transition-colors duration-300">
-        {project.subtitle}
-      </p>
+          {/* Subtitle */}
+          <p className="ont-jetbrains text-sm group-hover:text-accent transition-colors duration-300">
+            {project.subtitle}
+          </p>
+        </div>
+      </div>
 
       {/* Description */}
       <p className="text-muted-light text-sm leading-relaxed mb-5 flex-1 line-clamp-3">
