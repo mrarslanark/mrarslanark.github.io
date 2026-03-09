@@ -117,7 +117,10 @@ export default async function ProjectPage(props: {
           <div className="inline-flex mb-4 gap-4 items-center">
             {project.logo && (
               <div className="rounded-xl overflow-hidden border border-gray-700">
-                <img src={project.logo} className="w-[90px] h-[90px]" />
+                <img
+                  src={project.logo}
+                  className="aspect-square w-[90px] h-[90px]"
+                />
               </div>
             )}
             <div className="space-y-2">

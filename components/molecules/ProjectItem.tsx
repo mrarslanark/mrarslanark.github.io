@@ -69,7 +69,7 @@ export function ProjectCard({
           </h3>
 
           {/* Subtitle */}
-          <p className="ont-jetbrains text-sm group-hover:text-accent transition-colors duration-300">
+          <p className="ont-jetbrains text-sm group-hover:text-accent transition-colors duration-300 line-clamp-1">
             {project.subtitle}
           </p>
         </div>
