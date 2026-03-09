@@ -2,10 +2,11 @@
 
 import projects from "@/lib/data/projects.json";
 import { AnimatePresence, motion } from "framer-motion";
-import { Layers } from "lucide-react";
+import { ArrowRight, Layers } from "lucide-react";
 import { useState } from "react";
 import { ProjectCard } from "./molecules/ProjectItem";
 import { Project } from "@/lib/types/project";
+import Link from "next/link";
 
 type TabKey = "personal" | "professional";
 
@@ -74,7 +75,7 @@ export default function Projects() {
             transition={{ duration: 0.3 }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
           >
-            {projects[activeTab].map((project, i) => {
+            {projects[activeTab].slice(0, 3).map((project, i) => {
               if (project.status === "Development") {
                 return null;
               }
@@ -84,6 +85,25 @@ export default function Projects() {
               );
             })}
           </motion.div>
+          <Link
+            href={"/projects"}
+            className="flex justify-end text-accent mt-8"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{
+                duration: 0.6,
+                delay: 0.5,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="inline-flex items-center space-x-2"
+            >
+              <p className="font-semibold">View All Projects</p>
+              <ArrowRight size={14} className="text-accent" />
+            </motion.div>
+          </Link>
         </AnimatePresence>
       </div>
     </section>

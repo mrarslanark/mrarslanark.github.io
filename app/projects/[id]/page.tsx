@@ -1,3 +1,5 @@
+import ScreenshotGallery from "@/components/ScreenshotGallery";
+import { WarningBox } from "@/components/molecules/WarningBox";
 import projects from "@/lib/data/projects.json";
 import {
   AppleIcon,
@@ -10,12 +12,9 @@ import {
   Server,
   Smartphone,
   Sparkles,
-  TriangleAlert,
 } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import ScreenshotGallery from "@/components/ScreenshotGallery";
-import { WarningBox } from "@/components/molecules/WarningBox";
 
 const typeIcon = {
   "Mobile App": <Smartphone size={16} />,
