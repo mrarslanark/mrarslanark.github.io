@@ -40,7 +40,16 @@ export default function ProjectsPage() {
         </motion.div>
 
         {/* Tabs */}
-        <div className="flex space-x-2 mb-12 border-b border-border">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{
+            duration: 0.6,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+          className="flex space-x-2 mb-12 border-b border-border"
+        >
           <button
             onClick={() => setActiveTab("personal")}
             className={`px-6 py-3 font-jetbrains font-medium transition-all relative ${
@@ -49,7 +58,7 @@ export default function ProjectsPage() {
                 : "text-muted hover:text-text"
             }`}
           >
-            Work Lab
+            Work Lab - {projects.filter((p) => p.type === "personal").length}
             {activeTab === "personal" && (
               <motion.div
                 layoutId="activeTab"
@@ -66,7 +75,8 @@ export default function ProjectsPage() {
                 : "text-muted hover:text-text"
             }`}
           >
-            Shipped Systems
+            Shipped Systems -{" "}
+            {projects.filter((p) => p.type === "professional").length}
             {activeTab === "professional" && (
               <motion.div
                 layoutId="activeTab"
@@ -75,7 +85,7 @@ export default function ProjectsPage() {
               />
             )}
           </button>
-        </div>
+        </motion.div>
 
         {/* Content */}
         <div className="min-h-[500px]">

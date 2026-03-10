@@ -10,9 +10,17 @@ import Link from "next/link";
 
 type ProjectType = Project["type"];
 
-const tabs: { key: Project["type"]; label: string }[] = [
-  { key: "personal", label: "Work Lab" },
-  { key: "professional", label: "Shipped Systems" },
+const tabs: { key: Project["type"]; label: string; count: number }[] = [
+  {
+    key: "personal",
+    label: "Work Lab",
+    count: projects.filter((p) => p.type === "personal").length,
+  },
+  {
+    key: "professional",
+    label: "Shipped Systems",
+    count: projects.filter((p) => p.type === "professional").length,
+  },
 ];
 
 export default function Projects() {
@@ -60,7 +68,9 @@ export default function Projects() {
                   className="absolute inset-0 bg-accent rounded-lg"
                 />
               )}
-              <span className="relative z-10">{tab.label}</span>
+              <span className="relative z-10">
+                {tab.label} - {tab.count}
+              </span>
             </button>
           ))}
         </div>
