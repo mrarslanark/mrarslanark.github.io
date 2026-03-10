@@ -832,7 +832,6 @@
       "Redux Persist",
       "Redux Thunk",
       "Redux Saga",
-      "Redux Saga",
       "Firebase Auth",
       "Firebase Firestore",
       "Firebase Storage",

@@ -13,10 +13,6 @@ export function PersonalProjectCard({
   project: Project;
   index: number;
 }) {
-  const [readMore, setReadMore] = useState(false);
-
-  const onToggleReadMore = useCallback(() => setReadMore((prev) => !prev), []);
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -63,20 +59,9 @@ export function PersonalProjectCard({
       </div>
 
       {/* Description */}
-      <div className="mb-5 space-y-2">
-        <p
-          className={`text-muted-light text-sm leading-relaxed  ${readMore ? "" : "line-clamp-3"}`}
-        >
-          {project.description}
-        </p>
-        <p
-          onClick={onToggleReadMore}
-          role="button"
-          className="text-sm text-accent hover:underline"
-        >
-          Read More
-        </p>
-      </div>
+      <p className={"text-muted-light text-sm leading-relaxed mb-5"}>
+        {project.description}
+      </p>
 
       {/* Tags */}
       <div className="flex-1">
