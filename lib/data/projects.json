@@ -84,7 +84,38 @@
         "id": "1",
         "type": "android",
         "url": "https://play.google.com/store/apps/details?id=arslan.appclub.loanmanager",
-        "title": "VIew on Google Play - v1.0"
+        "title": "View on Google Play - v1.0"
+      }
+    ]
+  },
+  {
+    "id": "covid-19-stats",
+    "title": "Covid 19 Stats",
+    "type": "personal",
+    "subtitle": "Live Pandemic Tracker",
+    "logo": "/logos/covid-19-stats.webp",
+    "description": "Covid 19 Stats is a personal Android project built to provide live, aggregated COVID-19 statistics from multiple public APIs, helping users stay informed about infection rates and regional impact across the world. The application was ultimately discontinued due to Google Play Store policy restrictions on COVID-related apps.",
+    "product_type": "mobile",
+    "build_at": "Personal",
+    "status": "suspended",
+    "tags": [
+      "Android",
+      "Kotlin",
+      "Retrofit2",
+      "Google Maps SDK",
+      "Navigation Components",
+      "Glide",
+      "Material Design",
+      "JUnit",
+      "Espresso",
+      "GitHub"
+    ],
+    "urls": [
+      {
+        "id": "1",
+        "type": "github",
+        "url": "https://github.com/mrarslanark/covid-19-status-android",
+        "title": "View Repository"
       }
     ]
   },

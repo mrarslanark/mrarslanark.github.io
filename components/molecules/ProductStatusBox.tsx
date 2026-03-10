@@ -18,6 +18,10 @@ const properties: Record<string, { title: string; className: string }> = {
     title: "Archived",
     className: "text-orange border-orange/30 bg-orange/5",
   },
+  suspended: {
+    title: "Suspended",
+    className: "text-violet-400 border-violet-700/30 bg-violet-700/5",
+  },
 };
 
 export const ProductStatusBox: React.FC<{ status: ProjectStatus }> = ({
