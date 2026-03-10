@@ -1,0 +1,15 @@
+{
+  "name": "Arslan Mushtaq",
+  "title": "Senior / Lead React Native Engineer",
+  "tagline": "I architect and scale mobile platforms that ship to millions.",
+  "summary": "I architect and scale React Native platforms in regulated industries like fintech and health-tech with a track record of eliminating manual QA dependency (100% → 20%), slashing build times by 85%, and shipping products used by 1M+ users. I specialise in server-driven UI, micro-frontend architecture (Re.pack), and building the CI/CD and observability infrastructure that keeps production stable at scale.",
+  "location": "Pakistan (Remote-Ready)",
+  "email": "m.arslanmushtaqahmed@gmail.com",
+  "linkedin": "https://linkedin.com/in/mrarslanark",
+  "stats": [
+    { "value": "10+", "label": "Years Experience" },
+    { "value": "1M+", "label": "Active Users" },
+    { "value": "85%", "label": "Build Time Reduced" },
+    { "value": "80%", "label": "QA Automation" }
+  ]
+}

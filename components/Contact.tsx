@@ -1,15 +1,9 @@
 "use client";
 
+import volunteering from "@/lib/data/volunteering.json";
+import personalInfo from "@/lib/data/info.json";
 import { motion } from "framer-motion";
-import {
-  Mail,
-  Linkedin,
-  Phone,
-  MapPin,
-  ArrowUpRight,
-  Heart,
-} from "lucide-react";
-import { personalInfo, volunteering } from "@/lib/data";
+import { ArrowUpRight, Heart, Linkedin, Mail } from "lucide-react";
 
 export default function Contact() {
   return (

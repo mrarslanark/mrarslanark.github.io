@@ -8,15 +8,15 @@ import { ProjectCard } from "./molecules/ProjectItem";
 import { Project } from "@/lib/types/project";
 import Link from "next/link";
 
-type TabKey = "personal" | "professional";
+type ProjectType = Project["type"];
 
-const tabs: { key: TabKey; label: string }[] = [
-  { key: "personal", label: "Personal Projects" },
-  { key: "professional", label: "Professional Work" },
+const tabs: { key: Project["type"]; label: string }[] = [
+  { key: "personal", label: "Work Lab" },
+  { key: "professional", label: "Shipped Systems" },
 ];
 
 export default function Projects() {
-  const [activeTab, setActiveTab] = useState<TabKey>("personal");
+  const [activeTab, setActiveTab] = useState<ProjectType>("personal");
 
   return (
     <section id="projects" className="relative py-28 px-6">
@@ -75,15 +75,16 @@ export default function Projects() {
             transition={{ duration: 0.3 }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
           >
-            {projects[activeTab].slice(0, 3).map((project, i) => {
-              if (project.status === "Development") {
-                return null;
-              }
-
-              return (
-                <ProjectCard index={i} project={project} key={project.id} />
-              );
-            })}
+            {projects
+              .filter((p) => p.type === activeTab)
+              .slice(0, 3)
+              .map((project, i) => (
+                <ProjectCard
+                  index={i}
+                  project={project as Project}
+                  key={project.id}
+                />
+              ))}
           </motion.div>
           <Link
             href={"/projects"}
@@ -100,7 +101,7 @@ export default function Projects() {
               }}
               className="inline-flex items-center space-x-2"
             >
-              <p className="font-semibold">View All Projects</p>
+              <p className="font-semibold hover:underline">View All Projects</p>
               <ArrowRight size={14} className="text-accent" />
             </motion.div>
           </Link>

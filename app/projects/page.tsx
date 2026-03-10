@@ -7,11 +7,10 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { ProjectCard } from "@/components/molecules/ProjectItem";
 import { Project } from "@/lib/types/project";
+import { PersonalProjectCard } from "@/components/molecules/PersonalProjectItem";
 
 export default function ProjectsPage() {
-  const [activeTab, setActiveTab] = useState<"professional" | "personal">(
-    "professional",
-  );
+  const [activeTab, setActiveTab] = useState<Project["type"]>("personal");
 
   return (
     <div className="min-h-screen bg-bg">
@@ -29,34 +28,19 @@ export default function ProjectsPage() {
             <ArrowLeft size={18} />
             Back to Home
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold font-jetbrains text-text mb-6">
-            Projects <span className="text-accent">&</span> Experience
+          <h1 className="text-4xl md:text-5xl font-bold font-jetbrains text-text mb-6 text-accent">
+            Products <span className="text-accent">&amp;</span> Ventures
           </h1>
           <p className="text-muted-light text-lg md:text-xl max-w-2xl leading-relaxed">
-            A showcase of my professional work in the industry and personal side
-            projects built to solve problems and explore new technologies.
+            A showcase of my <span className="text-accent">personal</span> and{" "}
+            <span className="text-accent">professional</span> work in the
+            industry and personal side projects built to solve problems and
+            explore new technologies.
           </p>
         </motion.div>
 
         {/* Tabs */}
         <div className="flex space-x-2 mb-12 border-b border-border">
-          <button
-            onClick={() => setActiveTab("professional")}
-            className={`px-6 py-3 font-jetbrains font-medium transition-all relative ${
-              activeTab === "professional"
-                ? "text-accent"
-                : "text-muted hover:text-text"
-            }`}
-          >
-            Professional
-            {activeTab === "professional" && (
-              <motion.div
-                layoutId="activeTab"
-                className="absolute bottom-0 left-0 right-0 h-0.5 bg-accent"
-                transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              />
-            )}
-          </button>
           <button
             onClick={() => setActiveTab("personal")}
             className={`px-6 py-3 font-jetbrains font-medium transition-all relative ${
@@ -65,8 +49,25 @@ export default function ProjectsPage() {
                 : "text-muted hover:text-text"
             }`}
           >
-            Personal
+            Work Lab
             {activeTab === "personal" && (
+              <motion.div
+                layoutId="activeTab"
+                className="absolute bottom-0 left-0 right-0 h-0.5 bg-accent"
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
+              />
+            )}
+          </button>
+          <button
+            onClick={() => setActiveTab("professional")}
+            className={`px-6 py-3 font-jetbrains font-medium transition-all relative ${
+              activeTab === "professional"
+                ? "text-accent"
+                : "text-muted hover:text-text"
+            }`}
+          >
+            Shipped Systems
+            {activeTab === "professional" && (
               <motion.div
                 layoutId="activeTab"
                 className="absolute bottom-0 left-0 right-0 h-0.5 bg-accent"
@@ -85,17 +86,25 @@ export default function ProjectsPage() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="grid grid-cols-1 lg:grid-cols-2 gap-5"
+              className={`grid grid-cols-1 gap-5 lg:grid-cols-2`}
             >
-              {projects[activeTab].map((project, i) => {
-                if (project.status === "Development") {
-                  return null;
-                }
-
-                return (
-                  <ProjectCard index={i} project={project} key={project.id} />
-                );
-              })}
+              {projects
+                .filter((p) => p.type === activeTab)
+                .map((project, i) =>
+                  project.type === "professional" ? (
+                    <ProjectCard
+                      index={i}
+                      project={project as Project}
+                      key={project.id}
+                    />
+                  ) : (
+                    <PersonalProjectCard
+                      index={i}
+                      project={project as Project}
+                      key={project.id}
+                    />
+                  ),
+                )}
             </motion.div>
           </AnimatePresence>
         </div>

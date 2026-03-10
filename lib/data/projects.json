@@ -1,586 +1,713 @@
-{
-  "personal": [
-    {
-      "id": "pulseboard",
-      "title": "PulseBoard",
-      "subtitle": "Monitoring & Observability Platform",
-      "description": "An open-source mobile observability platform featuring crash analytics, real-time WebSocket event streaming, AI-powered insights via Anthropic/OpenAI/Google/Moonshot, and a React Native SDK. Self-hostable backend on Railway, web dashboard on Vercel.",
-      "type": "Product",
-      "status": "Live",
-      "contribution": [],
-      "tags": [
-        "Next.js",
-        "React Native",
-        "Node.js",
-        "Fastify",
-        "PostgreSQL",
-        "Redis",
-        "Railway",
-        "BullMQ"
-      ],
-      "urls": [
-        {
-          "id": "1",
-          "type": "web",
-          "url": "https://pulseboard-omega-ruddy.vercel.app",
-          "title": "Visit Homepage"
-        },
-        {
-          "id": "2",
-          "type": "github",
-          "url": "https://github.com/aenexar/pulseboard-react-native",
-          "title": "React Native SDK - Repository"
-        }
-      ]
-    },
-    {
-      "id": "kmih-88-9-radio",
-      "title": "KMIH 88.9 Radio",
-      "subtitle": "Student Operated Radio Station",
-      "description": "A student-operated radio station at Mercer Island High School, featuring a web application developed with Bolt.new and an iOS-exclusive mobile app built using React Native.",
-      "type": "Mobile App",
-      "status": "Live",
-      "tags": [
-        "React Native CLI",
-        "React Navigation",
-        "Axios",
-        "Spotify Web API",
-        "React Query",
-        "Firebase"
-      ],
-      "contribution": [],
-      "urls": [
-        {
-          "id": "1",
-          "type": "ios",
-          "url": "https://apps.apple.com/us/app/kmih-88-9/id6755164132",
-          "title": "View on App Store"
-        },
-        {
-          "id": "2",
-          "type": "web",
-          "url": "https://radio-station-stream-xnee.bolt.host/",
-          "title": "Visit Homepage"
-        }
-      ]
-    },
-    {
-      "id": "loan-manager-v2-0",
-      "title": "Loan Manager v2.0",
-      "subtitle": "Informal Loan Management Platform",
-      "description": "Loan Manager, a mobile-first product focused on bringing structure and reliability to informal personal lending. Millions of people lend and borrow money within their personal networks without proper tracking, instalment visibility, or accountability systems. Over time, this lack of structure creates missed repayments, unclear expectations, and strained relationships.",
-      "type": "Product",
-      "status": "Live",
-      "tags": ["React Native", "Java Spring Boot", "Redis", "PostgreSQL"],
-      "urls": [
-        {
-          "id": "1",
-          "type": "android",
-          "url": "https://play.google.com/store/apps/details?id=arslan.appclub.loanmanager",
-          "title": "VIew on Google Play - v1.0"
-        }
-      ],
-      "contribution": []
-    }
-  ],
-  "professional": [
-    {
-      "id": "fundix",
-      "title": "Fundix.pro",
-      "subtitle": "Prop Trading Application",
-      "logo": "/logos/fundix.webp",
-      "build_at": "Amega",
-      "description": "I led the architecture of the application using React Native alongside a small engineering team, establishing the foundational codebase structure, implementing complex business logic, and integrating third-party services. I managed two developers—mentoring a junior engineer to mid-level and oversaw performance optimization, scalability, and overall code quality.",
-      "contribution": [
-        "Build the initial documentation for system design.",
-        "Implemented the core architecture and established the foundational structure of the mobile application.",
-        "Managed the organization of the codebase by applying principles like SOLID, DRY, OOP, and the KISS pattern.",
-        "Implemented CI/CD pipelines for linting, unit test coverage checks, and documentation validation.",
-        "Implemented CI/CD for end-to-end testing using GitHub Actions and BrowserStack to fulfill business requirements.",
-        "Managed performance through profiling, bundle analysis, and applied optimizations such as lazy loading and code splitting.",
-        "Utilized AI agents to enhance productivity for both the team and myself.",
-        "Collaborated cross-functionally with the backend team to define and maintain API contracts.",
-        "Collaborated with UI/UX designers to ensure smooth design handoffs and accurate implementation.",
-        "Mentored both junior and senior developers through complex decisions and technical challenges.",
-        "Managed internal testing processes and post-production release workflows.",
-        "Developed a generic internal library on npmjs to support all company applications by isolating reusable components and design attributes.",
-        "Developed automated pipelines connecting the backend to Directus CMS and the mobile application, ensuring that backend updates automatically propagate to the frontend."
-      ],
-      "type": "Mobile App",
-      "status": "Archived",
-      "status_reason": "The company was dissolved due to unknown reasons but work that was done is mentioned below along with screenshots.",
-      "tags": [
-        "React Native CLI",
-        "React Query",
-        "React Navigation API",
-        "Zustand",
-        "WebSockets",
-        "Directus CMS",
-        "GitHub Actions",
-        "Fastlane",
-        "MixPanel",
-        "Firebase Analytics",
-        "Looker Studio",
-        "Sentry",
-        "Zoho",
-        "Jira",
-        "Confluence",
-        "Figma"
-      ],
-      "urls": [
-        {
-          "id": "1",
-          "type": "web",
-          "url": "https://fundix.pro/",
-          "title": "Visit Homepage"
-        },
-        {
-          "id": "2",
-          "type": "android",
-          "url": "https://play.google.com/store/apps/details?id=com.amega.fundix",
-          "title": "View on Google Play"
-        }
-      ],
-      "screenshots": {
-        "mobile": [
-          "android-1_fr7kmg",
-          "android-2_erbmfp",
-          "android-3_grya12",
-          "android-4_r5684f",
-          "android-5_dtqydy",
-          "android-6_h7b7a5",
-          "android-7_xpzpxh",
-          "android-8_kobshe"
-        ]
+[
+  {
+    "id": "pulseboard",
+    "type": "personal",
+    "title": "PulseBoard",
+    "subtitle": "Monitoring & Observability Platform",
+    "logo": "/logos/pulseboard.webp",
+    "description": "An open-source mobile observability platform featuring crash analytics, real-time WebSocket event streaming, AI-powered insights via Anthropic/OpenAI/Google/Moonshot, and a React Native SDK. Self-hostable backend on Railway, web dashboard on Vercel.",
+    "product_type": "product",
+    "status": "live",
+    "build_at": "Personal",
+    "tags": [
+      "Next.js",
+      "Vercel",
+      "React Native",
+      "Node.js",
+      "Fastify",
+      "PostgreSQL",
+      "Redis",
+      "Railway",
+      "BullMQ"
+    ],
+    "urls": [
+      {
+        "id": "1",
+        "type": "web",
+        "url": "https://pulseboard-omega-ruddy.vercel.app",
+        "title": "Visit Homepage"
+      },
+      {
+        "id": "2",
+        "type": "github",
+        "url": "https://github.com/aenexar/pulseboard-react-native",
+        "title": "React Native SDK"
       }
-    },
-    {
-      "id": "yoka",
-      "title": "Yoka",
-      "subtitle": "Real-time Asset Duel Trading Platform",
-      "logo": "/logos/yoka.webp",
-      "build_at": "Amega",
-      "description": "Yoka was a real-time asset dueling platform where users selected financial assets such as Tesla, Microsoft, or Google and competed against other assets based on market price movement. Users placed stakes using USDT or Yokens (an in-app virtual currency) and selected duel durations of 5, 10, 15, or 30 minutes. Outcomes were determined by market profit or loss during the selected timeframe. The platform was delivered as both a Telegram Mini App built with Next.js and a mobile application built with React Native, enabling users to deposit funds via multiple wallets and participate in live duels.",
-      "contribution": [
-        "Led the mobile engineering effort and established the overall architecture and technical foundation of the React Native application.",
-        "Designed the system architecture and collaborated with backend teams to define scalable API contracts and real-time data flows.",
-        "Delivered the first production-ready version of the application within a 3-month timeline.",
-        "Implemented real-time communication using WebSockets to handle live asset duels and instant result updates.",
-        "Integrated wallet-based deposit mechanisms enabling users to fund their accounts with USDT and participate in duels.",
-        "Established state management and data-fetching strategies using Zustand and React Query for predictable and performant application behavior.",
-        "Implemented monitoring and observability using Sentry, MixPanel, Firebase Analytics, and Looker Studio.",
-        "Set up CI/CD pipelines using GitHub Actions and Fastlane to automate builds, testing, and release processes.",
-        "Collaborated with product, design, and backend teams to iterate on features and optimize the application after launch."
-      ],
-      "type": "Mobile App",
-      "status": "Archived",
-      "status_reason": "The company was dissolved due to unknown reasons but work that was done is mentioned below along with screenshots.",
-      "tags": [
-        "Telegram Mini Apps",
-        "Next.js",
-        "React Native CLI",
-        "React Query",
-        "React Navigation API",
-        "Zustand",
-        "WebSockets",
-        "Directus CMS",
-        "GitHub Actions",
-        "Fastlane",
-        "MixPanel",
-        "Firebase Analytics",
-        "Looker Studio",
-        "Sentry",
-        "Zoho",
-        "Jira",
-        "Confluence",
-        "Figma"
-      ],
-      "urls": [
-        {
-          "id": "1",
-          "type": "android",
-          "url": "https://play.google.com/store/apps/details?id=com.amega.yoka",
-          "title": "View on Google Play"
-        }
-      ],
-      "screenshots": {
-        "telegram-mini-app": [
-          "telegram-1_wwyrgt",
-          "telegram-2_p10e2s",
-          "telegram-3_etz3s9",
-          "telegram-4_rgciuq",
-          "telegram-5_r9ih3l",
-          "telegram-6_rx1szp",
-          "telegram-7_inhcht"
-        ],
-        "mobile": ["android-01_n2nhem", "ios-2_qw3rnl", "ios-1_fqc6sr"]
+    ]
+  },
+  {
+    "id": "kmih-88-9-radio",
+    "title": "KMIH 88.9 Radio",
+    "type": "personal",
+    "subtitle": "Student Operated Radio Station",
+    "logo": "/logos/kmih.webp",
+    "description": "KMIH 88.9 The Bridge is a student-operated radio station at Mercer Island High School. The platform allows users to live stream the station and explore various shows broadcast on KMIH 88.9 The Bridge, which has been recognized as the best high school radio station. ",
+    "product_type": "mobile",
+    "build_at": "Freelance",
+    "status": "live",
+    "tags": [
+      "React Native CLI",
+      "React Navigation",
+      "Axios",
+      "Spotify Web API",
+      "React Query",
+      "Firebase"
+    ],
+    "urls": [
+      {
+        "id": "1",
+        "type": "ios",
+        "url": "https://apps.apple.com/us/app/kmih-88-9/id6755164132",
+        "title": "View on App Store"
+      },
+      {
+        "id": "2",
+        "type": "web",
+        "url": "https://radio-station-stream-xnee.bolt.host/",
+        "title": "Visit Homepage"
       }
+    ]
+  },
+  {
+    "id": "loan-manager-v21-0",
+    "title": "Loan Manager v1.0",
+    "type": "personal",
+    "subtitle": "Informal Loan Management Platform",
+    "logo": "/logos/loan-manager.webp",
+    "description": "Loan Manager, a mobile-first product focused on bringing structure and reliability to informal personal lending. Millions of people lend and borrow money within their personal networks without proper tracking, instalment visibility, or accountability systems. Over time, this lack of structure creates missed repayments, unclear expectations, and strained relationships.",
+    "product_type": "product",
+    "build_at": "Personal",
+    "status": "live",
+    "tags": ["React Native", "Java Spring Boot", "Redis", "PostgreSQL"],
+    "urls": [
+      {
+        "id": "1",
+        "type": "android",
+        "url": "https://play.google.com/store/apps/details?id=arslan.appclub.loanmanager",
+        "title": "VIew on Google Play - v1.0"
+      }
+    ]
+  },
+  {
+    "id": "fundix",
+    "title": "Fundix.pro",
+    "type": "professional",
+    "subtitle": "Prop Trading Application",
+    "logo": "/logos/fundix.webp",
+    "build_at": "Amega",
+    "description": "I led the architecture of the application using React Native alongside a small engineering team, establishing the foundational codebase structure, implementing complex business logic, and integrating third-party services. I managed two developers—mentoring a junior engineer to mid-level and oversaw performance optimization, scalability, and overall code quality.",
+    "contribution": [
+      "Build the initial documentation for system design.",
+      "Implemented the core architecture and established the foundational structure of the mobile application.",
+      "Managed the organization of the codebase by applying principles like SOLID, DRY, OOP, and the KISS pattern.",
+      "Implemented CI/CD pipelines for linting, unit test coverage checks, and documentation validation.",
+      "Implemented CI/CD for end-to-end testing using GitHub Actions and BrowserStack to fulfill business requirements.",
+      "Managed performance through profiling, bundle analysis, and applied optimizations such as lazy loading and code splitting.",
+      "Utilized AI agents to enhance productivity for both the team and myself.",
+      "Collaborated cross-functionally with the backend team to define and maintain API contracts.",
+      "Collaborated with UI/UX designers to ensure smooth design handoffs and accurate implementation.",
+      "Mentored both junior and senior developers through complex decisions and technical challenges.",
+      "Managed internal testing processes and post-production release workflows.",
+      "Developed a generic internal library on npmjs to support all company applications by isolating reusable components and design attributes.",
+      "Developed automated pipelines connecting the backend to Directus CMS and the mobile application, ensuring that backend updates automatically propagate to the frontend."
+    ],
+    "product_type": "mobile",
+    "status": "archived",
+    "info": {
+      "type": "warning",
+      "description": "The company was dissolved due to unknown reasons but work that was done is mentioned below along with screenshots."
     },
-    {
-      "id": "novos-life",
-      "title": "NOVOS Life",
-      "subtitle": "AI-Powered Longevity Optimization Platform",
-      "logo": "/logos/novos-life.webp",
-      "build_at": "Novos",
-      "description": "NOVOS Life is a mobile application designed to help individuals understand and improve their biological aging through data-driven lifestyle insights. The app provides a comprehensive longevity assessment that evaluates health behaviors and calculates a user’s biological age using AI models trained on large lifestyle datasets. Based on the results, users receive personalized recommendations, daily actions, and a lifestyle score aimed at improving long-term health and extending healthspan. Additional features include AI-powered coaching, longevity research resources, and tools that track lifestyle habits to help users gradually reduce their biological age and optimize overall well-being.",
-      "contribution": [
-        "Led the mobile architecture and technical foundation of the NOVOS Life React Native application, building the platform from scratch and establishing scalable engineering standards.",
-        "Architected and implemented a Server-Driven UI system powered by WordPress CMS, enabling product and medical teams to ship complex health assessment flows without requiring engineering releases.",
-        "Developed and integrated an AI-powered health and longevity chatbot directly within the mobile application to provide personalized guidance based on longevity research data.",
-        "Designed scalable state management and modular feature architecture to support a rapidly evolving health-tech product serving 1M+ registered users and ~80k monthly active users.",
-        "Established automated testing infrastructure using Jest, React Native Testing Library, and Detox to significantly reduce production crashes and improve release confidence.",
-        "Optimized the mobile user acquisition funnel and onboarding experience, contributing to a 30% increase in platform traffic and 15% growth in e-commerce revenue.",
-        "Implemented observability and monitoring using Sentry and Firebase Analytics to track performance, crashes, and user behavior across production environments.",
-        "Collaborated closely with medical researchers, product teams, and backend engineers to translate longevity science into scalable digital health experiences.",
-        "Governed the mobile release pipeline for iOS and Android, ensuring stable production deployments and consistent delivery across the platform lifecycle."
-      ],
-      "type": "Mobile App",
-      "status": "Live",
-      "tags": [
-        "React Native CLI",
-        "React Redux Toolkit",
-        "React Navigation API",
-        "AI Chatbot",
-        "WordPress CMS",
-        "GitHub Actions",
-        "Fastlane",
-        "Firebase Analytics",
-        "Firebase Crashlytics",
-        "Looker Studio",
-        "Zoho",
-        "monday.com",
-        "Confluence",
-        "Figma"
-      ],
-      "urls": [
-        {
-          "id": "1",
-          "type": "web",
-          "url": "https://novoslabs.com/",
-          "title": "View Homepage"
-        },
-        {
-          "id": "2",
-          "type": "android",
-          "url": "https://play.google.com/store/apps/details?id=com.novoslabs.NovosLife&hl=en&gl=US",
-          "title": "View on Google Play"
-        },
-        {
-          "id": "3",
-          "type": "ios",
-          "url": "https://apps.apple.com/us/app/novos-life/id6468173076",
-          "title": "View on App Store"
-        }
-      ]
-    },
-    {
-      "id": "novos-longevity-questionnare",
-      "title": "NOVOS Longevity Questionnare",
-      "subtitle": "Biological Age & Longevity Assessment",
-      "logo": "/logos/novos-life.webp",
-      "build_at": "Novos",
-      "description": "The NOVOS Longevity Questionnaire is a comprehensive digital health assessment designed to evaluate lifestyle, behavioral, and environmental factors that influence biological aging. The application guides users through a structured multi-step questionnaire covering areas such as nutrition, sleep, exercise, stress, and health history. Responses are processed through longevity scoring models to estimate biological age and generate personalized recommendations. The system was built as a dynamic, high-performance web application capable of handling complex conditional flows, large datasets, and seamless integration with the NOVOS health platform.",
-      "contribution": [
-        "Designed and developed the full web application architecture for the NOVOS Longevity Questionnaire using React and Vite.",
-        "Implemented a dynamic multi-step questionnaire system capable of handling complex conditional logic and branching flows.",
-        "Engineered state management using Redux to manage large-scale user input, scoring calculations, and navigation across the assessment.",
-        "Integrated the questionnaire with WordPress CMS to enable content teams to manage questions, explanations, and educational material.",
-        "Implemented biological age scoring logic and response processing to generate personalized longevity insights.",
-        "Optimized performance and responsiveness to support a large number of concurrent users accessing the assessment.",
-        "Developed reusable UI components and validation systems to maintain consistency across the questionnaire experience.",
-        "Ensured cross-browser compatibility and a responsive design to deliver a consistent experience across desktop and mobile devices."
-      ],
-      "type": "Web",
-      "status": "Live",
-      "tags": [
-        "Vite.js",
-        "React",
-        "CSS",
-        "JavaScript",
-        "WordPress",
-        "Redux",
-        "Lodash"
-      ],
-      "urls": [
-        {
-          "id": "1",
-          "type": "web",
-          "url": "https://novoslabs.com/",
-          "title": "View Homepage"
-        },
-        {
-          "id": "2",
-          "type": "web",
-          "url": "https://novoslabs.com/age-test/",
-          "title": "View Questtionare"
-        }
-      ]
-    },
-    {
-      "id": "proximus",
-      "title": "Proximus",
-      "subtitle": "Enterprise Telecom Super-App Engineering",
-      "logo": "/logos/proximus.webp",
-      "build_at": "S4 Digital",
-      "description": "Worked as part of the Proximus mobile engineering organization through S4 Digital to enhance the Proximus+ telecom super-app used by millions of subscribers. Contributed to feature development, platform stability, and large-scale testing initiatives within a distributed engineering environment exceeding 200 engineers across a 12,000+ employee global organization. Focused heavily on improving platform reliability by strengthening automated testing infrastructure and expanding end-to-end test coverage to ensure production stability across a complex enterprise mobile ecosystem.",
-      "contribution": [
-        "Collaborated with the Proximus mobile engineering organization to enhance the Proximus+ telecom super-app with new features and platform improvements.",
-        "Significantly increased end-to-end test coverage from 45% to 96% by expanding automated testing infrastructure across the mobile platform.",
-        "Implemented and maintained E2E testing workflows using enterprise testing tools to improve release confidence and reduce regression risk.",
-        "Developed new mobile features and enhancements within a large-scale React Native codebase serving millions of telecom subscribers.",
-        "Worked within a distributed Agile environment of 200+ engineers contributing to a telecom platform inside a 12,000+ employee organization.",
-        "Collaborated with cross-functional teams including QA engineers, backend teams, and product stakeholders to deliver stable production releases.",
-        "Improved platform reliability by identifying critical testing gaps and implementing comprehensive test coverage strategies.",
-        "Participated in code reviews, technical discussions, and architecture alignment to maintain engineering standards across a large enterprise codebase."
-      ],
-      "type": "Mobile App",
-      "status": "Live",
-      "tags": [
-        "React Native",
-        "Redux",
-        "Redux Thunk",
-        "Redux Saga",
-        "Dynatrace",
-        "Bitrise",
-        "Mangolia CMS",
-        "GitLab",
-        "Appium",
-        "WebDriverIO",
-        "InstaBug"
-      ],
-      "urls": [
-        {
-          "id": "1",
-          "type": "web",
-          "url": "https://www.s4-digital.com/",
-          "title": "View S4 Digital"
-        },
-        {
-          "id": "2",
-          "type": "web",
-          "url": "https://www.proximus.be/en/personal/",
-          "title": "View Proximus"
-        },
-        {
-          "id": "3",
-          "type": "android",
-          "url": "https://play.google.com/store/apps/details?id=be.belgacom.hello",
-          "title": "View on Google Play"
-        },
-        {
-          "id": "4",
-          "type": "ios",
-          "url": "https://apps.apple.com/be/app/proximus-telecom-and-more/id483589694",
-          "title": "View on App Store"
-        }
-      ]
-    },
-    {
-      "id": "athenum-hub",
-      "title": "Atheneum Hub",
-      "subtitle": "Expert Network App",
-      "logo": "/logos/atheneum-hub.webp",
-      "build_at": "Ecologix",
-      "description": "At Ecologix, I contributed to Atheneum Hub, a mobile platform empowering independent experts to manage consulting engagements end-to-end. The app enables experts to discover and apply for tailored opportunities, manage their availability and appointments, communicate directly with the Atheneum team, and handle payments, all from a single cross-platform experience on iOS and Android.",
-      "contribution": [
-        "Developed cross-platform React Native features for the Atheneum Hub expert app, covering opportunity discovery, scheduling, in-app messaging, and profile management.",
-        "Implemented state management using Redux with Redux Thunk and Redux Saga to handle asynchronous flows across engagement lifecycle and scheduling features.",
-        "Integrated Firebase Cloud Messaging to deliver real-time push notifications for new opportunities, appointment reminders, and direct messages.",
-        "Set up Firebase Analytics to track expert engagement funnels and in-app behaviour, providing product teams with actionable usage insights.",
-        "Authored unit and integration tests using Jest and React Native Testing Library to maintain reliability across core user flows.",
-        "Collaborated within a 5-person cross-functional Agile team, contributing to code reviews, standardised development workflows, and consistent release cadence."
-      ],
-      "type": "Mobile App",
-      "status": "Live",
-      "tags": [
-        "React Native Expo",
-        "Redux",
-        "Redux Thunk",
-        "Redux Saga",
-        "Firebase Analytics",
-        "Firebase Functions",
-        "Firebase Messaging",
-        "GitHub",
-        "GitHub Actions",
-        "CodePush",
-        "RNTL",
-        "Jest",
-        "Mocha"
-      ],
-      "urls": [
-        {
-          "id": "1",
-          "type": "web",
-          "url": "https://www.atheneum.ai/atheneum-hub",
-          "title": "View Homepage"
-        },
-        {
-          "id": "2",
-          "type": "android",
-          "url": "https://play.google.com/store/apps/details?id=ai.atheneum&pcampaignid=web_share",
-          "title": "View on Google Play"
-        },
-        {
-          "id": "3",
-          "type": "ios",
-          "url": "https://apps.apple.com/us/app/atheneum-hub/id1568998155",
-          "title": "View on App Store"
-        }
-      ]
-    },
-    {
-      "id": "workapp",
-      "title": "Workapp",
-      "subtitle": "Team Task Manager",
-      "logo": "/logos/workapp.webp",
-      "build_at": "Ecologix",
-      "description": "At Ecologix, I contributed to WorkApp v2.0 — a lightweight cross-platform productivity app that lets teams send tasks as messages and track everyone's progress in real time. My work focused on upgrading existing features to meet the v2.0 milestone, resolving bugs carried over from the current release, and managing both the pre-production and post-production processes to ensure a stable and timely rollout on iOS and Android.",
-      "contribution": [
-        "Delivered feature upgrades for WorkApp v2.0, enhancing task creation, team messaging, and progress tracking workflows in React Native.",
-        "Diagnosed and resolved production bugs from the existing release, improving app stability and user experience ahead of the v2.0 launch.",
-        "Managed the pre-production process including build configuration, release branch management, and QA coordination across iOS and Android.",
-        "Oversaw the post-production release process, monitoring the rollout via App Store Connect and Google Play Console and addressing any post-launch issues.",
-        "Integrated Firebase Cloud Messaging to power real-time push notifications for task assignments and completion updates.",
-        "Wrote and maintained unit tests using Jest and React Native Testing Library to safeguard upgraded features against regressions."
-      ],
-      "type": "Mobile App",
-      "status": "Live",
-      "tags": [
-        "React Native Expo",
-        "Redux",
-        "Redux Thunk",
-        "Redux Saga",
-        "Firebase Analytics",
-        "Firebase Functions",
-        "Firebase Messaging",
-        "Github",
-        "RNTL",
-        "Jest Expo",
-        "Mocha",
-        "Grafana",
-        "Datadog"
-      ],
-      "urls": [
-        {
-          "id": "1",
-          "type": "web",
-          "url": "https://workapp.chat/",
-          "title": "View Homepage"
-        },
-        {
-          "id": "2",
-          "type": "android",
-          "url": "https://play.google.com/store/apps/details?id=lyttleton.com.Work&pli=1",
-          "title": "View on Google Play"
-        },
-        {
-          "id": "3",
-          "type": "ios",
-          "url": "https://apps.apple.com/us/app/work-app-chat-share-tasks/id1287481085",
-          "title": "View on App Store"
-        }
-      ]
-    },
-    {
-      "id": "tolt",
-      "title": "TOTL Football Quiz",
-      "subtitle": "Football Trivia Game",
-      "logo": "/logos/totl.webp",
-      "build_at": "Ecologix",
-      "description": "At Ecologix, I led the development of TOTL Football Quiz, a competitive football trivia app for iOS and Android, guiding a team of 2 engineers from scratch to production. The app challenges fans with thousands of football questions across multiplayer modes and weekly competitive leagues, where players represent their club and compete to prove which team has the smartest supporters. I was responsible for overall technical direction, architecture decisions, and ensuring a stable production release across both platforms.",
-      "contribution": [
-        "Led a team of 2 engineers across the full development lifecycle, from initial architecture and feature planning through to App Store and Google Play production releases.",
-        "Architected the React Native mobile application, establishing codebase structure, development standards, and code review practices for the team.",
-        "Designed and built the Node.js + Express.js backend, covering RESTful API design, quiz session management, league standings, and weekly league reset logic.",
-        "Implemented weekly competitive league mechanics, enabling players to compete on behalf of their football club with automatic standings updates every Sunday.",
-        "Managed pre-production workflows including build configuration, QA coordination, and release preparation across iOS and Android platforms.",
-        "Oversaw post-production processes via App Store Connect and Google Play Console, monitoring stability and coordinating bug fixes after launch."
-      ],
-      "type": "Product",
-      "status": "Live",
-      "tags": [
-        "React Native CLI",
-        "React (CRA)",
-        "Firebase",
-        "Github",
-        "Github Actions",
-        "Fastlane",
-        "Node.js",
-        "Express.js",
-        "Heroku",
-        "Redis",
-        "BullMQ",
-        "MongoDB",
-        "Socket.IO"
-      ],
-      "urls": [
-        {
-          "id": "1",
-          "type": "web",
-          "url": "https://www.totl.football/",
-          "title": "View Homepage"
-        },
-        {
-          "id": "2",
-          "type": "android",
-          "url": "https://play.google.com/store/apps/details?id=com.totl.football&hl=en",
-          "title": "View on Google Play"
-        },
-        {
-          "id": "3",
-          "type": "ios",
-          "url": "https://apps.apple.com/us/app/totl-football-quiz/id1634446319",
-          "title": "View on App Store"
-        }
-      ]
-    },
-    {
-      "id": "tempo",
-      "title": "Tempo",
-      "subtitle": "Event Management System",
-      "logo": "/logos/tempo.webp",
-      "build_at": "Juice Phactree",
-      "description": "I designed and developed Tempo end-to-end — a full-stack event management platform built on the MERN stack and deployed to Heroku. The platform serves two audiences: event managers get a powerful dashboard to create and manage events, generate bulk PDF tickets with QR codes, and oversee attendee management at scale; while the public can browse events and purchase tickets seamlessly via Stripe. The mobile experience was delivered as a React Native app, with the web dashboard built in React and Vite.",
-      "contribution": [
-        "Architected and developed the entire platform from scratch across web (React + Vite), mobile (React Native), and backend (Node.js + MongoDB), owning all layers of the stack.",
-        "Built an optimised event manager dashboard enabling bulk generation of PDF tickets embedded with unique QR codes, supporting hundreds to thousands of attendees per event.",
-        "Integrated Stripe for secure end-to-end ticket purchasing, covering payment intent creation, webhook handling, and post-payment confirmation flows.",
-        "Implemented Redis for caching and RabbitMQ for asynchronous job processing, ensuring performant and reliable bulk PDF generation under high load.",
-        "Designed and managed a MongoDB database schema to support event lifecycle management, attendee records, and ticket inventory.",
-        "Configured Firebase for authentication and real-time features across the web and mobile clients.",
-        "Established CI/CD pipelines using GitHub Actions and Fastlane to automate builds, testing, and deployments to Heroku across all platforms."
-      ],
-      "type": "Product",
-      "status": "Live",
-      "tags": [
-        "React Native",
-        "React",
-        "Vite",
-        "Firebase",
-        "Github",
-        "Github Actions",
-        "Fastlane",
-        "Node.js",
-        "Heroku",
-        "Redis",
-        "RabitMQ",
-        "MongoDB",
-        "Stripe"
-      ],
-      "urls": [
-        {
-          "id": "1",
-          "type": "web",
-          "url": "https://tempo.live/",
-          "title": "View Homepage"
-        },
-        {
-          "id": "2",
-          "type": "ios",
-          "url": "https://apps.apple.com/us/app/tempo/id954178248",
-          "title": "View on App Store"
-        }
+    "tags": [
+      "React Native CLI",
+      "React Query",
+      "React Navigation API",
+      "Zustand",
+      "WebSockets",
+      "Directus CMS",
+      "GitHub Actions",
+      "Fastlane",
+      "MixPanel",
+      "Firebase Analytics",
+      "Looker Studio",
+      "Sentry",
+      "Zoho",
+      "Jira",
+      "Confluence",
+      "Figma"
+    ],
+    "urls": [
+      {
+        "id": "1",
+        "type": "web",
+        "url": "https://fundix.pro/",
+        "title": "Visit Homepage"
+      },
+      {
+        "id": "2",
+        "type": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.amega.fundix",
+        "title": "View on Google Play"
+      }
+    ],
+    "screenshots": {
+      "mobile": [
+        "android-1_fr7kmg",
+        "android-2_erbmfp",
+        "android-3_grya12",
+        "android-4_r5684f",
+        "android-5_dtqydy",
+        "android-6_h7b7a5",
+        "android-7_xpzpxh",
+        "android-8_kobshe"
       ]
     }
-  ]
-}
+  },
+  {
+    "id": "yoka",
+    "title": "Yoka",
+    "type": "professional",
+    "subtitle": "Real-time Asset Duel Trading Platform",
+    "logo": "/logos/yoka.webp",
+    "build_at": "Amega",
+    "description": "Yoka was a real-time asset dueling platform where users selected financial assets such as Tesla, Microsoft, or Google and competed against other assets based on market price movement. Users placed stakes using USDT or Yokens (an in-app virtual currency) and selected duel durations of 5, 10, 15, or 30 minutes. Outcomes were determined by market profit or loss during the selected timeframe. The platform was delivered as both a Telegram Mini App built with Next.js and a mobile application built with React Native, enabling users to deposit funds via multiple wallets and participate in live duels.",
+    "contribution": [
+      "Led the mobile engineering effort and established the overall architecture and technical foundation of the React Native application.",
+      "Designed the system architecture and collaborated with backend teams to define scalable API contracts and real-time data flows.",
+      "Delivered the first production-ready version of the application within a 3-month timeline.",
+      "Implemented real-time communication using WebSockets to handle live asset duels and instant result updates.",
+      "Integrated wallet-based deposit mechanisms enabling users to fund their accounts with USDT and participate in duels.",
+      "Established state management and data-fetching strategies using Zustand and React Query for predictable and performant application behavior.",
+      "Implemented monitoring and observability using Sentry, MixPanel, Firebase Analytics, and Looker Studio.",
+      "Set up CI/CD pipelines using GitHub Actions and Fastlane to automate builds, testing, and release processes.",
+      "Collaborated with product, design, and backend teams to iterate on features and optimize the application after launch."
+    ],
+    "product_type": "mobile",
+    "status": "archived",
+    "info": {
+      "type": "warning",
+      "description": "The company was dissolved due to unknown reasons but work that was done is mentioned below along with screenshots."
+    },
+    "tags": [
+      "Telegram Mini Apps",
+      "Next.js",
+      "React Native CLI",
+      "React Query",
+      "React Navigation API",
+      "Zustand",
+      "WebSockets",
+      "Directus CMS",
+      "GitHub Actions",
+      "Fastlane",
+      "MixPanel",
+      "Firebase Analytics",
+      "Looker Studio",
+      "Sentry",
+      "Zoho",
+      "Jira",
+      "Confluence",
+      "Figma"
+    ],
+    "urls": [
+      {
+        "id": "1",
+        "type": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.amega.yoka",
+        "title": "View on Google Play"
+      }
+    ],
+    "screenshots": {
+      "telegram-mini-app": [
+        "telegram-1_wwyrgt",
+        "telegram-2_p10e2s",
+        "telegram-3_etz3s9",
+        "telegram-4_rgciuq",
+        "telegram-5_r9ih3l",
+        "telegram-6_rx1szp",
+        "telegram-7_inhcht"
+      ],
+      "mobile": ["android-01_n2nhem", "ios-2_qw3rnl", "ios-1_fqc6sr"]
+    }
+  },
+  {
+    "id": "novos-life",
+    "title": "NOVOS Life",
+    "type": "professional",
+    "subtitle": "AI-Powered Longevity Optimization Platform",
+    "logo": "/logos/novos-life.webp",
+    "build_at": "Novos",
+    "description": "NOVOS Life is a mobile application designed to help individuals understand and improve their biological aging through data-driven lifestyle insights. The app provides a comprehensive longevity assessment that evaluates health behaviors and calculates a user’s biological age using AI models trained on large lifestyle datasets. Based on the results, users receive personalized recommendations, daily actions, and a lifestyle score aimed at improving long-term health and extending healthspan. Additional features include AI-powered coaching, longevity research resources, and tools that track lifestyle habits to help users gradually reduce their biological age and optimize overall well-being.",
+    "contribution": [
+      "Led the mobile architecture and technical foundation of the NOVOS Life React Native application, building the platform from scratch and establishing scalable engineering standards.",
+      "Architected and implemented a Server-Driven UI system powered by WordPress CMS, enabling product and medical teams to ship complex health assessment flows without requiring engineering releases.",
+      "Developed and integrated an AI-powered health and longevity chatbot directly within the mobile application to provide personalized guidance based on longevity research data.",
+      "Designed scalable state management and modular feature architecture to support a rapidly evolving health-tech product serving 1M+ registered users and ~80k monthly active users.",
+      "Established automated testing infrastructure using Jest, React Native Testing Library, and Detox to significantly reduce production crashes and improve release confidence.",
+      "Optimized the mobile user acquisition funnel and onboarding experience, contributing to a 30% increase in platform traffic and 15% growth in e-commerce revenue.",
+      "Implemented observability and monitoring using Sentry and Firebase Analytics to track performance, crashes, and user behavior across production environments.",
+      "Collaborated closely with medical researchers, product teams, and backend engineers to translate longevity science into scalable digital health experiences.",
+      "Governed the mobile release pipeline for iOS and Android, ensuring stable production deployments and consistent delivery across the platform lifecycle."
+    ],
+    "product_type": "mobile",
+    "status": "live",
+    "tags": [
+      "React Native CLI",
+      "React Redux Toolkit",
+      "React Navigation API",
+      "AI Chatbot",
+      "WordPress CMS",
+      "GitHub Actions",
+      "Fastlane",
+      "Firebase Analytics",
+      "Firebase Crashlytics",
+      "Looker Studio",
+      "Zoho",
+      "monday.com",
+      "Confluence",
+      "Figma"
+    ],
+    "urls": [
+      {
+        "id": "1",
+        "type": "web",
+        "url": "https://novoslabs.com/",
+        "title": "View Homepage"
+      },
+      {
+        "id": "2",
+        "type": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.novoslabs.NovosLife&hl=en&gl=US",
+        "title": "View on Google Play"
+      },
+      {
+        "id": "3",
+        "type": "ios",
+        "url": "https://apps.apple.com/us/app/novos-life/id6468173076",
+        "title": "View on App Store"
+      }
+    ]
+  },
+  {
+    "id": "novos-longevity-questionnare",
+    "title": "NOVOS Longevity Questionnare",
+    "type": "professional",
+    "subtitle": "Biological Age & Longevity Assessment",
+    "logo": "/logos/novos-life.webp",
+    "build_at": "Novos",
+    "description": "The NOVOS Longevity Questionnaire is a comprehensive digital health assessment designed to evaluate lifestyle, behavioral, and environmental factors that influence biological aging. The application guides users through a structured multi-step questionnaire covering areas such as nutrition, sleep, exercise, stress, and health history. Responses are processed through longevity scoring models to estimate biological age and generate personalized recommendations. The system was built as a dynamic, high-performance web application capable of handling complex conditional flows, large datasets, and seamless integration with the NOVOS health platform.",
+    "contribution": [
+      "Designed and developed the full web application architecture for the NOVOS Longevity Questionnaire using React and Vite.",
+      "Implemented a dynamic multi-step questionnaire system capable of handling complex conditional logic and branching flows.",
+      "Engineered state management using Redux to manage large-scale user input, scoring calculations, and navigation across the assessment.",
+      "Integrated the questionnaire with WordPress CMS to enable content teams to manage questions, explanations, and educational material.",
+      "Implemented biological age scoring logic and response processing to generate personalized longevity insights.",
+      "Optimized performance and responsiveness to support a large number of concurrent users accessing the assessment.",
+      "Developed reusable UI components and validation systems to maintain consistency across the questionnaire experience.",
+      "Ensured cross-browser compatibility and a responsive design to deliver a consistent experience across desktop and mobile devices."
+    ],
+    "product_type": "web",
+    "status": "live",
+    "tags": [
+      "Vite.js",
+      "React",
+      "CSS",
+      "JavaScript",
+      "WordPress",
+      "Redux",
+      "Lodash"
+    ],
+    "urls": [
+      {
+        "id": "1",
+        "type": "web",
+        "url": "https://novoslabs.com/",
+        "title": "View Homepage"
+      },
+      {
+        "id": "2",
+        "type": "web",
+        "url": "https://novoslabs.com/age-test/",
+        "title": "View Questtionare"
+      }
+    ]
+  },
+  {
+    "id": "proximus",
+    "title": "Proximus",
+    "type": "professional",
+    "subtitle": "Enterprise Telecom Super-App Engineering",
+    "logo": "/logos/proximus.webp",
+    "build_at": "S4 Digital",
+    "description": "Worked as part of the Proximus mobile engineering organization through S4 Digital to enhance the Proximus+ telecom super-app used by millions of subscribers. Contributed to feature development, platform stability, and large-scale testing initiatives within a distributed engineering environment exceeding 200 engineers across a 12,000+ employee global organization. Focused heavily on improving platform reliability by strengthening automated testing infrastructure and expanding end-to-end test coverage to ensure production stability across a complex enterprise mobile ecosystem.",
+    "contribution": [
+      "Collaborated with the Proximus mobile engineering organization to enhance the Proximus+ telecom super-app with new features and platform improvements.",
+      "Significantly increased end-to-end test coverage from 45% to 96% by expanding automated testing infrastructure across the mobile platform.",
+      "Implemented and maintained E2E testing workflows using enterprise testing tools to improve release confidence and reduce regression risk.",
+      "Developed new mobile features and enhancements within a large-scale React Native codebase serving millions of telecom subscribers.",
+      "Worked within a distributed Agile environment of 200+ engineers contributing to a telecom platform inside a 12,000+ employee organization.",
+      "Collaborated with cross-functional teams including QA engineers, backend teams, and product stakeholders to deliver stable production releases.",
+      "Improved platform reliability by identifying critical testing gaps and implementing comprehensive test coverage strategies.",
+      "Participated in code reviews, technical discussions, and architecture alignment to maintain engineering standards across a large enterprise codebase."
+    ],
+    "product_type": "mobile",
+    "status": "live",
+    "tags": [
+      "React Native",
+      "Redux",
+      "Redux Thunk",
+      "Redux Saga",
+      "Dynatrace",
+      "Bitrise",
+      "Mangolia CMS",
+      "GitLab",
+      "Appium",
+      "WebDriverIO",
+      "InstaBug"
+    ],
+    "urls": [
+      {
+        "id": "1",
+        "type": "web",
+        "url": "https://www.s4-digital.com/",
+        "title": "View S4 Digital"
+      },
+      {
+        "id": "2",
+        "type": "web",
+        "url": "https://www.proximus.be/en/personal/",
+        "title": "View Proximus"
+      },
+      {
+        "id": "3",
+        "type": "android",
+        "url": "https://play.google.com/store/apps/details?id=be.belgacom.hello",
+        "title": "View on Google Play"
+      },
+      {
+        "id": "4",
+        "type": "ios",
+        "url": "https://apps.apple.com/be/app/proximus-telecom-and-more/id483589694",
+        "title": "View on App Store"
+      }
+    ]
+  },
+  {
+    "id": "athenum-hub",
+    "title": "Atheneum Hub",
+    "type": "professional",
+    "subtitle": "Expert Network App",
+    "logo": "/logos/atheneum-hub.webp",
+    "build_at": "Ecologix",
+    "description": "At Ecologix, I contributed to Atheneum Hub, a mobile platform empowering independent experts to manage consulting engagements end-to-end. The app enables experts to discover and apply for tailored opportunities, manage their availability and appointments, communicate directly with the Atheneum team, and handle payments, all from a single cross-platform experience on iOS and Android.",
+    "contribution": [
+      "Developed cross-platform React Native features for the Atheneum Hub expert app, covering opportunity discovery, scheduling, in-app messaging, and profile management.",
+      "Implemented state management using Redux with Redux Thunk and Redux Saga to handle asynchronous flows across engagement lifecycle and scheduling features.",
+      "Integrated Firebase Cloud Messaging to deliver real-time push notifications for new opportunities, appointment reminders, and direct messages.",
+      "Set up Firebase Analytics to track expert engagement funnels and in-app behaviour, providing product teams with actionable usage insights.",
+      "Authored unit and integration tests using Jest and React Native Testing Library to maintain reliability across core user flows.",
+      "Collaborated within a 5-person cross-functional Agile team, contributing to code reviews, standardised development workflows, and consistent release cadence."
+    ],
+    "product_type": "mobile",
+    "status": "live",
+    "tags": [
+      "React Native Expo",
+      "Redux",
+      "Redux Thunk",
+      "Redux Saga",
+      "Firebase Analytics",
+      "Firebase Functions",
+      "Firebase Messaging",
+      "GitHub",
+      "GitHub Actions",
+      "CodePush",
+      "RNTL",
+      "Jest",
+      "Mocha"
+    ],
+    "urls": [
+      {
+        "id": "1",
+        "type": "web",
+        "url": "https://www.atheneum.ai/atheneum-hub",
+        "title": "View Homepage"
+      },
+      {
+        "id": "2",
+        "type": "android",
+        "url": "https://play.google.com/store/apps/details?id=ai.atheneum&pcampaignid=web_share",
+        "title": "View on Google Play"
+      },
+      {
+        "id": "3",
+        "type": "ios",
+        "url": "https://apps.apple.com/us/app/atheneum-hub/id1568998155",
+        "title": "View on App Store"
+      }
+    ]
+  },
+  {
+    "id": "workapp",
+    "title": "Workapp",
+    "type": "professional",
+    "subtitle": "Team Task Manager",
+    "logo": "/logos/workapp.webp",
+    "build_at": "Ecologix",
+    "description": "At Ecologix, I contributed to WorkApp v2.0 — a lightweight cross-platform productivity app that lets teams send tasks as messages and track everyone's progress in real time. My work focused on upgrading existing features to meet the v2.0 milestone, resolving bugs carried over from the current release, and managing both the pre-production and post-production processes to ensure a stable and timely rollout on iOS and Android.",
+    "contribution": [
+      "Delivered feature upgrades for WorkApp v2.0, enhancing task creation, team messaging, and progress tracking workflows in React Native.",
+      "Diagnosed and resolved production bugs from the existing release, improving app stability and user experience ahead of the v2.0 launch.",
+      "Managed the pre-production process including build configuration, release branch management, and QA coordination across iOS and Android.",
+      "Oversaw the post-production release process, monitoring the rollout via App Store Connect and Google Play Console and addressing any post-launch issues.",
+      "Integrated Firebase Cloud Messaging to power real-time push notifications for task assignments and completion updates.",
+      "Wrote and maintained unit tests using Jest and React Native Testing Library to safeguard upgraded features against regressions."
+    ],
+    "product_type": "mobile",
+    "status": "live",
+    "tags": [
+      "React Native Expo",
+      "Redux",
+      "Redux Thunk",
+      "Redux Saga",
+      "Firebase Analytics",
+      "Firebase Functions",
+      "Firebase Messaging",
+      "Github",
+      "RNTL",
+      "Jest Expo",
+      "Mocha",
+      "Grafana",
+      "Datadog"
+    ],
+    "urls": [
+      {
+        "id": "1",
+        "type": "web",
+        "url": "https://workapp.chat/",
+        "title": "View Homepage"
+      },
+      {
+        "id": "2",
+        "type": "android",
+        "url": "https://play.google.com/store/apps/details?id=lyttleton.com.Work&pli=1",
+        "title": "View on Google Play"
+      },
+      {
+        "id": "3",
+        "type": "ios",
+        "url": "https://apps.apple.com/us/app/work-app-chat-share-tasks/id1287481085",
+        "title": "View on App Store"
+      }
+    ]
+  },
+  {
+    "id": "tolt",
+    "title": "TOTL Football Quiz",
+    "type": "professional",
+    "subtitle": "Football Trivia Game",
+    "logo": "/logos/totl.webp",
+    "build_at": "Ecologix",
+    "description": "At Ecologix, I led the development of TOTL Football Quiz, a competitive football trivia app for iOS and Android, guiding a team of 2 engineers from scratch to production. The app challenges fans with thousands of football questions across multiplayer modes and weekly competitive leagues, where players represent their club and compete to prove which team has the smartest supporters. I was responsible for overall technical direction, architecture decisions, and ensuring a stable production release across both platforms.",
+    "contribution": [
+      "Led a team of 2 engineers across the full development lifecycle, from initial architecture and feature planning through to App Store and Google Play production releases.",
+      "Architected the React Native mobile application, establishing codebase structure, development standards, and code review practices for the team.",
+      "Designed and built the Node.js + Express.js backend, covering RESTful API design, quiz session management, league standings, and weekly league reset logic.",
+      "Implemented weekly competitive league mechanics, enabling players to compete on behalf of their football club with automatic standings updates every Sunday.",
+      "Managed pre-production workflows including build configuration, QA coordination, and release preparation across iOS and Android platforms.",
+      "Oversaw post-production processes via App Store Connect and Google Play Console, monitoring stability and coordinating bug fixes after launch."
+    ],
+    "product_type": "product",
+    "status": "live",
+    "tags": [
+      "React Native CLI",
+      "React (CRA)",
+      "Firebase",
+      "Github",
+      "Github Actions",
+      "Fastlane",
+      "Node.js",
+      "Express.js",
+      "Heroku",
+      "Redis",
+      "BullMQ",
+      "MongoDB",
+      "Socket.IO"
+    ],
+    "urls": [
+      {
+        "id": "1",
+        "type": "web",
+        "url": "https://www.totl.football/",
+        "title": "View Homepage"
+      },
+      {
+        "id": "2",
+        "type": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.totl.football&hl=en",
+        "title": "View on Google Play"
+      },
+      {
+        "id": "3",
+        "type": "ios",
+        "url": "https://apps.apple.com/us/app/totl-football-quiz/id1634446319",
+        "title": "View on App Store"
+      }
+    ]
+  },
+  {
+    "id": "tempo",
+    "title": "Tempo",
+    "type": "professional",
+    "subtitle": "Event Management System",
+    "logo": "/logos/tempo.webp",
+    "build_at": "Juice Phactree",
+    "description": "I designed and developed Tempo end-to-end — a full-stack event management platform built on the MERN stack and deployed to Heroku. The platform serves two audiences: event managers get a powerful dashboard to create and manage events, generate bulk PDF tickets with QR codes, and oversee attendee management at scale; while the public can browse events and purchase tickets seamlessly via Stripe. The mobile experience was delivered as a React Native app, with the web dashboard built in React and Vite.",
+    "contribution": [
+      "Architected and developed the entire platform from scratch across web (React + Vite), mobile (React Native), and backend (Node.js + MongoDB), owning all layers of the stack.",
+      "Built an optimised event manager dashboard enabling bulk generation of PDF tickets embedded with unique QR codes, supporting hundreds to thousands of attendees per event.",
+      "Integrated Stripe for secure end-to-end ticket purchasing, covering payment intent creation, webhook handling, and post-payment confirmation flows.",
+      "Implemented Redis for caching and RabbitMQ for asynchronous job processing, ensuring performant and reliable bulk PDF generation under high load.",
+      "Designed and managed a MongoDB database schema to support event lifecycle management, attendee records, and ticket inventory.",
+      "Configured Firebase for authentication and real-time features across the web and mobile clients.",
+      "Established CI/CD pipelines using GitHub Actions and Fastlane to automate builds, testing, and deployments to Heroku across all platforms."
+    ],
+    "product_type": "product",
+    "status": "live",
+    "tags": [
+      "React Native",
+      "React",
+      "Vite",
+      "Firebase",
+      "Github",
+      "Github Actions",
+      "Fastlane",
+      "Node.js",
+      "Heroku",
+      "Redis",
+      "RabitMQ",
+      "MongoDB",
+      "Stripe"
+    ],
+    "urls": [
+      {
+        "id": "1",
+        "type": "web",
+        "url": "https://tempo.live/",
+        "title": "View Homepage"
+      },
+      {
+        "id": "2",
+        "type": "ios",
+        "url": "https://apps.apple.com/us/app/tempo/id954178248",
+        "title": "View on App Store"
+      }
+    ]
+  },
+  {
+    "id": "telex",
+    "title": "Telex",
+    "type": "professional",
+    "subtitle": "Business-Consumer Messaging",
+    "logo": "/logos/telex.webp",
+    "build_at": "Juice Phactree",
+    "description": "At Ecologix, I led the development of Telex, a cross-platform communication app that bridges businesses and their customers through real-time chat. Consumers can reach businesses directly for services like placing orders, tracking deliveries, submitting complaints, and raising reports, similar to contacting a brand's customer support. I oversaw the full development lifecycle, mentored a junior developer, and was responsible for architecture, feature delivery, and production releases on iOS and Android.",
+    "contribution": [
+      "Led the project end-to-end, making architecture decisions and mentoring a junior developer through feature implementation, code reviews, and best practices.",
+      "Built a real-time chat system using React Native Gifted Chat and Firebase Firestore, supporting text, audio messages, file attachments, and image sharing.",
+      "Integrated Firebase Authentication for secure phone number-based OTP login and Firebase Cloud Messaging for real-time push notifications across iOS and Android.",
+      "Implemented audio recording and playback using react-native-audio-recorder-player and @react-native-community/audio-toolkit, enabling voice messaging within conversations.",
+      "Set up Firebase Crashlytics for real-time crash monitoring and production stability tracking across both platforms.",
+      "Managed global state using Redux Toolkit with redux-persist, ensuring session continuity and offline resilience across app restarts.",
+      "Implemented multi-language support using i18next and react-i18next, enabling localisation across different business and consumer markets.",
+      "Built form-driven flows for complaints, reports, and order requests using Formik and Yup with robust client-side validation."
+    ],
+    "product_type": "product",
+    "status": "live",
+    "tags": [
+      "React Native",
+      "Redux Toolkit",
+      "Redux Persist",
+      "Firebase Auth",
+      "Firebase Firestore",
+      "Firebase Cloud Messaging",
+      "Firebase Storage",
+      "Firebase Crashlytics",
+      "React Navigation",
+      "Gifted Chat",
+      "i18next",
+      "Formik",
+      "Yup",
+      "Lottie",
+      "Jest",
+      "GitHub"
+    ],
+    "screenshots": {
+      "mobile": [
+        "01_b0ctfy",
+        "02_zu4ydl",
+        "03_fgetgy",
+        "04_vh9huu",
+        "05_coi3dc",
+        "06_dpvrgj",
+        "07_dqe3tf",
+        "08_omdkec",
+        "09_diqkhr",
+        "10_viptya",
+        "11_gy0utd",
+        "12_hgstfo",
+        "13_zimzwy",
+        "14_zlhubv"
+      ]
+    }
+  },
+  {
+    "id": "mandii-mart",
+    "title": "Mandii Mart",
+    "type": "professional",
+    "subtitle": "Warehouse Management System",
+    "build_at": "Juice Phactree",
+    "logo": "/logos/mandii-mart.webp",
+    "description": "Mandii Mart is a freelance client project — a private, internal cross-platform platform built to streamline warehouse operations from end to end. The mobile app enables staff to manage client orders, track live rider locations, handle payments, and oversee stock levels in real time. It is complemented by a React-based admin panel for back-office management. The backend was engineered for scale using Node.js, PostgreSQL, RabbitMQ, Kafka, Redis, and Docker, with observability via Grafana. Deployment evolved from manual releases to a fully automated CI/CD pipeline over the course of the project.",
+    "product_type": "product",
+    "status": "live",
+    "info": {
+      "type": "info",
+      "description": "Due to the terms of the NDA, I am not permitted to share any screenshots."
+    },
+    "tags": [
+      "React Native",
+      "React",
+      "Redux Toolkit",
+      "Redux Persist",
+      "Redux Thunk",
+      "Firebase Auth",
+      "Firebase Firestore",
+      "Firebase Storage",
+      "Google Sign-In",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "RabbitMQ",
+      "Kafka",
+      "Redis",
+      "Docker",
+      "Grafana",
+      "Chakra UI",
+      "Vite",
+      "Heroku",
+      "Formik",
+      "Yup",
+      "GitHub Actions",
+      "Jest"
+    ],
+    "contribution": [
+      "Architected and delivered the full platform across three surfaces: React Native mobile app, React admin panel, and a Node.js + PostgreSQL backend with Express.js.",
+      "Built core warehouse management features including client-specific ordering flows, stock management, payment handling, and live rider status tracking in the mobile app.",
+      "Integrated Firebase Auth with Google Sign-In and OTP verification, securing access across both the mobile app and admin panel.",
+      "Used Firebase Firestore and Storage for real-time data sync and media management across the mobile and admin surfaces.",
+      "Developed the admin panel initially with Create React App using Chakra UI, Redux Toolkit, and React Router, later migrating to Vite for significantly improved build performance.",
+      "Designed the backend with scalability in mind, integrating RabbitMQ and Kafka for async message processing and Redis for caching and session management.",
+      "Containerised backend services using Docker and set up Grafana dashboards for infrastructure observability and performance monitoring.",
+      "Transitioned deployment from manual releases to a fully automated CI/CD pipeline, reducing release overhead and human error.",
+      "Managed global state across the mobile app using Redux Toolkit with redux-persist and Redux Thunk, ensuring data continuity across sessions."
+    ]
+  }
+]

@@ -3,9 +3,10 @@
 import { useState, useCallback, useEffect } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { CldImage } from "next-cloudinary";
+import { Project } from "@/lib/types/project";
 
 interface ScreenshotGalleryProps {
-  screenshots?: Record<string, string[]>;
+  screenshots: Project["screenshots"];
 }
 
 export default function ScreenshotGallery({

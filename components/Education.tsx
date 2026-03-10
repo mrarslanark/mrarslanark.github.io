@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import { GraduationCap, Award, Trophy } from "lucide-react";
-import { education, certifications } from "@/lib/data";
+import education from "@/lib/data/education.json";
+import certifications from "@/lib/data/certifications.json";
 
 export default function Education() {
   return (

@@ -1,8 +1,8 @@
 "use client";
 
+import personalInfo from "@/lib/data/info.json";
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Mail, MapPin } from "lucide-react";
-import { personalInfo } from "@/lib/data";
+import { ArrowRight, Linkedin, Mail, MapPin } from "lucide-react";
 
 const containerVariants = {
   hidden: { opacity: 0 },

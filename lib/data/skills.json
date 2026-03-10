@@ -1,0 +1,48 @@
+{
+  "Mobile": [
+    "React Native CLI",
+    "React Native Expo",
+    "Micro-Frontend Architecture (Re.pack)",
+    "Server-Driven UI",
+    "Redux Toolkit",
+    "Redux Saga",
+    "Redux Thunk",
+    "Zustand",
+    "WebSockets",
+    "REST APIs",
+    "GraphQL",
+    "iOS Optimisation",
+    "Android Optimisation"
+  ],
+  "CI/CD & Release": [
+    "GitHub Actions",
+    "Fastlane",
+    "Bitrise",
+    "CircleCI",
+    "Multi-Environment Pipelines",
+    "Automated Quality Gates"
+  ],
+  "Quality & Observability": [
+    "Appium",
+    "WebDriverIO",
+    "Detox",
+    "Jest",
+    "RNTL",
+    "Dynatrace",
+    "Sentry",
+    "MixPanel",
+    "Luciq"
+  ],
+  "CMS / Analytics": [
+    "Strapi",
+    "Directus",
+    "WordPress",
+    "Customer.io",
+    "Intercom",
+    "Looker Studio",
+    "Firebase Analytics",
+    "Crashlytics",
+    "Datadog",
+    "Grafana"
+  ]
+}

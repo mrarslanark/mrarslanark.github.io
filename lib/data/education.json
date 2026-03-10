@@ -1,0 +1,21 @@
+[
+  {
+    "degree": "Bachelor of Computer Science",
+    "institution": "Minhaj University Lahore",
+    "location": "Lahore, Pakistan",
+    "period": "2015 – 2019",
+    "achievements": [
+      "President — Application Development Club: Founded the club to expose students to industry-standard product development. Organised bootcamps, hackathons, and seminars.",
+      "Winner at Softec'19: Built a Netflix-like mobile app in 28 hours at FAST-NU competition using Kotlin/Android, securing 1st prize and PKR 50,000.",
+      "Worked ~4–6 hours/day at Juice Phactree while studying full-time, self-financing education through professional salary.",
+      "Organized the Annual Dinner 2015, establishing a tradition that has continued as an annual event ever since. This initiative marked the beginning of the Annual Dinner tradition at the university after 22 years."
+    ]
+  },
+  {
+    "degree": "Intermediate of Computer Science",
+    "institution": "Sheikh Khalifa Bin Zayed Arab Pakistani College",
+    "location": "Abu Dhabi, U.A.E",
+    "period": "2011 – 2013",
+    "achievements": []
+  }
+]

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Briefcase, ChevronRight, MapPin, Calendar } from "lucide-react";
 import { useState } from "react";
-import { experience } from "@/lib/data";
+import experience from "@/lib/data/experience.json";
 
 const typeColors: Record<string, string> = {
   Lead: "text-accent border-accent/30 bg-accent/5",

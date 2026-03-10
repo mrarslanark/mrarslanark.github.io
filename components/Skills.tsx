@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Code2 } from "lucide-react";
-import { skills } from "@/lib/data";
+import skills from "@/lib/data/skills.json";
 
 const categoryIcons: Record<string, string> = {
   Mobile: "📱",

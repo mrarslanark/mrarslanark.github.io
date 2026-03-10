@@ -1,11 +1,12 @@
-import { Project } from "@/lib/types/project";
+import { Project, ProjectURL } from "@/lib/types/project";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ProductStatusBox } from "./ProductStatusBox";
 import { ProductTypeBox } from "./ProductType";
 import { BuiltAt } from "./BuiltAt";
+import { ProjectLinkItem } from "./ProjectLinkItem";
 
-export function ProjectCard({
+export function PersonalProjectCard({
   project,
   index,
 }: {
@@ -44,9 +45,11 @@ export function ProjectCard({
         )}
         <div>
           {/* Title */}
-          <h3 className="font-jetbrains font-bold text-xl text-text group-hover:text-accent transition-colors duration-300">
-            {project.title}
-          </h3>
+          <div>
+            <h3 className="font-jetbrains font-bold text-xl text-text group-hover:text-accent transition-colors duration-300">
+              {project.title}
+            </h3>
+          </div>
 
           {/* Subtitle */}
           <p className="ont-jetbrains text-sm group-hover:text-accent transition-colors duration-300 line-clamp-1">
@@ -56,16 +59,37 @@ export function ProjectCard({
       </div>
 
       {/* Description */}
-      <p className="text-muted-light text-sm leading-relaxed mb-5 flex-1 line-clamp-3">
+      <p className="text-muted-light text-sm leading-relaxed mb-5 flex-1">
         {project.description}
       </p>
 
-      <Link
-        href={`/projects/${project.id}`}
-        className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:underline"
-      >
-        View Details
-      </Link>
+      {/* URLs */}
+      {project.urls && Object.keys(project.urls).length > 0 && (
+        <div className="flex flex-wrap gap-6">
+          {project.urls.map((project: ProjectURL) => (
+            <ProjectLinkItem key={project.id} {...project} />
+          ))}
+        </div>
+      )}
+
+      {/* Tags */}
+      <div className="flex flex-wrap gap-2 mt-6">
+        {project.tags.map((tag: string, index: number) => (
+          <motion.span
+            key={tag}
+            initial={{ opacity: 0, scale: 0.85 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.3,
+              delay: index * 0.03,
+            }}
+            className="skill-badge"
+          >
+            {tag}
+          </motion.span>
+        ))}
+      </div>
     </motion.div>
   );
 }

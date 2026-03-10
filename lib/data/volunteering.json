@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Guest Speaker — Google I/O Extended 2019",
+    "description": "Presented \"Introduction to Kotlin\" at LUMS, covering Kotlin fundamentals and its advantages over Java in Android development. Organised by GDG Lahore."
+  },
+  {
+    "title": "Speaker — Tech Tology Lahore Chapter Launch",
+    "description": "Presented on the enjoyable aspects of constructing Android applications, demystifying Android development for attendees."
+  },
+  {
+    "title": "Speaker — Tech Tology & Devenings",
+    "description": "Delivered a presentation on Firebase services and their practical applications in real-world scenarios, highlighting how Firebase can be leveraged to build and scale applications efficiently while accelerating the overall development process."
+  },
+  {
+    "title": "Speaker — Minhaj University Lahore",
+    "description": "Delivered a seminar on Programming Fundamentals, focusing on how programming concepts can be applied to solve real-world problems effectively."
+  }
+]
