@@ -665,9 +665,9 @@
     "subtitle": "Warehouse Management System",
     "build_at": "Juice Phactree",
     "logo": "/logos/mandii-mart.webp",
-    "description": "Mandii Mart is a freelance client project — a private, internal cross-platform platform built to streamline warehouse operations from end to end. The mobile app enables staff to manage client orders, track live rider locations, handle payments, and oversee stock levels in real time. It is complemented by a React-based admin panel for back-office management. The backend was engineered for scale using Node.js, PostgreSQL, RabbitMQ, Kafka, Redis, and Docker, with observability via Grafana. Deployment evolved from manual releases to a fully automated CI/CD pipeline over the course of the project.",
+    "description": "Mandii Mart is a private, internal cross-platform platform built to streamline warehouse operations from end to end. The mobile app enables staff to manage client orders, track live rider locations, handle payments, and oversee stock levels in real time. It is complemented by a React-based admin panel for back-office management. The backend was engineered for scale using Node.js, PostgreSQL, RabbitMQ, Kafka, Redis, and Docker, with observability via Grafana. Deployment evolved from manual releases to a fully automated CI/CD pipeline over the course of the project.",
     "product_type": "product",
-    "status": "live",
+    "status": "internal",
     "info": {
       "type": "info",
       "description": "Due to the terms of the NDA, I am not permitted to share any screenshots."
@@ -708,6 +708,50 @@
       "Containerised backend services using Docker and set up Grafana dashboards for infrastructure observability and performance monitoring.",
       "Transitioned deployment from manual releases to a fully automated CI/CD pipeline, reducing release overhead and human error.",
       "Managed global state across the mobile app using Redux Toolkit with redux-persist and Redux Thunk, ensuring data continuity across sessions."
+    ]
+  },
+  {
+    "id": "site-seekr",
+    "title": "Site Seekr",
+    "type": "professional",
+    "subtitle": "Virtual Tourist Guide App",
+    "build_at": "Juice Phactree",
+    "logo": "/logos/site-seekr.webp",
+    "description": "Site Seekr is a social experience platform that bridges tourists with expert local guides for iconic destinations worldwide. Users can connect with guides through real-time chat or join private and public live streams to get an authentic, on-the-ground view of prominent tourist attractions from anywhere in the world. Guides can monetise their expertise directly through the app, creating an ecosystem where local knowledge meets global curiosity.",
+    "product_type": "mobile",
+    "status": "archived",
+    "info": {
+      "type": "warning",
+      "description": "As the company has discontinued the application, no screenshots or links are currently available."
+    },
+    "tags": [
+      "React Native",
+      "Redux",
+      "Redux Persist",
+      "Redux Thunk",
+      "Redux Saga",
+      "Redux Saga",
+      "Firebase Auth",
+      "Firebase Firestore",
+      "Firebase Storage",
+      "Google Sign-In",
+      "WebRTC",
+      "Formik",
+      "Yup",
+      "GitHub Actions",
+      "Jest"
+    ],
+    "contribution": [
+      "Architected the React Native application from the ground up, establishing the codebase structure, navigation patterns, and state management strategy across the platform.",
+      "Integrated WebRTC to power private and public live-streaming functionality, enabling real-time video connections between tourists and guides worldwide.",
+      "Built a real-time chat-based guide service using Firebase Firestore, supporting live messaging between tourists and guides during active sessions.",
+      "Implemented Firebase Auth with Google Sign-In and OTP flows to provide secure and seamless onboarding for both tourists and guides.",
+      "Developed guide monetisation flows, enabling guides to receive direct in-app payments for their live stream and chat services.",
+      "Managed complex asynchronous state flows using Redux Saga and Redux Thunk, handling live session lifecycle, real-time data sync, and payment processing.",
+      "Configured redux-persist to maintain session continuity and user preferences across app restarts.",
+      "Implemented form-driven onboarding and profile flows using Formik and Yup with thorough client-side validation.",
+      "Set up GitHub Actions for automated build and deployment pipelines across iOS and Android.",
+      "Authored unit tests using Jest to safeguard core session, authentication, and payment flows against regressions."
     ]
   }
 ]

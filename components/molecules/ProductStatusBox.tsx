@@ -8,7 +8,7 @@ const properties: Record<string, { title: string; className: string }> = {
   },
   internal: {
     title: "Internal",
-    className: "text-orange border-orange/30 bg-orange/5",
+    className: "text-fuchsia-300 border-fuchsia-800/30 bg-fuchsia-800/20",
   },
   development: {
     title: "Development",
