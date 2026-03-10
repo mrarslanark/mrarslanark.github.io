@@ -120,6 +120,77 @@
     ]
   },
   {
+    "id": "moviehub",
+    "title": "MoveiHub",
+    "type": "personal",
+    "subtitle": "Netflix-Inspired Streaming App",
+    "logo": "/logos/movie-hub.webp",
+    "description": "MovieHub is an Android application built in 48 hours as part of Softec'19, a competitive hackathon. The app is a Netflix-inspired clone that streams sample video content sourced from Firebase, featuring user authentication, media storage, a real-time database, and analytics. Built under tight time constraints, MovieHub demonstrated rapid end-to-end delivery of a fully functional media streaming experience on Android.",
+    "product_type": "mobile",
+    "build_at": "Personal",
+    "status": "suspended",
+    "tags": [
+      "Android",
+      "Java",
+      "Firebase Auth",
+      "Firebase Firestore",
+      "Firebase Storage",
+      "Firebase Analytics",
+      "Firebase Realtime Database",
+      "Picasso",
+      "Material Design",
+      "JUnit",
+      "Espresso",
+      "GitHub"
+    ],
+    "urls": [
+      {
+        "id": "1",
+        "type": "github",
+        "url": "https://github.com/mrarslanark/moviehub-fast",
+        "title": "View Repository"
+      },
+      {
+        "id": "2",
+        "type": "picture",
+        "url": "https://www.facebook.com/share/182kbarwBL/",
+        "title": "Price Taking Ceremony"
+      }
+    ]
+  },
+  {
+    "id": "mul",
+    "title": "MUL Attendence System",
+    "type": "personal",
+    "subtitle": "University Attendance Manager",
+    "logo": "/logos/mul.webp",
+    "description": "The Minhaj University Lahore Attendance System is an Android application I built for my university to digitise and simplify the attendance management process. The app empowers teachers to record and manage both their own and their students' attendance directly from their mobile device, and generates attendance reports with ease, replacing manual, paper-based processes with a streamlined digital workflow.",
+    "product_type": "mobile",
+    "build_at": "Personal",
+    "status": "internal",
+    "tags": [
+      "Android",
+      "Java",
+      "Firebase Auth",
+      "Firebase Realtime Database",
+      "FirebaseUI",
+      "Glide",
+      "Material Design",
+      "RecyclerView",
+      "JUnit",
+      "Espresso",
+      "GitHub"
+    ],
+    "urls": [
+      {
+        "id": "1",
+        "type": "web",
+        "url": "https://mul.edu.pk/",
+        "title": "Visit Homepage"
+      }
+    ]
+  },
+  {
     "id": "fundix",
     "title": "Fundix.pro",
     "type": "professional",

@@ -1,10 +1,10 @@
 import { Project, ProjectURL } from "@/lib/types/project";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { BuiltAt } from "./BuiltAt";
 import { ProductStatusBox } from "./ProductStatusBox";
 import { ProductTypeBox } from "./ProductType";
-import { BuiltAt } from "./BuiltAt";
 import { ProjectLinkItem } from "./ProjectLinkItem";
+import { useCallback, useState } from "react";
 
 export function PersonalProjectCard({
   project,
@@ -13,6 +13,10 @@ export function PersonalProjectCard({
   project: Project;
   index: number;
 }) {
+  const [readMore, setReadMore] = useState(false);
+
+  const onToggleReadMore = useCallback(() => setReadMore((prev) => !prev), []);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -59,37 +63,50 @@ export function PersonalProjectCard({
       </div>
 
       {/* Description */}
-      <p className="text-muted-light text-sm leading-relaxed mb-5 flex-1">
-        {project.description}
-      </p>
+      <div className="mb-5 space-y-2">
+        <p
+          className={`text-muted-light text-sm leading-relaxed  ${readMore ? "" : "line-clamp-3"}`}
+        >
+          {project.description}
+        </p>
+        <p
+          onClick={onToggleReadMore}
+          role="button"
+          className="text-sm text-accent hover:underline"
+        >
+          Read More
+        </p>
+      </div>
+
+      {/* Tags */}
+      <div className="flex-1">
+        <div className="flex flex-wrap gap-2">
+          {project.tags.map((tag: string, index: number) => (
+            <motion.span
+              key={tag}
+              initial={{ opacity: 0, scale: 0.85 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.3,
+                delay: index * 0.03,
+              }}
+              className="skill-badge"
+            >
+              {tag}
+            </motion.span>
+          ))}
+        </div>
+      </div>
 
       {/* URLs */}
       {project.urls && Object.keys(project.urls).length > 0 && (
-        <div className="flex flex-wrap gap-6">
+        <div className="flex flex-wrap gap-6 mt-6 border-t border-neutral-100/10 pt-6">
           {project.urls.map((project: ProjectURL) => (
-            <ProjectLinkItem key={project.id} {...project} />
+            <ProjectLinkItem key={project.id} {...project} isTextSmall />
           ))}
         </div>
       )}
-
-      {/* Tags */}
-      <div className="flex flex-wrap gap-2 mt-6">
-        {project.tags.map((tag: string, index: number) => (
-          <motion.span
-            key={tag}
-            initial={{ opacity: 0, scale: 0.85 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{
-              duration: 0.3,
-              delay: index * 0.03,
-            }}
-            className="skill-badge"
-          >
-            {tag}
-          </motion.span>
-        ))}
-      </div>
     </motion.div>
   );
 }

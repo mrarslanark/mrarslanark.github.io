@@ -1,9 +1,25 @@
 import { ProjectURL } from "@/lib/types/project";
-import { AppleIcon, ExternalLink, GithubIcon, Globe, Play } from "lucide-react";
+import {
+  AppleIcon,
+  ExternalLink,
+  GithubIcon,
+  Globe,
+  Image,
+  Play,
+} from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
-export const ProjectLinkItem: React.FC<ProjectURL> = ({ url, title, type }) => {
+type Props = {
+  isTextSmall?: boolean;
+} & ProjectURL;
+
+export const ProjectLinkItem: React.FC<Props> = ({
+  url,
+  title,
+  type,
+  isTextSmall = false,
+}) => {
   const Icon = () => {
     switch (type) {
       case "web":
@@ -14,6 +30,8 @@ export const ProjectLinkItem: React.FC<ProjectURL> = ({ url, title, type }) => {
         return <Play size={18} className="text-accent" />;
       case "github":
         return <GithubIcon size={18} className="text-accent" />;
+      case "picture":
+        return <Image size={18} className="text-accent" />;
       default:
         return null;
     }
@@ -26,7 +44,9 @@ export const ProjectLinkItem: React.FC<ProjectURL> = ({ url, title, type }) => {
       rel="noopener noreferrer"
       className="inline-flex items-center justify-between gap-2 text-text font-medium hover:underline"
     >
-      <div className="inline-flex items-center gap-2">
+      <div
+        className={`inline-flex items-center gap-2 ${isTextSmall ? "text-sm" : ""}`}
+      >
         <Icon />
         {title}
       </div>
