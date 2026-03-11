@@ -767,7 +767,7 @@
     "subtitle": "Warehouse Management System",
     "build_at": "Juice Phactree",
     "logo": "/logos/mandii-mart.webp",
-    "description": "Mandii Mart is a private, internal cross-platform platform built to streamline warehouse operations from end to end. The mobile app enables staff to manage client orders, track live rider locations, handle payments, and oversee stock levels in real time. It is complemented by a React-based admin panel for back-office management. The backend was engineered for scale using Node.js, PostgreSQL, RabbitMQ, Kafka, Redis, and Docker, with observability via Grafana. Deployment evolved from manual releases to a fully automated CI/CD pipeline over the course of the project.",
+    "description": "Mandii Mart is a private, internal cross-platform built to streamline warehouse operations from end to end. The mobile app enables staff to manage client orders, track live rider locations, handle payments, and oversee stock levels in real time. It is complemented by a React-based admin panel for back-office management. The backend was engineered for scale using Node.js, PostgreSQL, RabbitMQ, Kafka, Redis, and Docker, with observability via Grafana. Deployment evolved from manual releases to a fully automated CI/CD pipeline over the course of the project.",
     "product_type": "product",
     "status": "internal",
     "info": {
