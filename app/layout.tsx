@@ -43,6 +43,8 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
           rel="stylesheet"
         />
+        <meta name="apple-mobile-web-app-title" content="Arslan Mushtaq" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className="bg-bg text-text antialiased">
         {children}
