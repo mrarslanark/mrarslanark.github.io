@@ -3,7 +3,16 @@
 import volunteering from "@/lib/data/volunteering.json";
 import personalInfo from "@/lib/data/info.json";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Heart, Linkedin, Mail } from "lucide-react";
+import {
+  ArrowUpRight,
+  Facebook,
+  Heart,
+  Instagram,
+  Linkedin,
+  Mail,
+  Rss,
+} from "lucide-react";
+import React from "react";
 
 export default function Contact() {
   return (
@@ -119,24 +128,37 @@ export default function Contact() {
           <p className="text-muted text-sm font-mono">
             © {new Date().getFullYear()}
           </p>
+
           <div className="flex gap-4">
-            <a
-              href={personalInfo.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted hover:text-accent transition-colors"
-            >
-              <Linkedin size={16} />
-            </a>
-            <a
-              href={`mailto:${personalInfo.email}`}
-              className="text-muted hover:text-accent transition-colors"
-            >
-              <Mail size={16} />
-            </a>
+            {personalInfo.social.map((s) => (
+              <a
+                key={s.id}
+                href={s.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted hover:text-accent transition-colors"
+              >
+                <SocialIcon id={s.id} />
+              </a>
+            ))}
           </div>
         </div>
       </footer>
     </>
   );
 }
+
+const SocialIcon: React.FC<{ id: string }> = ({ id }) => {
+  switch (id) {
+    case "linkedin":
+      return <Linkedin size={16} />;
+    case "instagram":
+      return <Instagram size={16} />;
+    case "facebook":
+      return <Facebook size={16} />;
+    case "blog":
+      return <Rss size={16} />;
+    default:
+      return null;
+  }
+};
