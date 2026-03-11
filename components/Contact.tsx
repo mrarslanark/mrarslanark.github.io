@@ -90,10 +90,10 @@ export default function Contact() {
                 className="group inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-accent text-bg font-bold rounded-xl hover:bg-accent-dim transition-all duration-300 text-lg"
               >
                 <Mail size={20} />
-                {personalInfo.email}
+                Get Connected
                 <ArrowUpRight
                   size={18}
-                  className="opacity-0 group-hover:opacity-100 transition-opacity"
+                  className="opacity-[0.25] group-hover:opacity-100 transition-opacity"
                 />
               </a>
               <a
@@ -114,13 +114,10 @@ export default function Contact() {
       <footer className="border-t border-border py-8 px-6">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-md bg-accent flex items-center justify-center">
-              <span className="text-bg font-bold text-xs font-syne">AM</span>
-            </div>
             <span className="text-muted text-sm font-mono">Arslan Mushtaq</span>
           </div>
           <p className="text-muted text-sm font-mono">
-            © {new Date().getFullYear()} · Built with Next.js & Framer Motion
+            © {new Date().getFullYear()}
           </p>
           <div className="flex gap-4">
             <a

@@ -54,9 +54,6 @@ export default function Navigation() {
             className="flex items-center gap-2 group"
             whileHover={{ scale: 1.02 }}
           >
-            <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
-              <span className="text-bg font-bold text-sm font-syne">AM</span>
-            </div>
             <span className="font-syne font-semibold text-text hidden sm:block">
               Arslan Mushtaq
             </span>
